@@ -1,0 +1,1061 @@
+{
+ "meta": {
+  "ausschnitt": "Kapitel 4, Teil E: Schätze",
+  "version": "0.9"
+ },
+ "tags": [
+  {
+   "key": "tag.kap4",
+   "name": "Kapitel 4: Begegnungen und Gegner"
+  },
+  {
+   "key": "tag.tabelle",
+   "name": "Regeltabelle"
+  },
+  {
+   "key": "tag.schatz",
+   "name": "Schatz"
+  },
+  {
+   "key": "tag.legendaer",
+   "name": "Legendärer Gegenstand"
+  }
+ ],
+ "entities": [
+  {
+   "key": "n.k4.schatz",
+   "kind": "note",
+   "name": "Schätze",
+   "type": "Regel",
+   "parent": "n.k4",
+   "tags": [
+    "tag.kap4",
+    "tag.schatz"
+   ],
+   "entry": "<p>Alles Körperliche, was die Helden begehren, gilt als <strong>Schatz</strong>. Es gibt zwei Hauptarten:</p><ul><li><strong>Beute (Loot):</strong> Silber oder jeder Wertgegenstand, der sich in Unzen Silber bewerten lässt. Heimgebracht und der Familie geschenkt, wird sie im Originalsystem zu Siegespunkten.</li><li><strong>Ausrüstung (Gear):</strong> alles, was die Erfolgschancen der Helden erhöht: seltene Ausrüstungsstücke, die Wikinger nur durch Plündern bekommen, oder magische Gegenstände, die Fertigkeiten steigern. Sie bringt nicht direkt Siegespunkte, kann aber bei Händlern gegen Silber getauscht werden.</li></ul><ul><li>{{ref:n.k4.sch.kategorien}}</li><li>{{ref:n.k4.sch.tabellen}}</li><li>{{ref:n.k4.sch.beute}}</li><li>{{ref:n.k4.sch.traenke}}</li><li>{{ref:n.k4.sch.talismane}}</li><li>{{ref:n.k4.sch.amulette}}</li><li>{{ref:n.k4.sch.ausruestung}}</li><li>{{ref:n.k4.sch.potenz}}</li><li>{{ref:n.k4.sch.looting}}</li><li>{{ref:n.k4.sch.helme}}</li><li>{{ref:n.k4.sch.legendaer}}</li></ul><p>Der Gegner-Teil dieser Regeln verweist auf Schätze, die Spielleiter bei Bedarf auswürfeln. Als Spielleiter kannst du Schätze natürlich auch frei vergeben und die Tabellen als Ideengeber und Maßstab für den Wert nutzen.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 155</em></p>"
+  },
+  {
+   "key": "n.k4.sch.kategorien",
+   "kind": "note",
+   "name": "Schatzkategorien und Platzierung",
+   "type": "Regel",
+   "parent": "n.k4.schatz",
+   "tags": [
+    "tag.kap4",
+    "tag.schatz",
+    "tag.tabelle"
+   ],
+   "entry": "<p>Nimmt der Entwerfer einen Schatz in eine Begegnung auf, legt er im Originalsystem nicht die genaue Art fest, sondern wählt eine <strong>Kategorie</strong> (A bis F). Erst wenn die Helden den Schatz zum ersten Mal sehen, bestimmt der Runner durch Würfeln auf der Tabelle der Kategorie, was es ist. Je reicher die Ausbeute, desto mehr Begegnungspunkte bringt die Kategorie.</p><table><tr><th>Kategorie</th><th>Begegnungspunkte (Originalsystem)</th></tr><tr><td>A</td><td>−10</td></tr><tr><td>B</td><td>−20</td></tr><tr><td>C</td><td>−30</td></tr><tr><td>D</td><td>−40</td></tr><tr><td>E</td><td>−50</td></tr><tr><td>F</td><td>−75</td></tr></table><ul><li><strong>Platzierung:</strong> Ein Schatz, für den der Entwerfer Punkte bekommt, muss den Helden eine <strong>faire Chance</strong> lassen, ihn zu bekommen: offen sichtbar (automatisch aufzuheben) oder durch einen Wurf erreichbar. Auch gewaltlose Konfrontationen können Schätze bringen (ein magisches Amulett für einen Wikingerkapitän, den man mit Zechen beeindruckt; ein Beutel Silber von einer Riesin, der man mit Auftreten gefällt). Der Entwerfer kann verlangen, dass der Held einen Kampf oder eine Gefahr übersteht (typisch: Beute aus dem Lager und den Besitztümern besiegter Gegner). Ein Schatz, den die Helden nicht bekommen können, bringt keine Punkte.</li><li>Die <strong>Entscheidung</strong>, welcher Held einen automatischen Schatz erhält, muss bei den <strong>Plünderern</strong> liegen, nicht beim Entwerfer-Runner.</li><li><strong>Geringe Mengen:</strong> Bis zu <strong>9 Unzen Silber</strong> je Ereignis (1 Punkt je Unze) und <strong>9 Stücke falsches Silber</strong> je Ereignis dürfen ohne Kategorie platziert werden, offen oder hinter einem Wurf. Alles Größere läuft über Kategorien und Zufallstabellen.</li><li><strong>Mischung:</strong> Für höchstens <strong>3 Schätze derselben Kategorie</strong> je Ereignis und höchstens <strong>5 je Kategorie</strong> in der ganzen Begegnung gibt es Punkte.</li><li><strong>Magische Gegenstände erkennen:</strong> Das Buch verzichtet auf das Identifizieren: Wikinger erkennen alle magischen Gegenstände auf einen Blick.</li></ul><h3>Falsches Silber (Liar’s Silver)</h3><p>Loki amüsiert sich über die Gier der Menschen: Er schafft falsches Silber und lässt es seine Diener dort aussäen, wo Schatzsucher es finden. Jedes Stück sieht aus und wiegt wie eine echte Unze (Last 1 je 32 Stück). Öffnen die Heimkehrer ihre Beutesäcke vor den versammelten Verwandten, verwandeln sich die Münzen in kriechende und fliegende, beißende Käfer, deren Ausscheidung die Augen brennt und die Felder verdirbt.</p><ul><li>Heimgebracht kostet es Ansehen: Wer zu lange mit Münzen in Berührung war, die Loki berührt hat, gilt als vom Pech verfolgt. <strong>Abzug von 1 Siegespunkt je Stück</strong> falschen Silbers von den Siegespunkten für heimgebrachtes echtes Silber (Originalsystem).</li><li>Ohne einen erfolgreichen <strong>Überlieferungs-Wurf gegen Schwierigkeit 8</strong> halten Helden ihren Anteil automatisch für echt. Jeder Plünderer würfelt für seinen Helden. Die Spieler wissen es, können es aber nur wegwerfen, wenn die Belastungsstufe ihrer Helden <em>Lieber etwas ablegen</em> oder schlimmer ist; dann müssen sie echtes und falsches Silber zu gleichen Teilen abgeben.</li><li>In einem Beutedepot kann falsches Silber zurückgelassen werden, muss aber zugleich mit dem restlichen Inhalt aufgenommen werden.</li></ul><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 155–157</em></p>"
+  },
+  {
+   "key": "n.k4.sch.tabellen",
+   "kind": "note",
+   "name": "Zufallstabellen der Schatzkategorien",
+   "type": "Regeltabelle",
+   "parent": "n.k4.schatz",
+   "tags": [
+    "tag.kap4",
+    "tag.schatz",
+    "tag.tabelle"
+   ],
+   "entry": "<p>Die Art eines Schatzes wird bestimmt, wenn ein Held ihn zum ersten Mal sieht. Würfeln darf der Runner, aber es macht mehr Spaß, wenn der Plünderer würfelt, dessen Held den Schatz zuerst sah oder bekam.</p><ul><li><strong>Modifikatoren</strong> (z. B. „A: −4, B: −2, E: +2, F: +4“) zeigen, was der Würfelnde je Kategorie auf das Ergebnis addiert oder abzieht. Ergebnisse können nie über oder unter die Werte der Tabelle gehen.</li><li>Ergebnisse unter 1 zählen als 1. Geht die Tabelle bis 10, würfle einen W10 und werte höhere Ergebnisse als 10. Geht sie bis 100, würfle 2W10 (ein Würfel Zehner, einer Einer; 0 = 10 bzw. 100) und werte Ergebnisse über 100 als 100.</li></ul><h3>Kategorie A</h3><table><tr><th>Wurf</th><th>Schatz</th></tr><tr><td>1</td><td>1W10 Unzen falsches Silber</td></tr><tr><td>2–5</td><td>Beute im Wert von 1W10 Unzen Silber</td></tr><tr><td>6</td><td>Beute im Wert von 2W10 Unzen Silber</td></tr><tr><td>7</td><td>Ausrüstung</td></tr><tr><td>8</td><td>Trank</td></tr><tr><td>9</td><td>Talisman (Charm)</td></tr><tr><td>0</td><td>stattdessen auf Kategorie B würfeln</td></tr></table><h3>Kategorie B</h3><table><tr><th>Wurf</th><th>Schatz</th></tr><tr><td>1</td><td>(2W10 × 2) Unzen falsches Silber</td></tr><tr><td>2</td><td>Beute im Wert von 2W10 Unzen Silber</td></tr><tr><td>3–5</td><td>Beute im Wert von (2W10 × 2) Unzen Silber</td></tr><tr><td>6</td><td>Ausrüstung</td></tr><tr><td>7</td><td>Trank</td></tr><tr><td>8</td><td>Talisman</td></tr><tr><td>9</td><td>Amulett</td></tr><tr><td>0</td><td>stattdessen auf Kategorie C würfeln</td></tr></table><h3>Kategorie C</h3><table><tr><th>Wurf</th><th>Schatz</th></tr><tr><td>1</td><td>(2W10 × 4) Unzen falsches Silber</td></tr><tr><td>2–4</td><td>Beute im Wert von (2W10 × 4) Unzen Silber</td></tr><tr><td>5</td><td>Ausrüstung</td></tr><tr><td>6</td><td>Trank</td></tr><tr><td>7</td><td>Talisman</td></tr><tr><td>8</td><td>Amulett</td></tr><tr><td>9</td><td>Machthelm</td></tr><tr><td>0</td><td>stattdessen auf Kategorie D würfeln</td></tr></table><h3>Kategorie D</h3><table><tr><th>Wurf</th><th>Schatz</th></tr><tr><td>01–10</td><td>100 + (2W10 × 4) Unzen falsches Silber</td></tr><tr><td>11–40</td><td>Beute im Wert von 100 + (2W10 × 4) Unzen Silber</td></tr><tr><td>41–45</td><td>Ausrüstung</td></tr><tr><td>46–47</td><td>2 Stück Ausrüstung</td></tr><tr><td>48–49</td><td>3 Stück Ausrüstung</td></tr><tr><td>50</td><td>4 Stück Ausrüstung</td></tr><tr><td>51–55</td><td>Trank</td></tr><tr><td>56–57</td><td>2 Tränke</td></tr><tr><td>58–59</td><td>3 Tränke</td></tr><tr><td>60</td><td>4 Tränke</td></tr><tr><td>61–65</td><td>Talisman</td></tr><tr><td>66–67</td><td>2 Talismane</td></tr><tr><td>68–69</td><td>3 Talismane</td></tr><tr><td>70</td><td>4 Talismane</td></tr><tr><td>71–75</td><td>Amulett</td></tr><tr><td>76–77</td><td>2 Amulette</td></tr><tr><td>78–79</td><td>3 Amulette</td></tr><tr><td>80</td><td>4 Amulette</td></tr><tr><td>81–85</td><td>Machthelm</td></tr><tr><td>86–90</td><td>Legendärer Gegenstand</td></tr><tr><td>91–00</td><td>stattdessen auf Kategorie E würfeln</td></tr></table><h3>Kategorie E</h3><table><tr><th>Wurf</th><th>Schatz</th></tr><tr><td>01–10</td><td>200 + (2W10 × 20) Unzen falsches Silber</td></tr><tr><td>11–40</td><td>Beute im Wert von 200 + (2W10 × 20) Unzen Silber</td></tr><tr><td>41–45</td><td>2 Stück Ausrüstung</td></tr><tr><td>46–47</td><td>3 Stück Ausrüstung</td></tr><tr><td>48–49</td><td>4 Stück Ausrüstung</td></tr><tr><td>50–52</td><td>2 Tränke</td></tr><tr><td>53–55</td><td>3 Tränke</td></tr><tr><td>56–60</td><td>4 Tränke</td></tr><tr><td>61–63</td><td>2 Talismane</td></tr><tr><td>64–67</td><td>3 Talismane</td></tr><tr><td>68–70</td><td>4 Talismane</td></tr><tr><td>71–73</td><td>2 Amulette</td></tr><tr><td>74–77</td><td>3 Amulette</td></tr><tr><td>78–79</td><td>4 Amulette</td></tr><tr><td>81–85</td><td>Machthelm</td></tr><tr><td>86–90</td><td>Legendärer Gegenstand</td></tr><tr><td>91–00</td><td>stattdessen auf Kategorie F würfeln</td></tr></table><h3>Kategorie F</h3><table><tr><th>Wurf</th><th>Schatz</th></tr><tr><td>01–10</td><td>300 + (2W10 × 30) Unzen falsches Silber</td></tr><tr><td>11–40</td><td>Beute im Wert von 300 + (2W10 × 30) Unzen Silber</td></tr><tr><td>41–45</td><td>3 Stück Ausrüstung</td></tr><tr><td>46–47</td><td>4 Stück Ausrüstung</td></tr><tr><td>48–51</td><td>3 Tränke</td></tr><tr><td>50–52</td><td>4 Tränke</td></tr><tr><td>53–57</td><td>3 Talismane</td></tr><tr><td>58–59</td><td>4 Talismane</td></tr><tr><td>60–63</td><td>3 Amulette</td></tr><tr><td>64–67</td><td>4 Amulette</td></tr><tr><td>68–76</td><td>Machthelm</td></tr><tr><td>77–78</td><td>2 Machthelme</td></tr><tr><td>79–88</td><td>Legendärer Gegenstand</td></tr><tr><td>89–90</td><td>2 Legendäre Gegenstände</td></tr><tr><td>91–00</td><td>zweimal auf dieser Tabelle würfeln; weitere Ergebnisse über 90 ignorieren</td></tr></table><p><em>Auffälligkeiten im Original:</em> In Kategorie E fehlt das Ergebnis 80. In Kategorie F überschneiden sich 48–51 (3 Tränke) und 50–52 (4 Tränke). Die Tabellen sind hier so wiedergegeben, wie sie stehen; am Tisch bitte eine Auslegung wählen (etwa 80 = Machthelm, Überschneidung nach unten).</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 156–157</em></p>"
+  },
+  {
+   "key": "n.k4.sch.beute",
+   "kind": "note",
+   "name": "Beute (Loot)",
+   "type": "Regeltabelle",
+   "parent": "n.k4.schatz",
+   "tags": [
+    "tag.kap4",
+    "tag.schatz",
+    "tag.tabelle"
+   ],
+   "entry": "<p>Helden gewinnen Status, indem sie Wertgegenstände in ihre Gemeinschaften bringen. Wikinger messen Reichtum in <strong>Unzen Silber</strong>; es kommt selten als Münze vor, sondern als zerschnittene silberne Becher, Teller oder Kunstwerke, die jeweils etwa eine Unze wiegen. <strong>32 Unzen Silber haben Last 1</strong> (Brüche werden bei der Last abgeschnitten).</p><ul><li>Am Ende eines Abenteuers (oder bei einer frühen Rückkehr zur Basis) können Helden mitgeführte Beute gegen Siegespunkte eintauschen; bis dahin müssen sie sie von Begegnung zu Begegnung tragen.</li><li>Der Entwerfer kann <strong>Beutedepots</strong> einbauen, in denen die Helden Beute bis Abenteuerende verstecken können (keine Last, keine Schäden auf dem Weg).</li><li>Bei jedem Beuteergebnis würfelt der Runner die Form der Beute auf der folgenden Tabelle: Manche Formen sind leicht und gut tragbar, andere sperrig. Ein niedriger Ausrüstungsschaden-Modifikator erhöht die Chance, dass sie bei Ausrüstungsschaden ({{ref:n.k4.f.ausruestung}}) ruiniert wird.</li></ul><table><tr><th>Wurf</th><th>Form</th><th>Last</th><th>Ausrüstungsschaden-Modifikator</th></tr><tr><td>01–10</td><td>Möbel</td><td>1 je 5 Stück</td><td>4</td></tr><tr><td>11–15</td><td>Skulptur</td><td>1 je 3 Stück</td><td>6</td></tr><tr><td>16–20</td><td>Wandteppiche</td><td>1 je 10 Stück</td><td>3</td></tr><tr><td>21–30</td><td>Keramik</td><td>1 je 15 Stück</td><td>2</td></tr><tr><td>31–90</td><td>Unzen Silber</td><td>1 je 32 Stück</td><td>15</td></tr><tr><td>91–00</td><td>Schmuck</td><td>0</td><td>4</td></tr></table><p><em>Das Buch erwähnt:</em> Bei den Wikingern war das Rind eine Grundeinheit des Tauschs; Rinder durch dunkle, goblinverseuchte Gänge zu treiben ist weder heldenhaft noch praktisch.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 158</em></p>"
+  },
+  {
+   "key": "n.k4.sch.traenke",
+   "kind": "note",
+   "name": "Tränke",
+   "type": "Regeltabelle",
+   "parent": "n.k4.schatz",
+   "tags": [
+    "tag.kap4",
+    "tag.schatz",
+    "tag.tabelle"
+   ],
+   "entry": "<p><strong>Minor magische Gegenstände</strong> (Tränke, Talismane, Amulette) wirken nicht durch göttliche Essenz, sondern durch überlieferte Volksrituale. Sie sind weniger wirksam als Göttliche Gaben, entscheiden aber oft über Erfolg oder Misserfolg. Man kauft sie <strong>nicht</strong> mit Siegespunkten; Helden erlangen sie nur im Abenteuer als Beute oder Belohnung. Sie addieren meist einen festen Bonus auf Würfe mit einer bestimmten Fertigkeit oder Charakteristik (Charakteristik-Boni gelten auf reine Charakteristik-Würfe und auf jede Fertigkeit, die von ihr abgeleitet ist). Einige erhöhen vorübergehend andere Spielwerte.</p><blockquote><strong>Beispiel:</strong> Ragnar hat einen Trank, der Führungsstärke um 3 erhöht; er trinkt ihn vor einer mitreißenden Rede an befreite Zwergensklaven. Thurid hat einen Präsenz-Trank für jede Handlung mit Präsenz.</blockquote><ul><li>Tränke sind <strong>Flüssigkeiten</strong>, die nur eine bestimmte Zahl Male benutzt werden können (Dosen). Zur Wirkung müssen sie getrunken oder selten auf ein Ziel geschüttet werden. Eine Dosis zu trinken kostet eine <strong>Aktion</strong>. Ist die letzte Dosis weg, bleibt ein leerer Flakon.</li><li>Ein <strong>einfacher Trank</strong> gibt dem Spieler lediglich einen zweiten Versuch bei einem schon misslungenen Wurf, in einer Lage, in der seine Versuche sonst erschöpft wären. Er hebt den früheren Misserfolg nicht auf.</li><li><strong>Vorgehen:</strong> Würfle auf der Typentabelle; sie sagt, auf welchen weiteren Tabellen du würfelst. Dann die Dosen-Tabelle.</li></ul><h3>Trank: Typ</h3><table><tr><th>Wurf</th><th>Typ</th></tr><tr><td>1–2</td><td>Einfach: würfle auf Potenz und Fertigkeit</td></tr><tr><td>3–8</td><td>Fertigkeit: würfle auf Potenz, Dauer und Fertigkeit</td></tr><tr><td>9–0</td><td>Charakteristik: würfle auf Potenz, Dauer und Charakteristik</td></tr></table><p>Modifikatoren: A −4, B −2, E +2, F +4</p><h3>Trank: Potenz</h3><table><tr><th>Wurf</th><th>Bonus</th></tr><tr><td>1–5</td><td>+1</td></tr><tr><td>6–8</td><td>+2</td></tr><tr><td>9</td><td>+3</td></tr><tr><td>0</td><td>+4</td></tr></table><p>Modifikatoren: A −5, B −2, E +2, F +3</p><h3>Trank: Dauer</h3><table><tr><th>Wurf</th><th>Dauer</th></tr><tr><td>1–2</td><td>1 Runde</td></tr><tr><td>3–4</td><td>2 Runden</td></tr><tr><td>5–6</td><td>3 Runden</td></tr><tr><td>7–8</td><td>4 Runden</td></tr><tr><td>9</td><td>5 Runden</td></tr><tr><td>0</td><td>5 + W10 Runden</td></tr></table><p>Modifikatoren: A −6, B −2, D +2, E +2, F +4</p><h3>Trank: Dosen (Gesamtmenge)</h3><table><tr><th>Wurf</th><th>Menge</th></tr><tr><td>1</td><td>4 Dosen</td></tr><tr><td>2–3</td><td>5 Dosen</td></tr><tr><td>4–7</td><td>6 Dosen</td></tr><tr><td>8–9</td><td>7 Dosen</td></tr><tr><td>0</td><td>8 Dosen</td></tr></table><p>Keine Modifikatoren. Die Tabellen für Fertigkeit und Charakteristik stehen unter {{ref:n.k4.sch.amulette}}.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 158–159</em></p>"
+  },
+  {
+   "key": "n.k4.sch.talismane",
+   "kind": "note",
+   "name": "Talismane (Charms)",
+   "type": "Regeltabelle",
+   "parent": "n.k4.schatz",
+   "tags": [
+    "tag.kap4",
+    "tag.schatz",
+    "tag.tabelle"
+   ],
+   "entry": "<p>Ein <strong>Talisman</strong> kann nach dem Gebrauch erst wieder genutzt werden, wenn er sich auflädt, was geschieht, wenn eine festgelegte Bedingung erfüllt ist. Der Spieler entscheidet, wann er ihn einsetzt. <strong>Aktivieren kostet keine Aktion.</strong></p><blockquote><strong>Beispiel:</strong> Ragnar hat einen Talisman, der seine Großwaffe erhöht und alle sechs Stunden aktiviert werden kann.</blockquote><h3>Talisman: Typ</h3><table><tr><th>Wurf</th><th>Typ</th></tr><tr><td>1–8</td><td>Erhöht Fertigkeit: würfle auf Bonus, Dauer, Aufladebedingung und Fertigkeit</td></tr><tr><td>9–0</td><td>Erhöht Charakteristik: würfle auf Bonus, Dauer, Aufladebedingung und Charakteristik</td></tr></table><p>Modifikatoren: A −4, B −2, D +2, E +4, F +6</p><h3>Talisman: Bonus</h3><table><tr><th>Wurf</th><th>Bonus</th></tr><tr><td>1–5</td><td>+1</td></tr><tr><td>6–8</td><td>+2</td></tr><tr><td>9</td><td>+3</td></tr><tr><td>0</td><td>+4</td></tr></table><p>Modifikatoren: A −5, B −2, E +2, F +3</p><h3>Talisman: Dauer</h3><table><tr><th>Wurf</th><th>Dauer</th></tr><tr><td>1–2</td><td>2 Runden</td></tr><tr><td>3–4</td><td>3 Runden</td></tr><tr><td>5–6</td><td>4 Runden</td></tr><tr><td>7–8</td><td>5 Runden</td></tr><tr><td>9</td><td>6 Runden</td></tr><tr><td>0</td><td>6 + W10 Runden</td></tr></table><p>Modifikatoren: A −6, B −2, D +2, E +2, F +4</p><h3>Talisman: Aufladebedingung</h3><table><tr><th>Wurf</th><th>Bedingung</th></tr><tr><td>01–15</td><td>Todesstoß gegen einen Gegner gleicher oder höherer Bedrohungsstufe</td></tr><tr><td>16–21</td><td>Triumph bei einem SCHNELLIGKEITS-Fertigkeitswurf aus den Notizen</td></tr><tr><td>22–27</td><td>Triumph bei einem AUSDAUER-Fertigkeitswurf aus den Notizen</td></tr><tr><td>28–33</td><td>Triumph bei einem GESCHICKLICHKEITS-Fertigkeitswurf aus den Notizen</td></tr><tr><td>34–39</td><td>Triumph bei einem STÄRKE-Fertigkeitswurf aus den Notizen</td></tr><tr><td>40–45</td><td>Triumph bei einem WAHRNEHMUNGS-Fertigkeitswurf aus den Notizen</td></tr><tr><td>46–51</td><td>Triumph bei einem INTELLIGENZ-Fertigkeitswurf aus den Notizen</td></tr><tr><td>52–57</td><td>Triumph bei einem KOMMUNIKATIONS-Fertigkeitswurf aus den Notizen</td></tr><tr><td>58–64</td><td>Triumph bei einem PRÄSENZ-Fertigkeitswurf aus den Notizen</td></tr><tr><td>65–70</td><td>Erfolgreicher Wurf zur Aktivierung einer Göttlichen Gabe</td></tr><tr><td>71–74</td><td>Besuch eines Schreins</td></tr><tr><td>75–85</td><td>Der Besitzer besucht einen Schrein seines Hauptgottes</td></tr><tr><td>86–95</td><td>Bis zum nächsten Ereignis warten</td></tr><tr><td>96–00</td><td>Bis zur nächsten Begegnung warten</td></tr></table><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 160</em></p>"
+  },
+  {
+   "key": "n.k4.sch.amulette",
+   "kind": "note",
+   "name": "Amulette und die Tabellen für Fertigkeit und Charakteristik",
+   "type": "Regeltabelle",
+   "parent": "n.k4.schatz",
+   "tags": [
+    "tag.kap4",
+    "tag.schatz",
+    "tag.tabelle"
+   ],
+   "entry": "<p><strong>Amulette</strong> sind meist defensiv: Ihre Magie aktiviert sich, wenn eine festgelegte Bedingung eintritt. Ein Amulett wirkt unbefristet, aber seine Magie schwindet jedes Mal ein wenig, wenn es seinen Besitzer nicht schützt. Es aktiviert sich automatisch und <strong>kostet keine Aktion</strong>; nach einer festgelegten Zahl Fehlschläge wird es nutzlos.</p><blockquote><strong>Beispiel:</strong> Thurid hat ein Amulett, das ihren Schutzwert erhöht, sechs Fehlschläge übersteht und sich aktiviert, wenn ein Diener Lokis versucht, sie zu treffen. Gelingt es dem Diener, sie zu verletzen, macht sie einen Strich auf dem Heldenbogen; bei sechs Strichen ist es wertlos.</blockquote><p>Würfle auf allen drei Tabellen.</p><h3>Amulett: Bonus</h3><table><tr><th>Wurf</th><th>Bonus</th></tr><tr><td>1–5</td><td>+1</td></tr><tr><td>6–8</td><td>+2</td></tr><tr><td>9</td><td>+3</td></tr><tr><td>0</td><td>+4</td></tr></table><p>Modifikatoren: B −2, E +2, F +3</p><h3>Amulett: Fehlschläge bis zur Nutzlosigkeit</h3><table><tr><th>Wurf</th><th>Nutzlos nach</th></tr><tr><td>1</td><td>4 Fehlschlägen</td></tr><tr><td>2–3</td><td>5</td></tr><tr><td>4–7</td><td>6</td></tr><tr><td>8–9</td><td>7</td></tr><tr><td>0</td><td>7 + W10</td></tr></table><p>Keine Modifikatoren.</p><h3>Amulett: Aktivierung und Wirkung</h3><table><tr><th>Wurf</th><th>Aktiviert sich, wenn</th><th>Wirkt auf</th></tr><tr><td>01–04</td><td>Ein Dark Viking versucht, den Besitzer mit einer Nahkampfwaffe zu treffen</td><td>DFN</td></tr><tr><td>04–08</td><td>Ein Goblin versucht, den Besitzer mit einer Nahkampfwaffe zu treffen</td><td>DFN</td></tr><tr><td>09–12</td><td>Ein Zwerg versucht, den Besitzer mit einer Nahkampfwaffe zu treffen</td><td>DFN</td></tr><tr><td>13–16</td><td>Ein Sark Amen oder Dishonored versucht, den Besitzer mit einer Nahkampfwaffe zu treffen</td><td>DFN</td></tr><tr><td>17–20</td><td>Eine Landkrabbe versucht, den Besitzer im Nahkampf zu treffen</td><td>DFN</td></tr><tr><td>21–24</td><td>Ein Wendol versucht, den Besitzer im Nahkampf zu treffen</td><td>DFN</td></tr><tr><td>25–28</td><td>Ein Dark Viking versucht, den Besitzer mit einer Fernwaffe zu treffen</td><td>Ausweichen</td></tr><tr><td>29–32</td><td>Ein Zwerg versucht, den Besitzer mit einer Fernwaffe zu treffen</td><td>Ausweichen</td></tr><tr><td>33–36</td><td>Der Besitzer wird vergiftet</td><td>Ausdauer</td></tr><tr><td>37–40</td><td>Der Besitzer wird einer Krankheit ausgesetzt</td><td>Ausdauer</td></tr><tr><td>41–44</td><td>Der Schutzwert des Besitzers sinkt durch Schaden an Waffen oder Rüstung</td><td>Schutz</td></tr><tr><td>45–48</td><td>Die HP des Besitzers betragen höchstens 10, und ein Gegner versucht, ihn im Nahkampf zu treffen</td><td>DFN</td></tr><tr><td>49–52</td><td>wie oben, aber mit Fernkampf</td><td>Ausweichen</td></tr><tr><td>53–56</td><td>Ein oder mehrere Mithelden haben im aktuellen Kampf einen Gegner getötet, der Besitzer nicht</td><td>INIT</td></tr><tr><td>57–60</td><td>Der Besitzer erleidet nicht wundbedingte Beeinträchtigung</td><td>ATK</td></tr><tr><td>61–64</td><td>Der Besitzer erleidet wundbedingte Beeinträchtigung</td><td>ATK</td></tr><tr><td>65–68</td><td>Der Besitzer war der erste Held, der auf den Gegner zusprintete</td><td>INIT</td></tr><tr><td>69–72</td><td>Der Besitzer steht vor einer Falle mit Feuerschaden</td><td>Wurf zum Vermeiden*</td></tr><tr><td>73–80</td><td>Der Besitzer steht vor einer Falle mit Standardschaden**</td><td>Wurf zum Vermeiden*</td></tr><tr><td>81–84</td><td>Der Besitzer steht vor einer Falle mit Ertrinkungsschaden</td><td>Wurf zum Vermeiden*</td></tr><tr><td>85–88</td><td>Der Besitzer steht vor einer Falle mit Sturzschaden</td><td>Wurf zum Vermeiden*</td></tr><tr><td>89–92</td><td>Der Besitzer steht vor einer Falle mit Säureschaden</td><td>Wurf zum Vermeiden*</td></tr><tr><td>93–96</td><td>Der aktuelle Gegner des Besitzers hat ihm im laufenden Kampf Wunden zugefügt</td><td>ATK</td></tr><tr><td>97–00</td><td>Der Besitzer hat weniger Siegespunkte als jeder andere Spieler</td><td>ATK</td></tr></table><p>* „Wurf zum Vermeiden“ ist jeder Wurf, der bestimmt, ob dein Held von der Falle betroffen ist. ** „Standardschaden“ umfasst jeden Schaden, der nicht durch einen anderen Eintrag abgedeckt ist.</p><h3>Fertigkeitstabelle (für Tränke, Talismane und weitere Schätze)</h3><p>Ergebnisse unter 1: würfle neu, bis ein Ergebnis unter 30 erreicht ist; über 100: würfle neu, bis über 30. Kategoriemodifikatoren beim Neuwürfeln ignorieren. Modifikatoren: <strong>A −30, B −15, D +5, E +10, F +15</strong>.</p><table><tr><th>Wurf</th><th>Fertigkeit</th></tr><tr><td>01–02</td><td>{{ref:ab.musizieren}}</td></tr><tr><td>03–04</td><td>{{ref:ab.singen}}</td></tr><tr><td>05–06</td><td>{{ref:ab.reparieren}}</td></tr><tr><td>07–08</td><td>{{ref:ab.verkleiden}}</td></tr><tr><td>09–10</td><td>{{ref:ab.verfolgung}}</td></tr><tr><td>11–12</td><td>{{ref:ab.seemannschaft}}</td></tr><tr><td>13–14</td><td>{{ref:ab.skilaufen}}</td></tr><tr><td>15–16</td><td>{{ref:ab.reiten}}</td></tr><tr><td>17–18</td><td>{{ref:ab.zechen}}</td></tr><tr><td>19–20</td><td>{{ref:ab.gluecksspiel}}</td></tr><tr><td>21–22</td><td>{{ref:ab.taeuschung}}</td></tr><tr><td>23–24</td><td>{{ref:ab.tierumgang}}</td></tr><tr><td>25–26</td><td>{{ref:ab.auftreten}}</td></tr><tr><td>27–28</td><td>{{ref:ab.schlafen}}</td></tr><tr><td>29–30</td><td>{{ref:ab.raufen}}</td></tr><tr><td>31–32</td><td>{{ref:ab.menschenkenntnis}}</td></tr><tr><td>33–34</td><td>{{ref:ab.runenkunde}}</td></tr><tr><td>35–36</td><td>{{ref:ab.ueberleben}}</td></tr><tr><td>37–38</td><td>{{ref:ab.skaldik}}</td></tr><tr><td>39–40</td><td>{{ref:ab.ueberlieferung}}</td></tr><tr><td>41–42</td><td>{{ref:ab.fuehrung}}</td></tr><tr><td>43–44</td><td>{{ref:ab.kartenzeichnen}}</td></tr><tr><td>45–46</td><td>{{ref:ab.schloesser}}</td></tr><tr><td>47–48</td><td>{{ref:ab.schleichen}}</td></tr><tr><td>49–50</td><td>{{ref:ab.feilschen}}</td></tr><tr><td>51–52</td><td>{{ref:ab.aufmerksamkeit}}</td></tr><tr><td>53–54</td><td>{{ref:ab.gottesgespuer}}</td></tr><tr><td>55–56</td><td>{{ref:ab.bogen}}</td></tr><tr><td>57–58</td><td>{{ref:ab.schwimmen}}</td></tr><tr><td>59–60</td><td>{{ref:ab.kettenwaffe}}</td></tr><tr><td>61–63</td><td>{{ref:ab.balance}}</td></tr><tr><td>64–66</td><td>{{ref:ab.klettern}}</td></tr><tr><td>67–69</td><td>{{ref:ab.springen}}</td></tr><tr><td>70–72</td><td>{{ref:ab.tapferkeit}}</td></tr><tr><td>73–76</td><td>{{ref:ab.fallenkunde}}</td></tr><tr><td>77–79</td><td>{{ref:ab.heilkunde}}</td></tr><tr><td>80–82</td><td>{{ref:ab.sprint}}</td></tr><tr><td>83–85</td><td>{{ref:ab.ausweichen}}</td></tr><tr><td>86–88</td><td>{{ref:ab.stangenwaffe}}</td></tr><tr><td>89–91</td><td>{{ref:ab.zweiwaffen}}</td></tr><tr><td>92–94</td><td>{{ref:ab.wurfwaffe}}</td></tr><tr><td>95–97</td><td>{{ref:ab.grosswaffe}}</td></tr><tr><td>98–00</td><td>{{ref:ab.einzelwaffe}}</td></tr></table><h3>Charakteristikentabelle</h3><p>Modifikatoren: <strong>A +10, B +5, D −5, E −15, F −30</strong>.</p><table><tr><th>Wurf</th><th>Charakteristik</th></tr><tr><td>01–15</td><td>{{ref:n.ch.schnelligkeit}}</td></tr><tr><td>16–28</td><td>{{ref:n.ch.ausdauer}}</td></tr><tr><td>29–44</td><td>{{ref:n.ch.geschick}}</td></tr><tr><td>45–56</td><td>{{ref:n.ch.staerke}}</td></tr><tr><td>57–68</td><td>{{ref:n.ch.wahrnehmung}}</td></tr><tr><td>69–80</td><td>{{ref:n.ch.intelligenz}}</td></tr><tr><td>81–90</td><td>{{ref:n.ch.kommunikation}}</td></tr><tr><td>91–00</td><td>{{ref:n.ch.praesenz}}</td></tr></table><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 160–162</em></p>"
+  },
+  {
+   "key": "n.k4.sch.ausruestung",
+   "kind": "note",
+   "name": "Ausrüstung als Schatz",
+   "type": "Regeltabelle",
+   "parent": "n.k4.schatz",
+   "tags": [
+    "tag.kap4",
+    "tag.schatz",
+    "tag.tabelle"
+   ],
+   "entry": "<p>Krieger sind stets auf neue Tötungswerkzeuge aus; auch gut Ausgerüstete wissen, dass Waffen, Schilde und Rüstung leicht verloren gehen oder zerstört werden. <strong>Gewöhnliche</strong> Ausrüstung wird nicht als Schatz gefunden: Verlorene oder beschädigte gewöhnliche Ausrüstung ersetzen die Helden durch Plündern besiegter Gegner ({{ref:n.k4.sch.looting}}) oder bei ihrer Heimatbasis. Würfle auf den folgenden Tabellen die Werte von Ausrüstungsschätzen.</p><h3>Ausrüstung: Typ</h3><table><tr><th>Wurf</th><th>Typ</th></tr><tr><td>1–5</td><td>Seltener Gegenstand: würfle auf der Tabelle Seltene Ausrüstung</td></tr><tr><td>6–0</td><td>Magischer Gegenstand: würfle auf der Tabelle Magische Ausrüstung, dann bei Schild/Waffe oder Rüstung auf den Potenz-Tabellen</td></tr></table><p>Modifikatoren: A −5, B −3, E +3, F +5</p><h3>Seltene Ausrüstung</h3><p>Modifikatoren: A würfle neu bei Ergebnissen über 80; E würfle neu bei Ergebnissen unter 30; F würfle neu bei Ergebnissen unter 60.</p><table><tr><th>Wurf</th><th>Gegenstand</th></tr><tr><td>01–05</td><td>{{ref:item.w.barb-net}}</td></tr><tr><td>06–10</td><td>{{ref:item.w.gauntlet}}</td></tr><tr><td>11–15</td><td>{{ref:item.w.billhook}}</td></tr><tr><td>16–20</td><td>{{ref:item.w.mstar}}</td></tr><tr><td>21–25</td><td>{{ref:item.w.polearm}}</td></tr><tr><td>26–30</td><td>{{ref:item.w.pike}}</td></tr><tr><td>31–35</td><td>{{ref:item.w.gobaxe}}</td></tr><tr><td>36–40</td><td>{{ref:item.w.gobclub}}</td></tr><tr><td>41–45</td><td>{{ref:item.w.compbow}}</td></tr><tr><td>46–50</td><td>{{ref:item.w.dblaxe}}</td></tr><tr><td>51–55</td><td>{{ref:item.w.romansword}}</td></tr><tr><td>56–60</td><td>{{ref:item.w.hxbow}}</td></tr><tr><td>61–65</td><td>{{ref:item.w.lxbow}}</td></tr><tr><td>66–70</td><td>{{ref:item.w.longbow}}</td></tr><tr><td>71–75</td><td>{{ref:item.w.fbmace}}</td></tr><tr><td>76–80</td><td>{{ref:item.w.dwwsword}}</td></tr><tr><td>81–85</td><td>{{ref:item.w.dwwhammer}}</td></tr><tr><td>86–90</td><td>{{ref:item.w.dwbaxe}}</td></tr><tr><td>91–95</td><td>{{ref:item.w.dwbsword}}</td></tr><tr><td>96–00</td><td>{{ref:item.w.dwbhammer}}</td></tr></table><h3>Magische Ausrüstung</h3><p>Die Tabelle bestimmt, welche Art magisch starker Ausrüstung erscheint. Bei Schild oder Waffe folgt die Potenz-Tabelle für Schilde und Waffen, um zu sehen, wie sich die Spielwerte von einem normalen Gegenstand derselben Art unterscheiden; bei Rüstung die Rüstungs-Potenz; Kits geben einen Bonus auf die zugehörige Fertigkeit (Kit-Potenz). Modifikatoren: <strong>A −20, B −10, E +20, F +40</strong>.</p><table><tr><th>Wurf</th><th>Gegenstand</th></tr><tr><td>01</td><td>{{ref:item.w.barb-net}}</td></tr><tr><td>02</td><td>{{ref:item.w.billhook}}</td></tr><tr><td>03–04</td><td>{{ref:item.w.punyknife}}</td></tr><tr><td>05</td><td>{{ref:item.w.sap}}</td></tr><tr><td>06–07</td><td>{{ref:item.w.dagger}}</td></tr><tr><td>08</td><td>{{ref:item.w.net}}</td></tr><tr><td>09</td><td>{{ref:item.w.gauntlet}}</td></tr><tr><td>10</td><td>{{ref:item.w.whip}}</td></tr><tr><td>11</td><td>{{ref:item.s.buckler}}</td></tr><tr><td>12</td><td>{{ref:item.w.mstar}}</td></tr><tr><td>13–16</td><td>{{ref:item.w.gobaxe}}</td></tr><tr><td>17–19</td><td>{{ref:item.w.gobclub}}</td></tr><tr><td>20</td><td>{{ref:item.w.pike}}</td></tr><tr><td>21</td><td>{{ref:item.w.polearm}}</td></tr><tr><td>22</td><td>{{ref:item.w.qstaff}}</td></tr><tr><td>23–24</td><td>{{ref:item.a.quilted}}</td></tr><tr><td>25</td><td>{{ref:item.w.flail}}</td></tr><tr><td>26</td><td>{{ref:item.w.sling}}</td></tr><tr><td>27–30</td><td>{{ref:item.s.round}}</td></tr><tr><td>31–32</td><td>{{ref:item.w.shortspear}}</td></tr><tr><td>33–36</td><td>{{ref:item.a.heavyleather}}</td></tr><tr><td>37–38</td><td>{{ref:item.w.mace}}</td></tr><tr><td>39–40</td><td>{{ref:item.w.handaxe}}</td></tr><tr><td>41–42</td><td>{{ref:item.a.studded}}</td></tr><tr><td>43–44</td><td>{{ref:item.w.shortbow}}</td></tr><tr><td>45–46</td><td>{{ref:item.w.shortsword}}</td></tr><tr><td>47–48</td><td>{{ref:item.w.spearlance}}</td></tr><tr><td>49–50</td><td>Wurfmesser (Satz zu 5)</td></tr><tr><td>51–52</td><td>{{ref:item.a.heavyleather}}</td></tr><tr><td>53–54</td><td>{{ref:item.w.throwaxe}}</td></tr><tr><td>55–56</td><td>{{ref:item.w.compbow}}</td></tr><tr><td>57–59</td><td>{{ref:item.s.kite}}</td></tr><tr><td>60</td><td>{{ref:item.w.lxbow}}</td></tr><tr><td>61</td><td>{{ref:item.w.warmaul}}</td></tr><tr><td>62</td><td>{{ref:item.w.longbow}}</td></tr><tr><td>63–66</td><td>{{ref:item.w.vikingbroad}}</td></tr><tr><td>67–69</td><td>{{ref:item.w.vikingaxe}}</td></tr><tr><td>70</td><td>{{ref:item.w.hxbow}}</td></tr><tr><td>71–72</td><td>{{ref:item.a.steelscale}}</td></tr><tr><td>73</td><td>{{ref:item.s.tower}}</td></tr><tr><td>74–75</td><td>Skier und Zubehör</td></tr><tr><td>76–77</td><td>Glücksspiel-Kit</td></tr><tr><td>78–79</td><td>Reparaturkit</td></tr><tr><td>80–81</td><td>Kartenzeichen-Kit</td></tr><tr><td>82–84</td><td>Überlebenskit</td></tr><tr><td>85–86</td><td>Dietriche (Schlossknacker-Kit)</td></tr><tr><td>87–88</td><td>Fallenentschärfungs-Kit</td></tr><tr><td>89–90</td><td>Kletterausrüstung</td></tr><tr><td>91–92</td><td>Heilerkit</td></tr><tr><td>93</td><td>{{ref:item.w.fbmace}}</td></tr><tr><td>94</td><td>{{ref:item.w.romansword}}</td></tr><tr><td>95</td><td>{{ref:item.w.dblaxe}}</td></tr><tr><td>96</td><td>{{ref:item.w.dwwsword}}</td></tr><tr><td>97</td><td>{{ref:item.w.dwwhammer}}</td></tr><tr><td>98</td><td>{{ref:item.w.dwbaxe}}</td></tr><tr><td>99</td><td>{{ref:item.w.dwbsword}}</td></tr><tr><td>00</td><td>{{ref:item.w.dwbhammer}}</td></tr></table><p><em>Hinweis:</em> „Leather Scale Armor“ nennt das Buch in der Tabelle für magische Ausrüstung und bei den legendären Rüstungen; die Rüstungstabelle (S. 35) kennt sie nicht. Hier ist sie der Lederrüstung gleichgesetzt.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 162–164</em></p>"
+  },
+  {
+   "key": "n.k4.sch.potenz",
+   "kind": "note",
+   "name": "Potenz magischer Ausrüstung",
+   "type": "Regeltabelle",
+   "parent": "n.k4.schatz",
+   "tags": [
+    "tag.kap4",
+    "tag.schatz",
+    "tag.tabelle"
+   ],
+   "entry": "<h3>Potenz von Schild und Waffe: Bonus</h3><p>Würfle zuerst auf den gewährten Bonus, dann auf den Spielwert, auf den er wirkt.</p><table><tr><th>Wurf</th><th>Bonus</th></tr><tr><td>1–5</td><td>+1</td></tr><tr><td>6–7</td><td>+2</td></tr><tr><td>8</td><td>+3</td></tr><tr><td>9</td><td>Würfle noch zweimal auf dieser Tabelle (Ergebnisse über 9 ignorieren). Jeder Bonus gilt für einen anderen Spielwert; würfle zweimal auf der nächsten Tabelle, bei gleichem Ergebnis neu.</td></tr><tr><td>0</td><td>Würfle noch dreimal auf dieser Tabelle (Ergebnisse über 9 ignorieren). Würfle dreimal auf der nächsten Tabelle, welche Spielwerte den Bonus erhalten; bei gleichem Wert sind die Boni kumulativ.</td></tr></table><p>Modifikatoren: A −5, B −2, C −1, D +1, E +2, F +3</p><h3>Potenz von Schild und Waffe: Spielwert</h3><table><tr><th>Wurf</th><th>Spielwert</th></tr><tr><td>1–3</td><td>DAM-Wert</td></tr><tr><td>4–5</td><td>ATK-Wert</td></tr><tr><td>6–7</td><td>INIT-Wert</td></tr><tr><td>8–0</td><td>DFN-Wert</td></tr></table><p>Bei Schilden würfle bei Ergebnissen von 2 oder weniger neu. (Ja, das heißt, dass ein paar seltene Schilde den DAM-Wert des Helden erhöhen.) Keine Modifikatoren.</p><h3>Potenz von Rüstung</h3><table><tr><th>Wurf</th><th>Wirkung</th></tr><tr><td>1–2</td><td>INIT-Wert +1</td></tr><tr><td>3</td><td>INIT-Wert +2</td></tr><tr><td>4</td><td>INIT-Wert +3</td></tr><tr><td>5</td><td>Schutz +1</td></tr><tr><td>6</td><td>Schutz +2</td></tr><tr><td>7</td><td>Schutz +3</td></tr><tr><td>8</td><td>Schutz +4</td></tr><tr><td>9</td><td>Schutz +5</td></tr><tr><td>0</td><td>Schutz +6</td></tr></table><p>Modifikatoren: A −4, B −2, E +2, F +4</p><h3>Kit-Potenz</h3><p>Der Bonus der Fertigkeit, den das Kit gibt. Er gilt nicht für Proben, für die keine Ausrüstung nötig ist.</p><table><tr><th>Wurf</th><th>Bonus</th></tr><tr><td>1–5</td><td>+1</td></tr><tr><td>6–8</td><td>+2</td></tr><tr><td>9</td><td>+3</td></tr><tr><td>0</td><td>+4</td></tr></table><p>Modifikatoren: B −2, E +2, F +3</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 164</em></p>"
+  },
+  {
+   "key": "n.k4.sch.looting",
+   "kind": "note",
+   "name": "Gegner plündern (Looting)",
+   "type": "Regel",
+   "parent": "n.k4.schatz",
+   "tags": [
+    "tag.kap4",
+    "tag.schatz"
+   ],
+   "entry": "<p>Nach einem gewonnenen Kampf können die Helden bei jedem Gegner, dessen Typ das <strong>Streitaxt-Symbol</strong> trägt (Handwaffen), <strong>2 Nahkampfwaffen</strong> bergen und <strong>1 Fernwaffe</strong> von jedem Gegner, der im Kampf eine benutzt hat.</p><ul><li>Weil die Kampfwerte der Gegner im Verhältnis zu den Helden bestimmt werden, passen sie nicht zwingend zu den Werten der jeweiligen Waffen. Das Buch räumt ein, dass das zunächst seltsam wirkt, aber nötig ist, damit die Helden nicht unerwartet regelmäßig zerschlagen werden.</li><li>Die Spieler entscheiden, welche gewöhnlichen Waffen sie von erschlagenen Gegnern bergen, und dürfen dabei ihre bevorzugte Art zum Ersatz wählen. Gut bevorratet können sie die Waffen bei Handelsgelegenheiten gegen Silber tauschen (heimgebracht zählt es für Siegespunkte).</li><li>Die von Gegnern getragene <strong>Rüstung</strong> gilt immer als in den tödlichen Schlägen zerfetzt (bequeme Spielkonvention).</li><li>Der Entwerfer erhält keine zusätzlichen Punkte für geplünderte Waffen.</li></ul><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 164</em></p>"
+  },
+  {
+   "key": "n.k4.sch.helme",
+   "kind": "note",
+   "name": "Machthelme (Helms of Power)",
+   "type": "Regeltabelle",
+   "parent": "n.k4.schatz",
+   "tags": [
+    "tag.kap4",
+    "tag.schatz",
+    "tag.tabelle"
+   ],
+   "entry": "<p>Ein <strong>Machthelm</strong> ist ein Helm, der seinem Träger <strong>eine oder mehrere Stufen einer bestimmten Göttlichen Gabe</strong> verleiht.</p><ul><li>Der Held muss den Helm mindestens seit dem Ende des vorherigen Ereignisses tragen, um die Gabe zu nutzen. Es kann nur <strong>ein Helm</strong> gleichzeitig getragen werden. Ein Helm erhöht oder senkt den üblichen Rüstungsschutz des Trägers nicht, wenn er die übliche Kopfbedeckung ersetzt. <strong>Last 2</strong>.</li><li>Besitzt der Held die Gabe schon, sind die Stufen <strong>kumulativ</strong>. Hat eine Gabe eine Stufenbeschränkung, bringt der Helm den Nutzer höchstens auf diese Höchststufe, egal wie viele Stufen der Helm normalerweise gäbe oder wie viele der Held ohne ihn hat.</li><li>Machthelme erhöhen die <strong>Göttliche Verbindung</strong> des Trägers mit dem Gott der Gabe. Auch nach Abnahme gilt das bis zum Beginn des nächsten Ereignisses (ein Helm mit 2 Stufen Aufgeschobene Qual erhöht die Heimdal-Verbindung um 2, solange man ihn trägt oder nur im aktuellen Ereignis abgenommen hat).</li><li>Bei einem Helm mit einer <strong>Runenkraft</strong> braucht der Held weiterhin die zugehörige Waffe; der Helm gibt nur die Kraft, ohne dass man Siegespunkte dafür ausgibt.</li><li>Beschädigte Machthelme: siehe {{ref:n.k4.f.ausruestung}}.</li></ul><h3>Machthelm: Stufen</h3><table><tr><th>Wurf</th><th>Stufen</th></tr><tr><td>1–5</td><td>1 Stufe</td></tr><tr><td>6</td><td>2 Stufen</td></tr><tr><td>7</td><td>3 Stufen</td></tr><tr><td>8</td><td>4 Stufen</td></tr><tr><td>9</td><td>5 Stufen</td></tr><tr><td>0</td><td>6 Stufen</td></tr></table><p>Modifikatoren: B −2, E +2, F +3</p><h3>Machthelm: Gabe</h3><p>Modifikatoren: A würfle neu bei Ergebnissen über 18; B würfle neu bei Ergebnissen über 76; D würfle neu bei Ergebnissen unter 19; F würfle neu bei Ergebnissen unter 77.</p><table><tr><th>Wurf</th><th>Gabe des Helms</th></tr><tr><td>01</td><td>{{ref:gift.heft}}</td></tr><tr><td>02</td><td>{{ref:gift.naglfar}}</td></tr><tr><td>03</td><td>{{ref:gift.seufzer}}</td></tr><tr><td>04</td><td>{{ref:gift.schlangentraenen}}</td></tr><tr><td>05</td><td>{{ref:gift.geister}}</td></tr><tr><td>06</td><td>{{ref:gift.skadi}}</td></tr><tr><td>07</td><td>{{ref:gift.feuersee}}</td></tr><tr><td>08</td><td>{{ref:gift.beide_haende}}</td></tr><tr><td>09</td><td>{{ref:gift.eichhoernchen}}</td></tr><tr><td>10</td><td>{{ref:gift.kiefer}}</td></tr><tr><td>11</td><td>{{ref:gift.todesstreich}}</td></tr><tr><td>12</td><td>{{ref:gift.becher}}</td></tr><tr><td>13</td><td>{{ref:gift.fluch}}</td></tr><tr><td>14</td><td>{{ref:gift.nebel}}</td></tr><tr><td>15</td><td>{{ref:gift.njordsatem}}</td></tr><tr><td>16</td><td>{{ref:gift.gebruell}}</td></tr><tr><td>17</td><td>{{ref:gift.mistel}}</td></tr><tr><td>18</td><td>{{ref:gift.freudenschrei}}</td></tr><tr><td>19</td><td>{{ref:gift.agony}}</td></tr><tr><td>20–21</td><td>{{ref:gift.aura}}</td></tr><tr><td>22</td><td>{{ref:gift.bann}}</td></tr><tr><td>23</td><td>{{ref:gift.angrboda}}</td></tr><tr><td>24</td><td>{{ref:gift.knochenrichter}}</td></tr><tr><td>25–26</td><td>{{ref:gift.sturm}}</td></tr><tr><td>27–28</td><td>{{ref:gift.kaesebruch}}</td></tr><tr><td>29</td><td>{{ref:gift.pfeil}}</td></tr><tr><td>30</td><td>{{ref:gift.pferd}}</td></tr><tr><td>31</td><td>{{ref:gift.kohlen}}</td></tr><tr><td>32</td><td>{{ref:gift.fleisch}}</td></tr><tr><td>33</td><td>{{ref:gift.gipfel}}</td></tr><tr><td>34–35</td><td>{{ref:gift.fersen}}</td></tr><tr><td>36</td><td>{{ref:gift.donner}}</td></tr><tr><td>37</td><td>{{ref:gift.freyr_zunge}}</td></tr><tr><td>38</td><td>{{ref:gift.hirsche}}</td></tr><tr><td>39</td><td>{{ref:gift.aepfel}}</td></tr><tr><td>40–41</td><td>{{ref:gift.gestemmt}}</td></tr><tr><td>42</td><td>{{ref:gift.entschlossenheit}}</td></tr><tr><td>43</td><td>{{ref:gift.blatt}}</td></tr><tr><td>44</td><td>{{ref:gift.hirsch}}</td></tr><tr><td>45</td><td>{{ref:gift.speer}}</td></tr><tr><td>46</td><td>{{ref:gift.mjoelnir}}</td></tr><tr><td>47</td><td>{{ref:gift.kruste}}</td></tr><tr><td>48</td><td>{{ref:gift.walkuere}}</td></tr><tr><td>49</td><td>{{ref:gift.eule}}</td></tr><tr><td>50</td><td>{{ref:gift.blitz}}</td></tr><tr><td>51</td><td>{{ref:gift.rabe}}</td></tr><tr><td>52</td><td>{{ref:gift.hoders_reue}}</td></tr><tr><td>53</td><td>{{ref:gift.quell}}</td></tr><tr><td>54</td><td>{{ref:gift.r.wikingerkurzschwert}}</td></tr><tr><td>55</td><td>{{ref:gift.r.roemisches_schwert}}</td></tr><tr><td>56</td><td>{{ref:gift.r.wikingerbreitschwert}}</td></tr><tr><td>57</td><td>{{ref:gift.r.zwergenarbeitsschwert}}</td></tr><tr><td>58</td><td>{{ref:gift.r.zwergenkampfschwert}}</td></tr><tr><td>59</td><td>{{ref:gift.r.handaxt}}</td></tr><tr><td>60</td><td>{{ref:gift.r.goblinaxt}}</td></tr><tr><td>61</td><td>{{ref:gift.r.wikingeraxt}}</td></tr><tr><td>62</td><td>{{ref:gift.r.doppelaxt}}</td></tr><tr><td>63</td><td>{{ref:gift.r.zwergenaxt}}</td></tr><tr><td>64</td><td>{{ref:gift.r.streitkolben}}</td></tr><tr><td>65</td><td>{{ref:gift.r.goblinstachelkeule}}</td></tr><tr><td>66</td><td>{{ref:gift.verrat}}</td></tr><tr><td>67</td><td>{{ref:gift.schultern}}</td></tr><tr><td>68</td><td>{{ref:gift.sleipnir}}</td></tr><tr><td>69</td><td>{{ref:gift.spalten}}</td></tr><tr><td>70</td><td>{{ref:gift.thors_sehnen}}</td></tr><tr><td>71</td><td>{{ref:gift.trompete}}</td></tr><tr><td>72</td><td>{{ref:gift.tyrs_langmut}}</td></tr><tr><td>73</td><td>{{ref:gift.ulls_haut}}</td></tr><tr><td>74</td><td>{{ref:gift.lokis_ranke}}</td></tr><tr><td>75</td><td>{{ref:gift.ringer}}</td></tr><tr><td>76</td><td>{{ref:gift.sehnen}}</td></tr><tr><td>77</td><td>{{ref:gift.luege}}</td></tr><tr><td>78</td><td>{{ref:gift.mantel}}</td></tr><tr><td>79–80</td><td>{{ref:gift.bergsturm}}</td></tr><tr><td>81</td><td>{{ref:gift.wachsamkeit}}</td></tr><tr><td>82–83</td><td>{{ref:gift.stiefel}}</td></tr><tr><td>84</td><td>{{ref:gift.vergeltung}}</td></tr><tr><td>85–86</td><td>{{ref:gift.verweben}}</td></tr><tr><td>87</td><td>{{ref:gift.r.zwergenarbeitshammer}}</td></tr><tr><td>88–89</td><td>{{ref:gift.berserker}}</td></tr><tr><td>90</td><td>{{ref:gift.abgang}}</td></tr><tr><td>91</td><td>{{ref:gift.schicksal}}</td></tr><tr><td>92</td><td>{{ref:gift.macht_thors}}</td></tr><tr><td>93–94</td><td>{{ref:gift.yggdrasil}}</td></tr><tr><td>95</td><td>{{ref:gift.njordsgale}}</td></tr><tr><td>96</td><td>{{ref:gift.r.vierklingenkolben}}</td></tr><tr><td>97</td><td>{{ref:gift.r.zwergenkriegshammer}}</td></tr><tr><td>98</td><td>{{ref:gift.ulls_hand}}</td></tr><tr><td>99</td><td>{{ref:gift.tyrs_mut}}</td></tr><tr><td>00</td><td>{{ref:gift.wunden}}</td></tr></table><p><em>Hinweis:</em> In der Tabelle des Buchs steht bei einem Eintrag „8“ statt „38“ („Die nagenden Hirsche“); hier als 38 gelesen.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 165–166</em></p>"
+  },
+  {
+   "key": "n.k4.sch.legendaer",
+   "kind": "note",
+   "name": "Legendäre Gegenstände",
+   "type": "Regeltabelle",
+   "parent": "n.k4.schatz",
+   "tags": [
+    "tag.kap4",
+    "tag.schatz",
+    "tag.tabelle",
+    "tag.legendaer"
+   ],
+   "entry": "<p><strong>Legendäre Gegenstände</strong> machten die Zwerge, als sie noch mit Odin verbündet waren. Sie sind nicht einzigartig, aber sehr selten, und ihr Besitz steigert das Ansehen eines Kriegers erheblich. Sie sind fast immer Ausrüstungsstücke; zusätzlich zu ihren Sonderkräften zählen sie als <strong>magische Ausrüstung</strong> mit Boni (würfle auf den Potenz-Tabellen, {{ref:n.k4.sch.potenz}}).</p><ul><li>Um die Kräfte zu aktivieren, gibst du <strong>Siegespunkte</strong> aus, wie bei einer Göttlichen Gabe. Wie dort erlauben die meisten <strong>Stufen</strong> („Unbegrenzt“) oder keine („Keine“). Manche geben für jede gekaufte Stufe eine <strong>Göttliche Verbindung</strong> (Patron genannt).</li><li>Ein legendärer Gegenstand zählt wie jede Ausrüstung <strong>nicht</strong> für gespeicherte Charaktere (Todesversicherung, {{ref:n.k3.todesversicherung}}): Hohe Investitionen sind riskanter als bei Göttlichen Gaben, die Kosten der Stufen sind dafür meist niedriger.</li><li>Rüstungen für Loki fertigten untote Schmiede aus den noch lebenden Körpern riesiger, dämonischer Insekten; sie glänzen in kränklich schillernden Farben und sind gespickt mit zerbrochenen Facettenaugen, Kiefern und pulsierenden Stacheln.</li><li>Beschädigt: Die Kosten für Stufen verdoppeln sich, Reparatur ist nicht möglich ({{ref:n.k4.f.ausruestung}}).</li></ul><p>Würfle auf der Tabelle, welcher legendäre Gegenstand gefunden wurde:</p><table><tr><th>Wurf</th><th>Gegenstand</th></tr><tr><td>01–05</td><td>{{ref:item.l.inflexible}}</td></tr><tr><td>06–10</td><td>{{ref:item.l.absorption}}</td></tr><tr><td>11–15</td><td>{{ref:item.l.axt}}</td></tr><tr><td>16–20</td><td>{{ref:item.l.klinge}}</td></tr><tr><td>21–25</td><td>{{ref:item.l.blendend}}</td></tr><tr><td>26–30</td><td>{{ref:item.l.blutzoll}}</td></tr><tr><td>31–35</td><td>{{ref:item.l.mantel_verrat}}</td></tr><tr><td>36–40</td><td>{{ref:item.l.stumpf}}</td></tr><tr><td>41–45</td><td>{{ref:item.l.daemonenrachen}}</td></tr><tr><td>46–50</td><td>{{ref:item.l.einherjar}}</td></tr><tr><td>51–55</td><td>{{ref:item.l.halsreif_gerecht}}</td></tr><tr><td>56–60</td><td>{{ref:item.l.goldklinge}}</td></tr><tr><td>61–65</td><td>{{ref:item.l.stiefel}}</td></tr><tr><td>66–70</td><td>{{ref:item.l.lokivereitelnd}}</td></tr><tr><td>71–75</td><td>{{ref:item.l.lokistab}}</td></tr><tr><td>76–80</td><td>{{ref:item.l.grimmig}}</td></tr><tr><td>81–85</td><td>{{ref:item.l.alberich_ring}}</td></tr><tr><td>86–90</td><td>{{ref:item.l.schildwut}}</td></tr><tr><td>91–95</td><td>{{ref:item.l.spuckend}}</td></tr><tr><td>96–00</td><td>{{ref:item.l.alberich_halsreif}}</td></tr></table><p>Heißt der Ausrüstungstyp „Beliebige Rüstung“, würfle die Art:</p><table><tr><th>Wurf</th><th>Rüstungstyp</th></tr><tr><td>1</td><td>{{ref:item.a.quilted}}</td></tr><tr><td>2–3</td><td>{{ref:item.a.heavyleather}}</td></tr><tr><td>4–7</td><td>{{ref:item.a.studded}}</td></tr><tr><td>8–9</td><td>{{ref:item.a.heavyleather}}</td></tr><tr><td>0</td><td>{{ref:item.a.steelscale}}</td></tr></table><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 166–170</em></p>"
+  },
+  {
+   "key": "item.l.inflexible",
+   "kind": "item",
+   "name": "Rüstung der unbeugsamen Sicherheit",
+   "type": "Legendärer Gegenstand",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.legendaer"
+   ],
+   "entry": "<p><strong>Ausrüstungstyp:</strong> Beliebige Rüstung · <strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt</p><p>Für jede Stufe darfst du <strong>+3</strong> auf jeden Wurf addieren, um <strong>Beeinträchtigung zu widerstehen</strong> oder <strong>Invigoration</strong> zu erlangen.</p><p><strong>Originalname:</strong> Armor of Inflexible Surety</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 167–170</em></p>",
+   "properties": [
+    {
+     "name": "Ausrüstungstyp",
+     "value": "Beliebige Rüstung",
+     "type_id": 1
+    },
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Armor of Inflexible Surety",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "167–170",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.l.absorption",
+   "kind": "item",
+   "name": "Absorptionsrüstung",
+   "type": "Legendärer Gegenstand",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.legendaer"
+   ],
+   "entry": "<p><strong>Ausrüstungstyp:</strong> Beliebige Rüstung · <strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt</p><p>Trifft ein Gegner den Träger, kann seine Waffe an der Rüstung haften und in einem Regenbogenblitz <strong>aufgesogen</strong> werden. Um das zu verhindern, muss der Gegner <strong>RES gegen Schwierigkeit = Stufen in Absorptionsrüstung</strong> würfeln. Scheitert er, wird seine Waffe aufgesogen und er ist <strong>entwaffnet</strong>. Bis zum Ende des Ereignisses addierst du <strong>(DFN-Wert der Waffe ÷ 5)</strong> zum Schutz. Nur wirksam gegen Gegnertypen mit Streitaxt-Symbol.</p><p><strong>Originalname:</strong> Absorption Armor</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 167–170</em></p>",
+   "properties": [
+    {
+     "name": "Ausrüstungstyp",
+     "value": "Beliebige Rüstung",
+     "type_id": 1
+    },
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Absorption Armor",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "167–170",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.l.axt",
+   "kind": "item",
+   "name": "Axt des Ruhms",
+   "type": "Legendärer Gegenstand",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.legendaer"
+   ],
+   "entry": "<p><strong>Ausrüstungstyp:</strong> Beliebige Axt · <strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt</p><p>Jedes Mal, wenn der Träger einen Gegner mit dieser Waffe trifft, steigt der <strong>Siegespunktbonus für den Todesstoß</strong> gegen ihn um <strong>10X</strong> (X = Stufen in dieser Kraft).</p><p><strong>Originalname:</strong> Axe of Glory</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 167–170</em></p>",
+   "properties": [
+    {
+     "name": "Ausrüstungstyp",
+     "value": "Beliebige Axt",
+     "type_id": 1
+    },
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Axe of Glory",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "167–170",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.l.klinge",
+   "kind": "item",
+   "name": "Klinge des rechtmäßigen Anspruchs",
+   "type": "Legendärer Gegenstand",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.legendaer"
+   ],
+   "entry": "<p><strong>Ausrüstungstyp:</strong> Wikinger-Breitschwert · <strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt</p><p>Wirkt, wenn der Held eines anderen Plünderers einen Gegner erschlägt, den der Träger zuvor mit ihr traf, sofern die Klinge dem Gegner <strong>insgesamt mehr Schaden</strong> zufügte als der andere beim Todesstoß. Dann ziehe <strong>5X</strong> vom Siegespunktstand des anderen Helden ab und addiere sie dem Träger; nicht mehr als der Todesstoßbonus.</p><p><strong>Originalname:</strong> Blade of Fair Title</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 167–170</em></p>",
+   "properties": [
+    {
+     "name": "Ausrüstungstyp",
+     "value": "Wikinger-Breitschwert",
+     "type_id": 1
+    },
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Blade of Fair Title",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "167–170",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.l.blendend",
+   "kind": "item",
+   "name": "Blendende Rüstung",
+   "type": "Legendärer Gegenstand",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.legendaer"
+   ],
+   "entry": "<p><strong>Ausrüstungstyp:</strong> Schuppenpanzer · <strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt</p><p>Wann immer ein Gegner die Rüstung trifft, sprüht sie Funken, die seine Augen blenden. Bei jedem erfolgreichen Treffer muss er <strong>Ausdauer gegen Schwierigkeit = Gottesgespür des Trägers + Stufen</strong> würfeln. Scheitert er, erleidet er einen Abzug in Höhe der Differenz auf alle Handlungen, die klare Sicht verlangen (auch alle Kampfhandlungen), für so viele Runden wie die Stufen des Trägers. Mehrfache Wirkung addiert Abzüge und Dauer. Kostet keine Aktion. Wirkt nur gegen Nahkämpfer.</p><p><strong>Originalname:</strong> Blinding Armor</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 167–170</em></p>",
+   "properties": [
+    {
+     "name": "Ausrüstungstyp",
+     "value": "Schuppenpanzer",
+     "type_id": 1
+    },
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Blinding Armor",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "167–170",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.l.blutzoll",
+   "kind": "item",
+   "name": "Blutzoll-Rüstung",
+   "type": "Legendärer Gegenstand",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.legendaer"
+   ],
+   "entry": "<p><strong>Ausrüstungstyp:</strong> Beliebige Rüstung · <strong>Kosten:</strong> 45 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.loki}} · <strong>Stufen:</strong> unbegrenzt</p><p>Der Träger kann die Rüstung dutzende kleine, spitze Saugröhren in sein Fleisch treiben lassen, die so viel Blut trinken, wie der Plünderer festlegt. Für je <strong>10 HP</strong> Blut darf er seine Stufen auf <strong>einen einzelnen Wurf</strong> addieren. Alternativ erhöht er den <strong>Schutz der Rüstung um 1 je 4 HP</strong>; das hält bis zum Ende der Begegnung oder bis er dieselbe Zahl HP zurückgewinnt, je nachdem was früher kommt.</p><p><strong>Originalname:</strong> Blood Tribute Armor</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 167–170</em></p>",
+   "properties": [
+    {
+     "name": "Ausrüstungstyp",
+     "value": "Beliebige Rüstung",
+     "type_id": 1
+    },
+    {
+     "name": "Kosten",
+     "value": "45",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Loki",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Blood Tribute Armor",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "167–170",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.l.mantel_verrat",
+   "kind": "item",
+   "name": "Blauer Mantel des Verrats",
+   "type": "Legendärer Gegenstand",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.legendaer"
+   ],
+   "entry": "<p><strong>Ausrüstungstyp:</strong> Dunkelblauer Mantel · <strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.loki}} · <strong>Stufen:</strong> unbegrenzt</p><p>Der Träger ist immun gegen den <strong>Siegespunktabzug für Schaden an anderen Helden</strong>. Abzüge durch den Tod anderer Helden sinken um <strong>25X</strong> (X = Stufen).</p><p><strong>Originalname:</strong> Blue Cloak of Treachery</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 167–170</em></p>",
+   "properties": [
+    {
+     "name": "Ausrüstungstyp",
+     "value": "Dunkelblauer Mantel",
+     "type_id": 1
+    },
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Loki",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Blue Cloak of Treachery",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "167–170",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.l.stumpf",
+   "kind": "item",
+   "name": "Stumpfmachende Rüstung",
+   "type": "Legendärer Gegenstand",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.legendaer"
+   ],
+   "entry": "<p><strong>Ausrüstungstyp:</strong> Beliebige Rüstung · <strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt</p><p>Jede Nahkampfwaffe gewöhnlicher Machart (nicht magisch oder zwergisch), die den Träger trifft, ist gefährdet: Bei einem Treffer muss der Gegner seine <strong>Waffenfertigkeit gegen Schwierigkeit = Gottesgespür des Trägers + Stufen</strong> würfeln. Scheitert er, sinkt der DAM-Wert der Waffe um die Stufen des Trägers. Waffenführende Gegner dürfen eine beschädigte Waffe wie beim Entwaffnen ersetzen. Kostet keine Aktion.</p><p><strong>Originalname:</strong> Blunting Armor</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 167–170</em></p>",
+   "properties": [
+    {
+     "name": "Ausrüstungstyp",
+     "value": "Beliebige Rüstung",
+     "type_id": 1
+    },
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Blunting Armor",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "167–170",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.l.daemonenrachen",
+   "kind": "item",
+   "name": "Dämonenrachen-Helm",
+   "type": "Legendärer Gegenstand",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.legendaer"
+   ],
+   "entry": "<p><strong>Ausrüstungstyp:</strong> Machthelm · <strong>Kosten:</strong> 45 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.loki}} · <strong>Stufen:</strong> unbegrenzt</p><p>Der Helm sieht aus wie ein riesiger Dämonenkopf, den der Träger über den eigenen setzt. Er kann ihn das Maul öffnen und ein tiefes, furchtbares Brüllen ausstoßen lassen, das den Gegnern in den Eingeweiden bebt. Das kostet eine <strong>Aktion</strong>, <strong>einmal je Begegnung</strong>. Danach muss jeder, der den Träger im Kampf schlagen will, seine <strong>Göttliche Verbindung mit dem Hauptgott</strong> gegen die <strong>Loki-Verbindung</strong> des Trägers würfeln. Scheitert er, erleidet er <strong>−3 × Stufen</strong> auf seine ATK-Würfe. Hält bis zum Ende des Ereignisses.</p><p><strong>Originalname:</strong> Demon Maw Helm</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 167–170</em></p>",
+   "properties": [
+    {
+     "name": "Ausrüstungstyp",
+     "value": "Machthelm",
+     "type_id": 1
+    },
+    {
+     "name": "Kosten",
+     "value": "45",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Loki",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Demon Maw Helm",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "167–170",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.l.einherjar",
+   "kind": "item",
+   "name": "Rüstung der Einherjar",
+   "type": "Legendärer Gegenstand",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.legendaer"
+   ],
+   "entry": "<p><strong>Ausrüstungstyp:</strong> Beliebige Rüstung · <strong>Kosten:</strong> 45 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt</p><p>Die Einherjar, Walhalls ehrenvolle Tote, führen ständig Scheinschlachten gegeneinander und werden am Abend wieder ganz. Die Rüstung lässt den Träger Ähnliches bescheiden tun: Am <strong>Ende jeder Kampfrunde</strong> gewinnt er HP in Höhe seiner Stufen zurück. Geschieht automatisch und kostet keine Aktion.</p><p><strong>Originalname:</strong> Einherjar’s Armor</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 167–170</em></p>",
+   "properties": [
+    {
+     "name": "Ausrüstungstyp",
+     "value": "Beliebige Rüstung",
+     "type_id": 1
+    },
+    {
+     "name": "Kosten",
+     "value": "45",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Einherjar’s Armor",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "167–170",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.l.halsreif_gerecht",
+   "kind": "item",
+   "name": "Gerechter Halsreif",
+   "type": "Legendärer Gegenstand",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.legendaer"
+   ],
+   "entry": "<p><strong>Ausrüstungstyp:</strong> Silberner Halsreif · <strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt</p><p>Aktiviert ein Held eines anderen Plünderers eine Göttliche Gabe, die seinen möglichen Siegespunktstand erhöht, kann der Träger ihn zu einem <strong>Wettstreit Präsenz + X gegen dessen Präsenz</strong> zwingen (X = Stufen). Gewinnt der Träger, sinken die Siegespunkte des anderen um <strong>10X</strong> (nicht unter 0). <strong>X-mal je Begegnung.</strong></p><p><strong>Originalname:</strong> Even-Handed Torc</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 167–170</em></p>",
+   "properties": [
+    {
+     "name": "Ausrüstungstyp",
+     "value": "Silberner Halsreif",
+     "type_id": 1
+    },
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Even-Handed Torc",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "167–170",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.l.goldklinge",
+   "kind": "item",
+   "name": "Goldene Klinge",
+   "type": "Legendärer Gegenstand",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.legendaer"
+   ],
+   "entry": "<p><strong>Ausrüstungstyp:</strong> Dolch · <strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt</p><p>Würfelt der Runner auf einer Schatztabelle für einen Gegenstand, den der Träger als Erster aufhebt, addiert er <strong>X auf jeden W10-Wurf oder 10 auf jeden Prozentwurf</strong> (X = Stufen). Der Träger erleidet einen Abzug von <strong>20X Siegespunkten</strong>, wenn er danach nicht der alleinige Besitzer des Schatzes wird.</p><p><strong>Originalname:</strong> Golden Blade</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 167–170</em></p>",
+   "properties": [
+    {
+     "name": "Ausrüstungstyp",
+     "value": "Dolch",
+     "type_id": 1
+    },
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Golden Blade",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "167–170",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.l.stiefel",
+   "kind": "item",
+   "name": "Leichtfüßige Stiefel",
+   "type": "Legendärer Gegenstand",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.legendaer"
+   ],
+   "entry": "<p><strong>Ausrüstungstyp:</strong> Paar Stiefel · <strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt</p><p><strong>X-mal je Kampf</strong> (X = Stufen) darf der Träger eine Bewegung, halbe Bewegung, einen Engagement-Wurf oder eine Aktion wegen Geländes oder einer Falle ausführen, <strong>ohne dass der Runner</strong> die übliche Siegespunktprämie für diese Aktion erhält.</p><p><strong>Originalname:</strong> Light-Treading Boots</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 167–170</em></p>",
+   "properties": [
+    {
+     "name": "Ausrüstungstyp",
+     "value": "Paar Stiefel",
+     "type_id": 1
+    },
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Light-Treading Boots",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "167–170",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.l.lokivereitelnd",
+   "kind": "item",
+   "name": "Loki-vereitelnde Rüstung",
+   "type": "Legendärer Gegenstand",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.legendaer"
+   ],
+   "entry": "<p><strong>Ausrüstungstyp:</strong> Beliebige Rüstung · <strong>Kosten:</strong> 45 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt</p><p>Zusätzlicher Schutz gegen <strong>Sark Amen, Dishonored und Dark Vikings</strong>: Jedes Mal, wenn sie versuchen, ihn zu treffen, steigt sein Schutz um 1. Im Verlauf eines Ereignisses darf der gesamte Schutzzuwachs seine Stufen in dieser Kraft nicht übersteigen. Am Ende des Ereignisses normal.</p><p><strong>Originalname:</strong> Loki-Thwarting Armor</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 167–170</em></p>",
+   "properties": [
+    {
+     "name": "Ausrüstungstyp",
+     "value": "Beliebige Rüstung",
+     "type_id": 1
+    },
+    {
+     "name": "Kosten",
+     "value": "45",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Loki-Thwarting Armor",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "167–170",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.l.lokistab",
+   "kind": "item",
+   "name": "Loki-bezwingender Stab",
+   "type": "Legendärer Gegenstand",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.legendaer"
+   ],
+   "entry": "<p><strong>Ausrüstungstyp:</strong> Kampfstab · <strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.odin}} · <strong>Stufen:</strong> unbegrenzt</p><p>Wirkt auf jeden Sark Amen, Dishonored, Dark Viking oder Helden mit Loki-Verbindung. Der Träger würfelt <strong>seine Odin-Verbindung + Stufen gegen die RES des Ziels</strong> (bei Helden: gegen dessen Loki-Verbindung). Gewinnt er, verliert das Ziel seine <strong>nächste Aktion</strong>; wer die vorige Aktion so verlor, ist immun. Der Stab muss als bereite Waffe in der Hand gehalten werden. Der Träger darf keine Stufen erwerben, wenn seine Loki-Verbindung seiner Odin-Verbindung gleich oder höher ist; wird sie es später, verliert er sofort und unwiderruflich alle Stufen.</p><p><strong>Originalname:</strong> Loki-Trouncing Wand</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 167–170</em></p>",
+   "properties": [
+    {
+     "name": "Ausrüstungstyp",
+     "value": "Kampfstab",
+     "type_id": 1
+    },
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Odin",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Loki-Trouncing Wand",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "167–170",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.l.grimmig",
+   "kind": "item",
+   "name": "Mantel der grimmigen Gerechtigkeit",
+   "type": "Legendärer Gegenstand",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.legendaer"
+   ],
+   "entry": "<p><strong>Ausrüstungstyp:</strong> Hermelinkragen (an einem Mantel zu befestigen) · <strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.odin}} · <strong>Stufen:</strong> unbegrenzt</p><p>Wirkt auf jeden Helden, dessen Loki-Verbindung höher als seine Odin-Verbindung ist, sofern die Odin-Verbindung des Trägers höher als seine Loki-Verbindung ist. <strong>X-mal je Begegnung</strong> (X = Stufen): Gelingt dem Ziel ein Wurf aus den Begegnungsnotizen, würfelt es seine Loki-Verbindung gegen die Odin-Verbindung des Trägers. Gewinnt der Träger, gehen die Siegespunkte, die das Ziel für den Wurf erhielte, an ihn.</p><p><strong>Originalname:</strong> Mantle of Grim Justice</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 167–170</em></p>",
+   "properties": [
+    {
+     "name": "Ausrüstungstyp",
+     "value": "Hermelinkragen (an einem Mantel zu befestigen)",
+     "type_id": 1
+    },
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Odin",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Mantle of Grim Justice",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "167–170",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.l.alberich_ring",
+   "kind": "item",
+   "name": "Ring des Alberich",
+   "type": "Legendärer Gegenstand",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.legendaer"
+   ],
+   "entry": "<p><strong>Ausrüstungstyp:</strong> Ring mit trübem Bernstein · <strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt</p><p>Erhöht die Siegespunkte, die der Träger bei jedem Erfolg eines Fertigkeitswurfs aus den Notizen erhält, nur für <strong>eine Fertigkeit</strong>: Erscheint der Ring zum ersten Mal, würfle auf der Fertigkeitstabelle ({{ref:n.k4.sch.amulette}}), welche er steigert. Multipliziere alle Punktgewinne aus Erfolgen mit dieser Fertigkeit mit den <strong>Stufen</strong> des Trägers.</p><p><strong>Originalname:</strong> Ring of Alberich</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 167–170</em></p>",
+   "properties": [
+    {
+     "name": "Ausrüstungstyp",
+     "value": "Ring mit trübem Bernstein",
+     "type_id": 1
+    },
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Ring of Alberich",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "167–170",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.l.schildwut",
+   "kind": "item",
+   "name": "Schild der Wut",
+   "type": "Legendärer Gegenstand",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.legendaer"
+   ],
+   "entry": "<p><strong>Ausrüstungstyp:</strong> Rundschild · <strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.loki}} · <strong>Stufen:</strong> unbegrenzt</p><p><strong>X-mal je Begegnung</strong> (X = Stufen) darf der Träger das <strong>nächste Ziel</strong> eines Gegners wählen und so das Zielwahl-Diagramm und bei Gegnern mit freiem Willen das Ermessen des Runners übertrumpfen. Ist der Gegner nicht im Engagement, gelingt es automatisch. Bindet er bereits einen Helden, kann der Träger ihn zum Lösen und Angreifen eines neuen Ziels bringen, indem er <strong>seine Stufen gegen die RES</strong> des Gegners gewinnt.</p><p><strong>Originalname:</strong> Shield of Fury</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 167–170</em></p>",
+   "properties": [
+    {
+     "name": "Ausrüstungstyp",
+     "value": "Rundschild",
+     "type_id": 1
+    },
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Loki",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Shield of Fury",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "167–170",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.l.spuckend",
+   "kind": "item",
+   "name": "Spuckende Rüstung",
+   "type": "Legendärer Gegenstand",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.legendaer"
+   ],
+   "entry": "<p><strong>Ausrüstungstyp:</strong> Beliebige Rüstung · <strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.loki}} · <strong>Stufen:</strong> unbegrenzt</p><p>Wann immer ein Feind den Träger mit einer Nahkampfwaffe verletzt, durchsticht er auch ein Stück dieser käferartigen Rüstung. Sie spritzt grünes, ätzendes Blut auf den Angreifer. Er muss <strong>Schnelligkeit + Ausweichen gegen Schwierigkeit = Loki-Verbindung des Trägers</strong> würfeln oder erleidet <strong>3 Punkte rüstungsignorierenden Schaden je Stufe</strong>.</p><p><strong>Originalname:</strong> Spitting Armor</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 167–170</em></p>",
+   "properties": [
+    {
+     "name": "Ausrüstungstyp",
+     "value": "Beliebige Rüstung",
+     "type_id": 1
+    },
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Loki",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Spitting Armor",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "167–170",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.l.alberich_halsreif",
+   "kind": "item",
+   "name": "Halsreif des Alberich",
+   "type": "Legendärer Gegenstand",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.legendaer"
+   ],
+   "entry": "<p><strong>Ausrüstungstyp:</strong> Kupferner Halsreif · <strong>Kosten:</strong> 15 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt</p><p>Senkt um <strong>3X</strong> die Siegespunkte, die der Runner sonst erhielte, wenn dir ein Fertigkeitswurf aus den Notizen misslingt (X = Stufen). Nicht unter 0.</p><p><strong>Originalname:</strong> Torc of Alberich</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 167–170</em></p>",
+   "properties": [
+    {
+     "name": "Ausrüstungstyp",
+     "value": "Kupferner Halsreif",
+     "type_id": 1
+    },
+    {
+     "name": "Kosten",
+     "value": "15",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Torc of Alberich",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "167–170",
+     "type_id": 1
+    }
+   ]
+  }
+ ]
+}

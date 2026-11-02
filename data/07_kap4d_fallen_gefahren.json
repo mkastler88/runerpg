@@ -1,0 +1,248 @@
+{
+ "meta": {
+  "ausschnitt": "Kapitel 4, Teil D: Fallen und Gefahren",
+  "version": "0.8"
+ },
+ "tags": [
+  {
+   "key": "tag.kap4",
+   "name": "Kapitel 4: Begegnungen und Gegner"
+  },
+  {
+   "key": "tag.tabelle",
+   "name": "Regeltabelle"
+  },
+  {
+   "key": "tag.falle",
+   "name": "Falle / Gefahr"
+  }
+ ],
+ "entities": [
+  {
+   "key": "n.k4.fallen",
+   "kind": "note",
+   "name": "Fallen und Gefahren",
+   "type": "Regel",
+   "parent": "n.k4",
+   "tags": [
+    "tag.kap4",
+    "tag.falle"
+   ],
+   "entry": "<p>Helden erreichen 20 oder weniger HP nicht allein durch Kampf. <strong>Fallen und Gefahren</strong> lassen den Runner die Spieler zermürben, ohne dass sie durch Todesstoß-Boni haufenweise Siegespunkte sammeln. Für die Regeln funktionieren beide gleich: Es sind Lagen, in denen ein oder mehrere Helden einen Wurf bestehen müssen oder eine Folge erleiden, meist Schaden.</p><ul><li>Eine <strong>Falle</strong> ist eine Lage, die ein intelligentes Wesen geschaffen hat, von Jägerschlingen bis zu dampfbetriebenen, ohrenbetäubenden Zwergenapparaten. <strong>Gefahren</strong> (Hazards), von Lawinen bis Schleimgruben, entstehen natürlich.</li><li><strong>Originalgrenze:</strong> Höchstens <strong>8 Fallen</strong> je Begegnung und höchstens <strong>4 Fallen</strong> je Kampf-Ereignis.</li><li>Für jede Falle legst du fest: 1. Was würfelt der Held zum Vermeiden? 2. Welche Schwierigkeit? 3. Gelten Sonderregeln für den Wurf ({{ref:n.k4.schwierigkeit}})? 4. Welche Folge erleidet er bei Misserfolg? 5. Welche Sonderregeln gelten für die Funktionsweise der Falle? Dieser Teil beantwortet die Fragen 4 und 5.</li><li>Gelingt der Wurf, vermeidet der Held die Falle (im Originalsystem erhält sein Plünderer Siegespunkte, Runner bei Misserfolg).</li></ul><ul><li>{{ref:n.k4.f.schaden}}</li><li>{{ref:n.k4.f.beeintraechtigung}}</li><li>{{ref:n.k4.f.sonder}}</li><li>Fertigpakete: {{ref:n.k4.f.saeure}}, {{ref:n.k4.f.hinterhalt}}, {{ref:n.k4.f.ertrinken}}, {{ref:n.k4.f.ausruestung}}, {{ref:n.k4.f.sturz}}, {{ref:n.k4.f.feuer}}, {{ref:n.k4.f.verirren}}, {{ref:n.k4.f.greifer}}, {{ref:n.k4.f.plage}}</li></ul><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 141</em></p>"
+  },
+  {
+   "key": "n.k4.f.schaden",
+   "kind": "note",
+   "name": "Fallenschaden",
+   "type": "Regel",
+   "parent": "n.k4.fallen",
+   "tags": [
+    "tag.kap4",
+    "tag.falle",
+    "tag.tabelle"
+   ],
+   "entry": "<p>Die meisten Fallen fügen Schaden zu. Verliert ein Held bei Misserfolg HP, entspricht das dem <strong>DAM-Wert der Falle plus der Differenz zwischen Schwierigkeit und misslungenem Ergebnis, minus Absorption</strong>.</p><p><strong>Fallenschaden = DAM-Wert + (Schwierigkeit − Ergebnis des misslungenen Wurfs) − Absorption</strong></p><blockquote><strong>Beispiel:</strong> Ragnar betritt eine Höhle mit schmelzenden speerartigen Eiszapfen; einer fällt herab. Ausweichen gegen Schwierigkeit 8, DAM-Wert 12. Der Wurf ergibt 4: Rohschaden 12 + 4 = 16. Absorption 6: Ragnar verliert 10 HP. Kein DAM-Wert einer Falle ist höher als 50.</blockquote><h3>Kosten des DAM-Werts (Originalsystem)</h3><p>Bis DAM 15 entsprechen die Kosten dem DAM-Wert. Darüber kommt ein Aufschlag hinzu:</p><table><tr><th>DAM-Wert</th><th>Aufschlag</th></tr><tr><td>16–20</td><td>+5</td></tr><tr><td>21–25</td><td>+10</td></tr><tr><td>26–30</td><td>+15</td></tr><tr><td>31–35</td><td>+20</td></tr><tr><td>36–40</td><td>+25</td></tr><tr><td>41–45</td><td>+30</td></tr><tr><td>46–50</td><td>+35</td></tr></table><blockquote><strong>Beispiel:</strong> Eine Lawine mit DAM 20 kostet 25 Punkte (20 plus 5).</blockquote><h3>Rüstungsignorierender Schaden</h3><p>Ignoriert die Wirkung einer Gefahr die Rüstung, zahle <strong>10 Punkte</strong> extra. Der Charakter darf den <strong>Schutzanteil (Prot)</strong> seiner Absorption nicht abziehen, nur seine Ausdauer.</p><blockquote><strong>Beispiel:</strong> Ragnar löst eine Giftnadelfalle aus und erleidet 14 Rohschaden. Er darf Absorption 3 (Ausdauer) abziehen, nicht Rüstung 3: Er verliert 11 HP.</blockquote><h3>Zufälliger Schaden</h3><p>Wähle eine Anzahl <strong>W10</strong>. Der Runner würfelt beim Schaden für jedes Opfer einzeln und addiert die Werte; Schadenswürfe können patzen oder triumphieren. Die Differenz zwischen Ergebnis und Schwierigkeit des Heldenwurfs wird zum Schadenswurf addiert. Höchstens 8 Würfel.</p><blockquote><strong>Beispiel:</strong> Eine Lawine mit 4 Würfeln; Ragnars Skifahren-Wurf misslingt um 4. Der Runner würfelt 3, 9, 4, 9 und addiert 4: Rohschaden 29.</blockquote><table><tr><th>Würfel</th><th>Kosten (Originalsystem)</th></tr><tr><td>1</td><td>+2</td></tr><tr><td>2</td><td>+7</td></tr><tr><td>3</td><td>+15</td></tr><tr><td>4</td><td>+22</td></tr><tr><td>5</td><td>+26</td></tr><tr><td>6</td><td>+30</td></tr><tr><td>7</td><td>+43</td></tr><tr><td>8</td><td>+50</td></tr></table><h3>Wiederkehrender Schaden (Recurring)</h3><p>Nach der Aussetzung verliert der Held <strong>jede Runde eine feste Zahl HP</strong>, bis jemand mit einer Aktion (meist mit Wurf) dem ein Ende setzt. Verlangt das einen Wurf, muss der Entwerfer unbegrenzte Wiederholungen erlauben (ohne die üblichen Punkte).</p><blockquote><strong>Beispiel:</strong> Ein zwergisches Craftwerk-Schlange hat DAM 4 (wiederkehrend). Ragnars Stärke-Wurf gegen Schwierigkeit 6 misslingt um 2: Er erleidet sofort 6 Schaden und jede Runde weitere 6, bis ein Fallenkunde-Wurf das Craftwerk deaktiviert.</blockquote><p><strong>Kosten:</strong> normale Kosten des DAM-Werts (mit Aufschlag) <strong>× 2,5</strong>, Brüche abschneiden (DAM 2 → 5; DAM 21 → (21 + 10) × 2,5 = 77).</p><h3>Eskalierender Schaden (Escalating)</h3><p>Wiederkehrender Schaden, der <strong>jede Runde um 2 steigt</strong>: Der Schaden einer Runde ist die ursprüngliche Differenz zwischen Schwierigkeit und Ergebnis plus der aktuelle DAM-Wert.</p><blockquote><strong>Beispiel:</strong> Ragnar fällt in einen Bottich ätzenden Öls (DAM 4, Ausdauer gegen Schwierigkeit 10, misslungen um 3): Runde 1 erleidet er 7, Runde 2 9, Runde 3 11 usw.</blockquote><ul><li><strong>Kosten:</strong> (Basisschaden × 2,5) + 15 (DAM 2 → 20; DAM 21 → 52 + 15 = 67).</li><li>In beiden Fällen bekommt der Held meist einen Wurf zum <strong>Vermeiden</strong> und einen weiteren zum <strong>Beenden</strong>. Er hat <strong>eine Chance je Runde</strong> (kostet eine Aktion), Verbündete dürfen es mit ihren Aktionen ebenfalls versuchen. Beide Schwierigkeiten werden zum üblichen Preis bezahlt; einen Mehrfachwurf-Rabatt gibt es nicht.</li></ul><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 142–143</em></p>"
+  },
+  {
+   "key": "n.k4.f.beeintraechtigung",
+   "kind": "note",
+   "name": "Beeinträchtigung, Sticks, Schlafentzug, Statusverlust",
+   "type": "Regel",
+   "parent": "n.k4.fallen",
+   "tags": [
+    "tag.kap4",
+    "tag.falle"
+   ],
+   "entry": "<h3>Beeinträchtigung (Impairment)</h3><p>Manchmal erleidet ein Held eine Wirkung, die <strong>alle seine Würfe</strong> für eine bestimmte Zeit um einen festen Betrag senkt (körperlich oder geistig: Schmerz im Bein erschwert das Kartenzeichnen, Ragnarök-Halluzinationen trüben den Blick im Kampf). Wie Verletzungen wird sie vor der nächsten Begegnung entfernt. Sie wirkt nur auf <em>Würfe</em>, nicht auf nicht gewürfelte Werte wie Absorption. Die höchste Beeinträchtigung aus anderen Quellen als Wunden beträgt <strong>2</strong>.</p><ul><li><strong>Basiskosten (Originalsystem)</strong> je Beeinträchtigungspunkt nach den noch kommenden Würfen: je Kampfsequenz +30; je Wurf zum Vermeiden einer Falle +5; je Wurf zum Auslösen eines Gewinns +5; je freistehendem Fertigkeitswurf +3. Multipliziere mit der Zahl der Beeinträchtigungspunkte.</li><li>Sie muss nicht bis zum Ende der Begegnung dauern: Der Entwerfer kann einen Punkt festlegen, an dem sie endet, und zahlt nur für Kampfsequenzen und Würfe dazwischen.</li><li><strong>Spezifische Beeinträchtigung</strong> betrifft nur eine Fertigkeit oder daraus abgeleitete Würfe (etwa Engagement): Bezahlt werden nur betroffene Würfe; wirkt sie auf INIT, ATK, DFN oder Engagement, +10 je Kampfsequenz.</li><li>Sobald eine Beeinträchtigung in der Begegnung vorkommt, gibt es für niedrige Schwierigkeiten bei betroffenen Proben keine Punkte mehr.</li></ul><h3>Sticks (Stöcke)</h3><p>Ein <strong>Stick</strong> ist ein Wurf, der den Plünderer bei Misserfolg mit einem <strong>Malus auf einen späteren Wurf</strong> derselben Begegnung belastet.</p><ul><li>Beispiele: <strong>Alarmfallen</strong> (warnen Feinde; im kommenden Kampf erhalten alle Gegner für eine Zahl Runden einen INIT-Bonus; je nach Alarm durch Aufmerksamkeit, Schleichen oder Fallenkunde vermeidbar); ein <strong>Auftreten-Wurf</strong>, der bei Misserfolg den Gegner erzürnt (ATK-Bonus); ein <strong>Tapferkeits-Wurf</strong>, der bei Misserfolg die Hände zittern lässt und das Schlossknacken erschwert.</li><li><strong>Kosten:</strong> (Malus auf den späteren Wurf × 5), bei mehreren Würfen über eine Zahl Runden mal der Rundenzahl; der Basismalus höchstens 6. Boni für Gegner auf ATK oder DFN kosten (Bonus × 5 × Rundenzahl); INIT-Boni 5 Punkte je +3, mal der Rundenzahl. Soll der Bonus <em>allen</em> Gegnern nützen, muss der Wurf ein Weak-Link-Wurf sein.</li><li><strong>Keine Verzweigungen:</strong> In Rune gibt es keine Handlungsverzweigungen. Misslungene Würfe schließen die Helden nie ganz von einem Ereignis aus, sie schaffen nur einen Nachteil (das Schloss öffnet sich später, und etwas Schlimmes geschieht: der Vampir steht bereit, Gremlins haben Zeit, einen Trank zu verstecken).</li></ul><h3>Schlafentzug</h3><p>Eine gute Quelle allgemeiner Beeinträchtigung. Helden schlafen unterwegs fast überall (Schlafen-Fertigkeit) und stellen Wachen auf; nur in außergewöhnlichen Lagen können sie gar nicht schlafen: nahe zwergischer Maschinen mit ohrenbetäubendem Lärm, in einem so feindbevölkerten Gebiet, dass jedes Lager bald gestört wird, an einem von unsichtbaren Geistern heimgesuchten Ort mit furchteinflößender Aura.</p><ul><li>Zähle den Schlafentzug <strong>nach 16 Stunden</strong> Wachsein, wenn der Held normalerweise schlafen ginge. Nach <strong>18 Stunden</strong> Schlafentzug: <strong>1 Punkt Beeinträchtigung</strong>; nach <strong>36 Stunden</strong>: <strong>2 Punkte</strong>. Es gelten die üblichen Kosten allgemeiner Beeinträchtigung.</li></ul><h3>Statusverlust</h3><p>Unter den Ihren riskieren Helden womöglich Statusverlust, wenn sie eine gefährliche Handlung nicht unternehmen (etwa daheim heilen wollen, doch die Dorfältesten drängen, die Feinde aufzuspüren). Ignorieren sie die Wünsche, verlieren sie einen Teil der Siegespunkte der Begegnung (Originalsystem): Abzüge in <strong>5er-Schritten, höchstens 20</strong> je Begegnung; die Kosten entsprechen dem Abzug.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 143–145</em></p>"
+  },
+  {
+   "key": "n.k4.f.sonder",
+   "kind": "note",
+   "name": "Sonderfälle bei Fallen",
+   "type": "Regel",
+   "parent": "n.k4.fallen",
+   "tags": [
+    "tag.kap4",
+    "tag.falle",
+    "tag.tabelle"
+   ],
+   "entry": "<h3>Begrenztes Zielen (Limited Targeting)</h3><p>Betrifft die Falle <strong>alle</strong> Helden, gelten die Kosten unverändert. Begrenztes Zielen liegt vor, wenn sie nur einen Teil der Gruppe trifft und der Runner den Betroffenen aus den Notizen nicht vorher erkennen kann: Das Opfer wird durch die Entscheidung der Spieler bestimmt oder vom Runner ausgewürfelt.</p><ul><li><em>Wahl:</em> Ein Parasitenwurm lauert unter dem Deckel einer Silbertruhe; nur wer sie öffnet, riskiert ihn. <em>Zufall:</em> Eine giftige Fledermaus beißt einen der Helden; der Runner würfelt.</li><li>Mehrere gleiche Objekte (etwa vier Bärenfallen mit denselben Werten) zählen als <strong>eine</strong> Falle für vier Helden.</li><li><strong>Kosten:</strong> 1 Held −15; 2 Helden −10; 3 oder mehr ±0. Solche Fallen sind fast immer auch bedingt vermeidbar ({{ref:n.k4.sw.bedingt}}), aber nicht jede bedingt vermeidbare Falle hat begrenztes Zielen.</li></ul><h3>Wiederholte Schüsse (Repeat Shots)</h3><p>Eine Falle mit begrenztem Zielen kann Runde für Runde weiterschaden, bis sie deaktiviert wird. Jede Runde würfelt der Runner zufällig die Ziele. Der Entwerfer muss festlegen, wie die Helden sie stoppen (Wurf: zum üblichen Preis; nur eine Aktion: ohne Aufschlag).</p><table><tr><th>Ziele je Runde</th><th>Zusatzkosten (statt der Kosten für begrenztes Zielen)</th></tr><tr><td>1</td><td>+25</td></tr><tr><td>2</td><td>+50</td></tr><tr><td>3</td><td>+75</td></tr><tr><td>4</td><td>+100</td></tr><tr><td>5</td><td>+150</td></tr><tr><td>6</td><td>+200</td></tr></table><h3>Stick-und-Karotte-Kombinationen</h3><p>Eine <strong>Karotte</strong> ist das Gegenstück zum Stick ({{ref:n.k4.f.beeintraechtigung}}): Ein Erfolg gibt einen Bonus auf einen späteren Wurf. Der Entwerfer kann Würfe bauen, die bei Erfolg eine Karotte und bei Misserfolg einen Stick liefern (an der Schlosstür: Gelingt Schlossknacken, öffnet er rasch und erhält INIT-Bonus, weil der Vampir noch nicht bereit ist; misslingt es, warnt das Rasseln und der Vampir erhält den Bonus).</p><ul><li>Gleichen sich Karotte und Stick aus, kostet es 0. Weder Erhöhung noch Senkung darf 6 übersteigen oder länger als <strong>3 Runden</strong> dauern.</li><li>Ist die Karotte größer als der Stick, gibt es 5 Punkte je Punkt Unterschied; im umgekehrten Fall kostet es 5 je Punkt. Die Schwierigkeit wird nur einmal bezahlt.</li></ul><h3>Positionsmodifikatoren</h3><p>Manche Charaktere stehen beim Auslösen einer Falle im Vor- oder Nachteil, je nach Position zu einem Punkt der Karte. Typisch ändert ein Charakter seinen Vermeidenswurf um <strong>1 je 10 Meter</strong> Abstand zu einem Punkt. Bei Senkung zählt der Abstand zum <strong>Rand der Sicherheit</strong>, jenseits dessen er normal würfelt.</p><blockquote><strong>Beispiel:</strong> Ein Topf kochenden Öls fällt auf einen markierten Punkt. Wer 80 Meter oder weiter entfernt ist, würfelt normal. Ragnar steht 30 Meter entfernt, also 50 Meter vom sicheren Rand: Er erleidet −5 auf Ausweichen. Steht er dagegen 10 Meter von einem magischen Lagerfeuer, dessen Schutzzone 70 Meter reicht, addiert er +6 (Differenz 60 Meter) auf Ausdauer gegen Frostschaden.</blockquote><ul><li>Der Entwerfer bestimmt die Größe der Zone und damit den Höchstwert. Kosten einer Erhöhung: 5 × Höchstmodifikator; Gewinn einer Senkung: 5 × Höchstmodifikator, aber nie mehr, als die Falle für Schaden kostet.</li><li>Nur nutzbar, wenn der Runner die relativen Positionen der Helden auf einer Karte verfolgt.</li></ul><h3>Fallen im Kampf</h3><p>Fallen, die im Kampf losgehen, zählen im Originalsystem wie Geländemerkmale für die Siegespunktbestimmung. Sie treffen <strong>nie die Gegner</strong>; der Entwerfer sollte erklären können, warum (bedingt vermeidbar machen und dafür sorgen, dass Gegner die auslösende Handlung nie ausführen: Goblins wissen, dass im Fluss Fleisch fressende Fische sind; der unsterbliche römische Zenturio, der die Brücke baute, weiß, dass sie einstürzt). Oder der Runner erklärt, dass Gegner jeden Fallenvermeidungswurf automatisch bestehen.</p><p>Fallen können durch bestimmte Kampfereignisse ausgelöst werden: ein Kämpfer wird entwaffnet, fällt hin (auch ohne Gelände als Ursache), aktiviert eine Göttliche Gabe oder geht Berserker; ein Held nutzt eine Fernwaffe; ein bestimmter Gegner stirbt, patzt oder triumphiert.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 145–147</em></p>"
+  },
+  {
+   "key": "n.k4.f.saeure",
+   "kind": "note",
+   "name": "Säure und ätzende Stoffe",
+   "type": "Gefahr (Fertigpaket)",
+   "parent": "n.k4.fallen",
+   "tags": [
+    "tag.kap4",
+    "tag.falle"
+   ],
+   "entry": "<p>Wer in eine Lache aus Säure, rauchenden Dämonendärmen oder anderem Ätzenden stürzt, erleidet <strong>wiederkehrenden, rüstungsignorierenden Schaden</strong>. Der Entwerfer wählt einen festen DAM-Wert; Zufallsschaden wird nicht empfohlen. Ist die Lache tief, kann zusätzlich eine <strong>Ertrinkungsgefahr</strong> bestehen ({{ref:n.k4.f.ertrinken}}). Säure beschädigt auch <strong>Rüstung und Ausrüstung</strong> ({{ref:n.k4.f.ausruestung}}); beides wird gesondert bezahlt.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 147</em></p>",
+   "properties": [
+    {
+     "name": "Kosten (Originalsystem)",
+     "value": "wiederkehrender Schaden, rüstungsignorierend (+10), plus Ausrüstungsschaden 40",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.k4.f.hinterhalt",
+   "kind": "note",
+   "name": "Hinterhalt-Gelegenheiten",
+   "type": "Gefahr (Fertigpaket)",
+   "parent": "n.k4.fallen",
+   "tags": [
+    "tag.kap4",
+    "tag.falle"
+   ],
+   "entry": "<p>Ein <strong>Hinterhalt</strong> ist ein Angriff auf einen ahnungslosen Gegner; Helden können Gegner überfallen oder umgekehrt. Gelegenheiten für Helden sind Gewinne, die für Gegner Fallen. Es gibt zwei Arten: <strong>Verstecke</strong> (gut verborgene Bereiche, in denen sich eine Seite lange genug verbergen kann) und <strong>nachlässige Wachen</strong> (die Ziele lagern so, dass sie einen Überfall einladen).</p><ul><li><strong>Helden im Versteck oder bei nachlässigen Wachen:</strong> Die Gruppe macht einen <strong>Weak-Link-Wurf auf Schleichen</strong> gegen eine Schwierigkeit, die die Güte des Verstecks oder die Aufmerksamkeit der Wachen anzeigt (gute Verstecke und schläfrige Wachen: niedrig). Gelingt er, erleiden die Gegner die Folgen des Hinterhalts.</li><li><strong>Helden gehen an einem Gegnerversteck vorbei oder lagern einladend:</strong> Die Gruppe macht einen <strong>Weak-Link-Wurf auf Aufmerksamkeit</strong> gegen die Güte des Verstecks oder die Heimlichkeit der Anschleicher (schlechte Verstecke und nachlässige Pirscher: niedrig). Misslingt er, erleiden die Helden die Folgen.</li><li><strong>Folgen:</strong> In Runde 1 erleiden alle überraschten Kämpfer <strong>−6</strong> auf ATK, DFN und Engagement; in Runde 2 <strong>−3</strong> auf ATK und DFN; in Runde 3 <strong>−1</strong>. Bei der Initiative der zweiten Runde darf jeder <strong>Tapferkeit (Gegner: RES) gegen Schwierigkeit 9</strong> würfeln; gelingt es, gilt in dieser Runde nur −2 und danach kein Abzug; misslingt es, darf er beim nächsten Initiative erneut würfeln, um den Abzug der dritten Runde zu ignorieren. Diese Würfe kosten keine Aktion.</li><li><strong>Originalsystem:</strong> Gegner Hinterhalt-Gelegenheiten zu geben kostet 50 Punkte plus Schwierigkeitskosten; Helden welche zu geben bringt 50 Punkte.</li><li><em>Tipp des Buchs:</em> Nachlässige Wachen sind ein hervorragender Abschluss von Heilungsgelegenheiten: Zeige den Spielern die Karte erst, wenn der Hinterhalt geschieht.</li></ul><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 147–148</em></p>",
+   "properties": [
+    {
+     "name": "Kosten (Originalsystem)",
+     "value": "Gegner im Hinterhalt −50 (zahlt der Entwerfer 50 + Schwierigkeit), Helden im Hinterhalt +50",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.k4.f.ertrinken",
+   "kind": "note",
+   "name": "Ertrinken",
+   "type": "Gefahr (Fertigpaket)",
+   "parent": "n.k4.fallen",
+   "tags": [
+    "tag.kap4",
+    "tag.falle",
+    "tag.tabelle"
+   ],
+   "entry": "<p>Langschiff-Reisen über sturmgepeitschte Meere und reißende Unterweltflüsse bieten reichlich Ertrinkungsgelegenheiten. Gerät ein Held plötzlich in zu tiefes Wasser, würfelt sein Spieler <strong>Schwimmen</strong>, um nicht zu ertrinken. Die Grundschwierigkeit ist <strong>4</strong>, angepasst nach:</p><table><tr><th>Lage</th><th>Modifikator</th></tr><tr><td>Wasseroberfläche ruhig</td><td>−3</td></tr><tr><td>Wasseroberfläche leicht bewegt</td><td>0</td></tr><tr><td>Wellen toben über das Wasser</td><td>+3</td></tr><tr><td>Mächtige Unterströmung</td><td>+5</td></tr><tr><td>Zum Ufer gegen schwache Strömung schwimmen</td><td>+3</td></tr><tr><td>Zum Ufer gegen starke Strömung schwimmen</td><td>+6</td></tr><tr><td>Held tritt nicht nur Wasser, sondern schwimmt in eine bestimmte Richtung</td><td>+2</td></tr><tr><td>Held zieht eine andere Person mit</td><td>+4 plus Ausdauer der Person</td></tr><tr><td>Dem Helden wurde ein Seil zugeworfen, das ein starker, fest stehender Gefährte hält</td><td>−(3 + Stärke des Verbündeten)</td></tr><tr><td>Held ist länger als 1 Runde im Wasser</td><td>+1 je Runde</td></tr></table><ul><li>Der Spieler würfelt <strong>jede Runde</strong> im Wasser. Kann der Held zum Ufer, einer Insel oder einem Felsen schwimmen, beendet er die Gefahr (Strecke je Runde: {{ref:ab.schwimmen}}).</li><li><strong>Misslungener Wurf:</strong> Der Held geht unter und ertrinkt. Ertrinkungsschaden ist <strong>rüstungsignorierend und eskalierend, beginnend bei 6</strong> ({{ref:n.k4.f.schaden}}).</li><li>Ein Ertrinkender kann selbst nichts tun. Ein anderer Held kann ins Wasser springen und ihn ans Ufer ziehen: Er muss einen <strong>Raufen-Angriff</strong> gegen die Raufen-Verteidigung des Ertrinkenden machen, um ihn zu umfassen, und muss selbst jede Runde im Wasser <strong>Schwimmen</strong> würfeln. (Die Sagas erzählen von vielen tapferen Kriegern, die bei Rettungsversuchen starben.)</li></ul><blockquote><strong>Beispiel:</strong> Eine rollende Baumstammfalle schleudert Ragnar in einen kalten unterirdischen Fluss mit leichter Strömung. Schwierigkeit 4 + 3 (gegen die Strömung) = 7. Ragnars Stärke + Schwimmen ergibt 5: Er beginnt zu ertrinken und verliert 6 HP.</blockquote><table><tr><th>Gewässer</th><th>Kosten (Originalsystem)</th></tr><tr><td>Ruhig</td><td>+10</td></tr><tr><td>Bewegt</td><td>+30</td></tr><tr><td>Tobende Wellen</td><td>+60</td></tr><tr><td>Mächtige Unterströmung</td><td>+80</td></tr><tr><td>Zuschlag mäßige Strömung zum Ufer</td><td>+30</td></tr><tr><td>Zuschlag schnelle Strömung</td><td>+60</td></tr></table><p>Manche Gewässer, besonders in der Unterwelt, sind von Barrakudas, Quallen und anderen Tieren verseucht ({{ref:n.k4.f.plage}}).</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 148–149</em></p>",
+   "properties": [
+    {
+     "name": "Kosten (Originalsystem)",
+     "value": "ruhig 10, bewegt 30, tobend 60, Unterströmung 80; Strömung +30/+60",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.k4.f.ausruestung",
+   "kind": "note",
+   "name": "Ausrüstungsschaden",
+   "type": "Gefahr (Fertigpaket)",
+   "parent": "n.k4.fallen",
+   "tags": [
+    "tag.kap4",
+    "tag.falle",
+    "tag.tabelle"
+   ],
+   "entry": "<p>Vieles kann Waffen, Rüstung, Schilde, Schätze und magische Gegenstände beschädigen: Säure, Hitze, Kälte, seltsame Magie. Eine Falle, die Ausrüstung beschädigt, kostet im Originalsystem <strong>40 Punkte</strong>.</p><ul><li>Nach der Aussetzung würfelt der Spieler für <strong>jedes Ausrüstungsstück</strong> des Helden, nachdem der Runner den Schaden am Helden bestimmt hat. <strong>Schwierigkeit: die Hälfte des gesamten Rohschadens</strong> der Falle (vor Absorption); erlitt der Held keinen Schaden, <strong>3</strong>.</li><li><strong>Waffen, Rüstung, Schilde:</strong> Modifikator = Last × 2 (Brüche nach dem Verdoppeln abschneiden). Zwergen-Gegenstände (Zwergen-Streitaxt usw.) <strong>+3</strong>, magische <strong>+6</strong>, magische Zwergen-Gegenstände beides.</li><li>Andere Ausrüstung hat feste Modifikatoren; magische Kits erhalten zusätzlich +6:</li></ul><table><tr><th>Gegenstand</th><th>Modifikator</th></tr><tr><td>Kletterausrüstung</td><td>2</td></tr><tr><td>Fallenentschärfungs-Kit</td><td>4</td></tr><tr><td>Glücksspiel-Kit</td><td>2</td></tr><tr><td>Heilerkit</td><td>1</td></tr><tr><td>Leier (Musikerkit)</td><td>1</td></tr><tr><td>Kartenzeichen-Kit</td><td>1</td></tr><tr><td>Dietriche</td><td>4</td></tr><tr><td>Reitzeug</td><td>3</td></tr><tr><td>Reparaturkit</td><td>3</td></tr><tr><td>Skier und Zubehör</td><td>4</td></tr><tr><td>Überlebenskit</td><td>3</td></tr><tr><td>Trank</td><td>4</td></tr><tr><td>Talisman (Charm)</td><td>6</td></tr><tr><td>Amulett</td><td>8</td></tr><tr><td>Machthelm</td><td>10</td></tr><tr><td>Legendärer Gegenstand</td><td>15</td></tr></table><blockquote><strong>Beispiel:</strong> Thurid trägt Doppelaxt (Last 3: Modifikator 6), Buckler (Last 0,5: 1) und Lederrüstung (Last 4: 8). Nach 16 Rohschaden einer Säurefalle ist die Schwierigkeit für jeden Wurf 8.</blockquote><h3>Folgen eines misslungenen Wurfs</h3><ul><li><strong>Rüstung:</strong> verliert <strong>1 Punkt Schutz</strong> plus 1 für je 2 volle Punkte Differenz zwischen Ergebnis und Schwierigkeit. Bleibt der Schutz über 0, lässt sich die Rüstung mit Reparieren richten; bei 0 oder weniger ist sie zerstört.</li><li><strong>Waffen:</strong> verlieren je <strong>1 Punkt ATK und DFN</strong> und <strong>2 Punkte DAM</strong> je Punkt Differenz. Bleibt mindestens ein Wert über 0, ist sie mit Reparieren reparierbar; sonst Schrott.</li><li><strong>Schilde:</strong> verlieren <strong>1 Punkt DFN</strong> je Punkt Differenz. Bleibt DFN über 0, reparierbar; sonst unbrauchbar.</li><li><strong>Kits:</strong> Liegt das Ergebnis höchstens 4 unter der Schwierigkeit, ist das Kit <em>leicht beschädigt</em> (−1 Beeinträchtigung auf die Fertigkeit beim Gebrauch); bei Differenz 5–8 <em>überwiegend beschädigt</em> (−2); bei 9 oder mehr <em>völlig zerstört</em> (der übliche −3-Malus für die Fertigkeit ohne nötige Ausrüstung). Glücksspiel-Kits: Schon bei leichtem Schaden verweigern Gegner das Spiel, es sei denn, sie nutzen ein eigenes Kit.</li><li><strong>Tränke:</strong> bei misslungenem Wurf vollständig zerstört.</li><li><strong>Talismane und Amulette:</strong> der Bonus sinkt um <strong>1 plus 1 je 3 volle Punkte</strong> Differenz; unter 0 nutzlos.</li><li><strong>Machthelme:</strong> verlieren <strong>1 Stufe</strong> der gewährten Göttlichen Gaben plus 1 je 5 volle Punkte Differenz; unter 0 nutzlos. Ein Held, dessen Hauptgott der Gott der Gabe des Helms ist, kann ihn mit <strong>Gottesgespür gegen Schwierigkeit 6</strong> (einmal je Begegnung) wiederherstellen; ein Schrein der Gottheit (Original S. 174) stellt ihn ebenfalls voll her.</li><li><strong>Legendäre Gegenstände:</strong> Der Preis für Stufen in ihrer Kraft verdoppelt sich; sie lassen sich nicht reparieren.</li></ul><blockquote><strong>Beispiel:</strong> Thurids Rüstung: Differenz 3, also −1 Schutz (8 → 7). Doppelaxt: 5 Punkte unter dem Ziel: ATK und DFN sinken um 5 auf je 0, DAM um 10 von 12 auf 2; noch reparierbar. Buckler: Differenz 12, DFN 2: völlig zerstört. Kartenzeichen-Kit: Ergebnis 4 gegen Schwierigkeit 12, Differenz 8: überwiegend beschädigt, −2 Beeinträchtigung.</blockquote><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 149–151</em></p>",
+   "properties": [
+    {
+     "name": "Kosten (Originalsystem)",
+     "value": "40",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.k4.f.sturz",
+   "kind": "note",
+   "name": "Stürze",
+   "type": "Gefahr (Fertigpaket)",
+   "parent": "n.k4.fallen",
+   "tags": [
+    "tag.kap4",
+    "tag.falle",
+    "tag.tabelle"
+   ],
+   "entry": "<p>Der DAM-Wert eines Sturzes hängt von der Fallhöhe ab. Der Entwerfer wählt den Schaden und danach die Länge des Falls. Fallende Helden dürfen <strong>Springen (Schwierigkeit 6)</strong> würfeln: Gelingt es, haben sie eine <strong>gute Landung</strong>, sonst eine <strong>schlechte Landung</strong>. Sturzschaden <strong>ignoriert die Rüstung</strong> (zusammen mit dem variablen Schaden bereits in den Kosten enthalten).</p><table><tr><th>DAM gute Landung</th><th>DAM schlechte Landung</th><th>Länge des Falls</th><th>Kosten (Originalsystem)</th></tr><tr><td>5</td><td>10</td><td>10–15 Fuß</td><td>+17</td></tr><tr><td>10</td><td>20</td><td>16–20 Fuß</td><td>+25</td></tr><tr><td>20</td><td>30</td><td>21–25 Fuß</td><td>+42</td></tr><tr><td>25</td><td>30</td><td>26–30 Fuß</td><td>+52</td></tr><tr><td>30</td><td>35</td><td>31–40 Fuß</td><td>+62</td></tr><tr><td>35</td><td>40</td><td>41–60 Fuß</td><td>+72</td></tr><tr><td>40</td><td>45</td><td>61–80 Fuß</td><td>+82</td></tr><tr><td>45</td><td>50</td><td>81–100 Fuß</td><td>+92</td></tr><tr><td>50</td><td>55</td><td>über 100 Fuß</td><td>+102</td></tr></table><p><em>Das Buch gibt zu:</em> Die Tabelle bildet die Gefahren des Fallens aus großer Höhe nicht wirklichkeitsgetreu ab: Die Tests mit Gebäudesprüngen scheiterten, weil den Autoren die Nordmänner ausgingen.</p><p>Die Göttliche Gabe {{ref:gift.njordsatem}} verringert die wirksame Fallhöhe.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 151</em></p>",
+   "properties": [
+    {
+     "name": "Kosten (Originalsystem)",
+     "value": "nach Falltabelle +17 bis +102",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.k4.f.feuer",
+   "kind": "note",
+   "name": "Feuer",
+   "type": "Gefahr (Fertigpaket)",
+   "parent": "n.k4.fallen",
+   "tags": [
+    "tag.kap4",
+    "tag.falle"
+   ],
+   "entry": "<p>Wikinger respektieren Feuer als furchtbare Waffe: Bei Fehden brennen sie die Häuser ihrer Rivalen nieder und warten vor dem brennenden Langhaus, um die Fliehenden niederzumachen. Feuer ignoriert Rüstung und <strong>nährt sich von ihr</strong>: Das Polster unter der Rüstung kann zünden. Bei brennender Kleidung oder ständigem Feuerkontakt <strong>eskaliert</strong> der Schaden.</p><h3>Flammenkontakt (Flame Exposure)</h3><ul><li>Bei erster Aussetzung würfelt der Runner einen <strong>unmodifizierten Würfel gegen Schwierigkeit 6</strong> (<strong>4</strong> bei Fellrüstung), ob die Kleidung Feuer fängt.</li><li>Fängt sie Feuer, erleidet das Opfer <strong>eskalierenden Schaden</strong> ({{ref:n.k4.f.schaden}}), beginnend bei <strong>6 plus der Differenz</strong> zwischen Schwierigkeit und Ergebnis.</li><li><strong>Löschen:</strong> Der Held verwendet eine Aktion, die Flammen zu ersticken (Kleidung gegen eine Wand drücken, auf dem Boden rollen): <strong>Geschicklichkeit gegen Schwierigkeit (4 + Zahl der vorherigen Fehlversuche)</strong>.</li><li>Kosten (Originalsystem): <strong>16 Punkte</strong>.</li></ul><blockquote><strong>Beispiel:</strong> Ragnar (Fellrüstung, Schwierigkeit 4) wird von einer Flammenfalle getroffen. Der Runner würfelt 5: Differenz 1, Ragnar erleidet 7 HP. Sein Löschversuch (Geschicklichkeit gegen 4) scheitert; nächste Runde 9 Schaden (plus 2) und Schwierigkeit 5. Danach gelingt es ihm mit Würfel 7 plus Geschicklichkeit 3.</blockquote><h3>Tobendes Feuer (Raging Fire)</h3><ul><li>Helden mitten in einem tobenden Feuer erleiden <strong>automatisch eskalierenden Schaden</strong>, unabhängig von Kleidung. Sie müssen das Feuer verlassen, bevor sie versuchen, die Flammen zu löschen.</li><li>Der eskalierende Schaden beginnt bei <strong>12</strong>. Die Schwierigkeit des Geschicklichkeits-Wurfs zum Löschen ist <strong>6</strong>. Kosten: <strong>36 Punkte</strong>.</li><li>Der Entwerfer muss dem Helden trotzdem einen Wurf zum Vermeiden der Aussetzung geben.</li></ul><ul><li><strong>Wasser:</strong> Untertauchen in Wasser (oder anderer nicht brennbarer Flüssigkeit) löscht brennende Kleidung sofort. Ein groß genug Wasserbereich für vollständiges Eintauchen <strong>innerhalb von 20 Meter</strong> bringt dem Entwerfer 15 Punkte, <strong>innerhalb von 40 Meter</strong> 5 Punkte; bei Kampf zählt es als ins Spiel kommendes Geländemerkmal.</li><li><strong>Feuer gegen Gegner im Nahkampf</strong> ist nicht verlässlich einsetzbar: Ein Holzhaus ist leicht angezündet, aber Menschen direkt in Brand zu stecken geht kaum (Lampenöle des Wikingerzeitalters taugen nicht als Molotowcocktails).</li></ul><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 151–152</em></p>",
+   "properties": [
+    {
+     "name": "Kosten (Originalsystem)",
+     "value": "Flammenkontakt 16; tobendes Feuer 36",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.k4.f.verirren",
+   "kind": "note",
+   "name": "Sich verirren",
+   "type": "Gefahr (Fertigpaket)",
+   "parent": "n.k4.fallen",
+   "tags": [
+    "tag.kap4",
+    "tag.falle",
+    "tag.tabelle"
+   ],
+   "entry": "<p>Verirrte Helden verlieren Zeit, Kraft und Moral und sind Wandermonstern ausgesetzt. Sie vermeiden es mit erfolgreichen <strong>Kartenzeichnen-Würfen</strong> ({{ref:ab.kartenzeichnen}}). Jeder Misserfolg bedeutet, dass sie in die falsche Richtung gegangen sind.</p><ul><li><strong>Zurück auf den Weg:</strong> Die kartenzeichnenden Helden müssen <strong>X aufeinanderfolgende Erfolge</strong> würfeln, X = Zahl der Fehlwürfe im aktuellen Vorfall plus 1 (höchstens 4). Ein <strong>Triumph</strong> zählt als zwei aufeinanderfolgende Erfolge. Helden können sich beim Kartenzeichnen abwechseln.</li><li><strong>Nach dem Wiederfinden</strong> würfelt jeder Held zweimal. <strong>Erster Wurf: Ausdauer + Tapferkeit</strong> gegen eine Schwierigkeit gleich der <strong>Gesamtzahl der versuchten Kartenzeichnen-Würfe</strong> (erfolgreich oder nicht). Bei Misserfolg erleidet der Held rüstungsignorierenden Schaden: Der Plünderer würfelt einen Würfel, das Ergebnis ist der DAM-Wert (Erschöpfung, Kratzer, kleinere Wunden). Bei einem Patzer 1 Punkt Beeinträchtigung durch Entmutigung.</li><li><strong>Zweiter Wurf: Schleichen</strong> gegen dieselbe Schwierigkeit. Für jeden Helden, der scheitert, erleidet die Gruppe eine <strong>Wandermonster-Begegnung</strong>; die Bedrohungsstufe richtet sich nach der Differenz:</li></ul><table><tr><th>Differenz</th><th>Bedrohungsstufe</th></tr><tr><td>13–15</td><td>Überlegen</td></tr><tr><td>10–12</td><td>Ebenbürtig</td></tr><tr><td>7–9</td><td>Unterlegen</td></tr><tr><td>4–6</td><td>Schwach</td></tr><tr><td>3 oder weniger</td><td>Erbärmlich</td></tr></table><blockquote><strong>Beispiel:</strong> Paul würfelt Thurids Kartenzeichnen gegen 6 und scheitert: X = 2. Ragnar versucht es und scheitert: X = 3. Paul würfelt dann Triumph (zählt als 2) und Erfolg: drei aufeinanderfolgende Erfolge. Die Schwierigkeit für die Folgewürfe ist 4 (Thurids Fehlschlag, Ragnars Fehlschlag, Triumph, Erfolg). Ragnars Ausdauer + Tapferkeit misslingt um 1; ein W10 ergibt 7: 8 Schaden, rüstungsignorierend. Sein Schleichen-Patzer (−4) ergibt Differenz 8: Unterlegene Wandermonster greifen an.</blockquote><p><strong>Originalsystem:</strong> Grundkosten <strong>30</strong>; übersteigt die Schwierigkeit der Kartenzeichnen-Würfe 6, kommt ein Aufschlag von <strong>2 × den Schwierigkeitskosten</strong> hinzu (Schwierigkeit 7: 30 + 10 + 20 = 60).</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 152–153</em></p>",
+   "properties": [
+    {
+     "name": "Kosten (Originalsystem)",
+     "value": "30 + (Schwierigkeitskosten × 2 bei Schwierigkeit über 6)",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.k4.f.greifer",
+   "kind": "note",
+   "name": "Greiferfallen (Grabber Traps)",
+   "type": "Gefahr (Fertigpaket)",
+   "parent": "n.k4.fallen",
+   "tags": [
+    "tag.kap4",
+    "tag.falle"
+   ],
+   "entry": "<p>Eine <strong>Greiferfalle</strong> hält ihre Opfer fest, bis sie entschärft ist: Bärenfallen, Schlingen, Treibsandgruben, Landmuscheln, Leimfallen. Außerhalb von Kämpfen sind sie wenig nützlich.</p><ul><li>Zum Befreien muss ein Held eine <strong>Aktion</strong> aufwenden und würfeln (meist <strong>Stärke + Fallenkunde</strong>). Ein anderer Held darf, sofern er nicht selbst gefangen ist, eine eigene Aktion für den Wurf aufwenden. Beliebig viele Aktionen sind erlaubt.</li><li>Eine Greiferfalle kann zusätzlich Schaden zufügen (DAM-Wert wie üblich bezahlt).</li><li>Gefangene können <strong>keine Engagement-Würfe</strong> machen. Fernkämpfer erhalten <strong>+3 ATK</strong> gegen sie. Im Nahkampf erleiden Gefangene <strong>−3 auf ATK und DFN</strong>.</li><li>Die Schwierigkeit zum Befreien ist <strong>6</strong>, sofern nichts anderes festgelegt ist. Die Vermeidungswürfe sind immer <strong>Standard oder Singulär</strong>: Standard, wenn die ganze Gruppe in mindestens so viele Greiferfallen läuft, wie sie Mitglieder hat; Singulär bei einer einzelnen oder weniger Fallen als Gruppenmitglieder.</li><li><strong>Originalsystem:</strong> 40 Punkte.</li></ul><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 153–154</em></p>",
+   "properties": [
+    {
+     "name": "Kosten (Originalsystem)",
+     "value": "40",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.k4.f.plage",
+   "kind": "note",
+   "name": "Tiere (Nuisance Animals)",
+   "type": "Gefahr (Fertigpaket)",
+   "parent": "n.k4.fallen",
+   "tags": [
+    "tag.kap4",
+    "tag.falle",
+    "tag.tabelle"
+   ],
+   "entry": "<p>Nicht alle Kreaturen sind gleich: Manche sind groß und gefährlich genug als Kampfgegner, andere nur <strong>Tiere</strong>. Gibt man ihnen die Gelegenheit, nagen, stechen oder infizieren sie die Helden; der Schaden ist aber gering, und sie sind zu klein, um wie ein richtiger Gegner bekämpft zu werden (Rattenkampf mit der Streitaxt ist schwer). Tiere treten meist in <strong>Schwärmen</strong> auf, ihr Erledigen bringt keine Siegespunkte; am besten verlassen die Helden das befallene Gebiet. Beispiele: Ratten, Barrakudas, kleine Quallen, Wespen, Pferdebremsen, Vampirfledermäuse.</p><ul><li><strong>Fliehen:</strong> Angegriffen von Schwärmen übernimmt bei den meisten der Instinkt, und sie rennen weg. Dabei erleiden sie <strong>−3</strong> auf alle Würfe für Handlungen, die nichts mit der unmittelbaren Flucht zu tun haben. Um nicht zu fliehen, muss man <strong>Tapferkeit gegen Schwierigkeit 6 + bereits in dieser Begegnung erlittener Schaden</strong> würfeln (einmal je Runde). Auch bei Erfolg: <strong>−1</strong> auf alle Würfe durch Ablenkung und Schmerz.</li><li><strong>Rüstungsignorierender Schaden:</strong> Der Wert setzt voraus, dass die meisten Angriffe an der Rüstung abprallen, aber durch Lücken genug Stiche durchkommen. Helden mit <strong>Schutz 2 oder weniger</strong> erleiden <strong>dreifachen Schaden</strong>.</li><li><strong>Ausweichen:</strong> Mit einer Aktion kann ein Charakter dem Schwarm ausweichen: <strong>Ausweichen gegen 6 + möglichem Schaden</strong>; jeder Erfolg verhindert allen Schaden.</li><li>Viele sind territorial (nur im Gebiet gefährlich), manche an eine Umgebung gebunden (Barrakudas, Portugiesische Galeeren nur im Wasser). Tiere greifen <strong>nie die Gegner der Helden</strong> an.</li></ul><table><tr><th>DAM-Wert (je Runde)</th><th>Kosten (Originalsystem)</th></tr><tr><td>1</td><td>1</td></tr><tr><td>2</td><td>2</td></tr><tr><td>3</td><td>4</td></tr><tr><td>4</td><td>6</td></tr><tr><td>5</td><td>10</td></tr><tr><td>6</td><td>15</td></tr><tr><td>7</td><td>20</td></tr><tr><td>8</td><td>25</td></tr><tr><td>9</td><td>30</td></tr><tr><td>10</td><td>35</td></tr></table><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 154</em></p>",
+   "properties": [
+    {
+     "name": "Kosten (Originalsystem)",
+     "value": "nach DAM-Wert je Runde 1 bis 35",
+     "type_id": 1
+    }
+   ]
+  }
+ ]
+}

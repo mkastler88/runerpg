@@ -1,0 +1,1168 @@
+{
+ "meta": {
+  "ausschnitt": "Kapitel 4, Teil A: Begegnungsreferenz und Gegnersystem",
+  "version": "0.5"
+ },
+ "tags": [
+  {
+   "key": "tag.kap4",
+   "name": "Kapitel 4: Begegnungen und Gegner"
+  },
+  {
+   "key": "tag.tabelle",
+   "name": "Regeltabelle"
+  },
+  {
+   "key": "tag.referenz",
+   "name": "Referenz (Originalsystem, nicht angewandt)"
+  },
+  {
+   "key": "tag.gegner",
+   "name": "Gegner"
+  },
+  {
+   "key": "tag.beispiel",
+   "name": "Beispiel"
+  }
+ ],
+ "entities": [
+  {
+   "key": "n.k4",
+   "kind": "note",
+   "name": "Kapitel 4: Begegnungen und Gegner",
+   "type": "Kapitel",
+   "parent": "n.root",
+   "tags": [
+    "tag.kap4"
+   ],
+   "entry": "<p>Dieses Kapitel richtet sich im Original an den <strong>Begegnungsentwerfer</strong>. In dieser Kampagne ist der Spielleiter dauerhaft der Runner, Entwerfer und Spielleiter; die Regeln dienen ihm als Werkzeugkasten.</p><ul><li>{{ref:n.k4.hinweis}}</li><li>{{ref:n.k4.begegnung}}</li><li>{{ref:n.k4.siegpunkte}}</li><li>{{ref:n.k4.budget}}</li><li>{{ref:n.k4.gegner}}</li><li>{{ref:pk.gegner|Property Kit „Rune-Gegner“}}</li></ul><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 85–101</em></p>"
+  },
+  {
+   "key": "n.k4.hinweis",
+   "kind": "note",
+   "name": "Verwendung in dieser Kampagne",
+   "type": "Regel",
+   "parent": "n.k4",
+   "tags": [
+    "tag.kap4"
+   ],
+   "entry": "<p>Diese Regeln sind für Rune als <strong>wettbewerbliches Spiel mit wechselndem Runner</strong> geschrieben. In dieser Kampagne gilt:</p><ul><li>Der Spielleiter ist <strong>immer der Runner</strong>. Es gibt keinen Runnerwechsel und damit keinen Proxy.</li><li>Die <strong>Begegnungspunkte</strong> (das Budget des Entwerfers) sind <strong>unbegrenzt</strong>. Ihre Kosten bleiben als Orientierung für die relative Härte von Elementen erhalten.</li><li><strong>Siegespunkte</strong> vergibt der Spielleiter <strong>nach Ermessen</strong>. Das Originalsystem steht unten als Referenz, etwa als Maßstab für Belohnungshöhen.</li><li>Nicht übernommen (nach Absprache): „Recap: Designing Your Encounters“, „Quick ‘n’ Dirty Encounter Design“ sowie Kapitel 5 bis 7, Anhang und Index des Originals.</li><li>Notes und Properties, die nur das Originalsystem betreffen, sind mit dem Tag „Referenz (Originalsystem, nicht angewandt)“ gekennzeichnet.</li></ul><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 85</em></p>"
+  },
+  {
+   "key": "n.k4.begegnung",
+   "kind": "note",
+   "name": "Begegnungen: Aufbau (Referenz)",
+   "type": "Regel",
+   "parent": "n.k4",
+   "tags": [
+    "tag.kap4",
+    "tag.referenz"
+   ],
+   "entry": "<p>Eine <strong>Begegnung</strong> ist die Grundeinheit der Handlung. Im Original führt jeder Spieler reihum genau eine Begegnung als Runner und gibt die Kontrolle über seinen Helden an einen Mitspieler ab. Der Entwurf läuft in acht Schritten:</p><ol><li><strong>Budget bestimmen:</strong> Alles, was den Helden das Leben schwer macht, kostet Begegnungspunkte; Belohnendes und Erleichterndes bringt sie ein ({{ref:n.k4.budget}}).</li><li><strong>Konzept:</strong> Ort, Zahl der Ereignisse, was geschieht.</li><li><strong>Gegner</strong> ({{ref:n.k4.gegner}}).</li><li><strong>Gelände</strong> (folgt in einer späteren Lieferung).</li><li><strong>Schwierigkeiten</strong> (Proben und Wurfarten, folgt).</li><li><strong>Fallen und Gefahren</strong> (folgt).</li><li><strong>Schätze</strong> (folgt).</li><li><strong>Sonstige Gewinne</strong> (folgt).</li></ol><h3>Konzept</h3><ul><li><strong>Ort:</strong> Bis zu den fortgeschrittenen Abenteuerregeln spielen alle Begegnungen in der <strong>Unterwelt</strong>, dem Netz aus Höhlen, Tunneln und Kammern, das die mythischen Reiche mit Midgard verbindet. Jeder denkbare Gegner kann dort vorkommen.</li><li><strong>Zahl der Ereignisse:</strong> Eine Begegnung hat <strong>ein bis vier Ereignisse</strong> (Events), jedes an einem eigenen Ort. Ein Ereignis kann einen Kampf, beliebig viele Fallen oder Gefahren und Schatz- oder Gewinnmöglichkeiten enthalten. Mindestens ein Ereignis enthält einen <strong>Kampf</strong>.</li><li><strong>Was geschieht:</strong> Fasse jedes Ereignis in einem einfachen Satz zusammen („Die Helden kämpfen gegen Goblins unter einem feurigen Wasserfall“, „Ein verrückter Alter versucht, die Helden zu hypnotisieren und ihnen die Ausrüstung abzunehmen“, „Zwerge fordern einen Helden zum Kampf gegen ihren neuen Roboter heraus, Preis ist ein großer Schatz“).</li></ul><h3>Begegnungsnotizen</h3><p>Notizen sollen knapp und spielnah sein, als Stichworte statt als vorzulesendes Skript. Im Original dürfen Plünderer die Notizen nach der Begegnung einsehen, außer bei Hinweisen auf spätere Begegnungen (Abenteuer: Original S. 176).</p><h3>Länge eines Abenteuers (Grundform)</h3><p>Ein Abenteuer ist eine Reihe von Begegnungen: in der Grundform <strong>6 Begegnungen oder so viele wie Spieler, je nachdem was mehr ist</strong>. Am Ende kehren die Helden heim und können Beute gegen Siegespunkte eintauschen.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 85–89, 95</em></p>"
+  },
+  {
+   "key": "n.k4.siegpunkte",
+   "kind": "note",
+   "name": "Siegespunkte (Originalsystem, Referenz)",
+   "type": "Regel",
+   "parent": "n.k4",
+   "tags": [
+    "tag.kap4",
+    "tag.referenz",
+    "tag.tabelle"
+   ],
+   "entry": "<p><em>In dieser Kampagne vergibt der Spielleiter Siegespunkte nach Ermessen. Die folgenden Zahlen geben das Originalsystem als Maßstab wieder.</em></p><p>Siegespunkte werden während einer Begegnung auf einem Zettel notiert und erst am <strong>Ende</strong> endgültig gutgeschrieben, nachdem Gewinne und Abzüge verrechnet sind. Ein Spieler kann nicht unter 0 fallen; Runner können bei grober Härte ein <strong>Defizit</strong> erhalten, das von künftigen Gewinnen abgezogen wird.</p><h3>Gewinne der Spieler</h3><table><tr><th>Quelle</th><th>Siegespunkte</th></tr><tr><td>Schaden an Gegnern</td><td>1 je HP tatsächlich zugefügten Schadens (nach Rüstung und Absorption; höchstens die verbliebenen HP des Gegners). Wer einen Gegner in eine Falle wirft oder lenkt, erhält die Punkte für den Schaden.</td></tr><tr><td>Todesstoß</td><td>50 % der Macht des Gegners (Brüche abrunden), zusätzlich zum Schaden; auch bei tödlichem Schaden durch Fallen und Gefahren</td></tr><tr><td>Erfolge</td><td>3 × Differenz zwischen Schwierigkeit und Ergebnis (Wurf + Fertigkeit) bei einem in den Notizen genannten Wurf; nur der erste Erfolg zählt, außer die Notizen verlangen weitere Würfe</td></tr><tr><td>Beute</td><td>1 Punkt je Unze Silber, die der Held seiner Heimatgemeinschaft schenkt; andere Wertgegenstände nach Silberwert; am Ende des Abenteuers. Einmal geschenkt, nicht zurückzuholen.</td></tr><tr><td>Proxy</td><td>Halbe Siegespunkte für die Taten des fremden Helden (hier nicht relevant)</td></tr></table><p>Das Buch nennt das „Kill-Stealing“ (einen Gegner erst von Gefährten schwächen lassen, dann den Todesstoß setzen) ausdrücklich gewollt: Die Helden sind Kameraden und Rivalen zugleich.</p><h3>Abzüge der Spieler</h3><table><tr><th>Anlass</th><th>Abzug</th></tr><tr><td>Erlittener Schaden</td><td>1 je HP nach Absorption (Heilung gleicht frühere Abzüge nicht aus)</td></tr><tr><td>Tod des eigenen Helden</td><td>Punktzahl der Begegnung wird 0</td></tr><tr><td>Tod des Runner-Helden durch den Proxy</td><td>Punktzahl des Proxys wird 0</td></tr><tr><td>Statusverlust</td><td>Wenn eine Begegnung unehrenhaftes Verhalten bestraft (z. B. Heilpause bei dringendem Ruf des Dorfes, Töten eines Verhandlers)</td></tr><tr><td>Schaden an anderen Helden</td><td>5 je HP tatsächlichen Schadens; stirbt das Opfer, wird die Punktzahl 0</td></tr><tr><td>Walhalls klaffender Rachen</td><td>Für jeden gestorbenen fremden Helden: Gewinner −75, Zweiter −45, Dritter −30 (nach vorläufigem Stand)</td></tr><tr><td>Faulheit</td><td>Wer seine Runnerpflicht abgibt, verliert 50 % der Siegespunkte</td></tr></table><h3>Gewinne und Abzüge des Runners</h3><table><tr><th>Anlass</th><th>Siegespunkte</th></tr><tr><td>Danke fürs Spielen</td><td>+30 für das Leiten</td></tr><tr><td>Fast am Boden</td><td>+75 + (Gesamtsiegespunkte des Helden ÷ 10) für jeden Helden, der auf höchstens 20 HP fällt oder genau 4 Wunden hat (einmal je Held, nicht bei später sterbenden)</td></tr><tr><td>Schadenfreude</td><td>3 × Differenz bei jedem misslungenen Wurf der Notizen (nicht bei freistehenden Fertigkeitswürfen)</td></tr><tr><td>Gelände ins Spiel</td><td>+20 je Geländemerkmal oder Falle, die einen Helden zu Engagement-Wurf, Bewegung oder Nicht-Angriffs-Aktion zwingt (höchstens 80; nicht für Merkmale der letzten zwei Begegnungen)</td></tr><tr><td>Trifecta</td><td>+75, wenn Entwerfer und Runner dieselbe Person sind und alle drei Kategorien (Fast am Boden, Schadenfreude, Gelände) punkten</td></tr><tr><td>Tote Helden</td><td>−75 je gestorbenem fremden Helden</td></tr></table><p>Der Spieler mit den meisten Siegespunkten am Sitzungsende gewinnt; Kampagnen können endlich oder offen sein.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 89–94</em></p>"
+  },
+  {
+   "key": "n.k4.budget",
+   "kind": "note",
+   "name": "Begegnungspunkte und Budget (Originalsystem, Referenz)",
+   "type": "Regel",
+   "parent": "n.k4",
+   "tags": [
+    "tag.kap4",
+    "tag.referenz",
+    "tag.tabelle"
+   ],
+   "entry": "<p><em>In dieser Kampagne unbegrenzt. Als Maßstab für die relative Härte von Elementen weiterhin nützlich.</em></p><ul><li>Wie du deinen Helden mit Erschaffungspunkten gebaut hast, bezahlst du die Elemente einer Begegnung mit <strong>Begegnungspunkten</strong>. Um positive Punkte für Herausforderungen auszugeben, musst du mindestens so viele negative Punkte durch Elemente verdienen, die den Helden helfen oder sie belohnen (z. B. kostet eine Schräge über zwei Drittel der Kampffläche −20: Du gewinnst 20 Punkte).</li><li>Das Grundbudget beträgt <strong>350 Punkte</strong>. Alles mit Kosten zählt zum Limit; Bündeln umgeht es nicht (eine Falle, die sich auf 0 ausgleicht, aber aus Elementen für 30 und −30 besteht, belegt 30 Budget).</li><li>Das Budget steigt mit den Siegespunkten der Spieler:</li></ul><table><tr><th>Durchschnittliche Siegespunkte</th><th>Limit steigt um</th></tr><tr><td>500</td><td>+50</td></tr><tr><td>750</td><td>+75</td></tr><tr><td>1000</td><td>+100</td></tr><tr><td>je weitere 250</td><td>+25</td></tr></table><p>Maßgeblich ist, ob die Mehrheit der Spieler (einschließlich Runner) die Schwelle erreicht hat; Steigerungen sind nicht kumulativ.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 94</em></p>"
+  },
+  {
+   "key": "n.k4.gegner",
+   "kind": "note",
+   "name": "Gegner: Regeln",
+   "type": "Regel",
+   "parent": "n.k4",
+   "tags": [
+    "tag.kap4"
+   ],
+   "entry": "<p>Dieser Teil zeigt, wie du Gegner für deine Kämpfe erschaffst und bezahlst. Jede Begegnung braucht mindestens ein Kampf-Ereignis. Die Spielwerte der Gegner werden nicht fest vergeben, sondern <strong>aus den Werten der Heldengruppe abgeleitet</strong>: So bleibt ein Gegner stets so gefährlich wie seine Bedrohungsstufe, egal wie stark die Helden werden. Das Property Kit {{ref:pk.gegner}} rechnet das automatisch.</p><ul><li>{{ref:n.k4.gegner.schritte}}</li><li>{{ref:n.k4.gegner.werte}}</li><li>{{ref:n.k4.gegner.fern}}</li></ul><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 96–101</em></p>"
+  },
+  {
+   "key": "n.k4.gegner.schritte",
+   "kind": "note",
+   "name": "Gegner entwerfen: die Schritte",
+   "type": "Regel",
+   "parent": "n.k4.gegner",
+   "tags": [
+    "tag.kap4",
+    "tag.tabelle"
+   ],
+   "entry": "<ol><li><strong>Bedrohungsstufen:</strong> Gegner gehören zu sieben Stufen, vom Gefährlichsten zum Harmlosesten: <strong>Schrecklich (Terrifying), Außergewöhnlich (Exceptional), Überlegen (Superior), Ebenbürtig (Equal), Unterlegen (Inferior), Schwach (Weak), Erbärmlich (Pitiful)</strong>. Der Entwerfer wählt die Stufe, ohne genaue Werte festzulegen; die Werte bestimmt der Runner kurz vor der Begegnung.</li><li><strong>Zahl der Gegner (Mix):</strong> In einer Begegnung mit einem Kampf-Ereignis muss der <strong>gesamte Mix-Wert</strong> aller Gegner dieses Ereignisses der <strong>Zahl der Helden</strong> entsprechen. Bei zwei Kampf-Ereignissen muss ein Ereignis die Heldenzahl erreichen, das zweite höchstens die Hälfte. Mix-Werte werden gerundet (bei 0,5 abrunden). Ändert sich die Heldenzahl, passt der Runner Stufen und Zahl der Gegner so an, dass der Mix wieder passt.</li><li><strong>Gegnertypen:</strong> Der Entwerfer wählt aus der Gegnergalerie oder erfindet eigene Typen. Manche Typen haben eine <strong>Maximale Bedrohungsstufe</strong> und können nie darüber liegen (Felsgoblins nie besser als Unterlegen). Jede Stufe ist relativ zur Stärke der Helden. Gegner mit Sonderfähigkeiten haben einen erhöhten Mix-Wert.</li><li><strong>Freier Wille oder vorhersehbar?</strong> Normalerweise wählt ein Ablaufdiagramm, welchen Helden ein Gegner angreift (<em>vorhersehbar</em>). Ein Entwerfer kann einzelnen Gegnern einen <strong>freien Willen (Self-Willed)</strong> geben: Sie greifen jeden Helden nach Wahl des Runners an, außer ihn bindet bereits ein anderer Gegner mit freiem Willen, und dürfen sich sogar aus dem Engagement lösen.</li><li><strong>Anpassung (Adjust, optional):</strong> Standardgegner haben in der Galerie Anpassungswerte, die ihre Spielwerte verändern und ihnen Eigenheiten geben. Für selbst erfundene Gegner gibt es Regeln in Kapitel 4 (Original S. 119).</li><li><strong>Fernwaffen (optional):</strong> Gegner mit dem Pfeilsymbol dürfen Bogen oder Armbrust führen. Der Entwerfer erhält <strong>10 Begegnungspunkte</strong>, wenn kein Gegner eines Kampf-Ereignisses Fernwaffen nutzt, obwohl mindestens die Hälfte (nach Mix-Wert) das Pfeilsymbol hat.</li><li><strong>Heldenwerte erfassen (Roll of Valor):</strong> siehe {{ref:n.k4.gegner.werte}}.</li><li><strong>Spielwerte bestimmen:</strong> siehe {{ref:n.k4.gegner.werte}}.</li></ol><h3>Mix-Werte</h3><table><tr><th>Stufe</th><th>Mix</th><th>Verhältnis</th></tr><tr><td>Schrecklich</td><td>4</td><td>Ein Gegner auf vier Helden</td></tr><tr><td>Außergewöhnlich</td><td>3</td><td>Ein Gegner auf drei Helden</td></tr><tr><td>Überlegen</td><td>2</td><td>Ein Gegner auf zwei Helden</td></tr><tr><td>Ebenbürtig</td><td>1,3</td><td>Zwei Gegner auf drei Helden</td></tr><tr><td>Unterlegen</td><td>0,7</td><td>Drei Gegner auf zwei Helden</td></tr><tr><td>Schwach</td><td>0,5</td><td>Zwei Gegner auf einen Helden</td></tr><tr><td>Erbärmlich</td><td>0,3</td><td>Drei Gegner auf einen Helden</td></tr></table><p>Ein <strong>schrecklicher</strong> Gegner darf nur auftreten, wenn mindestens <strong>vier Helden</strong> da sind. Dagegen dürfen je Held 2 schwache Gegner auftreten. Stufen dürfen gemischt werden.</p><blockquote><strong>Beispiel:</strong> Sechs Spieler, ein Kampf-Ereignis. Ein schrecklicher Gegner nimmt 4 der 6 Punkte, dazu ein ebenbürtiger (1,3) und ein schwacher (0,5): zusammen 5,8, gerundet 6.</blockquote><h3>Kosten für „freier Wille“</h3><table><tr><th>Stufe</th><th>Aufpreis</th></tr><tr><td>Schrecklich</td><td>+50 Begegnungspunkte</td></tr><tr><td>Außergewöhnlich</td><td>+35</td></tr><tr><td>Überlegen</td><td>+25</td></tr><tr><td>Ebenbürtig</td><td>+15</td></tr><tr><td>Unterlegen</td><td>+10</td></tr><tr><td>Schwach</td><td>+5</td></tr><tr><td>Erbärmlich</td><td>+2</td></tr></table><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 96–99</em></p>"
+  },
+  {
+   "key": "n.k4.gegner.werte",
+   "kind": "note",
+   "name": "Spielwerte der Gegner berechnen",
+   "type": "Regel",
+   "parent": "n.k4.gegner",
+   "tags": [
+    "tag.kap4",
+    "tag.tabelle"
+   ],
+   "entry": "<h3>Heldenwerte erfassen (Roll of Valor)</h3><ul><li>Vor Spielbeginn tragen alle Spieler die <strong>aktuellen Werte ihrer Helden</strong> ein: INIT, ATK, DFN, DAM, Absorption, HP und <strong>RES</strong>. RES ist der <strong>höchste Bonus</strong> eines Helden für eine Handlung außerhalb des Kampfes (meist Leitcharakteristik + Fertigkeit; in Ausnahmefällen der Wurf zur Aktivierung einer Göttlichen Gabe oder eines magischen Schatzes).</li><li>Erhöhen Göttliche Gaben einen Wert <strong>dauerhaft</strong>, trägt man den Höchstwert ein; vorübergehende Boni zählen nicht.</li><li>Der Runner markiert in jeder Spalte den <strong>zweitschlechtesten Wert</strong> (Gleichstände zählen als dieselbe Zahl). Das sind die <strong>Gruppenwerte</strong> für einen <strong>ebenbürtigen</strong> Gegner.</li><li>Bei <strong>weniger als vier Helden</strong>: Bei drei Helden gilt der <em>schlechteste</em> Wert jeder Spalte. Bei zwei Helden gilt der schlechteste Wert, davon <strong>−1</strong> auf INIT, ATK, DFN, DAM, Absorption und RES und <strong>−10</strong> auf HP.</li></ul><blockquote><strong>Beispiel:</strong> Gruppenwerte laut Buch: INIT 8, ATK 10, DFN 7, DAM 9, Absorption 6, HP 52, RES 3. Gegenüber 6 Helden mit ATK-Werten 10, 11, 7, 7, 12, 7, 10: der schlechteste Wert ist 7 (dreimal), der zweitschlechteste also 10.</blockquote><h3>Foe-Maker-Tabelle</h3><p>Aus den Gruppenwerten ergeben sich die Werte jedes Gegners: Ein ebenbürtiger Gegner hat genau die Gruppenwerte; weniger bedrohliche Gegner erhalten Abzüge, bedrohlichere Zuschläge.</p><table><tr><th>Stufe</th><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Absorption</th><th>HP</th><th>RES</th></tr><tr><td>Schrecklich</td><td>+6</td><td>+6</td><td>+6</td><td>+6</td><td>+3</td><td>+30</td><td>+3</td></tr><tr><td>Außergewöhnlich</td><td>+4</td><td>+4</td><td>+4</td><td>+4</td><td>+2</td><td>+20</td><td>+2</td></tr><tr><td>Überlegen</td><td>+2</td><td>+2</td><td>+2</td><td>+2</td><td>+1</td><td>+10</td><td>+1</td></tr><tr><td>Ebenbürtig</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td><td>0</td></tr><tr><td>Unterlegen</td><td>−2</td><td>−2</td><td>−2</td><td>−1</td><td>−1</td><td>−10</td><td>−1</td></tr><tr><td>Schwach</td><td>−4</td><td>−4</td><td>−4</td><td>−2</td><td>−2</td><td>−20</td><td>−2</td></tr><tr><td>Erbärmlich</td><td>−6</td><td>−6</td><td>−6</td><td>−3</td><td>0*</td><td>−30</td><td>−3</td></tr></table><p>* Im Original steht in dieser Zelle nur ein Strich; wie in der Zeile „Ebenbürtig“ als 0 gelesen.</p><ul><li>Danach wendet der Runner die <strong>Anpassungen</strong> (Adjusts) des Gegnertyps an. Bei der Anpassung werden alle <strong>HP unter 10 als 10</strong> und alle <strong>Absorptions- und DAM-Werte unter 0 als 0</strong> behandelt. INIT, ATK, DFN und RES dürfen negativ werden.</li><li><strong>Reaktion (RES):</strong> Gegner nutzen RES für <strong>jeden Wurf außer INIT, ATK und DFN</strong>, den sie im Kampf machen müssen: Engagement, Tapferkeit, Ausweichen, Aufmerksamkeit, Klettern, Sprinten, Springen und mehr.</li><li><strong>Ausrüstung ist eingerechnet:</strong> Die erzeugten Werte sind Endwerte und enthalten Waffen, Rüstung und Schilde. Gib diesen Werten <strong>niemals zusätzliche Boni für Ausrüstung</strong>.</li></ul><blockquote><strong>Beispiel:</strong> Gruppenwerte INIT 8 / ATK 10 / DFN 7 / DAM 9 / Abs 6 / HP 52 / RES 3. <strong>Schrecklicher Mechazwerg:</strong> 14 / 16 / 13 / 15 / 9 / 82 / 6. <strong>Ebenbürtiger Zwergen-Zenturio</strong> mit Anpassung ATK −2, DFN −1, DAM +9: 8 / 8 / 6 / 18 / 6 / 52 / 3. <strong>Unterlegener Zwergen-Arbeiter:</strong> 6 / 8 / 5 / 8 / 5 / 42 / 2.</blockquote><h3>Wundschwelle</h3><p>Die meisten Gegner haben Wundschwelle <strong>15</strong>. Gegner mit <strong>mehr als 60 HP</strong> haben <strong>18</strong>, Gegner mit <strong>weniger als 20 HP</strong> haben <strong>12</strong>.</p><h3>Macht (Might)</h3><p>Tötet ein Held einen Gegner, erhält er einen Siegbonus von <strong>½ der Macht</strong> des Gegners (Siegespunkte: Originalsystem, {{ref:n.k4.siegpunkte}}). Die Macht berechnet sich: <strong>(INIT + ATK + DFN + DAM + Absorption + (HP ÷ 10)) ÷ 2</strong>, Brüche am Ende abschneiden; Fernwaffenwerte bleiben unberücksichtigt, negative Werte zählen als 0.</p><blockquote><strong>Beispiel:</strong> Zenturio: (8 + 8 + 6 + 18 + 6 + 5,2) ÷ 2. Das Buch nennt als Ergebnis 24; die Formel ergibt 25,6, abgeschnitten <strong>25</strong>. Das Property Kit rechnet 25.</blockquote><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 97–101</em></p>"
+  },
+  {
+   "key": "n.k4.gegner.fern",
+   "kind": "note",
+   "name": "Fernkampfwerte von Gegnern",
+   "type": "Regel",
+   "parent": "n.k4.gegner",
+   "tags": [
+    "tag.kap4",
+    "tag.tabelle"
+   ],
+   "entry": "<p>Für Fernwaffen nimmt man die Nahkampfwerte des Gegners als Ausgangspunkt und wendet folgende Änderungen an. Als <strong>DFN</strong> gilt bei einer Fernwaffe in der Hand die <strong>RES</strong> des Gegners.</p><table><tr><th>Waffe</th><th>INIT</th><th>ATK</th><th>DAM</th><th>DFN</th></tr><tr><td>Bogen</td><td>−1</td><td>−4</td><td>unverändert, höchstens 11</td><td>= RES</td></tr><tr><td>Armbrust</td><td>−8</td><td>−3</td><td>unverändert, höchstens 14</td><td>= RES</td></tr></table><blockquote><strong>Beispiel:</strong> Armbrust-Zenturio: INIT 8 − 8 = 0, ATK 8 − 3 = 5, DFN = RES 3, DAM 18, begrenzt auf 14. Bogen-Arbeiter: INIT 6 − 1 = 5, ATK 8 − 4 = 4, DFN = RES 2, DAM 8.</blockquote><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 100</em></p>"
+  },
+  {
+   "key": "pk.gegner",
+   "kind": "property_kit",
+   "name": "Rune-Gegner",
+   "type": null,
+   "parent": null,
+   "tags": [],
+   "entry": "<p>Property Kit für Gegner: Du trägst die <strong>Gruppenwerte</strong> deiner Helden ein ({{ref:n.k4.gegner.werte}}), wählst die <strong>Bedrohungsstufe</strong> als Zahl und die <strong>Anpassungen</strong> des Gegnertyps; Spielwerte, Wundschwelle, Macht und Fernkampfwerte werden berechnet.</p><table><tr><th>Bedrohung_Idx</th><th>Stufe</th></tr><tr><td>3</td><td>Schrecklich</td></tr><tr><td>2</td><td>Außergewöhnlich</td></tr><tr><td>1</td><td>Überlegen</td></tr><tr><td>0</td><td>Ebenbürtig</td></tr><tr><td>−1</td><td>Unterlegen</td></tr><tr><td>−2</td><td>Schwach</td></tr><tr><td>−3</td><td>Erbärmlich</td></tr></table>",
+   "properties": [
+    {
+     "name": "Gruppenwerte (Roll of Valor)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "G_INIT",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "G_ATK",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "G_DFN",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "G_DAM",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "G_ABS",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "G_HP",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "G_RES",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Einstufung",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Bedrohung_Idx",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Bedrohung",
+     "value": "",
+     "type_id": 1
+    },
+    {
+     "name": "Max_Bedrohung",
+     "value": "",
+     "type_id": 1
+    },
+    {
+     "name": "Benchmark",
+     "value": "",
+     "type_id": 1
+    },
+    {
+     "name": "Mix_Zusatz",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Bewegung",
+     "value": "15",
+     "type_id": 6
+    },
+    {
+     "name": "Symbole",
+     "value": "",
+     "type_id": 1
+    },
+    {
+     "name": "Anpassungen (Adjust)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "A_INIT",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "A_ATK",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "A_DFN",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "A_DAM",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "A_ABS",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "A_HP",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Hilfswerte der Stufe",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "M_DAM",
+     "value": "{Bedrohung_Idx}+max({Bedrohung_Idx},0)",
+     "type_id": 1
+    },
+    {
+     "name": "M_ABS",
+     "value": "{Bedrohung_Idx}*min(1,{Bedrohung_Idx}+3)",
+     "type_id": 1
+    },
+    {
+     "name": "Spielwerte (berechnet)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "INIT",
+     "value": "{G_INIT}+2*{Bedrohung_Idx}+{A_INIT}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "ATK",
+     "value": "{G_ATK}+2*{Bedrohung_Idx}+{A_ATK}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "DFN",
+     "value": "{G_DFN}+2*{Bedrohung_Idx}+{A_DFN}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "DAM",
+     "value": "max(0,{G_DAM}+{M_DAM}+{A_DAM})",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "ABS",
+     "value": "max(0,{G_ABS}+{M_ABS}+{A_ABS})",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "HP",
+     "value": "max(10,{G_HP}+10*{Bedrohung_Idx}+{A_HP})",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "RES",
+     "value": "{G_RES}+{Bedrohung_Idx}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Wundschwelle",
+     "value": "15+3*min(1,floor({HP}/61))-3*(1-min(1,floor({HP}/20)))",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Macht",
+     "value": "floor((max(0,{INIT})+max(0,{ATK})+max(0,{DFN})+max(0,{DAM})+max(0,{ABS})+{HP}/10)/2)",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Fernkampfwerte (berechnet)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Bogen_INIT",
+     "value": "{INIT}-1",
+     "type_id": 1
+    },
+    {
+     "name": "Bogen_ATK",
+     "value": "{ATK}-4",
+     "type_id": 1
+    },
+    {
+     "name": "Bogen_DFN",
+     "value": "{RES}",
+     "type_id": 1
+    },
+    {
+     "name": "Bogen_DAM",
+     "value": "min({DAM},11)",
+     "type_id": 1
+    },
+    {
+     "name": "Armbrust_INIT",
+     "value": "{INIT}-8",
+     "type_id": 1
+    },
+    {
+     "name": "Armbrust_ATK",
+     "value": "{ATK}-3",
+     "type_id": 1
+    },
+    {
+     "name": "Armbrust_DFN",
+     "value": "{RES}",
+     "type_id": 1
+    },
+    {
+     "name": "Armbrust_DAM",
+     "value": "min({DAM},14)",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ex.zenturio",
+   "kind": "creature",
+   "name": "Beispiel: Zwergen-Zenturio (ebenbürtig)",
+   "type": "Beispiel (Regelbeispiel)",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.beispiel",
+    "tag.gegner"
+   ],
+   "entry": "<p>Regelbeispiel des Buchs: ebenbürtiger Zwergen-Zenturio mit Armbrust.</p><p>Gruppenwerte laut Buch: INIT 8, ATK 10, DFN 7, DAM 9, Absorption 6, HP 52, RES 3. Prüfwerte: Original S. 99–100.</p><p>Rechenweg: {{ref:n.k4.gegner.werte}}.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 99–101</em></p>",
+   "properties": [
+    {
+     "name": "Gruppenwerte (Roll of Valor)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "G_INIT",
+     "value": "8",
+     "type_id": 6
+    },
+    {
+     "name": "G_ATK",
+     "value": "10",
+     "type_id": 6
+    },
+    {
+     "name": "G_DFN",
+     "value": "7",
+     "type_id": 6
+    },
+    {
+     "name": "G_DAM",
+     "value": "9",
+     "type_id": 6
+    },
+    {
+     "name": "G_ABS",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "G_HP",
+     "value": "52",
+     "type_id": 6
+    },
+    {
+     "name": "G_RES",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Einstufung",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Bedrohung_Idx",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Bedrohung",
+     "value": "Ebenbürtig",
+     "type_id": 1
+    },
+    {
+     "name": "Max_Bedrohung",
+     "value": "",
+     "type_id": 1
+    },
+    {
+     "name": "Benchmark",
+     "value": "",
+     "type_id": 1
+    },
+    {
+     "name": "Mix_Zusatz",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Bewegung",
+     "value": "15",
+     "type_id": 6
+    },
+    {
+     "name": "Symbole",
+     "value": "",
+     "type_id": 1
+    },
+    {
+     "name": "Anpassungen (Adjust)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "A_INIT",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "A_ATK",
+     "value": "-2",
+     "type_id": 6
+    },
+    {
+     "name": "A_DFN",
+     "value": "-1",
+     "type_id": 6
+    },
+    {
+     "name": "A_DAM",
+     "value": "9",
+     "type_id": 6
+    },
+    {
+     "name": "A_ABS",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "A_HP",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Hilfswerte der Stufe",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "M_DAM",
+     "value": "{Bedrohung_Idx}+max({Bedrohung_Idx},0)",
+     "type_id": 1
+    },
+    {
+     "name": "M_ABS",
+     "value": "{Bedrohung_Idx}*min(1,{Bedrohung_Idx}+3)",
+     "type_id": 1
+    },
+    {
+     "name": "Spielwerte (berechnet)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "INIT",
+     "value": "{G_INIT}+2*{Bedrohung_Idx}+{A_INIT}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "ATK",
+     "value": "{G_ATK}+2*{Bedrohung_Idx}+{A_ATK}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "DFN",
+     "value": "{G_DFN}+2*{Bedrohung_Idx}+{A_DFN}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "DAM",
+     "value": "max(0,{G_DAM}+{M_DAM}+{A_DAM})",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "ABS",
+     "value": "max(0,{G_ABS}+{M_ABS}+{A_ABS})",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "HP",
+     "value": "max(10,{G_HP}+10*{Bedrohung_Idx}+{A_HP})",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "RES",
+     "value": "{G_RES}+{Bedrohung_Idx}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Wundschwelle",
+     "value": "15+3*min(1,floor({HP}/61))-3*(1-min(1,floor({HP}/20)))",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Macht",
+     "value": "floor((max(0,{INIT})+max(0,{ATK})+max(0,{DFN})+max(0,{DAM})+max(0,{ABS})+{HP}/10)/2)",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Fernkampfwerte (berechnet)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Bogen_INIT",
+     "value": "{INIT}-1",
+     "type_id": 1
+    },
+    {
+     "name": "Bogen_ATK",
+     "value": "{ATK}-4",
+     "type_id": 1
+    },
+    {
+     "name": "Bogen_DFN",
+     "value": "{RES}",
+     "type_id": 1
+    },
+    {
+     "name": "Bogen_DAM",
+     "value": "min({DAM},11)",
+     "type_id": 1
+    },
+    {
+     "name": "Armbrust_INIT",
+     "value": "{INIT}-8",
+     "type_id": 1
+    },
+    {
+     "name": "Armbrust_ATK",
+     "value": "{ATK}-3",
+     "type_id": 1
+    },
+    {
+     "name": "Armbrust_DFN",
+     "value": "{RES}",
+     "type_id": 1
+    },
+    {
+     "name": "Armbrust_DAM",
+     "value": "min({DAM},14)",
+     "type_id": 1
+    }
+   ],
+   "expected": {
+    "INIT": 8,
+    "ATK": 8,
+    "DFN": 6,
+    "DAM": 18,
+    "ABS": 6,
+    "HP": 52,
+    "RES": 3,
+    "Wundschwelle": 15,
+    "Macht": 25,
+    "Armbrust_INIT": 0,
+    "Armbrust_ATK": 5,
+    "Armbrust_DFN": 3,
+    "Armbrust_DAM": 14
+   }
+  },
+  {
+   "key": "ex.mechazwerg",
+   "kind": "creature",
+   "name": "Beispiel: Mechazwerg (schrecklich, ohne Anpassung)",
+   "type": "Beispiel (Regelbeispiel)",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.beispiel",
+    "tag.gegner"
+   ],
+   "entry": "<p>Regelbeispiel des Buchs: schrecklicher Gegner, ohne Anpassungen.</p><p>Gruppenwerte laut Buch: INIT 8, ATK 10, DFN 7, DAM 9, Absorption 6, HP 52, RES 3. Prüfwerte: Original S. 99–100.</p><p>Rechenweg: {{ref:n.k4.gegner.werte}}.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 99–101</em></p>",
+   "properties": [
+    {
+     "name": "Gruppenwerte (Roll of Valor)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "G_INIT",
+     "value": "8",
+     "type_id": 6
+    },
+    {
+     "name": "G_ATK",
+     "value": "10",
+     "type_id": 6
+    },
+    {
+     "name": "G_DFN",
+     "value": "7",
+     "type_id": 6
+    },
+    {
+     "name": "G_DAM",
+     "value": "9",
+     "type_id": 6
+    },
+    {
+     "name": "G_ABS",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "G_HP",
+     "value": "52",
+     "type_id": 6
+    },
+    {
+     "name": "G_RES",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Einstufung",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Bedrohung_Idx",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Bedrohung",
+     "value": "Schrecklich",
+     "type_id": 1
+    },
+    {
+     "name": "Max_Bedrohung",
+     "value": "",
+     "type_id": 1
+    },
+    {
+     "name": "Benchmark",
+     "value": "",
+     "type_id": 1
+    },
+    {
+     "name": "Mix_Zusatz",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Bewegung",
+     "value": "15",
+     "type_id": 6
+    },
+    {
+     "name": "Symbole",
+     "value": "",
+     "type_id": 1
+    },
+    {
+     "name": "Anpassungen (Adjust)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "A_INIT",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "A_ATK",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "A_DFN",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "A_DAM",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "A_ABS",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "A_HP",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Hilfswerte der Stufe",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "M_DAM",
+     "value": "{Bedrohung_Idx}+max({Bedrohung_Idx},0)",
+     "type_id": 1
+    },
+    {
+     "name": "M_ABS",
+     "value": "{Bedrohung_Idx}*min(1,{Bedrohung_Idx}+3)",
+     "type_id": 1
+    },
+    {
+     "name": "Spielwerte (berechnet)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "INIT",
+     "value": "{G_INIT}+2*{Bedrohung_Idx}+{A_INIT}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "ATK",
+     "value": "{G_ATK}+2*{Bedrohung_Idx}+{A_ATK}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "DFN",
+     "value": "{G_DFN}+2*{Bedrohung_Idx}+{A_DFN}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "DAM",
+     "value": "max(0,{G_DAM}+{M_DAM}+{A_DAM})",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "ABS",
+     "value": "max(0,{G_ABS}+{M_ABS}+{A_ABS})",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "HP",
+     "value": "max(10,{G_HP}+10*{Bedrohung_Idx}+{A_HP})",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "RES",
+     "value": "{G_RES}+{Bedrohung_Idx}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Wundschwelle",
+     "value": "15+3*min(1,floor({HP}/61))-3*(1-min(1,floor({HP}/20)))",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Macht",
+     "value": "floor((max(0,{INIT})+max(0,{ATK})+max(0,{DFN})+max(0,{DAM})+max(0,{ABS})+{HP}/10)/2)",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Fernkampfwerte (berechnet)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Bogen_INIT",
+     "value": "{INIT}-1",
+     "type_id": 1
+    },
+    {
+     "name": "Bogen_ATK",
+     "value": "{ATK}-4",
+     "type_id": 1
+    },
+    {
+     "name": "Bogen_DFN",
+     "value": "{RES}",
+     "type_id": 1
+    },
+    {
+     "name": "Bogen_DAM",
+     "value": "min({DAM},11)",
+     "type_id": 1
+    },
+    {
+     "name": "Armbrust_INIT",
+     "value": "{INIT}-8",
+     "type_id": 1
+    },
+    {
+     "name": "Armbrust_ATK",
+     "value": "{ATK}-3",
+     "type_id": 1
+    },
+    {
+     "name": "Armbrust_DFN",
+     "value": "{RES}",
+     "type_id": 1
+    },
+    {
+     "name": "Armbrust_DAM",
+     "value": "min({DAM},14)",
+     "type_id": 1
+    }
+   ],
+   "expected": {
+    "INIT": 14,
+    "ATK": 16,
+    "DFN": 13,
+    "DAM": 15,
+    "ABS": 9,
+    "HP": 82,
+    "RES": 6,
+    "Wundschwelle": 18
+   }
+  },
+  {
+   "key": "ex.arbeiter",
+   "kind": "creature",
+   "name": "Beispiel: Zwergen-Arbeiter (unterlegen, ohne Anpassung)",
+   "type": "Beispiel (Regelbeispiel)",
+   "parent": null,
+   "tags": [
+    "tag.kap4",
+    "tag.beispiel",
+    "tag.gegner"
+   ],
+   "entry": "<p>Regelbeispiel des Buchs: unterlegener Gegner mit Bogen, ohne Anpassungen.</p><p>Gruppenwerte laut Buch: INIT 8, ATK 10, DFN 7, DAM 9, Absorption 6, HP 52, RES 3. Prüfwerte: Original S. 99–100.</p><p>Rechenweg: {{ref:n.k4.gegner.werte}}.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 99–101</em></p>",
+   "properties": [
+    {
+     "name": "Gruppenwerte (Roll of Valor)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "G_INIT",
+     "value": "8",
+     "type_id": 6
+    },
+    {
+     "name": "G_ATK",
+     "value": "10",
+     "type_id": 6
+    },
+    {
+     "name": "G_DFN",
+     "value": "7",
+     "type_id": 6
+    },
+    {
+     "name": "G_DAM",
+     "value": "9",
+     "type_id": 6
+    },
+    {
+     "name": "G_ABS",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "G_HP",
+     "value": "52",
+     "type_id": 6
+    },
+    {
+     "name": "G_RES",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Einstufung",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Bedrohung_Idx",
+     "value": "-1",
+     "type_id": 6
+    },
+    {
+     "name": "Bedrohung",
+     "value": "Unterlegen",
+     "type_id": 1
+    },
+    {
+     "name": "Max_Bedrohung",
+     "value": "",
+     "type_id": 1
+    },
+    {
+     "name": "Benchmark",
+     "value": "",
+     "type_id": 1
+    },
+    {
+     "name": "Mix_Zusatz",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Bewegung",
+     "value": "15",
+     "type_id": 6
+    },
+    {
+     "name": "Symbole",
+     "value": "",
+     "type_id": 1
+    },
+    {
+     "name": "Anpassungen (Adjust)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "A_INIT",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "A_ATK",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "A_DFN",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "A_DAM",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "A_ABS",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "A_HP",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Hilfswerte der Stufe",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "M_DAM",
+     "value": "{Bedrohung_Idx}+max({Bedrohung_Idx},0)",
+     "type_id": 1
+    },
+    {
+     "name": "M_ABS",
+     "value": "{Bedrohung_Idx}*min(1,{Bedrohung_Idx}+3)",
+     "type_id": 1
+    },
+    {
+     "name": "Spielwerte (berechnet)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "INIT",
+     "value": "{G_INIT}+2*{Bedrohung_Idx}+{A_INIT}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "ATK",
+     "value": "{G_ATK}+2*{Bedrohung_Idx}+{A_ATK}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "DFN",
+     "value": "{G_DFN}+2*{Bedrohung_Idx}+{A_DFN}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "DAM",
+     "value": "max(0,{G_DAM}+{M_DAM}+{A_DAM})",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "ABS",
+     "value": "max(0,{G_ABS}+{M_ABS}+{A_ABS})",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "HP",
+     "value": "max(10,{G_HP}+10*{Bedrohung_Idx}+{A_HP})",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "RES",
+     "value": "{G_RES}+{Bedrohung_Idx}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Wundschwelle",
+     "value": "15+3*min(1,floor({HP}/61))-3*(1-min(1,floor({HP}/20)))",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Macht",
+     "value": "floor((max(0,{INIT})+max(0,{ATK})+max(0,{DFN})+max(0,{DAM})+max(0,{ABS})+{HP}/10)/2)",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Fernkampfwerte (berechnet)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Bogen_INIT",
+     "value": "{INIT}-1",
+     "type_id": 1
+    },
+    {
+     "name": "Bogen_ATK",
+     "value": "{ATK}-4",
+     "type_id": 1
+    },
+    {
+     "name": "Bogen_DFN",
+     "value": "{RES}",
+     "type_id": 1
+    },
+    {
+     "name": "Bogen_DAM",
+     "value": "min({DAM},11)",
+     "type_id": 1
+    },
+    {
+     "name": "Armbrust_INIT",
+     "value": "{INIT}-8",
+     "type_id": 1
+    },
+    {
+     "name": "Armbrust_ATK",
+     "value": "{ATK}-3",
+     "type_id": 1
+    },
+    {
+     "name": "Armbrust_DFN",
+     "value": "{RES}",
+     "type_id": 1
+    },
+    {
+     "name": "Armbrust_DAM",
+     "value": "min({DAM},14)",
+     "type_id": 1
+    }
+   ],
+   "expected": {
+    "INIT": 6,
+    "ATK": 8,
+    "DFN": 5,
+    "DAM": 8,
+    "ABS": 5,
+    "HP": 42,
+    "RES": 2,
+    "Wundschwelle": 15,
+    "Bogen_INIT": 5,
+    "Bogen_ATK": 4,
+    "Bogen_DFN": 2,
+    "Bogen_DAM": 8
+   }
+  }
+ ]
+}

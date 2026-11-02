@@ -1,0 +1,320 @@
+{
+ "meta": {
+  "ausschnitt": "Kapitel 2: Kampf und weitere Regeln",
+  "version": "0.3"
+ },
+ "tags": [
+  {
+   "key": "tag.kap2",
+   "name": "Kapitel 2: Kampf und weitere Regeln"
+  },
+  {
+   "key": "tag.tabelle",
+   "name": "Regeltabelle"
+  }
+ ],
+ "entities": [
+  {
+   "key": "n.k2",
+   "kind": "note",
+   "name": "Kapitel 2: Kampf und weitere Regeln",
+   "type": "Kapitel",
+   "parent": "n.root",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<p>Dieses Kapitel zeigt, wie dein Held kämpft und was er sonst tut, um die Aufmerksamkeit der Götter zu erringen. Es spricht dich als <strong>Plünderer</strong> (Spieler) an.</p><ul><li>{{ref:n.k2.stil}}</li><li>{{ref:n.k2.runde}}</li><li>{{ref:n.k2.s1}}</li><li>{{ref:n.k2.s2}}</li><li>{{ref:n.k2.s3}}</li><li>{{ref:n.k2.s4}}</li><li>{{ref:n.k2.sonder}}</li><li>{{ref:n.k2.verletzungen}}</li><li>{{ref:n.k2.weitere}}</li><li>{{ref:n.k2.hinweise}}</li></ul>"
+  },
+  {
+   "key": "n.k2.stil",
+   "kind": "note",
+   "name": "Würfler oder Erzähler?",
+   "type": "Regel",
+   "parent": "n.k2",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<p>Wie eure Gruppe Kämpfe abwickelt, ist Geschmackssache. Manche Gruppen rufen nur Zahlen aus, würfeln und sammeln Punkte; andere schmücken jeden Wurf und jede Schadensverteilung mit ausführlicher Erzählung aus, so wie das Computerspiel mit 3D-Animation arbeitet. Beides ist richtig. Meist wird es in einer Gruppe so sein, dass manche Runner viel beschreiben und andere nicht: Lasst keine Fraktion die andere zum Anpassen drängen, sucht einen Mittelweg.</p><h3>Praktischer Tipp zum Würfeln (optionale Regeln)</h3><ul><li>Würfelt bei ATK- und DFN-Würfen <strong>zwei Würfel verschiedener Farbe</strong>: eine Farbe immer für den Helden, die andere für den jeweiligen Gegner (Heldenwürfel positiv, Gegnerwürfel negativ). Der Spieler kennt die Werte des Gegners, rechnet selbst und nennt dem Runner nur das Ergebnis.</li><li><strong>Statische DFN:</strong> Addiert 5 auf alle DFN-Werte im Spiel. ATK-Würfe werden dann Standardwürfe gegen diese feste Zahl statt Wettstreite. Das Buch hält davon wenig: Die Chance auf etwas Bemerkenswertes (Patzer oder Triumph) sinkt um die Hälfte.</li><li>Besonders blutleere Runner könnten ein Computerprogramm Würfelergebnislisten erzeugen lassen und sie abhaken. Das ist laut Buch äußerst unnordisch.</li></ul><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 40–41, 50</em></p>"
+  },
+  {
+   "key": "n.k2.runde",
+   "kind": "note",
+   "name": "Aufbau einer Runde",
+   "type": "Regel",
+   "parent": "n.k2",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<p>Kämpfe laufen in <strong>Runden</strong> ab, die in vier Schritten ablaufen. Eine Runde ist ein ungefährer Zeitabschnitt von etwa <strong>fünf bis zwanzig Sekunden</strong>, in dem jede Figur eine interessante Sache tut: einen Hagel von Hieben austeilen, einem entwaffneten Gefährten eine Axt zuwerfen, einen Hang hinunterrutschen, um sich auf Verstärkung zu stürzen, oder den Rucksack nach der passenden Waffe durchwühlen.</p><ol><li>{{ref:n.k2.s1|Schritt 1: Wer geht zuerst?}}</li><li>{{ref:n.k2.s2|Schritt 2: Wer tut was?}}</li><li>{{ref:n.k2.s3|Schritt 3: Handlungen ausführen}}</li><li>{{ref:n.k2.s4|Schritt 4: Zurück zu Schritt 1}}</li></ol><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 41</em></p>"
+  },
+  {
+   "key": "n.k2.s1",
+   "kind": "note",
+   "name": "Schritt 1: Wer geht zuerst? (Initiative)",
+   "type": "Regel",
+   "parent": "n.k2",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<p>Jede Figur auf dem Schlachtfeld würfelt, um die Reihenfolge zu bestimmen. Die Plünderer würfeln für ihre Helden, der <strong>Proxy</strong> würfelt für den Helden des Runners, der Runner würfelt für alle Gegner. Jeder addiert den <strong>INIT-Wert</strong> der Waffe, die er benutzen will (oder den waffenlosen INIT-Wert, um jemanden zu verprügeln), als Bonus. Der Runner kann weitere Modifikatoren ansagen (siehe unten). INIT-Werte berechnen: {{ref:n.zahlen}}.</p><p>Wer etwas anderes als Kämpfen vorhat, würfelt mit seinem <strong>INIT-Wert ohne Kampf</strong>.</p><ul><li>Die Figuren handeln in der Reihenfolge ihrer <strong>Initiativesumme</strong>, von hoch nach niedrig. Auch bei einem Patzer mit negativem Ergebnis handelst du noch.</li><li><strong>Gleichstand:</strong> Ein Held handelt vor Unterstützungsfiguren. Bei zwei Helden geht der mit den meisten <strong>Göttlichen Gaben</strong> zuerst, bei gleich vielen würfeln sie neu. Gleichstand zwischen Unterstützungsfiguren entscheidet der Runner nach ihrer Reihenfolge in seinen Begegnungsnotizen.</li></ul><h3>Zusätzliche Angriffe</h3><p>Besonders hohe Initiativesummen erlauben mehrere Handlungen. Für <strong>jedes Mal, dass du 20 abziehen kannst und noch eine positive Zahl behältst</strong>, erhältst du eine zusätzliche Aktion. Die erste Aktion erfolgt bei deiner normalen Initiativestufe, die nächste <strong>20 Stufen später</strong>, die nächste weitere 20 Stufen danach usw.</p><blockquote><strong>Beispiel:</strong> Ragnars Spieler würfelt einen Triumph und nutzt einen Trank, der seine Schnelligkeit erhöht: Initiativesumme 45. Ragnar handelt auf Stufe 45, dann auf Stufe 25 und ein drittes Mal auf Stufe 5 (45 − 20 − 20 = 5).</blockquote><h3>Situative Modifikatoren der Initiative</h3><ul><li>Hat dein Held in der Vorrunde nichts getan, als sich in eine überlegene Position zu bringen, um anzugreifen, loszuspringen oder sonst mit großem Vorteil ins Gefecht zu treten, addiere seine <strong>Wahrnehmung</strong> als Bonus auf die Initiative (für Helden mit negativer Wahrnehmung keine gute Strategie).</li><li>Begann er die Runde auf <strong>erhöhtem Gelände</strong> oder in anderer vorteilhafter Position: Initiative <strong>+3</strong>. Auf tiefem Gelände oder in schlechter Position: <strong>−3</strong>. Der Runner entscheidet, was hoch und was tief ist.</li></ul><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 42</em></p>"
+  },
+  {
+   "key": "n.k2.s2",
+   "kind": "note",
+   "name": "Schritt 2: Wer tut was?",
+   "type": "Regel",
+   "parent": "n.k2",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<p>Wenn deine Initiative drankommt, fragt der Runner, was dein Held tun soll. Du antwortest anhand des folgenden Ablaufs. Unterseiten: {{ref:n.k2.s2.aktionen}}, {{ref:n.k2.s2.engagement}}, {{ref:n.k2.s2.gelegenheit}}.</p><ol><li><strong>A. Zuschlagen oder nicht?</strong> Will dein Held ein Ziel treffen, nenne Ziel und Waffe und gehe zu B. Will er etwas anderes tun, nenne die Aktion und gehe zu G.</li><li><strong>B. Ist das Ziel in Reichweite?</strong> Ja: Er hat etwas Zeit für andere Entscheidungen, gehe zu C. Nein: gehe zu E.</li><li><strong>C. Ist die Waffe bereit?</strong> Nein: Er muss sie bereitmachen und trifft dann normal. Ja: gehe zu D.</li><li><strong>D. Stellung halten oder Ducken und Ausweichen?</strong> Begann dein Held die Aktion schon in Reichweite und mit passender Waffe in der Hand, kannst du zwischen zwei Manövern wählen: <em>Stellung halten</em> (bereit, aus bester Hebelposition zu schlagen): <strong>+1 auf deinen ATK-Wert</strong> für die Runde. <em>Ducken und Ausweichen</em> (Gegenangriffe erschweren): <strong>+1 auf deinen DFN-Wert</strong> für die Runde; je höher deine INIT, desto vorteilhafter. Hast du einen Vorteil gewählt, kannst du später in der Runde nicht auf ein unvereinbares Manöver oder eine andere Angriffsform wechseln. Nur Helden haben diese Optionen.</li><li><strong>E. Kannst du in Reichweite kommen?</strong> Beginnt dein Held die Aktion mit einem Gegner außer Reichweite, bestimmst du mit dem Runner, ob er sich im Rahmen der Aktion in Reichweite bewegen kann. Die Strecke, die er sich bewegen und trotzdem angreifen darf, hängt von <strong>Sprinten</strong> ab (Spalte „Halbe Aktion“ der Tabelle in {{ref:ab.sprint}}; Helden haben nie weniger als den Wert für Sprinten 0). Ist die Entfernung gleich oder kleiner, gehe zu F; sonst ist der Angriff unmöglich: Wähle einen neuen Gegner oder verzichte auf die Aktion. Entfernungen werden in Metern gerechnet. Das Original nutzt „paces“ von etwa 30 Zoll (ungefähr 3/4 Meter); hier gelten sie vereinfacht als Meter.</li><li><strong>F. In Reichweite: Ist die Waffe bereit?</strong> Musst du dich bewegen, um in Reichweite zu kommen, muss die passende Waffe bereits in der Hand sein. Sonst kannst du nicht treffen und wählst einen Gegner in Reichweite oder verzichtest auf die Aktion.</li><li><strong>G. Welche Nicht-Kampf-Aktion?</strong> Siehe {{ref:n.k2.s2.aktionen}}.</li></ol><h3>Im Engagement („Engaged“)</h3><p>Ist dein Held <strong>höchstens 3 Meter</strong> von einem Gegner entfernt, gilt er als mit ihm <em>im Engagement</em>, ob einer von beiden schon zugeschlagen hat oder nicht. Helden können von mehreren Gegnern gleichzeitig im Engagement gehalten werden.</p><h3>Entscheidungen des Runners</h3><p>Der Runner entscheidet, wie schwer deine geplante Handlung ist, welche Charakteristik-Fertigkeits-Kombination passt und ob der Held sie in einer Aktion schaffen kann. Mit der Karte aus Kapitel 5 prüft er Hindernisse (Spalten, Gestrüpp, Feuerwände …), die dich vom Ziel trennen; dann musst du womöglich eine Runde darauf verwenden, sie zu überwinden. Ist eine Handlung schwerer als gedacht, soll er dich <strong>vorher warnen</strong>, damit du entscheiden kannst. Hält er sie für unmöglich (etwa durch eine zwei Meter hohe Ziegelmauer springen), sagt er es und du wählst etwas anderes. Der Runner ist der letzte Schiedsrichter der Wirklichkeit; weichen eure Vorstellungen der Lage stark ab, klärt das zuerst. Seine Karte soll er dir auf Wunsch zeigen und erklären.</p><p><em>Miniaturen und Spielfiguren</em> sind hilfreich, wenn Positionen wichtig sind (Battle Mats, Whiteboards, Lineal für Meter), aber nicht nötig: Eine grobe Skizze mit ein paar Markierungen genügt, und kleine Ungenauigkeiten fallen den Spielern kaum auf.</p><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 43–47</em></p>"
+  },
+  {
+   "key": "n.k2.s2.aktionen",
+   "kind": "note",
+   "name": "Nicht-Kampf-Aktionen",
+   "type": "Regel",
+   "parent": "n.k2",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<p>Entscheidest du dich, nichts zu treffen, hast du folgende Möglichkeiten:</p><ul><li><strong>Gelände einnehmen (Seizing Ground):</strong> Dein Held bewegt sich auf einen beliebigen freien Platz, meist um in Reichweite eines Gegners zu kommen oder erhöhtes bzw. vorteilhaftes Gelände einzunehmen, das dir Kampfboni gibt, solange er es hält. Eine volle Bewegung ist möglich.</li><li><strong>Deckung suchen:</strong> wie Gelände einnehmen, aber du suchst ein gutes Versteck, etwa hinter einer Barriere. Es muss eine geeignete Barriere vorhanden sein. Volle Bewegung zur Barriere ist möglich.</li><li><strong>Rückzug (Withdrawing):</strong> Dein Held weicht vorsichtig zurück; dein <strong>DFN-Wert steigt um 3</strong>. Auf normalem Gelände legt er bis zu <strong>15 Meter rückwärts</strong> zurück (das ersetzt die normalen Bewegungsregeln). Meist taktisch gemeint, um später mit Positionsvorteil zurückzukehren. Einem Gegner, der weiterkämpfen will, entkommst du so kaum dauerhaft.</li><li><strong>Flucht (Fleeing):</strong> Dein Held dreht sich um und rennt. Er legt das <strong>Doppelte seiner normalen vollen Bewegung</strong> zurück. Jeder Gegner, in dessen Reichweite er kommt, darf während deiner Aktion einen <strong>freien Treffversuch</strong> machen (siehe {{ref:n.k2.s2.gelegenheit}}); das hindert ihn nicht, später in der Runde seine eigene Aktion zu vollenden, und gilt auch für Gegner, die bereits gehandelt haben. Gegner, mit denen dein Held im Engagement war, und alle Fernwaffenschützen auf dem Feld zählen dazu. Er läuft in gerader Linie und darf nicht um wartende Gegner herummanövrieren. Gegner ohne Engagement dürfen sich bis zu <strong>10 Meter</strong> bewegen, um seine Flucht abzufangen. Flucht ersetzt die normalen Bewegungsregeln. Du kannst nicht in eine Richtung fliehen, die durch ein anderes Engagement führt oder dich mitten in einem endet.</li><li><strong>Unbedachter Lauf (Reckless Move):</strong> Dein Held bewegt sich das <strong>Doppelte seiner vollen Bewegung</strong>, ohne Vorsicht vor feindlichen Hieben, nur in gerader Linie und ohne Fallen oder Geländehindernisse zu umgehen. Wie bei der Flucht erhält jeder Gegner, dem er an irgendeinem Punkt auf <strong>3 Meter</strong> nahe kommt, einen freien ATK-Wurf gegen ihn. Danach ist ein <strong>Erschöpfungswurf</strong> mit +5 Schwierigkeit nötig (Original S. 12). In dieser Runde keine weiteren Aktionen.</li><li><strong>Heilung leisten:</strong> Dein Held versucht mit {{ref:ab.heilkunde}}, einen verletzten Verbündeten zu versorgen. Bist du nicht in Reichweite, kannst du eine halbe Bewegung machen.</li><li><strong>Waffen wechseln:</strong> Dein Held steckt eine Waffe ein oder in den Rucksack und zieht eine neue, einsatzbereit. Das kann er mit einer halben Bewegung oder mit Ducken und Ausweichen verbinden. Er kann auch <strong>achtlos eine Waffe fallen lassen</strong> und eine andere vom Gürtel greifen, ohne dafür eine Aktion zu brauchen. Helden können nur <strong>eine Waffe am Gürtel</strong> haben.</li><li><strong>Auf Gelegenheit warten:</strong> Du verzichtest auf deine Aktion, wenn deine Initiative drankommt. Nachdem eine andere Figur ihre Aktion beendet hat, darfst du die Reihenfolge unterbrechen und mit deinem Helden eine beliebige Aktion ausführen. Hast du durch eine Initiativesumme über 20 eine Zusatzaktion, darfst du die erste Aktion nicht über Stufe 20 hinaus verschieben, ohne die zweite zu verlieren (bei drei Aktionen: die erste nicht über Stufe 40, die zweite nicht über Stufe 20, usw.).</li><li><strong>Sonstiges:</strong> Bei besonderen Umständen (Steinschlag auslösen, Feuer legen, ein entmutigendes Kampflied singen …) beurteilt der Runner, ob dein Held eine Chance hat, und legt Schwierigkeit, Charakteristik, Fertigkeit und Machbarkeit in einer Aktion fest.</li></ul><blockquote><strong>Beispiel:</strong> Du erzielst Initiative 32. Dein Held Ragnar wartet, bis ein Goblin-Freak von seinem Sitz herunterkrabbelt, um ihn zu erschlagen. Der Goblin bewegt sich auf Stufe 25. Auf Stufe 24 führt Ragnar die Aktion aus, die er auf Stufe 32 gehabt hätte. Seine zweite Aktion bleibt auf Stufe 4. Wäre der Goblin erst auf Stufe 18 heruntergekommen und Ragnar auf Stufe 17 aktiv geworden, hätte er die zweite Aktion verloren.</blockquote><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 44–46</em></p>"
+  },
+  {
+   "key": "n.k2.s2.engagement",
+   "kind": "note",
+   "name": "Engagement-Würfe",
+   "type": "Regel",
+   "parent": "n.k2",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<p>Du darfst einen <strong>Engagement-Wurf</strong> machen, wenn du die Position deines Helden leicht verändern willst, um gegen einen Feind im Vorteil zu sein: auf den Rand einer Plattform springen oder auf die trockenen, festen Pflastersteine neben einem Schlammstück wechseln.</p><ul><li><strong>Wurf:</strong> Stärke + Waffenfertigkeit + Würfel ergibt die Engagement-Summe, verglichen mit einem ähnlichen Wurf des Gegners. Gegen eine Unterstützungsfigur vergleichst du mit einem <strong>RES-Wurf</strong> des Runners. Gegen einen leblosen Gegenstand gilt die Standardschwierigkeit <strong>6</strong>, sofern der Begegnungsentwerfer keine höhere bezahlt hat.</li><li><strong>Keine Aktion:</strong> Engagement-Würfe brauchen keine Aktion; sie gehören zum Hin und Her eines Gefechts und werden unabhängig vom Treffwurf bestimmt. Du kannst sie auf deiner Initiative oder vor einem gegnerischen ATK-Wurf machen.</li><li><strong>Nur einer je Runde.</strong> Es ist deshalb schwer, gegen mehrere Gegner die Anhöhe zu halten.</li><li>Du musst auch würfeln, wenn der Gegner nicht kann oder will. Ein Patzer mit negativem Ergebnis ist schlechter als seine Standardsumme von 0, und er verhindert deine gewünschte Bewegung. Ist dein Ergebnis gegen einen sich nicht wehrenden Gegner positiv, gelingt es immer.</li><li><strong>Bei Erfolg</strong> kannst du den Gegner in eine Richtung deiner Wahl zurückdrängen (immer geradeaus). Die Strecke beträgt höchstens <strong>1 + (STÄRKE × 2) Meter</strong>, auch weniger. Steht sein Rücken zu einem festen Hindernis, stoppt er dort.</li><li>Willst du einen Weg an Gefährten vorbei nehmen oder als Erster etwas tun, bestimmt der Runner den Sieger, indem alle beteiligten Plünderer gegeneinander Engagement-Würfe machen.</li></ul><p>Der Wurf steht für eine ganze Reihe von Bewegungen im Lauf der Runde: Rempeln, Schubsen, Schulterstoß, Wegdrängen. Der Verlierer akzeptiert den Verlust nicht einfach „demütig“.</p><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 45</em></p>"
+  },
+  {
+   "key": "n.k2.s2.gelegenheit",
+   "kind": "note",
+   "name": "Gelegenheitsangriffe, Aktionen und freie Würfe",
+   "type": "Regel",
+   "parent": "n.k2.s2",
+   "tags": [
+    "tag.kap2",
+    "tag.tabelle"
+   ],
+   "entry": "<h3>Gelegenheitsangriffe</h3><p>Bewegt sich dein Held auf dem Weg zu etwas anderem innerhalb von <strong>3 Meter</strong> an einem Gegner mit bereiter Waffe vorbei, darf dieser unabhängig von der Initiativereihenfolge einen <strong>freien Schlag</strong> führen. Hat er seine Aktion noch nicht gehabt, kann er auf sie verzichten und <strong>sorgfältig zuschlagen</strong>: Dann gilt dein DFN-Wert als <strong>0</strong> (du würfelst aber trotzdem dazu). Hat er schon gehandelt oder verzichtet er nicht, gilt dein DFN-Wert normal. Löst du dich aus einem Engagement, um jemand anderen zu treffen, darf dein Gegner immer sorgfältig zuschlagen.</p><h3>Aktionen, halbe Aktionen und freie Würfe</h3><p>Wenn dein Held handelt, führt er normalerweise <strong>eine</strong> Aktion aus, etwa einen Angriff (<strong>volle Aktion</strong>). Manches kostet nur eine <strong>halbe Aktion</strong>. Ist dein Held bereits im Engagement, kann er eine halbe Aktion ausführen und trotzdem einen einfachen, unmodifizierten Angriffswurf machen. Manche Würfe (meist als Reaktion) kosten keine Aktion: „Das erfordert keine Aktion“ (freie Würfe).</p><table><tr><th>Tätigkeit</th><th>Art der Aktion</th></tr><tr><td>Waffen sorgfältig wechseln</td><td>Halb</td></tr><tr><td>Aktuelle Waffe achtlos fallen lassen und neue vom Gürtel greifen (nur 1 Waffe am Gürtel)</td><td>Keine</td></tr><tr><td>Klettern</td><td>Voll oder halb, je nach Entfernung; Tabelle in {{ref:ab.klettern}}</td></tr><tr><td>Falle entschärfen</td><td>Voll</td></tr><tr><td>Falle hastig entschärfen (−5 auf den Wurf)</td><td>Halb</td></tr><tr><td>Halbe Maximalweite springen, nach oben oder seitlich</td><td>Halb</td></tr><tr><td>Maximalweite springen, nach oben oder seitlich</td><td>Voll</td></tr><tr><td>Bewegung auf heiklem Untergrund mit Balancewürfen</td><td>Voll oder halb, je nach Entfernung; Tabelle in {{ref:ab.balance}}</td></tr><tr><td>Einem Verbündeten Heilung leisten (auch sich selbst)</td><td>Voll</td></tr><tr><td>Runen lesen</td><td>Voll</td></tr><tr><td>Schlachtfeld nach interessanten verborgenen Einzelheiten absuchen</td><td>Halb</td></tr><tr><td>Offensichtliche Gefahr bemerken (Aufmerksamkeit)</td><td>Keine</td></tr><tr><td>Schlachtfeld nach feinen Hinweisen auf göttliche Gegenwart absuchen (Gottesgespür)</td><td>Halb</td></tr><tr><td>Mächtige göttliche Aura spüren (Gottesgespür)</td><td>Keine</td></tr><tr><td>Schwimmen</td><td>Voll oder halb, je nach Entfernung; Tabelle in {{ref:ab.schwimmen}}</td></tr><tr><td>Volle Bewegung</td><td>Voll</td></tr><tr><td>Halbe Bewegung</td><td>Halb</td></tr></table><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 46–47</em></p>"
+  },
+  {
+   "key": "n.k2.s3",
+   "kind": "note",
+   "name": "Schritt 3: Handlungen ausführen",
+   "type": "Regel",
+   "parent": "n.k2",
+   "tags": [
+    "tag.kap2",
+    "tag.tabelle"
+   ],
+   "entry": "<p>In der Reihenfolge der Initiativesummen, von hoch nach niedrig, versuchen die Figuren nun ihre angesagten Aktionen. Unterseiten: {{ref:n.k2.s3.fern}}, {{ref:n.k2.s3.nah}}, {{ref:n.k2.s3.sonder}}, {{ref:n.k2.s3.modifikatoren}}.</p><h3>Treffen und Verwunden auf einen Blick</h3><p>So ermittelst du, ob ein Angreifer einen Verteidiger trifft (hier ein Held gegen einen Gegner; umgekehrt gilt dasselbe):</p><ol><li>Der Spieler des Angreifers würfelt und addiert seinen ATK-Wert und alle Angriffsmodifikatoren: die <strong>ATK-Summe</strong>.</li><li>Die <strong>DFN-Summe</strong> des Verteidigers: Bei Nahkampfangriffen würfelt der Runner für den Verteidiger und addiert dessen DFN-Wert. Bei nicht ausgewichenen Fernangriffen addiert der Runner Angriffsmodifikatoren zur Grundschwierigkeit 6. Weicht der Verteidiger einem Fernangriff aus, würfelt der Runner und addiert Ausweichen und Schnelligkeit des Verteidigers.</li><li>Ist die ATK-Summe <strong>gleich oder größer</strong>, trifft der Angreifer.</li><li>Die Differenz heißt <strong>Treffermarge (Thwack Margin, TM)</strong>.</li><li>TM + DAM-Wert der Waffe = <strong>Rohschaden</strong>.</li><li>Rohschaden − Absorption des Verteidigers = verlorene Trefferpunkte. Vergleiche sie mit der Wundschwelle, ob eine Wunde entsteht. Ergebnisse unter null werden ignoriert: Absorption schenkt keine Trefferpunkte.</li><li>Zusammengefasst folgen die Formeln.</li></ol><table><tr><th>Angriffsart</th><th>Formel</th></tr><tr><td>Nahkampf</td><td>{[(Wurf Angreifer + ATK) − (Wurf Verteidiger + DFN)] + DAM} − Absorption = verlorene HP</td></tr><tr><td>Fernkampf</td><td>{[(Wurf Angreifer + ATK) − (6 + Angriffsmodifikatoren)] + DAM} − Absorption = verlorene HP</td></tr><tr><td>Fernkampf (ausgewichen)</td><td>{[(Wurf Angreifer + ATK) − (Wurf Verteidiger + Ausweichen + Schnelligkeit)] + DAM} − Absorption = verlorene HP</td></tr></table><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 48–50</em></p>"
+  },
+  {
+   "key": "n.k2.s3.fern",
+   "kind": "note",
+   "name": "Fernkampf",
+   "type": "Regel",
+   "parent": "n.k2.s3",
+   "tags": [
+    "tag.kap2",
+    "tag.tabelle"
+   ],
+   "entry": "<p>Um ein Ziel in Reichweite deiner Fernwaffe zu treffen, trittst du mit deinem <strong>ATK-Wert gegen das Ausweichen des Ziels</strong> an. Gegner haben statt dessen den Allround-Wert <strong>Reaktion (RES)</strong>. Dem Schuss auszuweichen kostet keine Aktion. Weicht das Ziel nicht aus, würfelst du gegen eine feste <strong>Schwierigkeit 6</strong>. Addiere folgende Modifikatoren zu dem, was du schlagen musst:</p><table><tr><th>Zustand des Ziels</th><th>Angriffsmodifikator</th></tr><tr><td>Ziel höchstens 3 Meter entfernt</td><td>Schießen nicht möglich</td></tr><tr><td>Ziel verdeckt (obscured)</td><td>−3</td></tr><tr><td>Ziel hinter 1/3-Deckung</td><td>−3</td></tr><tr><td>Ziel hinter halber Deckung</td><td>−6</td></tr><tr><td>Ziel mehr oder weniger vollständig gedeckt</td><td>−12</td></tr><tr><td>Ziel hält Stellung</td><td>0</td></tr><tr><td>Ziel ducken und ausweichen</td><td>−3</td></tr><tr><td>Ziel macht halbe oder volle Bewegung</td><td>−6</td></tr><tr><td>Ziel flieht oder bewegt sich unbedacht</td><td>+6</td></tr><tr><td>Ziel zieht sich zurück (Rückzug)</td><td>+3</td></tr><tr><td>Ziel in Fangfalle (Original S. 153)</td><td>+3</td></tr><tr><td>Ziel weicht mit Schild in der Hand aus</td><td>− DFN-Wert des Schilds</td></tr></table><p>Erreicht oder übertrifft deine ATK-Summe die Summe des Gegners aus Ausweichen + Schnelligkeit + Wurf (oder die Grundschwierigkeit 6 plus Modifikatoren), berechnest du den Rohschaden (DAM-Wert der Waffe + Treffermarge); der Gegner zieht seine Absorption ab.</p><blockquote><strong>Beispiel:</strong> Ragnar schießt auf den Goblin Meelu. Die Grundschwierigkeit ist 6, der Goblin duckt und weicht (+3): Schwierigkeit 9. Ragnars ATK mit dem Bogen ist 2 (er hat sich seit der Heldenerschaffung verbessert); der Wurf ist 7, genau genug. Rohschaden 0 (TM) + 4 (DAM Kurzbogen) = 4; Goblin-Absorption 1: Er verliert 3 HP.</blockquote><h3>Schwierigkeitsmodifikatoren beim Schießen in den Nahkampf</h3><ul><li>Schießt ein Held in einen Nahkampf mit Freund und Feind, trifft er womöglich jemand anderen. Addiere <strong>+3 Schwierigkeit</strong> für jede andere Figur im Umkreis von <strong>5 Meter</strong> um das Ziel und für jede Figur in der <strong>Schusslinie</strong> (jede Figur auf einer geraden Linie zwischen dir und dem Ziel).</li><li>Verfehlst du das Ziel, und dieser Aufschlag war ausschlaggebend für den Fehlschlag, trifft dein Held <strong>eine der Figuren, die zum Aufschlag beitrugen</strong>. Der Runner würfelt zufällig das Opfer aus. Der Schaden wird wie üblich bestimmt, <strong>ohne die +3-Punkte</strong>.</li><li>Du kannst nicht absichtlich auf deinen Freund neben dem Ziel schießen, um das Ziel eher zu treffen: Ein solcher Versuch misslingt automatisch.</li></ul><blockquote><strong>Beispiel:</strong> Ragnar schießt wieder auf Meelu, der nun gegen Thurid Blonde-Braids steht (näher als 5 Meter); ein zweiter Goblin, Vreek, liegt auf der Schusslinie. Schwierigkeit 9 + 3 (Thurid) + 3 (Vreek) = 15. Die ATK-Summe 9 hätte ohne den Aufschlag getroffen: Thurid oder Vreek wird getroffen; ungerade = Vreek, gerade = Thurid. Gewürfelt wird eine 6: Thurid. Der Schaden wird mit Schwierigkeit 9 berechnet (nicht 15): 4, Absorption 3: Thurid verliert 1 HP.</blockquote><p>Dein Held tut in der Runde mehr als den Sekundenbruchteil des Schusses: Er verfolgt die Bewegungen des Gegners, wartet auf den besten Moment, achtet auf andere Kämpfer und auf Geschosse und Hiebe, auch wenn er sich nicht ausschließlich aufs Ausweichen konzentriert.</p><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 48–50</em></p>"
+  },
+  {
+   "key": "n.k2.s3.nah",
+   "kind": "note",
+   "name": "Nahkampf",
+   "type": "Regel",
+   "parent": "n.k2.s3",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<p>Willst du einen Feind mit einer Nahkampfwaffe angreifen, würfelst du, modifiziert durch deinen ATK-Wert. Der Runner antwortet mit einem Wurf, modifiziert durch den DFN-Wert des Gegners (der DFN-Wert der Waffe, die er gerade führt). Situative Modifikatoren können beide Werte anpassen. Erreicht oder übertrifft deine Summe seine, hast du getroffen. Addiere deinen DAM-Wert zur Treffermarge; der Runner zieht die Absorption des Gegners vom Rohschaden ab. Ergebnisse unter null werden ignoriert.</p><blockquote><strong>Beispiel:</strong> Ragnar rast in den Nahkampf. Du würfelst 2 und addierst 9 (ATK Wikingeraxt): 11. Die DFN des Goblins ist 3, der Runner würfelt 2: 5. Treffer. Treffermarge 6 + DAM 12 = Rohschaden 18; der Goblin zieht Absorption 3 ab und verliert 15 HP.</blockquote><p>Eine Nahkampfrunde ist mehr als ein einzelner Hieb: Du kreist und beobachtest. Der Schaden kann das Ergebnis mehrerer Nadelstiche oder eines entscheidenden Schlags nach einem Hagel von Finten sein.</p><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 50–51</em></p>"
+  },
+  {
+   "key": "n.k2.s3.sonder",
+   "kind": "note",
+   "name": "Berserker, Sturmangriff, Kriegsnebel, Parieren",
+   "type": "Regel",
+   "parent": "n.k2.s3",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<h3>Berserkergang (Going Berserk)</h3><p>Beim Angriff darfst du deinen Helden <strong>Berserker</strong> werden lassen, wenn seine aktuellen Trefferpunkte <strong>mindestens 21</strong> betragen (er entscheidet das nicht bewusst, du schon). Du darfst für einen einzelnen Angriff deinen <strong>DFN-Wert zum ATK-Wert addieren</strong>. Nach diesem Angriff hat der Gegner (sofern er noch steht) einen <strong>freien zusätzlichen Angriff</strong> als Teil deiner Aktion. Beim Abwehren dieses Gegenangriffs ist dein DFN-Wert 0. Weitere Erhöhungen (Sturmangriff, Göttliche Gaben) gelten beim Berserkergang nicht. Du kannst nichts tun, als ehrlichen, odinwürdigen Schaden zu versuchen: Du erhältst ATK plus Berserker-Modifikator, mehr nicht. Nur Helden können Berserker werden.</p><h3>Sturmangriff (Charging)</h3><p>Musst du dich mehr als <strong>20 Meter</strong> auf einen Gegner zu bewegen, um ihn im Nahkampf zu stellen, kannst du einen Sturmangriff erwägen, besonders wenn du die Initiative gewonnen hast oder der Gegner abwartet. Der <strong>Angriffsbonus von +3</strong> gleicht die Zeit mehr als aus, die er zum Stellunghalten oder Ducken und Ausweichen hatte. Gegen eine Stangenwaffe, die gegen den Anstürmenden gestützt wird, lohnt sich der Sturmangriff womöglich nicht. Sturmangriffe gehen nur, wenn der Weg zum Gegner „wie die Raben fliegen“ verläuft, also mehr oder weniger gerade.</p><h3>Kriegsnebel (Fog of War)</h3><ul><li>Sind Verbündete innerhalb von <strong>3 Meter</strong> von deinem Helden, besteht eine kleine Chance, sie zu treffen, wenn du dein Ziel verfehlst. <strong>Bei einem Patzer</strong> würfle neu; hätte die neue Summe das Ziel getroffen, trifft dein Held stattdessen einen anderen Helden. Kommen mehrere in Frage, erleidet der mit der <strong>niedrigsten INIT-Summe</strong> den Treffer (bei Gleichstand würfelt der Runner zufällig).</li><li>Der Verbündete erleidet Schaden in Höhe deines <strong>reinen DAM-Werts</strong> mit dieser Waffe, ohne Zu- oder Abschläge durch den ATK-Wurf. Er darf Absorption abziehen.</li><li>Steht ein Verbündeter genau zwischen deinem Helden und einem Ziel, das ansonsten in Waffenreichweite wäre, darf dein Held auf das Ziel schlagen, aber der Malus zur Vermeidung von Treffern auf den Verbündeten beträgt <strong>−6</strong>. Triffst du keine Vorkehrungen und scheiterst, trifft dein Held ihn, wenn die Differenz höchstens 6 beträgt.</li></ul><h3>Das gefürchtete Parieren (Riposte)</h3><p>Bei einer sehr schlechten ATK-Summe scheitert ein Kämpfer nicht nur peinlich, sondern öffnet sich einem <strong>Gegenschlag</strong>. Der Gegner erhält einen <strong>freien Angriff</strong>, der keine Aktion kostet und unabhängig von seinem Initiativestatus erfolgt. Das Parieren erlaubt ihm keine zusätzlichen Aktionen, Bewegungen oder Engagement-Würfe. Der Verteidiger darf parieren, wenn die <strong>Treffermarge −20 oder weniger</strong> beträgt; bei −40 oder weniger zweimal parieren, bei −60 dreimal usw.</p><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 50–51</em></p>"
+  },
+  {
+   "key": "n.k2.s3.modifikatoren",
+   "kind": "note",
+   "name": "Nahkampfmodifikatoren (Tabelle)",
+   "type": "Regeltabelle",
+   "parent": "n.k2.s3",
+   "tags": [
+    "tag.kap2",
+    "tag.tabelle"
+   ],
+   "entry": "<p>Der Runner wendet folgende zusätzliche Modifikatoren auf Angriffs- oder Verteidigungswürfe im Nahkampf an:</p><table><tr><th>Situation</th><th>Modifikator</th><th>Auf welchen Wurf?</th></tr><tr><td>Einhandwaffe in der Nebenhand</td><td>−3</td><td>Beide</td></tr><tr><td>Kämpfer hat erhöhtes Gelände oder anderen Geländevorteil</td><td>+2</td><td>Beide</td></tr><tr><td>Kämpfer ist beritten, sein Gegner nicht</td><td>+3</td><td>Beide</td></tr><tr><td>Kämpfer hat erfolgreich einen Hinterhalt gelegt</td><td>Siehe „Verstecke“, Original S. 171</td><td>–</td></tr><tr><td>Kämpfer führt einen Sturmangriff (musste in dieser Runde mindestens 10 Meter sprinten, um das Gefecht zu eröffnen)</td><td>+3</td><td>Angriff</td></tr><tr><td>Kämpfer springt aus der Höhe (Fallschaden bei misslungenem Sprungwurf) auf einen Gegner</td><td>+3</td><td>Angriff</td></tr><tr><td>Kämpfer mit Stangenwaffe stützt sich gegen einen Gegner, der mindestens 20 Meter zurücklegen musste, um ins Gefecht zu kommen</td><td>+3</td><td>Verteidigung</td></tr><tr><td>Kämpfer in einer Fangfalle (Original S. 153)</td><td>−3</td><td>Beide</td></tr><tr><td>Mehr als ein Gegner ist nah genug am Verteidiger</td><td>−2 je Gegner*</td><td>Verteidigung</td></tr></table><p>* nach dem ersten Kämpfer, der ihn mit Nahkampfwaffen treffen kann. Gegen einen menschengroßen Verteidiger können im Nahkampf nie mehr als <strong>4 Gegner</strong> zugleich angreifen.</p><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 51</em></p>"
+  },
+  {
+   "key": "n.k2.s4",
+   "kind": "note",
+   "name": "Schritt 4: Zurück zu Schritt 1",
+   "type": "Regel",
+   "parent": "n.k2",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<p>Stehen auf jeder Seite noch Kämpfer, die willens und fähig sind zu kämpfen, beginnt eine <strong>neue Runde</strong>: zurück zu Schritt 1, Initiative bestimmen.</p><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 52</em></p>"
+  },
+  {
+   "key": "n.k2.sonder",
+   "kind": "note",
+   "name": "Sonderfälle",
+   "type": "Regel",
+   "parent": "n.k2",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<p>Schlachten sind voller Überraschungen. Die häufigsten Sonderfälle: {{ref:n.k2.sonder.raufen}}, {{ref:n.k2.sonder.arm}}, {{ref:n.k2.sonder.deckung}}, {{ref:n.k2.sonder.fallen}}.</p><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 52–54</em></p>"
+  },
+  {
+   "key": "n.k2.sonder.raufen",
+   "kind": "note",
+   "name": "Raufmanöver",
+   "type": "Regel",
+   "parent": "n.k2.sonder",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<p>Helden schlagen mit Fäusten und Tritten nur zu, wenn sie keine besseren Waffen haben (oder seltsame Magie normale Waffen unbrauchbar macht). Verwende dann einfach den Eintrag Faust/Tritt der Waffentabelle ({{ref:item.w.fist}}) und die normalen Kampfregeln.</p><p>Will dein Held einen Gegner am Bewegen, Fliehen oder Handeln hindern, ohne ihn ernsthaft zu verletzen, gibt es zwei Wege: den <strong>Haltegriff (Hold)</strong> am Hals oder Arm, sodass er sich nicht bewegen kann, ohne sich zu verletzen, oder das <strong>Festnageln (Pin)</strong> mit dem Körpergewicht an einer Wand oder am Boden.</p><ul><li>Mache mit {{ref:ab.raufen}} einen normalen waffenlosen Angriff. Statt Schaden zu verursachen, würfelst du ein zweites Mal, um die Wirkung eines gelungenen Manövers zu bestimmen: <strong>Haltegriff: Geschicklichkeit + Raufen</strong>; <strong>Festnageln: Stärke + Raufen</strong>. Die Schwierigkeit ist der <strong>DFN-Wert des Gegners</strong>. Erreichst du sie, hältst oder nagelst du ihn fest.</li><li>Merke dir die <strong>Treffermarge</strong>: Sie wird zur Schwierigkeit addiert, wenn das Opfer sich befreien will. Beim Haltegriff kannst du ihn zwingen, die Waffe fallen zu lassen; trägt er in jeder Hand etwas (zwei Waffen oder Waffe und Schild), beides.</li><li>Das Opfer darf <strong>keine weiteren Aktionen</strong> ausführen, bis es sich befreit oder der Gegner es loslässt. Loslassen kostet keine Aktion. Willst du den Gegner festgenagelt halten, musst du <strong>alle Aktionen</strong> darauf verwenden (du kannst ihn nicht zugleich festnageln und verprügeln).</li><li>Gegner führen Raufmanöver mit ihrer <strong>RES</strong> aus.</li><li>Gefesselte Helden dürfen weder um Engagement ringen noch sich bewegen noch sonst etwas tun, bevor sie die Fessel gelöst haben. Das Befreien erfordert eine Aktion: Beim Haltegriff würfelst du <strong>Geschicklichkeit + Raufen + DFN-Wert seiner Waffe oder seines Schilds</strong> (falls noch in der Hand; abzuziehen sind der Rüstungs-DFN-Wert und der Belastungsabzug); beim Festnageln dieselbe Formel mit <strong>Stärke + Raufen</strong>. Die Schwierigkeit ist <strong>6 + die Treffermarge</strong>, die der Gegner beim Festsetzen erzielt hat.</li><li>Verbündete können einen Gegner angreifen, den dein Held im Hold oder Pin hat: Dessen <strong>DFN-Wert ist halbiert</strong>. Doch die Unglücklichen riskieren etwas: Jeder Fehlschlag zählt als <strong>Treffer gegen deinen Helden</strong>. Er erleidet Schaden in Höhe des DAM-Werts der Waffe des Verbündeten plus der Differenz zwischen dessen gescheiterter Summe und der DFN-Summe des Gegners.</li></ul><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 52–53</em></p>"
+  },
+  {
+   "key": "n.k2.sonder.arm",
+   "kind": "note",
+   "name": "Abgetrennte Arme",
+   "type": "Regel",
+   "parent": "n.k2.sonder",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<p>Fügt ein Held mit einem Schwert oder einer Axt nach Abzug der Absorption <strong>mindestens das Doppelte der Wundschwelle</strong> seines Gegners zu, darfst du ansagen, dass er dem Feind den Arm abgetrennt hat. Der Runner würfelt: Bei einem <strong>ungeraden</strong> Ergebnis ist der Gegner „entwaffnet“, sein Waffenarm ab.</p><ul><li>Der Verstümmelte flieht, <strong>außer</strong> der Runner schafft für ihn einen RES-Wurf gegen die Standardschwierigkeit 6: Dann kämpft er weiter. Dazu muss er seine Waffe aufheben. Sein <strong>ATK-Wert halbiert sich</strong>, da er mit der Nebenhand kämpft.</li><li>Normalerweise erhältst du für den Todesstoß Siegespunkte in Höhe der <strong>halben Macht (Might)</strong> des Gegners (Original S. 100). Tötest du ihn mit seinem <strong>eigenen abgetrennten Arm</strong>, erhältst du seine <strong>volle Macht</strong>.</li><li>Der Arm ist eine Gelegenheitswaffe (Werte: {{ref:item.w.sevarm}}), nichts, was man mit sich herumträgt. Wer es versucht, verliert „eine Billion Gazillionen Siegespunkte“.</li><li>Das Abtrennen von Armen ist ein Vorrecht der Helden; Gegner können es dir nicht antun (das Buch gibt zu: bewusste Bevorzugung).</li></ul><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 52</em></p>"
+  },
+  {
+   "key": "n.k2.sonder.deckung",
+   "kind": "note",
+   "name": "Deckung und Hindernisse",
+   "type": "Regel",
+   "parent": "n.k2.sonder",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<p>Wer in Deckung geht, erschwert Fernkämpfern das Treffen. Alles, hinter dem sich eine Person verstecken kann und das Geschosse nicht durchschlagen, taugt als Deckung. Die Wirksamkeit hängt davon ab, wie viel der Figur es bedeckt: ein Drittel, die Hälfte oder fast alles. Deckung erhöht die Schwierigkeit für Fernwaffennutzer (siehe die Tabelle in {{ref:n.k2.s3.fern}}).</p><ul><li>Springt ein Held aus der Deckung, um selbst zu schießen, können Gegner seine Deckung ignorieren, indem sie bis unmittelbar nach seinem Angriff <strong>auf Gelegenheit warten</strong>. Warten mehrere Gegner, schießen alle in seinem kurzen Moment der vollen Entblößung.</li><li>Gibt es keine feste Deckung, kann ein Held sich dennoch schwerer treffbar machen, indem er einen Bereich einnimmt, in dem das Sehen der Fernkämpfer verwirrt wird: ein Nebelfeld, blendende Sonnenstrahlen, im Wind schwankende Äste mit ständig wandernden Schatten. Dann ist er <strong>verdeckt (obscured)</strong>. Die Vorteile entsprechen denen einer <strong>Drittel-Deckung</strong>.</li><li><strong>Hindernisse (Barrieren)</strong> im Nahkampf: Sie begünstigen den geschickteren Kämpfer. Übertrifft deine kombinierte <strong>ATK- + DFN-Summe</strong> die deines Gegners, erhältst du <strong>+1 auf ATK- und DFN-Würfe</strong> gegen den Gegner, der dich über das Hindernis hinweg bekämpft. Ist seine ATK- + DFN-Summe besser, bekommt er den Bonus. Beispiele: Fässer, Kisten, Treibholzhaufen, umgestürzte Stämme, kleine Bäche, Gräben, Gruben, Monsterkadaver. Der Runner entscheidet, wie ein Hindernis umgangen werden kann (einen Felsblock umgeht man leicht, einen Trog mit überirdischem Feuer schwerer).</li></ul><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 53</em></p>"
+  },
+  {
+   "key": "n.k2.sonder.fallen",
+   "kind": "note",
+   "name": "Hinfallen",
+   "type": "Regel",
+   "parent": "n.k2.sonder",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<p>Im Kampf zu rutschen oder niedergeschlagen zu werden ist nie gut. Das kann auf abschüssigem oder glattem Boden (Original S. 126) oder durch die Göttliche Gabe „Buffeting Gale“ (Original S. 66) geschehen.</p><ul><li>Wer mitten im Kampf hinfällt, kann erst bei seiner <strong>nächsten Aktion</strong> wieder aufstehen. Dann muss er einen <strong>Balancewurf</strong> (Schwierigkeit 6) bestehen, um Halt zu finden ({{ref:ab.balance}}). Misslingt er, muss er bis zur nächsten Aktion warten.</li><li>Am Boden Liegende können ATK- und DFN-Würfe machen, erleiden aber <strong>−4</strong> auf beide. Wer Stangenwaffen führt, hat <strong>keinen</strong> ATK-Malus.</li></ul><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 53–54</em></p>"
+  },
+  {
+   "key": "n.k2.verletzungen",
+   "kind": "note",
+   "name": "Verletzungen",
+   "type": "Regel",
+   "parent": "n.k2",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<p>Wie du bei der Heldenerschaffung gelernt hast, nennt dein Heldenbogen zwei entscheidende Zahlen: <strong>Trefferpunkte</strong> und <strong>Wundschwelle</strong> ({{ref:n.tp}}, {{ref:n.wunden}}). Unterseiten: {{ref:n.k2.verletzungen.heilung}}.</p><ul><li>Erleidet dein Held Schaden über seine Absorption hinaus, senke seine HP zeitweise um diese Zahl.</li><li>Ist der Schaden zugleich <strong>mindestens so groß wie die Wundschwelle</strong>, verliert er nicht nur die HP, sondern erleidet auch eine <strong>Wunde</strong>. In einem Treffer sind mehrere Wunden möglich: bei mindestens der doppelten Wundschwelle zwei Wunden, bei mindestens der dreifachen drei usw.</li><li>Für jede Wunde erleidet er <strong>1 Punkt Beeinträchtigung (Impairment)</strong>. Du senkst <strong>jeden Wurf</strong> um die aktuelle Beeinträchtigung deines Helden.</li><li>Sinkt sein Gesundheitszustand, sinken die HP vorübergehend und die Wundzahl steigt.</li><li>Bei <strong>4 Wunden</strong> ist er <strong>kampfunfähig (Incapacitated)</strong>: noch bei Bewusstsein, aber vor Schmerz unfähig, sich zu bewegen (außer sich zu winden), zu denken (außer an die furchtbare Qual) oder zu sprechen (schreckliche Laute sind erlaubt).</li><li>Sobald seine HP <strong>0</strong> erreichen oder er <strong>5 Wunden</strong> hat, ist der Held in unmittelbarer Todesgefahr. Wird er nicht sofort geheilt (siehe {{ref:n.k2.verletzungen.heilung}}), hustest du Blut, spuckst einen letzten Fluch, lässt die Zunge heraushängen, sackst wie ein Sack Steine zusammen und stirbst.</li></ul><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 54–55</em></p>"
+  },
+  {
+   "key": "n.k2.verletzungen.heilung",
+   "kind": "note",
+   "name": "Erholung, Heilung und Wiederbelebung",
+   "type": "Regel",
+   "parent": "n.k2.verletzungen",
+   "tags": [
+    "tag.kap2",
+    "tag.tabelle"
+   ],
+   "entry": "<h3>Erholung von Verletzungen</h3><ul><li>Helden heilen zwischen den Begegnungen und werfen auch die <strong>Beeinträchtigung</strong> ab, die sie durch Umstände der letzten Begegnung gewonnen haben. Mitten in einer Begegnung kann es sinnvoll sein, sich zum Heilen zurückzuziehen.</li><li>Oberflächliche Verletzungen heilen mit der Zeit bei Essen und Trinken von selbst: Unverwundete Helden erreichen nach <strong>acht Stunden Schlaf und acht Stunden Ruhe</strong> wieder ihre maximalen HP. Teilerholung durch kürzere Zeit gibt es nicht (das Buch nennt eine abgestufte Regel „feige Komplexität“).</li><li>Eine <strong>Wunde</strong> ist zu schlimm, um durch Anlehnen an einen Baum und männliches Grunzen zu heilen. Ein Charakter mit {{ref:ab.heilkunde}} muss sich mit Schienen, Verbänden, Arzneien und Umschlägen an die Arbeit machen. Blutende können auch von einem Heiler profitieren, im Notfall aber auch allein heilen.</li></ul><p>Der Heiler würfelt <strong>Geschicklichkeit + Heilkunde</strong> gegen eine Schwierigkeit nach der Zahl der Wunden des Patienten:</p><table><tr><th>Wunden</th><th>Schwierigkeit</th><th>Zeit zwischen Versuchen</th></tr><tr><td>0</td><td>4</td><td>1 Stunde</td></tr><tr><td>1</td><td>5</td><td>3 Stunden</td></tr><tr><td>2</td><td>6</td><td>12 Stunden</td></tr><tr><td>3</td><td>8</td><td>24 Stunden</td></tr><tr><td>4</td><td>10</td><td>3 Tage</td></tr><tr><td>5</td><td>12</td><td>1 Woche</td></tr></table><ul><li><strong>Patzer werden ignoriert</strong> (Qualitätswurf): Würfelst du eine 1, addiere sie wie jedes andere Würfelergebnis. Ein Heiler, der einen <em>anderen</em> Patienten behandelt, ist gegen Patzer immun.</li><li>Ein Heilversuch dauert im Kampf <strong>eine Runde</strong>, sonst etwa eine Minute.</li></ul><h3>Unverwundete</h3><p>Bei gelungenem Heilwurf gewinnen unverwundete Charaktere <strong>HP = (1 + Differenz zwischen Wurfsumme und Schwierigkeit) × 4</strong>.</p><blockquote><strong>Beispiel:</strong> Thorleik hat 29 HP verloren, keine durch Wunden: 47 von 76. Ragnar heilt (Schwierigkeit 4). Wurf 6, mit Heilkunde 1 und Geschicklichkeit 3 insgesamt 10; Differenz 6, plus 1 mal 4 = 28. Thorleik steigt von 47 auf 75 HP.</blockquote><h3>Wunden entfernen</h3><ul><li>Übertrifft der Heiler die Schwierigkeit aus der Tabelle, wird <strong>eine Wunde</strong> geheilt. Der Patient gewinnt zudem HP in Höhe seiner <strong>Wundschwelle</strong> oder der Differenz zwischen Schwierigkeit und Heilersumme, <strong>je nachdem, was größer ist</strong>.</li><li>Mehrere Wunden gleichzeitig: Ist die Differenz mindestens das <strong>Doppelte der Wundschwelle</strong>, heilen 2 Wunden; beim Dreifachen 3 usw.</li></ul><blockquote><strong>Beispiel:</strong> Ragnar will Thurid heilen (max. 76 HP, Wundschwelle 21; 2 Wunden, nur 21 HP). Schwierigkeit 6. Ragnars Wurf: Summe 24 mit Geschicklichkeit und abzüglich 5 für fehlende Fertigkeit und Ausrüstung. Das ist mehr als Thurids Wundschwelle, aber nicht das Doppelte: 1 Wunde geheilt, +24 HP: jetzt 45 HP.</blockquote><ul><li>Helden dürfen sich selbst heilen, würfeln aber unter ihrer <strong>Beeinträchtigung</strong>. Meist ist es besser, wenn ein unbeeinträchtigter Heiler die Wunden verbindet.</li><li>Nach jedem Heilversuch (ob erfolgreich oder nicht) muss der Heiler eine Zeit warten, bevor er sinnvoll erneut versuchen kann. Sie hängt von der <strong>Wundzahl nach dem letzten Versuch</strong> ab. Pro Intervall darf nur <strong>ein Heiler</strong> versuchen; scheitert er, kann nicht gleich ein anderer ansetzen (Thurid hat danach 1 Wunde: 3 Stunden Wartezeit).</li><li><strong>Ausnahme:</strong> Erleidet der Patient in der Wartezeit weiteren Schaden, darf ein Heiler sofort die neuen Verletzungen behandeln. Helden dürfen einen Patienten nicht absichtlich verletzen, um sofort erneut heilen zu können.</li><li>Einfache Tränke, die Heilkunde verbessern (Original S. 159), erlauben aufeinanderfolgende Heilwürfe ohne die üblichen Wartezeiten.</li></ul><p>Modifikatoren auf den Wurf des Heilers (zur Schwierigkeit):</p><table><tr><th>Situation</th><th>Modifikator</th></tr><tr><td>Heiler und Patient in der Wildnis oder feindlicher Umgebung</td><td>0</td></tr><tr><td>Heiler versucht es als Aktion im Kampf</td><td>+3</td></tr><tr><td>Heiler und Patient in warmer, sicherer, geschützter Umgebung</td><td>−3</td></tr><tr><td>Patient ist nichtmenschlich (z. B. Zwerg oder Goblin)</td><td>+3</td></tr><tr><td>Patient ist untot</td><td>+6</td></tr></table><h3>Sterbende wiederbeleben</h3><ul><li>Ein Sterbender (0 HP verloren oder 5 Wunden) kann noch gerettet werden, wenn ein Heiler <strong>schnell</strong> handelt: Er muss bei seiner ersten verfügbaren Aktion nach dem Todesstoß Heilung leisten (mehrere Heiler können es versuchen). Wurf gegen <strong>Schwierigkeit 12</strong>.</li><li>Gelingt es bei einem Patienten mit 0 oder weniger HP, erhält der Sterbende <strong>4 HP</strong>. Gelingt es bei einem Patienten mit fünfter Wunde, erhält das Opfer ebenfalls nur 4 HP, hat aber nun nur <strong>4 Wunden</strong>.</li><li>Helden, die durch einen Schlag unter <strong>−20 HP</strong> fallen würden, können nicht wiederbelebt werden: Der letzte Hieb enthauptet sie, zermalmt sie zu Brei oder macht sie anderweitig für Walhall reif. (Das ist der einzige Fall, in dem Rune negative Trefferpunkte kennt.)</li></ul><blockquote><strong>Beispiel:</strong> Eyrbyg hat Wundschwelle 18 und erleidet die fünfte Wunde. Thurid wirft einen Heilversuch und schafft ihn: Eyrbyg erhält 4 HP und gilt nur noch als 4-fach verwundet.</blockquote><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 54–56</em></p>"
+  },
+  {
+   "key": "n.k2.weitere",
+   "kind": "note",
+   "name": "Weitere Regeln",
+   "type": "Regel",
+   "parent": "n.k2",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<p>Diese Regeln sind so wichtig, wie Regeln sein können, die nicht ausschließlich mit Kämpfen zu tun haben. Unterseiten: {{ref:n.k2.weitere.fertigkeit}}, {{ref:n.k2.weitere.wuerfe}}, {{ref:n.k2.weitere.wettstreit}}, {{ref:n.k2.weitere.beritten}}.</p><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 56–58</em></p>"
+  },
+  {
+   "key": "n.k2.weitere.fertigkeit",
+   "kind": "note",
+   "name": "Fertigkeiten, die du nicht hast",
+   "type": "Regel",
+   "parent": "n.k2.weitere",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<ul><li>Du kannst jede Fertigkeit, die dein Held nicht hat, mit einem <strong>Malus von −3</strong> auf den Wurf einsetzen.</li><li>Erfordert die Fertigkeit Ausrüstung und du hast sie nicht, gilt zusätzlich der Standard-Malus <strong>−2</strong>: zusammen <strong>−5</strong>.</li><li><strong>Ausnahme:</strong> {{ref:ab.runenkunde}}. Ohne Wert in dieser Fertigkeit kannst du sie gar nicht versuchen.</li></ul><p>Das Fehlen angeborener Fertigkeiten wie Aufmerksamkeit oder Schlafen zeigt, dass du schlechter bist als der Durchschnitt. Mangelnde Kompetenz in komplizierteren Fertigkeiten wie Waffenfertigkeiten oder Runen entspricht eher der Norm deiner Gesellschaft. Diese Begründung erspart dem Buch eine eigene „realistische“ Strafe für jede Fertigkeit.</p><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 56</em></p>"
+  },
+  {
+   "key": "n.k2.weitere.wuerfe",
+   "kind": "note",
+   "name": "Mehrfache Würfe für dieselbe Handlung",
+   "type": "Regel",
+   "parent": "n.k2.weitere",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<p>Jeder einzelne Wurf steht für <strong>alle Versuche</strong> deines Helden, eine Aufgabe zu erledigen. Scheiterst du, kannst du es nicht erneut versuchen, außer dein Held ändert etwas an der Lage.</p><ul><li><strong>Im Kampf</strong> gilt die Regel nicht: Triffst du mit dem Schwert nicht, kannst du bei der nächsten Gelegenheit erneut zuschlagen.</li><li><strong>Zeitdruck:</strong> Muss der Held in kurzer Zeit handeln, um ein Unglück abzuwenden, kann der Runner beim Entwerfen der Begegnung eine Zahl aufeinanderfolgender Versuche festlegen, bevor das Schlimme geschieht. Meist ein Versuch pro Runde, oft in einer Kampfsituation.</li></ul><blockquote><strong>Beispiel:</strong> Thorleik scheitert beim Schlösserknacken an einer Messingtür in Thorstadt. Egal wie lange er stochert, die Zuhaltungen bewegen sich nicht. Später gibt ihm Thurid einen Spezialtrank, der ins Schloss gegossen werden kann: Das ändert die Lage, und er darf noch einmal würfeln. Scheitert er, muss er aufgeben oder einen weiteren neuen Vorteil finden. Muss er das Schloss öffnen, um vor einer Säureflut hinter die Tür zu springen, kann der Runner etwa drei Versuche erlauben; scheitert er dreimal, verbrennt ihn die Säure.</blockquote><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 56–57</em></p>"
+  },
+  {
+   "key": "n.k2.weitere.wettstreit",
+   "kind": "note",
+   "name": "Wettstreite (Contests)",
+   "type": "Regel",
+   "parent": "n.k2.weitere",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<p>Tödlicher Kampf ist zwar die wichtigste und heldenhafteste Form des Konflikts, aber nicht die einzige. Manchmal muss dein Held aktiven Widerstand von Feinden oder Gegnern ohne Gewalt überwinden. Dann legt der Runner die Fertigkeit fest, mit der jeder Teilnehmer antritt.</p><ul><li>Ein Wettstreit besteht aus <strong>einem einzigen Wurf</strong>: Du würfelst und addierst Fertigkeit und zugehörige Charakteristik und versuchst, die Summe zu schlagen, die der Runner für den anderen Teilnehmer (eine Unterstützungsfigur) würfelt. Es gewinnt die höchste Summe. Die <strong>Differenz</strong> zeigt den Erfolgsgrad.</li><li>Bei <strong>genau gleichen</strong> Ergebnissen gewinnt der <strong>Held</strong>.</li><li><strong>Zwischen Helden</strong> können Entwerfer keine Wettstreite in Begegnungen einbauen. Plünderer dürfen aber Wettstreite wählen, um Streit beizulegen (z. B. Armdrücken um begehrte magische Gegenstände als Raufen-Wettstreit). Gleichstand zwischen Helden wird durch Neuwurf entschieden.</li><li><strong>Mehr als zwei Teilnehmer:</strong> Alle würfeln; wer die höchste Summe hat, gewinnt. Gleichstand zwischen Unterstützungsfiguren wird durch Neuwurf entschieden.</li></ul><blockquote><strong>Beispiel:</strong> Die Elfenkönigin bietet dem Wikingerkrieger ein mächtiges Schwert an, der sie überzeugt, am meisten für den Frieden zwischen Nordmännern und Elfen zu tun. Thorleik der Schlaue tritt für die Helden an, gegen ihn die hinterhältige Dunkle Wikingerin Osk. Der Runner nennt einen Wettstreit im {{ref:ab.auftreten}}. Joel würfelt für Thorleik: Summe 8 mit Auftreten und Präsenz. Der Runner würfelt für Osk 7: Thorleik gewinnt.</blockquote><blockquote><strong>Beispiel:</strong> Thurid und Thorleik spielen mit den Zwergen Casin und Foldo um das Recht, eine Tür einzuschlagen. Das Spiel ist ehrlich, alle würfeln Intelligenz + Glücksspiel ({{ref:ab.gluecksspiel}}): Thurid 8, Thorleik 10, Casin 13, Foldo 13. Nun würfeln die beiden Zwerge neu: Casin 8, Foldo 12. Foldo gewinnt und darf zuerst auf Schätze hinter der Tür zugreifen.</blockquote><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 57–58</em></p>"
+  },
+  {
+   "key": "n.k2.weitere.beritten",
+   "kind": "note",
+   "name": "Berittener Kampf",
+   "type": "Regel",
+   "parent": "n.k2.weitere",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<p>Berittener Kampf ist in Rune selten; die meiste Zeit verbringst du in feuchten Netzen unterirdischer Gänge, in die kein vernünftiges Pferd gehen würde. Gelegentlich kämpfst du in Wildnisbegegnungen zu Pferd.</p><ul><li>Wer beritten ist, erhält <strong>+3 auf ATK- und DFN-Würfe</strong> gegen Fußgänger.</li><li>Addiere deine Fertigkeit {{ref:ab.reiten}} als weiteren Bonus auf die Initiative.</li><li>Die volle Bewegung eines Reittiers beträgt <strong>200 Meter</strong>.</li><li>Weitere Informationen zu Pferden und berittenem Kampf: Original S. 182.</li></ul><p><em>Quelle: Rune RPG, Kapitel 2, Original S. 58</em></p>"
+  },
+  {
+   "key": "n.k2.hinweise",
+   "kind": "note",
+   "name": "Übersetzungshinweise zu Kapitel 2",
+   "type": "Hinweise",
+   "parent": "n.k2",
+   "tags": [
+    "tag.kap2"
+   ],
+   "entry": "<ul><li><strong>Sturmangriff:</strong> Der Text (S. 50) verlangt mehr als <strong>20 Meter</strong> Anlauf, die Nahkampfmodifikator-Tabelle (S. 51) nennt <strong>mindestens 10 Meter Sprint</strong>. Beide Zahlen sind hier wie im Original übernommen. Bitte am Spieltisch eine Auslegung festlegen.</li><li><strong>Deckung:</strong> Der Text verweist für die Deckungsmodifikatoren auf die „Melee Modifier Chart, S. 51“. Die Deckungswerte stehen tatsächlich in der Fernkampftabelle (S. 48). Hier verweist der Text auf die Fernkampftabelle.</li><li><strong>Befreien aus Haltegriff:</strong> Die Formel nennt einen „Armor Dfn rating“. Rüstungen haben keinen DFN-Wert (nur Schutz und INIT). Hier wörtlich als „Rüstungs-DFN-Wert“ übernommen; vermutlich ist kein Abzug gemeint.</li><li><strong>Munition:</strong> Siehe Hinweis in der Note „Waffen, Rüstungen und Schilde (Regeln)“ (Last ohne Munition).</li><li><strong>Begriffe:</strong> Engagement/„Engaged“ bleibt als Lehnwort „Engagement“ („im Engagement“). „Botch“ = Patzer, „Triumph“ = Triumph (Definition: {{ref:n.ei.wuerfel}}). „Thwack Margin“ = Treffermarge.</li><li><strong>Beispiele</strong> sind teils gekürzt, die Regeln vollständig.</li></ul>"
+  }
+ ]
+}

@@ -1,0 +1,3480 @@
+{
+ "meta": {
+  "ausschnitt": "Kapitel 1, Rest (Ausrüstung)",
+  "version": "0.2"
+ },
+ "tags": [
+  {
+   "key": "tag.waffe",
+   "name": "Waffe"
+  },
+  {
+   "key": "tag.ruestung",
+   "name": "Rüstung"
+  },
+  {
+   "key": "tag.schild",
+   "name": "Schild"
+  },
+  {
+   "key": "tag.fernkampf",
+   "name": "Fernkampfwaffe"
+  },
+  {
+   "key": "tag.gewoehnlich",
+   "name": "gewöhnlich"
+  },
+  {
+   "key": "tag.selten",
+   "name": "selten"
+  }
+ ],
+ "entities": [
+  {
+   "key": "pk.waffe",
+   "kind": "property_kit",
+   "name": "Rune-Waffe",
+   "type": null,
+   "parent": null,
+   "tags": [],
+   "entry": "<p>Werte einer Waffe oder eines Schilds. Die Werte stehen im Heldenbogen (Kit „Rune-Held“) in den Waffenfeldern.</p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "pk.ruestung",
+   "kind": "property_kit",
+   "name": "Rune-Rüstung",
+   "type": null,
+   "parent": null,
+   "tags": [],
+   "entry": "<p>Werte einer Rüstung.</p>",
+   "properties": [
+    {
+     "name": "Schutz",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Init-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.barb-net",
+   "kind": "item",
+   "name": "Widerhakennetz",
+   "type": "Waffe (Raufen)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>-4</td><td>+0</td><td>+4</td><td>Spezial</td><td>2</td><td>{{ref:ab.raufen}}</td><td>selten</td></tr></table><p><strong>Originalname:</strong> Barb-net</p><p><strong>Sonderregel:</strong> Bei einem Treffer umschlingt das Widerhakennetz das Ziel und bleibt an ihm hängen. Das Ziel erleidet <strong>20 Schaden bei jeder Aktion</strong>. Es kann sich befreien, indem es <strong>Stärke gegen eine Schwierigkeit von 6 + Differenz</strong> würfelt (Differenz = ATK-Wert des Angreifers + Wurf minus eigener DFN-Wert + Wurf). Jeder Befreiungsversuch zählt als Aktion und verursacht den Schaden.</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "-4",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "4",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "Spezial (siehe Beschreibung)",
+     "type_id": 1
+    },
+    {
+     "name": "Last",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Raufen",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Barb-net",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.billhook",
+   "kind": "item",
+   "name": "Hippe",
+   "type": "Waffe (Stangenwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+5</td><td>+6</td><td>+1</td><td>+8</td><td>1,5</td><td>{{ref:ab.stangenwaffe}}</td><td>selten</td></tr></table><p><strong>Originalname:</strong> Billhook</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "5",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "8",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "1.5",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Stangenwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Billhook",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.chair",
+   "kind": "item",
+   "name": "Stuhl",
+   "type": "Waffe (Raufen)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+2</td><td>+2</td><td>+3</td><td>+1</td><td>–</td><td>{{ref:ab.raufen}}</td><td>–</td></tr></table><p><strong>Originalname:</strong> Chair</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Raufen",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Chair",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.compbow",
+   "kind": "item",
+   "name": "Kompositbogen",
+   "type": "Waffe (Bögen)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.fernkampf",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>-1</td><td>+1</td><td>–</td><td>+8</td><td>0,5</td><td>{{ref:ab.bogen}}</td><td>selten</td></tr></table><p><strong>Originalname:</strong> Composite Bow</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "-1",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "8",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.5",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Bögen",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Composite Bow",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.dagger",
+   "kind": "item",
+   "name": "Dolch",
+   "type": "Waffe (Einhandwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+2</td><td>+1</td><td>+2</td><td>+3</td><td>0,25</td><td>{{ref:ab.einzelwaffe}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Dagger</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.25",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Einhandwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Dagger",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.dblaxe",
+   "kind": "item",
+   "name": "Doppelaxt",
+   "type": "Waffe (Großwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+6</td><td>+5</td><td>+7</td><td>+12</td><td>3</td><td>{{ref:ab.grosswaffe}}</td><td>selten</td></tr></table><p><strong>Originalname:</strong> Double-bladed Axe</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "5",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "7",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "12",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Großwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Double-bladed Axe",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.dwbaxe",
+   "kind": "item",
+   "name": "Zwergen-Streitaxt",
+   "type": "Waffe (Großwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+8</td><td>+7</td><td>+8</td><td>+14</td><td>4</td><td>{{ref:ab.grosswaffe}}</td><td>selten</td></tr></table><p><strong>Originalname:</strong> Dwarven Battle Axe</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "8",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "7",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "8",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "14",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "4",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Großwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Dwarven Battle Axe",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.dwbhammer",
+   "kind": "item",
+   "name": "Zwergen-Kriegshammer",
+   "type": "Waffe (Großwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+8</td><td>+8</td><td>+10</td><td>+14</td><td>3</td><td>{{ref:ab.grosswaffe}}</td><td>selten</td></tr></table><p><strong>Originalname:</strong> Dwarven Battle Hammer</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "8",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "8",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "10",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "14",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Großwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Dwarven Battle Hammer",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.dwbsword",
+   "kind": "item",
+   "name": "Zwergen-Kampfschwert",
+   "type": "Waffe (Großwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+8</td><td>+6</td><td>+10</td><td>+12</td><td>1</td><td>{{ref:ab.grosswaffe}}</td><td>selten</td></tr></table><p><strong>Originalname:</strong> Dwarven Battle Sword</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "8",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "10",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "12",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Großwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Dwarven Battle Sword",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.dwwhammer",
+   "kind": "item",
+   "name": "Zwergen-Arbeitshammer",
+   "type": "Waffe (Großwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+6</td><td>+6</td><td>+8</td><td>+10</td><td>2</td><td>{{ref:ab.grosswaffe}}</td><td>selten</td></tr></table><p><strong>Originalname:</strong> Dwarven Work Hammer</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "8",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "10",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Großwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Dwarven Work Hammer",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.dwwsword",
+   "kind": "item",
+   "name": "Zwergen-Arbeitsschwert",
+   "type": "Waffe (Großwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+6</td><td>+4</td><td>+6</td><td>+8</td><td>1</td><td>{{ref:ab.grosswaffe}}</td><td>selten</td></tr></table><p><strong>Originalname:</strong> Dwarven Work Sword</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "4",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "8",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Großwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Dwarven Work Sword",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.fist",
+   "kind": "item",
+   "name": "Faust/Tritt",
+   "type": "Waffe (Raufen)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+1</td><td>+0</td><td>+0</td><td>+0</td><td>–</td><td>{{ref:ab.raufen}}</td><td>–</td></tr></table><p><strong>Originalname:</strong> Fist/Kick</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Raufen",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Fist/Kick",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.flagon",
+   "kind": "item",
+   "name": "Humpen",
+   "type": "Waffe (Raufen)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>-1</td><td>+0</td><td>+0</td><td>+2</td><td>0,25</td><td>{{ref:ab.raufen}}</td><td>–</td></tr></table><p><strong>Originalname:</strong> Flagon</p><p><em>Hinweis:</em> Wer einen Humpen eigens mit sich herumträgt, um den Schaden beim Raufen zu erhöhen, macht sich zum Gespött. Er ist für improvisierte Schlägereien am Trinktisch zwischen (halbwegs) befreundeten Wikingern aufgeführt.</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "-1",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.25",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Raufen",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Flagon",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.flail",
+   "kind": "item",
+   "name": "Flegel (zweihändig)",
+   "type": "Waffe (Kettenwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+2</td><td>+7</td><td>+1</td><td>+7</td><td>0,5</td><td>{{ref:ab.kettenwaffe}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Flail (2 handed)</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "7",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "7",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.5",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Kettenwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Flail (2 handed)",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.fbmace",
+   "kind": "item",
+   "name": "Vierklingen-Streitkolben",
+   "type": "Waffe (Einhandwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+4</td><td>+4</td><td>+3</td><td>+7</td><td>0,5</td><td>{{ref:ab.einzelwaffe}}</td><td>selten</td></tr></table><p><strong>Originalname:</strong> Four-bladed Mace</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "4",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "4",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "7",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.5",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Einhandwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Four-bladed Mace",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.gauntlet",
+   "kind": "item",
+   "name": "Panzerhandschuh",
+   "type": "Waffe (Raufen)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+1</td><td>+0</td><td>+1</td><td>+1</td><td>0,25</td><td>{{ref:ab.raufen}}</td><td>selten</td></tr></table><p><strong>Originalname:</strong> Gauntlet</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.25",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Raufen",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Gauntlet",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.gobaxe",
+   "kind": "item",
+   "name": "Goblinaxt",
+   "type": "Waffe (Einhandwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+4</td><td>+2</td><td>+2</td><td>+7</td><td>1</td><td>{{ref:ab.einzelwaffe}}</td><td>selten</td></tr></table><p><strong>Originalname:</strong> Goblin Axe</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "4",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "7",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Einhandwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Goblin Axe",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.gobclub",
+   "kind": "item",
+   "name": "Goblin-Stachelkeule",
+   "type": "Waffe (Einhandwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+3</td><td>+2</td><td>+3</td><td>+6</td><td>0,5</td><td>{{ref:ab.einzelwaffe}}</td><td>selten</td></tr></table><p><strong>Originalname:</strong> Goblin Spike Club</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.5",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Einhandwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Goblin Spike Club",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.handaxe",
+   "kind": "item",
+   "name": "Handaxt",
+   "type": "Waffe (Einhandwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+3</td><td>+1</td><td>+2</td><td>+6</td><td>0,5</td><td>{{ref:ab.einzelwaffe}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Hand Axe</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.5",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Einhandwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Hand Axe",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.hxbow",
+   "kind": "item",
+   "name": "Schwere Armbrust",
+   "type": "Waffe (Bögen)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.fernkampf",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>-10</td><td>+2</td><td>–</td><td>+14</td><td>1</td><td>{{ref:ab.bogen}}</td><td>selten</td></tr></table><p><strong>Originalname:</strong> Heavy Crossbow</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "-10",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "14",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Bögen",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Heavy Crossbow",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.lxbow",
+   "kind": "item",
+   "name": "Leichte Armbrust",
+   "type": "Waffe (Bögen)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.fernkampf",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>-6</td><td>+2</td><td>–</td><td>+12</td><td>0,5</td><td>{{ref:ab.bogen}}</td><td>selten</td></tr></table><p><strong>Originalname:</strong> Light Crossbow</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "-6",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "12",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.5",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Bögen",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Light Crossbow",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.longbow",
+   "kind": "item",
+   "name": "Langbogen",
+   "type": "Waffe (Bögen)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.fernkampf",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>-1</td><td>+1</td><td>–</td><td>+10</td><td>1</td><td>{{ref:ab.bogen}}</td><td>selten</td></tr></table><p><strong>Originalname:</strong> Long Bow</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "-1",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "10",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Bögen",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Long Bow",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.mace",
+   "kind": "item",
+   "name": "Streitkolben",
+   "type": "Waffe (Einhandwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+3</td><td>+2</td><td>+3</td><td>+5</td><td>0,5</td><td>{{ref:ab.einzelwaffe}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Mace</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "5",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.5",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Einhandwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Mace",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.mstar",
+   "kind": "item",
+   "name": "Morgenstern (zweihändig)",
+   "type": "Waffe (Kettenwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+1</td><td>+5</td><td>+0</td><td>+8</td><td>0,5</td><td>{{ref:ab.kettenwaffe}}</td><td>selten</td></tr></table><p><strong>Originalname:</strong> Morningstar (2 handed)</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "5",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "8",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.5",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Kettenwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Morningstar (2 handed)",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.net",
+   "kind": "item",
+   "name": "Netz",
+   "type": "Waffe (Kettenwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+0</td><td>+4</td><td>+2</td><td>+0</td><td>0,5</td><td>{{ref:ab.kettenwaffe}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Net</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "4",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.5",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Kettenwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Net",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.pike",
+   "kind": "item",
+   "name": "Pike",
+   "type": "Waffe (Stangenwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+6</td><td>+4</td><td>+1</td><td>+6</td><td>1,5</td><td>{{ref:ab.stangenwaffe}}</td><td>selten</td></tr></table><p><strong>Originalname:</strong> Pike</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "4",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "1.5",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Stangenwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Pike",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.polearm",
+   "kind": "item",
+   "name": "Hellebarde",
+   "type": "Waffe (Großwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+6</td><td>+3</td><td>+5</td><td>+9</td><td>1,5</td><td>{{ref:ab.grosswaffe}}</td><td>selten</td></tr></table><p><strong>Originalname:</strong> Polearm</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "5",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "9",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "1.5",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Großwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Polearm",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.punyknife",
+   "kind": "item",
+   "name": "Taschenfeitel",
+   "type": "Waffe (Einhandwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+1</td><td>+0</td><td>+1</td><td>+2</td><td>0,15</td><td>{{ref:ab.einzelwaffe}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Puny Knife</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.15",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Einhandwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Puny Knife",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.qstaff",
+   "kind": "item",
+   "name": "Kampfstab",
+   "type": "Waffe (Großwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+6</td><td>+4</td><td>+8</td><td>+3</td><td>1</td><td>{{ref:ab.grosswaffe}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Quarterstaff</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "4",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "8",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Großwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Quarterstaff",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.rock",
+   "kind": "item",
+   "name": "Stein",
+   "type": "Waffe (Wurfwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+4</td><td>+0</td><td>–</td><td>+2</td><td>0</td><td>{{ref:ab.wurfwaffe}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Rock</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "4",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Wurfwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Rock",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.romansword",
+   "kind": "item",
+   "name": "Römisches Schwert",
+   "type": "Waffe (Einhandwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+3</td><td>+1</td><td>+4</td><td>+4</td><td>0,5</td><td>{{ref:ab.einzelwaffe}}</td><td>selten</td></tr></table><p><strong>Originalname:</strong> Roman Sword</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "4",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "4",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.5",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Einhandwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Roman Sword",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.sap",
+   "kind": "item",
+   "name": "Totschläger",
+   "type": "Waffe (Einhandwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+1</td><td>+0</td><td>+1</td><td>+2</td><td>0,15</td><td>{{ref:ab.einzelwaffe}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Sap</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.15",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Einhandwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Sap",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.sevarm",
+   "kind": "item",
+   "name": "Abgetrennter Arm",
+   "type": "Waffe (Großwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+1</td><td>+1</td><td>+1</td><td>+1</td><td>–</td><td>{{ref:ab.grosswaffe}}</td><td>siehe Kapitel 2 (Original S. 52)</td></tr></table><p><strong>Originalname:</strong> Severed Arm</p><p>Siehe die Regeln in Kapitel 2 (Original S. 52).</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Großwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "siehe Kapitel 2 (Original S. 52)",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Severed Arm",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.shortbow",
+   "kind": "item",
+   "name": "Kurzbogen",
+   "type": "Waffe (Bögen)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.fernkampf",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+0</td><td>+0</td><td>–</td><td>+6</td><td>0,5</td><td>{{ref:ab.bogen}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Short Bow</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.5",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Bögen",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Short Bow",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.shortspear",
+   "kind": "item",
+   "name": "Kurzspeer",
+   "type": "Waffe (Einhandwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+5</td><td>+1</td><td>+2</td><td>+3</td><td>0,5</td><td>{{ref:ab.einzelwaffe}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Shortspear</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "5",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.5",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Einhandwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Shortspear",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.shortsword",
+   "kind": "item",
+   "name": "Kurzschwert",
+   "type": "Waffe (Einhandwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+4</td><td>+2</td><td>+3</td><td>+3</td><td>0,5</td><td>{{ref:ab.einzelwaffe}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Shortsword</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "4",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.5",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Einhandwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Shortsword",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.sworddag",
+   "kind": "item",
+   "name": "Kurzschwert und Dolch",
+   "type": "Waffe (Zwei Waffen)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+6</td><td>+5</td><td>+6</td><td>+5</td><td>0,75</td><td>{{ref:ab.zweiwaffen}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Shortsword + Dagger</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "5",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "5",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.75",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Zwei Waffen",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Shortsword + Dagger",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.sling",
+   "kind": "item",
+   "name": "Schleuder",
+   "type": "Waffe (Wurfwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+2</td><td>+2</td><td>–</td><td>+3</td><td>0,1</td><td>{{ref:ab.wurfwaffe}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Sling</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.1",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Wurfwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Sling",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.spearthrown",
+   "kind": "item",
+   "name": "Speer (geworfen)",
+   "type": "Waffe (Wurfwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+0</td><td>+2</td><td>+0</td><td>+6</td><td>1</td><td>{{ref:ab.wurfwaffe}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Spear (thrown)</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Wurfwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Spear (thrown)",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.spearlance",
+   "kind": "item",
+   "name": "Speer/Lanze",
+   "type": "Waffe (Stangenwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+5</td><td>+6</td><td>+4</td><td>+6</td><td>1</td><td>{{ref:ab.stangenwaffe}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Spear/Lance</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "5",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "4",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Stangenwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Spear/Lance",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.throwaxe",
+   "kind": "item",
+   "name": "Wurfaxt",
+   "type": "Waffe (Wurfwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+1</td><td>+1</td><td>+0</td><td>+4</td><td>0,5</td><td>{{ref:ab.wurfwaffe}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Throwing Axe</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "4",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.5",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Wurfwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Throwing Axe",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.throwknife",
+   "kind": "item",
+   "name": "Wurfmesser",
+   "type": "Waffe (Wurfwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+1</td><td>+1</td><td>–</td><td>+3</td><td>0,2</td><td>{{ref:ab.wurfwaffe}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Throwing Knife</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "–",
+     "type_id": 1
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.2",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Wurfwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Throwing Knife",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.twohandaxes",
+   "kind": "item",
+   "name": "Zwei Handäxte",
+   "type": "Waffe (Zwei Waffen)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+4</td><td>+5</td><td>+3</td><td>+7</td><td>1</td><td>{{ref:ab.zweiwaffen}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Two Hand Axes</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "4",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "5",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "7",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Zwei Waffen",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Two Hand Axes",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.twoswords",
+   "kind": "item",
+   "name": "Zwei Kurzschwerter",
+   "type": "Waffe (Zwei Waffen)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+6</td><td>+3</td><td>+5</td><td>+7</td><td>1</td><td>{{ref:ab.zweiwaffen}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Two Short Swords</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "5",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "7",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Zwei Waffen",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Two Short Swords",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.vikingaxe",
+   "kind": "item",
+   "name": "Wikingeraxt",
+   "type": "Waffe (Großwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+5</td><td>+3</td><td>+4</td><td>+10</td><td>1,5</td><td>{{ref:ab.grosswaffe}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Viking Axe</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "5",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "4",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "10",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "1.5",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Großwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Viking Axe",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.vikingbroad",
+   "kind": "item",
+   "name": "Wikinger-Breitschwert",
+   "type": "Waffe (Einhandwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+5</td><td>+3</td><td>+4</td><td>+6</td><td>1</td><td>{{ref:ab.einzelwaffe}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Viking Broadsword</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "5",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "4",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Einhandwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Viking Broadsword",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.warmaul",
+   "kind": "item",
+   "name": "Kriegshammer",
+   "type": "Waffe (Großwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+5</td><td>+2</td><td>+5</td><td>+10</td><td>1,5</td><td>{{ref:ab.grosswaffe}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> War Maul</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "5",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "5",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "10",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "1.5",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Großwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "War Maul",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.w.whip",
+   "kind": "item",
+   "name": "Peitsche",
+   "type": "Waffe (Kettenwaffe)",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.waffe",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+0</td><td>+6</td><td>+0</td><td>+2</td><td>0,5</td><td>{{ref:ab.kettenwaffe}}</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Whip</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.5",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Kettenwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Whip",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "34–35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.a.quilted",
+   "kind": "item",
+   "name": "Fellrüstung",
+   "type": "Rüstung",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.ruestung",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>Schutz</th><th>INIT</th><th>Last</th><th>Verfügbarkeit</th></tr><tr><td>1</td><td>0</td><td>1,0</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Quilted/Fur</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 32–35.</em></p>",
+   "properties": [
+    {
+     "name": "Schutz",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Init-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "1.0",
+     "type_id": 6
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Quilted/Fur",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.a.heavyleather",
+   "kind": "item",
+   "name": "Lederrüstung",
+   "type": "Rüstung",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.ruestung",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>Schutz</th><th>INIT</th><th>Last</th><th>Verfügbarkeit</th></tr><tr><td>3</td><td>-1</td><td>1,5</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Heavy Leather</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 32–35.</em></p>",
+   "properties": [
+    {
+     "name": "Schutz",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Init-Wert",
+     "value": "-1",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "1.5",
+     "type_id": 6
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Heavy Leather",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.a.studded",
+   "kind": "item",
+   "name": "Beschlagene Lederrüstung",
+   "type": "Rüstung",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.ruestung",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>Schutz</th><th>INIT</th><th>Last</th><th>Verfügbarkeit</th></tr><tr><td>5</td><td>-3</td><td>2,0</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Studded Leather</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 32–35.</em></p>",
+   "properties": [
+    {
+     "name": "Schutz",
+     "value": "5",
+     "type_id": 6
+    },
+    {
+     "name": "Init-Wert",
+     "value": "-3",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "2.0",
+     "type_id": 6
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Studded Leather",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.a.chainmail",
+   "kind": "item",
+   "name": "Kettenhemd",
+   "type": "Rüstung",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.ruestung",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>Schutz</th><th>INIT</th><th>Last</th><th>Verfügbarkeit</th></tr><tr><td>7</td><td>-5</td><td>2,5</td><td>gewöhnlich</td></tr></table><p><strong>Originalname:</strong> Chain Mail</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 32–35.</em></p>",
+   "properties": [
+    {
+     "name": "Schutz",
+     "value": "7",
+     "type_id": 6
+    },
+    {
+     "name": "Init-Wert",
+     "value": "-5",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "2.5",
+     "type_id": 6
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Chain Mail",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.a.steelscale",
+   "kind": "item",
+   "name": "Schuppenpanzer",
+   "type": "Rüstung",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.ruestung",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>Schutz</th><th>INIT</th><th>Last</th><th>Verfügbarkeit</th></tr><tr><td>9</td><td>-7</td><td>3,0</td><td>selten</td></tr></table><p><strong>Originalname:</strong> Steel Scale Mail</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 32–35.</em></p>",
+   "properties": [
+    {
+     "name": "Schutz",
+     "value": "9",
+     "type_id": 6
+    },
+    {
+     "name": "Init-Wert",
+     "value": "-7",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "3.0",
+     "type_id": 6
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Steel Scale Mail",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.s.buckler",
+   "kind": "item",
+   "name": "Buckler",
+   "type": "Schild",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.schild",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+0</td><td>+0</td><td>+2</td><td>+0</td><td>0,25</td><td>{{ref:ab.einzelwaffe}}</td><td>gewöhnlich</td></tr></table><p>Ein Schild addiert seine INIT-, ATK-, DFN-, DAM- und Lastwerte zu denen der <strong>Einhandwaffe</strong>, mit der er geführt wird.</p><p><strong>Originalname:</strong> Buckler</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 33–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.25",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Einhandwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Buckler",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.s.round",
+   "kind": "item",
+   "name": "Rundschild",
+   "type": "Schild",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.schild",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>+0</td><td>+0</td><td>+3</td><td>+0</td><td>0,5</td><td>{{ref:ab.einzelwaffe}}</td><td>gewöhnlich</td></tr></table><p>Ein Schild addiert seine INIT-, ATK-, DFN-, DAM- und Lastwerte zu denen der <strong>Einhandwaffe</strong>, mit der er geführt wird.</p><p><strong>Originalname:</strong> Round Shield</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 33–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "0.5",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Einhandwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Round Shield",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.s.kite",
+   "kind": "item",
+   "name": "Kiteschild",
+   "type": "Schild",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.schild",
+    "tag.gewoehnlich"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>-1</td><td>-1</td><td>+4</td><td>+0</td><td>2</td><td>{{ref:ab.einzelwaffe}}</td><td>gewöhnlich</td></tr></table><p>Ein Schild addiert seine INIT-, ATK-, DFN-, DAM- und Lastwerte zu denen der <strong>Einhandwaffe</strong>, mit der er geführt wird.</p><p><strong>Originalname:</strong> Kite Shield</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 33–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "-1",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "-1",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "4",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Einhandwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "gewöhnlich",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Kite Shield",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "item.s.tower",
+   "kind": "item",
+   "name": "Turmschild",
+   "type": "Schild",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.schild",
+    "tag.selten"
+   ],
+   "entry": "<table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>-2</td><td>-2</td><td>+5</td><td>+0</td><td>3</td><td>{{ref:ab.einzelwaffe}}</td><td>selten</td></tr></table><p>Ein Schild addiert seine INIT-, ATK-, DFN-, DAM- und Lastwerte zu denen der <strong>Einhandwaffe</strong>, mit der er geführt wird.</p><p><strong>Originalname:</strong> Tower Shield</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 33–35.</em></p>",
+   "properties": [
+    {
+     "name": "Init-Wert",
+     "value": "-2",
+     "type_id": 6
+    },
+    {
+     "name": "Atk-Wert",
+     "value": "-2",
+     "type_id": 6
+    },
+    {
+     "name": "Dfn-Wert",
+     "value": "5",
+     "type_id": 6
+    },
+    {
+     "name": "Dam-Wert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Last",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Fertigkeit",
+     "value": "Einhandwaffe",
+     "type_id": 1
+    },
+    {
+     "name": "Verfügbarkeit",
+     "value": "selten",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Tower Shield",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "35",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.waffen",
+   "kind": "note",
+   "name": "Waffen, Rüstungen und Schilde (Regeln)",
+   "type": "Regel",
+   "parent": "n.kap1",
+   "tags": [
+    "tag.kap1"
+   ],
+   "entry": "<p>Die Waffen eines Kriegers sind eine Verlängerung seiner selbst. Dein Held beginnt mit einer Auswahl <strong>gewöhnlicher Waffen</strong>, die der Schmied seines Heimatdorfes gefertigt hat. Im Lauf der Abenteuer sammelt er mächtigere an; manche sind so groß, dass er sie nur mit dem Segen der Götter richtig führen kann.</p><h3>Werte einer Waffe</h3><ul><li><strong>Initiative-Wert (INIT):</strong> Je größer die Waffe, desto kürzer der Abstand zwischen ihrer Tötungsfläche und dem Schädel des Gegners; je schneller die Waffe, desto höher der Wert.</li><li><strong>Angriffs-Wert (ATK):</strong> Je leichter du den Gegner mit der Waffe triffst, desto höher.</li><li><strong>Verteidigungs-Wert (DFN):</strong> Die meisten Nahkampfwaffen taugen zum Parieren. Je nützlicher beim Abwehren, desto höher.</li><li><strong>Schadens-Wert (DAM):</strong> Wie viel Verletzung die Waffe bei einem Treffer anrichten kann.</li><li><strong>Last:</strong> Das Gewicht der Waffe; es zählt zur Belastung (siehe {{ref:n.zahlen}}).</li><li><strong>Fertigkeit:</strong> Die Fertigkeit, mit der du die Waffe führst (ein Kurzspeer gehört zu {{ref:ab.einzelwaffe}}, ein Flegel zu {{ref:ab.kettenwaffe}}).</li><li><strong>Verfügbarkeit:</strong> <em>Gewöhnliche</em> Waffen stellen die Schmiede deines Heimatdorfes her. <em>Seltene</em> erhältst du nur im Spiel, durch Handel oder als Beute von Erschlagenen.</li></ul><p><strong>Wahl:</strong> Zu Spielbeginn darfst du bis zu <strong>3 gewöhnliche Waffen</strong> wählen.</p><h3>Rüstung</h3><p>Erfahrene Wikinger raten zu so viel Schutz, wie du auftreiben kannst: Irgendwann dringt ein Gegner an deiner Parade vorbei. Du darfst mit <strong>einer Art gewöhnlicher Rüstung</strong> und <strong>einem gewöhnlichen Schild</strong> beginnen.</p><p>Jede Rüstung hat zwei Werte: den <strong>Schutzwert (Prot)</strong> und einen <strong>INIT-Wert</strong> (negativ: mehr Schutz kostet Initiative). Rüstung beeinflusst weder Angriffe noch Verteidigung. Der Schutzwert fließt in die Absorption ein (Absorption = Ausdauer + Schutz): So steckst du Hiebe weg, die einen schwächer Gerüsteten verletzten.</p><p>Ein Metall-Gegenstück zur Lederrüstung kennt man in Wikingerdörfern nicht; Schuppenpanzer sind <em>selten</em> und finden sich in der Unterwelt oder an anderen gefährlichen Orten.</p><h3>Schilde</h3><p>Ein Schild addiert seine INIT-, ATK-, DFN-, DAM- und Lastwerte zu den Werten der <strong>Einhandwaffe</strong>, mit der er geführt wird.</p><h3>Fernwaffen: Reichweite und Munition</h3><ul><li><strong>Reichweite von Fernwaffen</strong> = <strong>10 Meter × DAM-Wert</strong> der Waffe. Weiter entfernte Ziele triffst du mit einem Abzug von 1 auf den DAM-Wert je 10 Meter jenseits der Standardreichweite. Ziele müssen mindestens <strong>5 Meter</strong> entfernt sein.</li><li><strong>Reichweite von Wurfwaffen</strong> = <strong>4 Meter je Punkt DAM-Wert</strong>. Auch hier: −1 DAM je 10 Meter außerhalb. Ziele müssen mindestens <strong>3 Meter</strong> entfernt sein.</li><li>Die <strong>Last</strong> jeder Fernwaffe schließt <strong>ein Dutzend Munition</strong> ein. Für jedes weitere Dutzend addierst du <strong>25 %</strong> der ursprünglichen Last. Reist du ganz ohne Munition, sinkt die Last um 25 % (im Original steht „Nahkampfwaffe“, gemeint ist vermutlich die Fernwaffe).</li><li>Zu Spielbeginn darfst du beliebig viel Munition haben.</li><li>Schleuderer finden an Land überall passende Steine. Nutzer anderer Fernwaffen müssen Munition in den Begegnungen finden, wenn sie ihnen mitten im Abenteuer ausgeht.</li></ul><p>Die Einzelwerte aller Waffen, Rüstungen und Schilde siehe {{ref:n.waffentabelle}} und die zugehörigen Items.</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31–35.</em></p>"
+  },
+  {
+   "key": "n.waffentabelle",
+   "kind": "note",
+   "name": "Waffen-, Rüstungs- und Schildtabelle",
+   "type": "Regeltabelle",
+   "parent": "n.kap1",
+   "tags": [
+    "tag.kap1",
+    "tag.tabelle"
+   ],
+   "entry": "<h3>Waffen</h3><table><tr><th>Waffe</th><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th><th>Verfügbarkeit</th></tr><tr><td>{{ref:item.w.barb-net}}</td><td>-4</td><td>+0</td><td>+4</td><td>Spezial</td><td>2</td><td>Raufen</td><td>selten</td></tr><tr><td>{{ref:item.w.billhook}}</td><td>+5</td><td>+6</td><td>+1</td><td>+8</td><td>1,5</td><td>Stangenwaffe</td><td>selten</td></tr><tr><td>{{ref:item.w.chair}}</td><td>+2</td><td>+2</td><td>+3</td><td>+1</td><td>–</td><td>Raufen</td><td>–</td></tr><tr><td>{{ref:item.w.compbow}}</td><td>-1</td><td>+1</td><td>–</td><td>+8</td><td>0,5</td><td>Bögen</td><td>selten</td></tr><tr><td>{{ref:item.w.dagger}}</td><td>+2</td><td>+1</td><td>+2</td><td>+3</td><td>0,25</td><td>Einhandwaffe</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.dblaxe}}</td><td>+6</td><td>+5</td><td>+7</td><td>+12</td><td>3</td><td>Großwaffe</td><td>selten</td></tr><tr><td>{{ref:item.w.dwbaxe}}</td><td>+8</td><td>+7</td><td>+8</td><td>+14</td><td>4</td><td>Großwaffe</td><td>selten</td></tr><tr><td>{{ref:item.w.dwbhammer}}</td><td>+8</td><td>+8</td><td>+10</td><td>+14</td><td>3</td><td>Großwaffe</td><td>selten</td></tr><tr><td>{{ref:item.w.dwbsword}}</td><td>+8</td><td>+6</td><td>+10</td><td>+12</td><td>1</td><td>Großwaffe</td><td>selten</td></tr><tr><td>{{ref:item.w.dwwhammer}}</td><td>+6</td><td>+6</td><td>+8</td><td>+10</td><td>2</td><td>Großwaffe</td><td>selten</td></tr><tr><td>{{ref:item.w.dwwsword}}</td><td>+6</td><td>+4</td><td>+6</td><td>+8</td><td>1</td><td>Großwaffe</td><td>selten</td></tr><tr><td>{{ref:item.w.fist}}</td><td>+1</td><td>+0</td><td>+0</td><td>+0</td><td>–</td><td>Raufen</td><td>–</td></tr><tr><td>{{ref:item.w.flagon}}</td><td>-1</td><td>+0</td><td>+0</td><td>+2</td><td>0,25</td><td>Raufen</td><td>–</td></tr><tr><td>{{ref:item.w.flail}}</td><td>+2</td><td>+7</td><td>+1</td><td>+7</td><td>0,5</td><td>Kettenwaffe</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.fbmace}}</td><td>+4</td><td>+4</td><td>+3</td><td>+7</td><td>0,5</td><td>Einhandwaffe</td><td>selten</td></tr><tr><td>{{ref:item.w.gauntlet}}</td><td>+1</td><td>+0</td><td>+1</td><td>+1</td><td>0,25</td><td>Raufen</td><td>selten</td></tr><tr><td>{{ref:item.w.gobaxe}}</td><td>+4</td><td>+2</td><td>+2</td><td>+7</td><td>1</td><td>Einhandwaffe</td><td>selten</td></tr><tr><td>{{ref:item.w.gobclub}}</td><td>+3</td><td>+2</td><td>+3</td><td>+6</td><td>0,5</td><td>Einhandwaffe</td><td>selten</td></tr><tr><td>{{ref:item.w.handaxe}}</td><td>+3</td><td>+1</td><td>+2</td><td>+6</td><td>0,5</td><td>Einhandwaffe</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.hxbow}}</td><td>-10</td><td>+2</td><td>–</td><td>+14</td><td>1</td><td>Bögen</td><td>selten</td></tr><tr><td>{{ref:item.w.lxbow}}</td><td>-6</td><td>+2</td><td>–</td><td>+12</td><td>0,5</td><td>Bögen</td><td>selten</td></tr><tr><td>{{ref:item.w.longbow}}</td><td>-1</td><td>+1</td><td>–</td><td>+10</td><td>1</td><td>Bögen</td><td>selten</td></tr><tr><td>{{ref:item.w.mace}}</td><td>+3</td><td>+2</td><td>+3</td><td>+5</td><td>0,5</td><td>Einhandwaffe</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.mstar}}</td><td>+1</td><td>+5</td><td>+0</td><td>+8</td><td>0,5</td><td>Kettenwaffe</td><td>selten</td></tr><tr><td>{{ref:item.w.net}}</td><td>+0</td><td>+4</td><td>+2</td><td>+0</td><td>0,5</td><td>Kettenwaffe</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.pike}}</td><td>+6</td><td>+4</td><td>+1</td><td>+6</td><td>1,5</td><td>Stangenwaffe</td><td>selten</td></tr><tr><td>{{ref:item.w.polearm}}</td><td>+6</td><td>+3</td><td>+5</td><td>+9</td><td>1,5</td><td>Großwaffe</td><td>selten</td></tr><tr><td>{{ref:item.w.punyknife}}</td><td>+1</td><td>+0</td><td>+1</td><td>+2</td><td>0,15</td><td>Einhandwaffe</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.qstaff}}</td><td>+6</td><td>+4</td><td>+8</td><td>+3</td><td>1</td><td>Großwaffe</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.rock}}</td><td>+4</td><td>+0</td><td>–</td><td>+2</td><td>0</td><td>Wurfwaffe</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.romansword}}</td><td>+3</td><td>+1</td><td>+4</td><td>+4</td><td>0,5</td><td>Einhandwaffe</td><td>selten</td></tr><tr><td>{{ref:item.w.sap}}</td><td>+1</td><td>+0</td><td>+1</td><td>+2</td><td>0,15</td><td>Einhandwaffe</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.sevarm}}</td><td>+1</td><td>+1</td><td>+1</td><td>+1</td><td>–</td><td>Großwaffe</td><td>siehe S. 52</td></tr><tr><td>{{ref:item.w.shortbow}}</td><td>+0</td><td>+0</td><td>–</td><td>+6</td><td>0,5</td><td>Bögen</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.shortspear}}</td><td>+5</td><td>+1</td><td>+2</td><td>+3</td><td>0,5</td><td>Einhandwaffe</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.shortsword}}</td><td>+4</td><td>+2</td><td>+3</td><td>+3</td><td>0,5</td><td>Einhandwaffe</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.sworddag}}</td><td>+6</td><td>+5</td><td>+6</td><td>+5</td><td>0,75</td><td>Zwei Waffen</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.sling}}</td><td>+2</td><td>+2</td><td>–</td><td>+3</td><td>0,1</td><td>Wurfwaffe</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.spearthrown}}</td><td>+0</td><td>+2</td><td>+0</td><td>+6</td><td>1</td><td>Wurfwaffe</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.spearlance}}</td><td>+5</td><td>+6</td><td>+4</td><td>+6</td><td>1</td><td>Stangenwaffe</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.throwaxe}}</td><td>+1</td><td>+1</td><td>+0</td><td>+4</td><td>0,5</td><td>Wurfwaffe</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.throwknife}}</td><td>+1</td><td>+1</td><td>–</td><td>+3</td><td>0,2</td><td>Wurfwaffe</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.twohandaxes}}</td><td>+4</td><td>+5</td><td>+3</td><td>+7</td><td>1</td><td>Zwei Waffen</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.twoswords}}</td><td>+6</td><td>+3</td><td>+5</td><td>+7</td><td>1</td><td>Zwei Waffen</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.vikingaxe}}</td><td>+5</td><td>+3</td><td>+4</td><td>+10</td><td>1,5</td><td>Großwaffe</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.vikingbroad}}</td><td>+5</td><td>+3</td><td>+4</td><td>+6</td><td>1</td><td>Einhandwaffe</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.warmaul}}</td><td>+5</td><td>+2</td><td>+5</td><td>+10</td><td>1,5</td><td>Großwaffe</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.w.whip}}</td><td>+0</td><td>+6</td><td>+0</td><td>+2</td><td>0,5</td><td>Kettenwaffe</td><td>gewöhnlich</td></tr></table><p><em>Chair/Stuhl:</em> Kein Verfügbarkeitseintrag im Original. <em>Fußnoten:</em> siehe Widerhakennetz und Humpen.</p><h3>Rüstungen</h3><table><tr><th>Rüstung</th><th>Schutz</th><th>INIT</th><th>Last</th><th>Verfügbarkeit</th></tr><tr><td>{{ref:item.a.quilted}}</td><td>1</td><td>0</td><td>1,0</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.a.heavyleather}}</td><td>3</td><td>-1</td><td>1,5</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.a.studded}}</td><td>5</td><td>-3</td><td>2,0</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.a.chainmail}}</td><td>7</td><td>-5</td><td>2,5</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.a.steelscale}}</td><td>9</td><td>-7</td><td>3,0</td><td>selten</td></tr></table><h3>Schilde</h3><table><tr><th>Schild</th><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Verfügbarkeit</th></tr><tr><td>{{ref:item.s.buckler}}</td><td>+0</td><td>+0</td><td>+2</td><td>+0</td><td>0,25</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.s.round}}</td><td>+0</td><td>+0</td><td>+3</td><td>+0</td><td>0,5</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.s.kite}}</td><td>-1</td><td>-1</td><td>+4</td><td>+0</td><td>2</td><td>gewöhnlich</td></tr><tr><td>{{ref:item.s.tower}}</td><td>-2</td><td>-2</td><td>+5</td><td>+0</td><td>3</td><td>selten</td></tr></table><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 34–35.</em></p>"
+  }
+ ]
+}

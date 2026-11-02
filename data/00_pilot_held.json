@@ -1,0 +1,3079 @@
+{
+ "meta": {
+  "projekt": "Rune RPG auf Kanka (Deutsch)",
+  "ausschnitt": "Held-Pilot (Kapitel 1)",
+  "sprache": "de",
+  "version": "0.1"
+ },
+ "tags": [
+  {
+   "key": "tag.kap1",
+   "name": "Kapitel 1: Ein Held entsteht"
+  },
+  {
+   "key": "tag.primaer",
+   "name": "Primärfertigkeit"
+  },
+  {
+   "key": "tag.sekundaer",
+   "name": "Sekundärfertigkeit"
+  },
+  {
+   "key": "tag.kampf",
+   "name": "Kampffertigkeit"
+  },
+  {
+   "key": "tag.erkundung",
+   "name": "Erkundungsfertigkeit"
+  },
+  {
+   "key": "tag.interaktion",
+   "name": "Interaktionsfertigkeit"
+  },
+  {
+   "key": "tag.sonstige",
+   "name": "Sonstige Fertigkeit"
+  },
+  {
+   "key": "tag.charakteristik",
+   "name": "Charakteristik"
+  },
+  {
+   "key": "tag.gottheit",
+   "name": "Gottheit"
+  },
+  {
+   "key": "tag.beispiel",
+   "name": "Beispiel"
+  },
+  {
+   "key": "tag.tabelle",
+   "name": "Regeltabelle"
+  }
+ ],
+ "entities": [
+  {
+   "key": "n.root",
+   "kind": "note",
+   "name": "Rune RPG: Regelwerk (Deutsch)",
+   "type": "Regelwerk",
+   "parent": null,
+   "tags": [],
+   "entry": "<p>Deutsche Fassung der Regeln des Pen-&-Paper-Rollenspiels <strong>Rune RPG</strong> (Atlas Games, Version 0.9 Digital Edition). Nur für den privaten Gebrauch in dieser Kampagne. Seitenangaben beziehen sich auf das englische Original.</p>"
+  },
+  {
+   "key": "n.kap1",
+   "kind": "note",
+   "name": "Kapitel 1: Ein Held entsteht",
+   "type": "Kapitel",
+   "parent": "n.root",
+   "tags": [
+    "tag.kap1"
+   ],
+   "entry": "<p>Wie du einen Helden erschaffst: Namen wählen, Charakteristiken und Fertigkeiten kaufen, Waffen und Rüstung wählen, wichtige Zahlen berechnen.</p><ul><li>{{ref:n.erschaffung}}</li><li>{{ref:n.beiname}}</li><li>{{ref:n.charakteristiken}}</li><li>{{ref:n.charkosten}}</li><li>{{ref:n.fertigkeitenregeln}}</li><li>{{ref:n.tp}}</li><li>{{ref:n.wunden}}</li><li>{{ref:n.zahlen}}</li><li>{{ref:n.ragnar}}</li><li>{{ref:n.heldenbogen}}</li><li>{{ref:n.hinweise}}</li></ul>"
+  },
+  {
+   "key": "n.erschaffung",
+   "kind": "note",
+   "name": "Heldenerschaffung: die Schritte",
+   "type": "Regel",
+   "parent": "n.kap1",
+   "tags": [
+    "tag.kap1"
+   ],
+   "entry": "<p>Du erschaffst einen Helden in fünf Schritten (siehe das durchgerechnete Beispiel in {{ref:n.ragnar}}):</p><ol><li><strong>Name:</strong> Wähle Namen und gegebenenfalls Beinamen ({{ref:n.beiname}}).</li><li><strong>Charakteristiken kaufen:</strong> Du startest mit <strong>60 Erschaffungspunkten</strong> ({{ref:n.charkosten}}).</li><li><strong>Fertigkeiten und Zusatz-Trefferpunkte kaufen:</strong> mit den übrigen Punkten ({{ref:n.fertigkeitenregeln}}, {{ref:n.tp}}).</li><li><strong>Waffen und Rüstung wählen:</strong> bis zu <strong>3 gewöhnliche Waffen</strong>, <strong>eine</strong> gewöhnliche Rüstungsart und <strong>ein</strong> gewöhnlicher Schild.</li><li><strong>Wichtige Zahlen berechnen:</strong> Belastung, INIT, ATK, DFN, DAM, Absorption, Bewegung und Reaktion ({{ref:n.zahlen}}).</li></ol><p>Rüstung und Schild: Je mehr Schutz, desto niedriger die Initiative. Gewöhnliche Waffen stellt der Schmied deines Heimatdorfes her; seltene Waffen erhältst du nur im Spiel durch Handel oder Beute.</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 14, 16, 18, 31–39</em></p>"
+  },
+  {
+   "key": "n.beiname",
+   "kind": "note",
+   "name": "Name und Beiname",
+   "type": "Regel",
+   "parent": "n.kap1",
+   "tags": [
+    "tag.kap1"
+   ],
+   "entry": "<p>Einen Namen zu wählen kostet keine Punkte. Der Held kann einen Beinamen tragen, der oft von anderen vergeben wird und meist eine auffällige Eigenschaft oder die Herkunft nennt (z. B. „der Schwächliche“, „Hakon der Östliche“, „Gizur aus den Tälern“). Ein rühmlicher Beiname wie „der Starke“ muss erst verdient werden; ein Anfänger trägt eher einen wenig schmeichelhaften. Die Regeln lassen das bewusst offen: Du darfst dir einen Beinamen wählen, wenn er etwas Interessantes über deinen Helden aussagt.</p><p><em>Die Namenslisten (männliche und weibliche Namen, Beinamen) des Originals auf S. 16 sind nicht Teil des Piloten.</em></p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 15–16</em></p>"
+  },
+  {
+   "key": "n.charakteristiken",
+   "kind": "note",
+   "name": "Charakteristiken (Übersicht)",
+   "type": "Regel",
+   "parent": "n.kap1",
+   "tags": [
+    "tag.kap1",
+    "tag.charakteristik"
+   ],
+   "entry": "<p>Charakteristiken sind grundlegende Anlagen von Körper und Geist. Es gibt <strong>acht</strong>. Jede reicht von <strong>−3</strong> (schlechtester Wert eines lebenden Menschen) bis <strong>+3</strong> (Gipfel menschlicher Möglichkeiten). Die meisten Dorfbewohner haben in den meisten Charakteristiken <strong>0</strong> (Durchschnitt). Durch Göttliche Gaben kannst du über +3 hinauskommen. Jeder Charakteristik ist ein Gott zugeordnet; Helden mit vielen Gaben einer Charakteristik stehen meist tief in der Schuld dieses Schutzgotts.</p><table><tr><th>Charakteristik</th><th>Kürzel (Original)</th><th>Schutzgott</th></tr><tr><td>{{ref:n.ch.staerke}}</td><td>STR</td><td>{{ref:god.thor}}</td></tr><tr><td>{{ref:n.ch.ausdauer}}</td><td>STA</td><td>{{ref:god.tyr}}</td></tr><tr><td>{{ref:n.ch.geschick}}</td><td>DEX</td><td>{{ref:god.ull}}</td></tr><tr><td>{{ref:n.ch.schnelligkeit}}</td><td>QIK</td><td>{{ref:god.njord}}</td></tr><tr><td>{{ref:n.ch.intelligenz}}</td><td>INT</td><td>{{ref:god.loki}}</td></tr><tr><td>{{ref:n.ch.wahrnehmung}}</td><td>PER</td><td>{{ref:god.heimdal}}</td></tr><tr><td>{{ref:n.ch.praesenz}}</td><td>PRE</td><td>{{ref:god.odin}}</td></tr><tr><td>{{ref:n.ch.kommunikation}}</td><td>COM</td><td>{{ref:god.freyr}}</td></tr></table><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 17–18</em></p>"
+  },
+  {
+   "key": "n.ch.staerke",
+   "kind": "note",
+   "name": "Stärke (STR)",
+   "type": "Charakteristik",
+   "parent": "n.charakteristiken",
+   "tags": [
+    "tag.kap1",
+    "tag.charakteristik"
+   ],
+   "entry": "<p>Muskelkraft: heben, schieben, drücken, stemmen und vor allem zuschlagen. Du nutzt sie, um Türen einzuschlagen, und sie erhöht den Schaden, den du Gegnern zufügst. Zusammen mit Ausdauer bestimmt sie deine Start-Trefferpunkte.</p><p><strong>Schutzgott:</strong> {{ref:god.thor}}</p><p><strong>Originalname:</strong> Strength (Str)</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 17–18</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Strength",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "17–18",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.ch.ausdauer",
+   "kind": "note",
+   "name": "Ausdauer (STA)",
+   "type": "Charakteristik",
+   "parent": "n.charakteristiken",
+   "tags": [
+    "tag.kap1",
+    "tag.charakteristik"
+   ],
+   "entry": "<p>Zeigt, wie gut du Schaden einstecken kannst. Ausdauer erlaubt dir, über die Erschöpfung hinauszugehen, Krankheiten und Gift zu widerstehen und über Wasser zu bleiben, wo Schwächere ertrinken. Sie bestimmt Absorption, Wundschwelle und Zusatz-Trefferpunkte.</p><p><strong>Schutzgott:</strong> {{ref:god.tyr}}</p><p><strong>Originalname:</strong> Stamina (Sta)</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 17–18</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Stamina",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "17–18",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.ch.geschick",
+   "kind": "note",
+   "name": "Geschicklichkeit (DEX)",
+   "type": "Charakteristik",
+   "parent": "n.charakteristiken",
+   "tags": [
+    "tag.kap1",
+    "tag.charakteristik"
+   ],
+   "entry": "<p>Anmut und Präzision deiner Bewegungen. Vor allem bestimmt sie deine Treffsicherheit mit Nahkampfwaffen. Außerdem für Schlösser knacken und um im Sattel zu bleiben, wenn das Pferd scheut.</p><p><strong>Schutzgott:</strong> {{ref:god.ull}}</p><p><strong>Originalname:</strong> Dexterity (Dex)</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 17–18</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Dexterity",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "17–18",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.ch.schnelligkeit",
+   "kind": "note",
+   "name": "Schnelligkeit (QIK)",
+   "type": "Charakteristik",
+   "parent": "n.charakteristiken",
+   "tags": [
+    "tag.kap1",
+    "tag.charakteristik"
+   ],
+   "entry": "<p>Du läufst schnell und reagierst rasch auf plötzliche Gefahr. Sie erlaubt dir, im Kampf zuerst zuzuschlagen, Hieben auszuweichen und Fernwaffen treffsicher abzufeuern.</p><p><strong>Schutzgott:</strong> {{ref:god.njord}}</p><p><strong>Originalname:</strong> Quickness (Qik)</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 17–18</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Quickness",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "17–18",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.ch.intelligenz",
+   "kind": "note",
+   "name": "Intelligenz (INT)",
+   "type": "Charakteristik",
+   "parent": "n.charakteristiken",
+   "tags": [
+    "tag.kap1",
+    "tag.charakteristik"
+   ],
+   "entry": "<p>Gedächtnis und Fähigkeit zu schlussfolgern, etwa um sich an ein Runenmuster zu erinnern, das du vor mehreren Begegnungen gesehen hast, oder um das Rätsel einer bedrohlichen Brückentrollin zu lösen. Intelligenz gilt mitunter als verdächtig, denn Loki besitzt sie unter allen Göttern im Übermaß.</p><p><strong>Schutzgott:</strong> {{ref:god.loki}}</p><p><strong>Originalname:</strong> Intelligence (Int)</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 17–18</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Intelligence",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "17–18",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.ch.wahrnehmung",
+   "kind": "note",
+   "name": "Wahrnehmung (PER)",
+   "type": "Charakteristik",
+   "parent": "n.charakteristiken",
+   "tags": [
+    "tag.kap1",
+    "tag.charakteristik"
+   ],
+   "entry": "<p>Du bemerkst feine Einzelheiten deiner Umgebung, und deine Intuition warnt dich vor Gefahren, die dein Bewusstsein nicht erfasst, etwa das verräterische Blitzen einer gezogenen Klinge im Wald oder ein belauschtes Gespräch zwischen einem Priester Hels und ihren Untoten.</p><p><strong>Schutzgott:</strong> {{ref:god.heimdal}}</p><p><strong>Originalname:</strong> Perception (Per)</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 17–18</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Perception",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "17–18",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.ch.praesenz",
+   "kind": "note",
+   "name": "Präsenz (PRE)",
+   "type": "Charakteristik",
+   "parent": "n.charakteristiken",
+   "tags": [
+    "tag.kap1",
+    "tag.charakteristik"
+   ],
+   "entry": "<p>Die Fähigkeit, bei Gleichgestellten sofort einen starken Eindruck zu machen: Wer viel Präsenz hat, gilt nach den Maßstäben seines Volkes als gutaussehend, tritt selbstsicher auf und zieht Aufmerksamkeit an. Sie kann auch ein furchteinflößender Eindruck sein, der Gehorsam erzwingt. Auf Goblins, Zwerge und Elfen wirkt sie schwächer, aber auch sie erkennen starke Präsenz. Präsenz ist die Eigenschaft von Häuptlingen und Anführern.</p><p><strong>Schutzgott:</strong> {{ref:god.odin}}</p><p><strong>Originalname:</strong> Presence (Pre)</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 17–18</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Presence",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "17–18",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.ch.kommunikation",
+   "kind": "note",
+   "name": "Kommunikation (COM)",
+   "type": "Charakteristik",
+   "parent": "n.charakteristiken",
+   "tags": [
+    "tag.kap1",
+    "tag.charakteristik"
+   ],
+   "entry": "<p>Du sprichst klar und überzeugend und hörst gut zu, um zu verstehen, wie du andere zu etwas bewegst.</p><p><strong>Schutzgott:</strong> {{ref:god.freyr}}</p><p><strong>Originalname:</strong> Communication (Com)</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 17–18</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Communication",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "17–18",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.charkosten",
+   "kind": "note",
+   "name": "Charakteristiken kaufen (Kostentabelle)",
+   "type": "Regeltabelle",
+   "parent": "n.kap1",
+   "tags": [
+    "tag.kap1",
+    "tag.tabelle"
+   ],
+   "entry": "<p>In einer Welt voller Schwerter sind nicht alle Charakteristiken gleich viel wert. Die Tabelle zeigt, was jeder Wert kostet. <strong>Negative Werte geben dir Erschaffungspunkte zurück</strong>, die du anderweitig ausgeben kannst. Aber: Konkurrierende Spieler können als Runner deine Schwächen ausnutzen.</p><table><tr><th>Charakteristik</th><th>−3</th><th>−2</th><th>−1</th><th>0</th><th>+1</th><th>+2</th><th>+3</th></tr><tr><td>Stärke</td><td>-12</td><td>-8</td><td>-4</td><td>0</td><td>4</td><td>8</td><td>16</td></tr><tr><td>Ausdauer</td><td>-16</td><td>-10</td><td>-6</td><td>0</td><td>4</td><td>8</td><td>16</td></tr><tr><td>Geschicklichkeit</td><td>-12</td><td>-8</td><td>-4</td><td>0</td><td>4</td><td>8</td><td>16</td></tr><tr><td>Schnelligkeit</td><td>-12</td><td>-8</td><td>-4</td><td>0</td><td>4</td><td>8</td><td>16</td></tr><tr><td>Intelligenz</td><td>-6</td><td>-4</td><td>-2</td><td>0</td><td>2</td><td>4</td><td>8</td></tr><tr><td>Wahrnehmung</td><td>-6</td><td>-4</td><td>-2</td><td>0</td><td>2</td><td>4</td><td>8</td></tr><tr><td>Präsenz</td><td>-2</td><td>-2</td><td>-2</td><td>0</td><td>2</td><td>4</td><td>8</td></tr><tr><td>Kommunikation</td><td>-2</td><td>-2</td><td>-2</td><td>0</td><td>2</td><td>4</td><td>8</td></tr></table><p>Extrem niedrige Werte in Präsenz und Kommunikation bringen keinen zusätzlichen Vorteil (mehr als +2 Punkte gibt es nicht zurück).</p><p><em>Hinweis für Anfänger:</em> Werte unter 0 in den ersten vier Charakteristiken oder unter −1 in den letzten vier empfiehlt das Buch nur erfahrenen Spielern mit kniffligen Heldenkonzepten.</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 18</em></p>"
+  },
+  {
+   "key": "n.fertigkeitenregeln",
+   "kind": "note",
+   "name": "Fertigkeiten: Grundregeln",
+   "type": "Regel",
+   "parent": "n.kap1",
+   "tags": [
+    "tag.kap1"
+   ],
+   "entry": "<ul><li>Nach den Charakteristiken kaufst du <strong>Fertigkeiten</strong> mit den übrigen Punkten. Beim Start ist jede Fertigkeit auf <strong>höchstens 3</strong> begrenzt.</li><li><strong>Primärfertigkeiten</strong> (kommen im Spiel viel häufiger vor) kosten <strong>2 Erschaffungspunkte pro Punkt</strong>; <strong>Sekundärfertigkeiten</strong> kosten <strong>1 Punkt pro Punkt</strong>.</li><li>Du kannst fast jede Handlung auch ohne die passende Fertigkeit versuchen, aber dein Wurf erhält einen Malus von <strong>−3</strong>. Ausnahme: {{ref:ab.runenkunde}} (ohne Wert gar nicht versuchbar).</li><li>Jede Fertigkeit hat eine <strong>Leitcharakteristik</strong>: Die kombiniert der Runner meist mit der Fertigkeit beim Wurf. Er darf bei Bedarf andere Charakteristiken verlangen. Umfasst eine Fertigkeit mehrere Tätigkeiten, sind die Beispiele je Charakteristik angegeben.</li><li>Viele Fertigkeiten haben eine <strong>Ausrüstung</strong> mit <strong>Last</strong>. Zu Beginn jedes Abenteuers hast du sie automatisch bei dir, sofern du nichts anderes angibst. Ohne die Ausrüstung erhältst du auf Würfe dieser Fertigkeit einen Malus von <strong>−2</strong> (es gibt Ausnahmen).</li><li>Fertigkeitswerte kannst du im Spiel steigern (Kapitel 3).</li></ul><p>Die Fertigkeiten sind in vier Gruppen geordnet (Kampf, Erkundung, Interaktion, Sonstige). Alle 43 Einträge findest du unter den Fertigkeiten: {{ref:ab.g.kampf}}, {{ref:ab.g.erkundung}}, {{ref:ab.g.interaktion}}, {{ref:ab.g.sonstige}}.</p><p><em>Im Original sind für Anfangshelden besonders empfohlene Fertigkeiten kursiv gesetzt. Diese Markierung liegt im verwendeten Textauszug nicht vor und ist hier daher nicht übernommen.</em></p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 19</em></p>"
+  },
+  {
+   "key": "n.tp",
+   "kind": "note",
+   "name": "Trefferpunkte",
+   "type": "Regeltabelle",
+   "parent": "n.kap1",
+   "tags": [
+    "tag.kap1",
+    "tag.tabelle"
+   ],
+   "entry": "<p>Dein Held beginnt mit einer Zahl an Trefferpunkten (HP), die zeigt, wie lange er trotz Verletzungen weitermacht. Die Start-HP hängen von <strong>Stärke + Ausdauer</strong> ab:</p><table><tr><th>Stärke + Ausdauer</th><th>Start-HP</th></tr><tr><td>−4 oder weniger</td><td>37</td></tr><tr><td>−3 bis −1</td><td>40</td></tr><tr><td>0</td><td>44</td></tr><tr><td>1 bis 3</td><td>48</td></tr><tr><td>4</td><td>52</td></tr><tr><td>5</td><td>56</td></tr><tr><td>6</td><td>60</td></tr></table><p>Mit Erschaffungspunkten kannst du <strong>Zusatz-HP</strong> kaufen. Wie viele du <em>pro ausgegebenem Erschaffungspunkt</em> erhältst, hängt von der <strong>Ausdauer</strong> ab:</p><table><tr><th>Ausdauer</th><th>Zusatz-HP je Erschaffungspunkt</th></tr><tr><td>−3</td><td>+1</td></tr><tr><td>−2</td><td>+2</td></tr><tr><td>−1</td><td>+3</td></tr><tr><td>0</td><td>+4</td></tr><tr><td>+1</td><td>+5</td></tr><tr><td>+2</td><td>+6</td></tr><tr><td>+3</td><td>+7</td></tr></table><p><strong>Achtung:</strong> Die HP der Gegner werden im Verhältnis zu den HP der Helden bestimmt. Kaufen alle riesige HP-Mengen, nützt es niemandem: Die Gegner werden nur zäher.</p><p>Verletzungen senken die HP zeitweise unter das Maximum. Die meisten Treffer sind nur „malerische“ Wunden ohne Einfluss auf Handlungen, außer es ist eine <strong>Wunde</strong> ({{ref:n.wunden}}). Regeln zu Zuständen und Erholung: Kapitel 2.</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 30–31</em></p>"
+  },
+  {
+   "key": "n.wunden",
+   "kind": "note",
+   "name": "Wundschwelle (Wnd)",
+   "type": "Regeltabelle",
+   "parent": "n.kap1",
+   "tags": [
+    "tag.kap1",
+    "tag.tabelle"
+   ],
+   "entry": "<p>Besonders üble Treffer heißen <strong>Wunden</strong>; sie erschweren das Weiterkämpfen und heilen schwerer als gewöhnliche Schnitte und Prellungen. Du erleidest eine Wunde, wenn der Schaden eines <strong>einzelnen Hiebes nach Abzug deiner Absorption</strong> mindestens deiner <strong>Wundschwelle</strong> entspricht. Sie hängt von der Ausdauer ab:</p><table><tr><th>Ausdauer</th><th>Wundschwelle</th></tr><tr><td>−3</td><td>2 HP</td></tr><tr><td>−2</td><td>4 HP</td></tr><tr><td>−1</td><td>6 HP</td></tr><tr><td>0</td><td>9 HP</td></tr><tr><td>+1</td><td>12 HP</td></tr><tr><td>+2</td><td>15 HP</td></tr><tr><td>+3</td><td>18 HP</td></tr></table><p>Weitere Einzelheiten zu Wunden folgen in Kapitel 2 (Original ab S. 54).</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 31</em></p>"
+  },
+  {
+   "key": "n.zahlen",
+   "kind": "note",
+   "name": "Wichtige Zahlen und Formeln",
+   "type": "Regel",
+   "parent": "n.kap1",
+   "tags": [
+    "tag.kap1"
+   ],
+   "entry": "<p>Vor dem Kampf berechnest du diese Werte und trägst sie auf dem Heldenbogen ein ({{ref:n.heldenbogen}} zeigt, wie Kanka sie automatisch rechnet).</p><h3>Belastung (Enc)</h3><p>Vergleiche deine Stärke mit der <strong>Gesamtlast</strong> deiner Ausrüstung (Nachkommastellen der Gesamtlast werden abgeschnitten). Sobald die Last den Schwellenwert einer Stufe erreicht, giltst du als so belastet.</p><table><tr><th>Stärke</th><th>Leicht</th><th>Beladen</th><th>Überladen</th><th>Lieber etwas ablegen</th><th>So viel trägt niemand</th></tr><tr><td>−3</td><td>unter 0,5</td><td>0,5</td><td>1</td><td>2</td><td>4</td></tr><tr><td>−2</td><td>unter 1</td><td>1</td><td>2</td><td>4</td><td>6</td></tr><tr><td>−1</td><td>unter 2</td><td>2</td><td>4</td><td>6</td><td>8</td></tr><tr><td>0</td><td>unter 4</td><td>4</td><td>6</td><td>8</td><td>10</td></tr><tr><td>1</td><td>unter 6</td><td>6</td><td>8</td><td>10</td><td>12</td></tr><tr><td>2</td><td>unter 8</td><td>8</td><td>10</td><td>12</td><td>14</td></tr><tr><td>3</td><td>unter 10</td><td>10</td><td>12</td><td>14</td><td>16</td></tr><tr><td>4+</td><td>—</td><td>je weiterer Punkt 2 mehr</td><td></td><td></td><td></td></tr></table><p>Bist du <strong>Beladen oder schlimmer</strong>, erleidest du einen <strong>Belastungsabzug</strong> auf alle Würfe (auch ATK, DFN und Engagement), in denen Stärke, Ausdauer, Geschicklichkeit oder Schnelligkeit eingehen, auch als Leitcharakteristik einer Fertigkeit:</p><table><tr><th>Belastungsstufe</th><th>Abzug</th></tr><tr><td>Leicht</td><td>0</td></tr><tr><td>Beladen</td><td>1</td></tr><tr><td>Überladen</td><td>3</td></tr><tr><td>Lieber etwas ablegen</td><td>5</td></tr><tr><td>So viel trägt niemand</td><td>8</td></tr></table><h3>Kampfwerte</h3><p>Fehlt dir die passende Fertigkeit (Raufen, Sprinten oder Waffenfertigkeit), gilt der <strong>−3-Malus</strong> für nicht beherrschte Fertigkeiten. Pro Waffe gibt es eigene Werte; Rüstung wirkt nur auf die INIT. Ein Schild addiert seine Werte zur Einhandwaffe, mit der er geführt wird.</p><ul><li><strong>INIT (bewaffnet)</strong> = Schnelligkeit + Waffenfertigkeit + INIT-Wert der Waffe + INIT-Werte von Rüstung und Schild − Belastungsabzug</li><li><strong>INIT (waffenlos)</strong> = Schnelligkeit + Raufen + INIT-Wert Faust/Tritt + INIT-Werte von Rüstung und Schild − Belastungsabzug</li><li><strong>INIT (ohne Kampf)</strong> = Schnelligkeit + Sprinten + INIT-Werte von Rüstung und Schild − Belastungsabzug</li><li><strong>ATK (Nahkampf)</strong> = Geschicklichkeit + Waffenfertigkeit + ATK-Wert der Waffe + ATK-Wert des Schilds − Belastungsabzug</li><li><strong>ATK (Fernkampf)</strong> = Wahrnehmung + Waffenfertigkeit + ATK-Wert der Waffe + ATK-Wert des Schilds − Belastungsabzug</li><li><strong>ATK (waffenlos)</strong> = Geschicklichkeit + Raufen + ATK-Wert Faust/Tritt + ATK-Wert des Schilds − Belastungsabzug</li><li><strong>DFN (bewaffnet)</strong> = Schnelligkeit + Waffenfertigkeit + DFN-Wert der Waffe + DFN-Wert des Schilds − Belastungsabzug</li><li><strong>DFN (waffenlos)</strong> = Schnelligkeit + Raufen + DFN-Wert Faust/Tritt + DFN-Wert des Schilds − Belastungsabzug</li><li><strong>DAM (Nah- und Wurfwaffen)</strong> = Stärke + DAM-Wert der Waffe. Fernwaffen verwenden nur den DAM-Wert der Waffe.</li><li><strong>Absorption (Soak)</strong> = Ausdauer + Schutzwert (Prot) der Rüstung</li></ul><p>Fernwaffen verleihen keine DFN. Hältst du bei einem Angriff eine Fernwaffe, nimmst du <strong>Raufen</strong> (mit den Faust/Tritt-Werten der Waffentabelle) als Grundlage deiner DFN.</p><h3>Bewegung (Move)</h3><p>Deine volle Bewegung hängt von <strong>Sprinten</strong> ab (ohne die Fertigkeit gilt der Wert für Sprinten 0, nie weniger).</p><table><tr><th>Sprinten</th><th>Volle Bewegung</th></tr><tr><td>0</td><td>15 Meter</td></tr><tr><td>1</td><td>20 Meter</td></tr><tr><td>2</td><td>25 Meter</td></tr><tr><td>3</td><td>30 Meter</td></tr></table><p>Ab Sprinten 4 gilt: 30 Meter + 10 Meter je Punkt über 3 (siehe {{ref:ab.sprint}}).</p><h3>Reaktion (RES)</h3><p>Die Reaktion nutzt der Runner, wenn er Werte für deine Gegner erstellt. Du nennst sie ihm zu Beginn jeder Begegnung. Sie ist dein <strong>höchster Gesamtmodifikator</strong> (Leitcharakteristik + Fertigkeit) aus: {{ref:ab.aufmerksamkeit}}, {{ref:ab.balance}}, {{ref:ab.tapferkeit}}, {{ref:ab.ausweichen}}, {{ref:ab.sprint}} oder <strong>Engagement</strong>. Engagement ist Stärke + deine beste Nahkampf-Waffenfertigkeit.</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 35–37</em></p>"
+  },
+  {
+   "key": "n.ragnar",
+   "kind": "note",
+   "name": "Beispiel: Ragnar erschaffen",
+   "type": "Beispiel",
+   "parent": "n.kap1",
+   "tags": [
+    "tag.kap1",
+    "tag.beispiel"
+   ],
+   "entry": "<p>Das Buch rechnet die Erschaffung eines Helden durch, nach dem Helden des Computerspiels. Diese Zahlen sind die Prüfwerte für den Heldenbogen in Kanka ({{ref:char.ragnar}}).</p><ol><li><strong>Name:</strong> Ragnar.</li><li><strong>Charakteristiken</strong> (60 Punkte): Geschicklichkeit 3 (16 Pkt), Ausdauer 3 (16), Stärke 2 (8), Schnelligkeit 2 (8) = 48 Punkte, 12 übrig. Intelligenz, Wahrnehmung, Präsenz und Kommunikation je −1 bringen 2+2+2+2 = 8 Punkte zurück: <strong>20 Punkte</strong> frei.</li><li><strong>Fertigkeiten:</strong> Großwaffe 3 (primär, 6 Pkt). Je 1 in den Primärfertigkeiten Ausweichen, Bögen, Sprinten (6 Pkt). Je 1 in den Sekundärfertigkeiten Balance, Tapferkeit, Klettern, Springen, Schwimmen (5 Pkt). Die letzten 3 Punkte kaufen Zusatz-HP: bei Ausdauer 3 sind das 7 HP pro Punkt, also +21. Start-HP bei Stärke + Ausdauer = 5 sind 56, also <strong>77 HP</strong>. Wundschwelle (Ausdauer 3): <strong>18</strong>.</li><li><strong>Waffen und Rüstung:</strong> Wikingeraxt, Kriegshammer, Kurzbogen (drei gewöhnliche Waffen) und Lederrüstung; kein Schild, weil die Großwaffe beide Hände braucht.</li><li><strong>Wichtige Zahlen:</strong> Gesamtlast 5 (Stärke 2: Leicht, bis unter 8), Belastungsabzug 0. Wikingeraxt INIT 9 / ATK 9 / DFN 9 / DAM 12. Kriegshammer INIT 9 / ATK 8 / DFN 10 / DAM 12. Kurzbogen INIT 2 / ATK 0. Absorption 6 (Ausdauer 3 + Rüstung 3). Bewegung 20 (Sprinten 1). Reaktion 5 (Stärke 2 + Großwaffe 3, das ist sein Engagement).</li></ol><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 38–39</em></p>"
+  },
+  {
+   "key": "n.heldenbogen",
+   "kind": "note",
+   "name": "Heldenbogen in Kanka (Anleitung)",
+   "type": "Anleitung",
+   "parent": "n.kap1",
+   "tags": [
+    "tag.kap1"
+   ],
+   "entry": "<p>Der Heldenbogen liegt als <strong>Property Kit „Rune-Held“</strong> vor. Wende es auf einen Charakter an (Tab „Properties“ des Charakters, Option „Property Kit“, dann speichern). Die Werte werden erst beim Speichern angelegt.</p><ul><li><strong>Eintragen:</strong> Charakteristiken, Fertigkeiten (Standard 0), Trefferpunkte, Wundschwelle, Gesamtlast, Belastungsabzug, Rüstungswerte und die Waffenwerte in den Waffenfeldern.</li><li><strong>Berechnet:</strong> Absorption, Bewegung, Reaktion (und ihre Zwischenwerte) sowie INIT, ATK, DFN und DAM je Waffenplatz. Die −3-Regel für fehlende Fertigkeiten ist eingebaut.</li><li><strong>Waffenplätze:</strong> Waffe 1 und 2 sind Nahkampfplätze, Waffe 3 ist ein Fernkampfplatz (ATK mit Wahrnehmung, keine DFN, DAM nur Waffenwert). In „…Fertigkeit“ trägst du die Fertigkeit der Waffe als Formel ein, z. B. <code>{Großwaffe}</code>. In „…InitWert“, „…AtkWert“, „…DfnWert“, „…DamWert“ trägst du die Werte der Waffe ein (bei Einhandwaffen plus Schild, z. B. <code>5+0</code>).</li><li><strong>Von Hand zu pflegen:</strong> Trefferpunkte, Wundschwelle, Gesamtlast, Belastungsabzug (siehe Tabellen in {{ref:n.tp}}, {{ref:n.wunden}}, {{ref:n.zahlen}}).</li><li><strong>Grenze der Formel „Bewegung“:</strong> Sie rechnet 15 + 5 × Sprinten und stimmt bis Sprinten 3. Ab Sprinten 4 gilt 30 + 10 je Punkt über 3; dann Wert von Hand überschreiben.</li></ul><p>Ein fertig ausgefüllter Beispielheld ist {{ref:char.ragnar}}.</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 38–39 (Heldenbogen)</em></p>"
+  },
+  {
+   "key": "n.hinweise",
+   "kind": "note",
+   "name": "Übersetzungshinweise und Auffälligkeiten im Original",
+   "type": "Hinweise",
+   "parent": "n.kap1",
+   "tags": [
+    "tag.kap1"
+   ],
+   "entry": "<ul><li><strong>Demeanor/Auftreten:</strong> Die Fertigkeitsliste (S. 20) nennt Präsenz als Leitcharakteristik, die Beschreibung (S. 28) Kommunikation. Hier gilt die Beschreibung: <strong>Kommunikation</strong>.</li><li><strong>Bows/Bögen:</strong> Die Liste nennt „Bows“, das Ragnar-Beispiel (S. 38) schreibt „Missiles“. Hier durchgehend <strong>Bögen</strong>.</li><li><strong>Kurzbogen, Schaden:</strong> Waffentabelle (S. 34): +6. Das Ragnar-Beispiel nennt im Text 4. Hier gilt die Tabelle (+6); der Kurzbogen-Schaden wird nicht zur Prüfung verwendet.</li><li><strong>Engagement:</strong> „beste Nahkampf-Waffenfertigkeit“ ist hier als Maximum aus Kettenwaffe, Großwaffe, Stangenwaffe, Einhandwaffe und Zwei Waffen umgesetzt (Raufen nicht eingerechnet). Das ist eine Auslegung.</li><li><strong>Seitenangaben</strong> beziehen sich auf das englische Original (Digital Edition 0.9).</li><li><strong>Kürzel:</strong> Charakteristiken STR/STA/DEX/QIK/INT/PER/PRE/COM sind Vorschläge; Kampfwerte INIT/ATK/DFN/DAM folgen dem Glossar (Initiative, Angriff, Verteidigung, Schaden).</li></ul>"
+  },
+  {
+   "key": "ab.g.kampf",
+   "kind": "ability",
+   "name": "Kampffertigkeiten",
+   "type": "Fertigkeitsgruppe",
+   "parent": null,
+   "tags": [
+    "tag.kampf"
+   ],
+   "entry": "<p>Fertigkeiten, mit denen du Gegner niederstreckst. Ausrüstung ist hier nicht aufgeführt: Waffen und Rüstung wählst du später bei der Heldenerschaffung. Beim Original auf S. 19–22.</p>"
+  },
+  {
+   "key": "ab.g.erkundung",
+   "kind": "ability",
+   "name": "Erkundungsfertigkeiten",
+   "type": "Fertigkeitsgruppe",
+   "parent": null,
+   "tags": [
+    "tag.erkundung"
+   ],
+   "entry": "<p>Ein Wikingerkrieger erwirbt seinen Ruf nicht nur im Kampf. Wer das Dorf verlässt, muss auf Lagen gefasst sein, die ihn Leib und Leben kosten können. Original S. 22–27.</p>"
+  },
+  {
+   "key": "ab.g.interaktion",
+   "kind": "ability",
+   "name": "Interaktionsfertigkeiten",
+   "type": "Fertigkeitsgruppe",
+   "parent": null,
+   "tags": [
+    "tag.interaktion"
+   ],
+   "entry": "<p>Manchmal musst du mit anderen sprechen, um an Informationen oder Hilfe zu kommen. Danach kehrst du zum Hauen und Hacken zurück. Original S. 27–30.</p>"
+  },
+  {
+   "key": "ab.g.sonstige",
+   "kind": "ability",
+   "name": "Sonstige Fertigkeiten",
+   "type": "Fertigkeitsgruppe",
+   "parent": null,
+   "tags": [
+    "tag.sonstige"
+   ],
+   "entry": "<p>Fertigkeiten, die in keine andere Gruppe passen. Original S. 30.</p>"
+  },
+  {
+   "key": "ab.bogen",
+   "kind": "ability",
+   "name": "Bögen",
+   "type": "Kampf (primär)",
+   "parent": "ab.g.kampf",
+   "tags": [
+    "tag.kap1",
+    "tag.kampf",
+    "tag.primaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Primär · <strong>Gruppe:</strong> Kampf · <strong>Leitcharakteristik:</strong> {{ref:n.ch.wahrnehmung}}</p><p>Du triffst Ziele mit Fernwaffen großer Reichweite wie Armbrust oder Pfeil und Bogen.</p><p>Nimm unbedingt auch {{ref:ab.raufen}}: Sonst hast du einen schweren Nachteil, wenn dich jemand im Nahkampf angreift (deine Verteidigung mit einer Fernwaffe in der Hand basiert auf Raufen).</p><p><strong>Originalname:</strong> Bows</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 21</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Bows",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "21",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Primär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.raufen",
+   "kind": "ability",
+   "name": "Raufen",
+   "type": "Kampf (primär)",
+   "parent": "ab.g.kampf",
+   "tags": [
+    "tag.kap1",
+    "tag.kampf",
+    "tag.primaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Primär · <strong>Gruppe:</strong> Kampf · <strong>Leitcharakteristik:</strong> {{ref:n.ch.geschick}}</p><p>Du kämpfst waffenlos mit Faust und Tritt, die beste Wahl für Raufereien unter Dorfbewohnern.</p><p>Für Fernwaffenschützen ist die Fertigkeit ein Muss: Sie ist die Grundlage der Verteidigung gegen Nahkampfangriffe. Ohne sie erhältst du einen üblen Malus auf Würfe zum Abwehren von Hieben.</p><p><strong>Originalname:</strong> Brawling</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 21</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Brawling",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "21",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Primär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.kettenwaffe",
+   "kind": "ability",
+   "name": "Kettenwaffe",
+   "type": "Kampf (primär)",
+   "parent": "ab.g.kampf",
+   "tags": [
+    "tag.kap1",
+    "tag.kampf",
+    "tag.primaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Primär · <strong>Gruppe:</strong> Kampf · <strong>Leitcharakteristik:</strong> {{ref:n.ch.geschick}}</p><p>Du kämpfst mit Morgensternen, Flegeln und anderen biegsamen Waffen, deren Kettenglieder dem Kopf der Waffe zusätzliche Wucht verleihen.</p><p><strong>Originalname:</strong> Chain Weapon</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 21</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Chain Weapon",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "21",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Primär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.grosswaffe",
+   "kind": "ability",
+   "name": "Großwaffe",
+   "type": "Kampf (primär)",
+   "parent": "ab.g.kampf",
+   "tags": [
+    "tag.kap1",
+    "tag.kampf",
+    "tag.primaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Primär · <strong>Gruppe:</strong> Kampf · <strong>Leitcharakteristik:</strong> {{ref:n.ch.geschick}}</p><p>Alles, was zwei Hände braucht und in großem Schwung auf den Gegner niedergeht, ist eine Großwaffe, etwa Großschwert, Stangenbeil oder Zwergen-Streitaxt. Sie sind schwerfällig, aber jeder Treffer kann verheerend sein.</p><p><strong>Originalname:</strong> Great Weapon</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 21</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Great Weapon",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "21",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Primär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.stangenwaffe",
+   "kind": "ability",
+   "name": "Stangenwaffe",
+   "type": "Kampf (primär)",
+   "parent": "ab.g.kampf",
+   "tags": [
+    "tag.kap1",
+    "tag.kampf",
+    "tag.primaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Primär · <strong>Gruppe:</strong> Kampf · <strong>Leitcharakteristik:</strong> {{ref:n.ch.geschick}}</p><p>Du führst Speere, Piken und andere zweihändig gehaltene Waffen mit langem Schaft, mit denen man zusticht.</p><p><strong>Originalname:</strong> Longshaft Weapon</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 22</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Longshaft Weapon",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "22",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Primär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.einzelwaffe",
+   "kind": "ability",
+   "name": "Einhandwaffe",
+   "type": "Kampf (primär)",
+   "parent": "ab.g.kampf",
+   "tags": [
+    "tag.kap1",
+    "tag.kampf",
+    "tag.primaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Primär · <strong>Gruppe:</strong> Kampf · <strong>Leitcharakteristik:</strong> {{ref:n.ch.geschick}}</p><p>Du kämpfst gut mit kleineren, einhändig geführten Waffen: Kurzschwerter, Keulen, Dolche, Streitkolben und Kampfbeile.</p><p>Die andere Hand führt einen schweren Schild. Die Fertigkeit schließt ein, dass du den Schild geschickt zwischen die Hiebe des Gegners und deine Haut bringst.</p><p><strong>Originalname:</strong> Single Weapon</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 22</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Single Weapon",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "22",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Primär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.wurfwaffe",
+   "kind": "ability",
+   "name": "Wurfwaffe",
+   "type": "Kampf (primär)",
+   "parent": "ab.g.kampf",
+   "tags": [
+    "tag.kap1",
+    "tag.kampf",
+    "tag.primaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Primär · <strong>Gruppe:</strong> Kampf · <strong>Leitcharakteristik:</strong> {{ref:n.ch.wahrnehmung}}</p><p>Du wirfst treffsicher auf Gegner: Steine, Schleudersteine, Wurfdolche und -äxte.</p><p>Eine gute Ergänzung, aber nicht als Hauptwaffe gedacht: Wurfwaffen sind in Sonderlagen nützlich, aber lange nicht so tödlich wie ein riesiges Schwert oder eine Axt.</p><p><strong>Originalname:</strong> Thrown Weapon</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 22</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Thrown Weapon",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "22",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Primär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.zweiwaffen",
+   "kind": "ability",
+   "name": "Zwei Waffen",
+   "type": "Kampf (primär)",
+   "parent": "ab.g.kampf",
+   "tags": [
+    "tag.kap1",
+    "tag.kampf",
+    "tag.primaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Primär · <strong>Gruppe:</strong> Kampf · <strong>Leitcharakteristik:</strong> {{ref:n.ch.geschick}}</p><p>Du kämpfst mit je einer Einhandwaffe (siehe {{ref:ab.einzelwaffe}}) in jeder Hand und verzichtest auf den Schild zugunsten zusätzlicher Angriffsmöglichkeiten. Zweiwaffen-Kombinationen sind die schnellsten im Spiel und geben dir am ehesten mehrere Angriffe pro Kampfrunde.</p><p><strong>Originalname:</strong> Two Weapons</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 22</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Two Weapons",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "22",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Primär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.tierumgang",
+   "kind": "ability",
+   "name": "Tierumgang",
+   "type": "Erkundung (sekundär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.praesenz}}</p><p>Du zähmst wilde Pferde und richtest übliche Haustiere wie Hunde für ihre Aufgaben ab. Gegenüber wilden Tieren weißt du dich so zu verhalten, dass du sie nicht zum Angriff reizt.</p><p><strong>Originalname:</strong> Animal Handling</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 22</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Animal Handling",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "22",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.aufmerksamkeit",
+   "kind": "ability",
+   "name": "Aufmerksamkeit",
+   "type": "Erkundung (primär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.primaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Primär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.wahrnehmung}}</p><p>Du bist auf deine Umgebung eingestellt und bemerkst Hinweise auf Gefahr: in der Unterwelt oder Wildnis jeden ungewöhnlichen Anblick oder ein unpassendes Geräusch. Du entdeckst verborgene Türen, riechst giftige Dämpfe und bemerkst Stolperdrähte und andere Hinweise auf Fallen.</p><p><strong>Konzentration:</strong> Wenn du sicher sein willst, nicht in einen Hinterhalt oder eine Falle zu laufen, kannst du den Weg voraus voll auf Gefahren absuchen. Das gibt dir <strong>+3</strong> auf Aufmerksamkeit für bis zu <strong>90 Minuten</strong>. Danach bist du geistig ermüdet und erleidest für <strong>ebenso lange einen Malus von −3</strong>.</p><p>Manchmal würfelt der Runner heimlich für dich, denn schon die Bitte um einen Wurf würde verraten, dass etwas nicht stimmt. Kluge Runner notieren die Aufmerksamkeit aller Helden.</p><p><strong>Originalname:</strong> Awareness</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 22</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Awareness",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "22",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Primär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.balance",
+   "kind": "ability",
+   "name": "Balance",
+   "type": "Erkundung (sekundär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.geschick}}</p><p>Du hast ein natürliches Gleichgewicht: Du balancierst über schmale Balken über reißenden Flüssen, kämpfst sicher am Klippenrand und rutschst nicht auf matschigem oder verschneitem Boden aus.</p><p>Die Tabelle zeigt die größte Strecke in Meter pro Runde auf Untergrund, der einen Balancewurf verlangt.</p><table><tr><th>Fertigkeitswert</th><th>Halbe Aktion</th><th>Volle Aktion</th></tr><tr><td>0</td><td>3</td><td>6</td></tr><tr><td>1</td><td>5</td><td>10</td></tr><tr><td>2</td><td>7</td><td>14</td></tr><tr><td>3</td><td>9</td><td>18</td></tr><tr><td>4+</td><td>9 + 2 je Punkt über 3</td><td>18 + 4 je Punkt über 3</td></tr></table><p><strong>Originalname:</strong> Balance</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 23</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Balance",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "23",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.tapferkeit",
+   "kind": "ability",
+   "name": "Tapferkeit",
+   "type": "Erkundung (sekundär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.ausdauer}}</p><p>Du hast dich über Jahre darin geübt, die natürliche Angst vor Gefahr zu unterdrücken und dich in Lagen zu stürzen, in denen das Bewusstsein eines Durchschnittsmenschen aussetzt.</p><p>Du musst <strong>nie würfeln</strong>, um in einem gewöhnlichen Kampf zu bleiben, auch wenn Gefährten um dich herum fallen. Übernatürliche Erscheinungen, die Anwesenheit böser Götter oder grausige Anblicke können deine Tapferkeit dennoch auf die Probe stellen: Mit erfolgreichen Tapferkeitswürfen behältst du deinen freien Willen gegen solche Einflüsse.</p><p><strong>Originalname:</strong> Bravery</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 23</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Bravery",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "23",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.klettern",
+   "kind": "ability",
+   "name": "Klettern",
+   "type": "Erkundung (sekundär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.staerke}}</p><p>Du kletterst Klippen, Mauern und felsige Flächen, ohne zu stürzen, und findest und greifst Halt in fast jeder Wand.</p><p>Die Tabelle zeigt die Strecke in Meter pro Kampfaktion bei senkrechter Wand mit reichlich Halt.</p><table><tr><th>Fertigkeitswert</th><th>Halbe Aktion</th><th>Volle Aktion</th></tr><tr><td>0</td><td>7</td><td>15</td></tr><tr><td>1</td><td>10</td><td>20</td></tr><tr><td>2</td><td>13</td><td>25</td></tr><tr><td>3</td><td>16</td><td>30</td></tr><tr><td>4+</td><td>16 + 3 je Punkt über 3</td><td>30 + 5 je Punkt über 3</td></tr></table><p>Bei einer Fläche mit ordentlichem Halt brauchst du für Strecken bis zum Wert deiner vollen Aktion keine Ausrüstung.</p><p><strong>Ausrüstung:</strong> 50 Fuß Seil, Felshaken, Enterhaken. Last: 2</p><p><strong>Originalname:</strong> Climb</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 23</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Climb",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "23",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.ausweichen",
+   "kind": "ability",
+   "name": "Ausweichen",
+   "type": "Erkundung (primär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.primaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Primär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.schnelligkeit}}</p><p>Du weichst Hieben, rollenden Felsen, magischen Energieblitzen und anderen rasch nahenden Gefahren aus. Allen voran Fernwaffen wie Pfeilen und Armbrustbolzen: Ohne Ausweichen bist du kein wehrloses Ziel, wirst aber nach dem Kampf neidisch auf Gefährten blicken, die ausweichen können, während du einen Pfeil nach dem anderen aus deinem Fleisch ziehst.</p><p><strong>Originalname:</strong> Dodge</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 24</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Dodge",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "24",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Primär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.heilkunde",
+   "kind": "ability",
+   "name": "Heilkunde",
+   "type": "Erkundung (primär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.primaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Primär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.wahrnehmung}} (Krankheit erkennen); {{ref:n.ch.geschick}} (Wunde verbinden, Schiene anlegen)</p><p>Du erkennst Krankheiten, stillst Blutungen, findest Heilkräuter, braust einfache Arzneien und rettest so Gefährten das Leben. Kleinere eigene Verletzungen kannst du selbst versorgen.</p><p>Regeln zum Heilen von Verletzungen: Kapitel 2 (Original S. 54).</p><p><strong>Ausrüstung:</strong> Verbände, Schienen, Branntwein, Umschläge, Katzendarm, Nadel und verschiedene Arzneien. Last: 1</p><p><strong>Originalname:</strong> Healer</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 24</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Healer",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "24",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Primär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.springen",
+   "kind": "ability",
+   "name": "Springen",
+   "type": "Erkundung (sekundär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.staerke}}</p><p>Du springst hoch in die Luft oder weit nach vorn, etwa über reißende Flüsse oder von einer Ebene der Unterwelt zur nächsten. Ein verfehlter Sprung kann Verletzung oder Tod bedeuten.</p><p>Die Tabelle zeigt die größte Sprungweite bei erfolgreichem Wurf.</p><table><tr><th>Fertigkeitswert</th><th>Sprung nach oben</th><th>Sprung nach vorn</th></tr><tr><td>0</td><td>1 Meter</td><td>2 Meter</td></tr><tr><td>1</td><td>2 Meter</td><td>5 Meter</td></tr><tr><td>2</td><td>3 Meter</td><td>10 Meter</td></tr><tr><td>3</td><td>4 Meter</td><td>15 Meter</td></tr><tr><td>4+</td><td>4 + 1 Meter je Punkt über 3</td><td>15 + 5 Meter je Punkt über 3</td></tr></table><p><strong>Originalname:</strong> Jump</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 24</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Jump",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "24",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.ueberlieferung",
+   "kind": "ability",
+   "name": "Überlieferung",
+   "type": "Erkundung (sekundär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.intelligenz}}</p><p>Du hast den Geschichten der älteren Krieger gelauscht, die von Raubzügen und Vorstößen in die Unterwelt heimkehrten. Du kennst allerlei seltsame und nützliche Tatsachen über die Gefahren, die Entdecker erwarten, und die Eigenarten der üblichen Feinde deines Volkes. Es ist praktisches Wissen, kein Bücherwissen.</p><p><strong>Originalname:</strong> Lore</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 24</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Lore",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "24",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.kartenzeichnen",
+   "kind": "ability",
+   "name": "Kartenzeichnen",
+   "type": "Erkundung (sekundär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.intelligenz}}</p><p>Du fertigst einigermaßen genaue Karten der Gebiete an, die du erkundest. Besonders nützlich in der Unterwelt, einem Labyrinth, in dem man sich leicht verirrt. Mit deinen Karten findest du heim, wo du sonst die Orientierung verlieren würdest.</p><p><strong>Besonderheit:</strong> Hier zählt nicht das Zeichentalent des Spielers, sondern das deines Helden. Seine Karte existiert nur in der Spielwelt (manchmal nur als gedankliche Karte).</p><p>Besteht die Gefahr, dass sich dein Held verirrt, muss er einen <strong>Kartenzeichnen-Wurf</strong> bestehen, sonst hält er eine falsche Route für richtig und führt die Gruppe in die Irre (genaue Regeln: Kapitel 4, Original S. 152).</p><p>Sagst du an, dass du eine Karte anfertigst, und gelingt in der Nachbereitung jeder Begegnung ein Wurf, entsteht ein wertvoller Gegenstand: Du kannst ihn gegen Schätze, Informationen oder Gefallen eintauschen oder in deine Gemeinschaft bringen. Eine gute Karte eines Unterweltabschnitts ist auch für Zwerge, Elfen und Riesen begehrt.</p><p><strong>Ausrüstung:</strong> Luftdichte, gefettete Lederrolle mit Pergament, Tintenfläschchen und Feder. Last: 0,5</p><p><strong>Originalname:</strong> Map</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 24</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Map",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "24",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.schloesser",
+   "kind": "ability",
+   "name": "Schlösserknacken",
+   "type": "Erkundung (sekundär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.geschick}}</p><p>Mit ein paar kräftigen Eisenstiften oder Drähten öffnest du mit der Zeit auch komplizierte gewöhnliche Schlösser an Türen und Truhen. Manche Schlösser sind mit Fallen gesichert: Entdecke sie zuvor mit {{ref:ab.aufmerksamkeit}} und entschärfe sie mit {{ref:ab.fallenkunde}}.</p><p><strong>Ausrüstung:</strong> Kleine Metalldietriche und -sägen. Last: 0,5</p><p><strong>Originalname:</strong> Pick Lock</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 25</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Pick Lock",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "25",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.verfolgung",
+   "kind": "ability",
+   "name": "Verfolgung",
+   "type": "Erkundung (sekundär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.wahrnehmung}}</p><p>Fliehende Feinde entkommen dir nicht lange. Du folgst Spuren durch verschneite Wildnis, felsiges Vorland und feuchte Kammern der Unterwelt, errätst die geplante Route des Feindes und findest den besten Platz für einen Hinterhalt.</p><p><strong>Originalname:</strong> Pursuit</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 25</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Pursuit",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "25",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.reparieren",
+   "kind": "ability",
+   "name": "Reparieren",
+   "type": "Erkundung (sekundär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.geschick}}</p><p>Du reparierst beschädigte Ausrüstung im Feld, auch Rüstung und Waffen: Klingen schärfen, verbogene Schwerter richten, Axtköpfe befestigen, Leder flicken, Schuppen annähen, Seile verknoten. Es sieht nicht schön aus, hält die Ausrüstung aber bis zum Ersatz in Gang.</p><p><strong>Ausrüstung:</strong> Hammer, Zange, Leim, Faden, Nadeln und Lederreste. Last: 1</p><p><strong>Originalname:</strong> Repair</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 25</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Repair",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "25",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.reiten",
+   "kind": "ability",
+   "name": "Reiten",
+   "type": "Erkundung (sekundär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.geschick}}</p><p>Du reitest geschickt und wirst nicht abgeworfen, wenn dein Pferd eine Schlucht überspringt oder vor einer Schlange scheut. Du erkennst, wann dein Reittier müde ist und Rast braucht, und kannst vom Pferd aus kämpfen.</p><p><strong>Ausrüstung:</strong> Sattel, Zaumzeug und Zügel. Last: keine (das Pferd trägt es)</p><p><strong>Originalname:</strong> Ride</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 25</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Ride",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "25",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.seemannschaft",
+   "kind": "ability",
+   "name": "Seefahrt",
+   "type": "Erkundung (sekundär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.ausdauer}} (Seekrankheit vermeiden); {{ref:n.ch.intelligenz}} (Navigation); {{ref:n.ch.geschick}} (Schiffsschäden reparieren)</p><p>Nordische Langschiffe sind die Schrecken der Meere, Startplätze für Horden schreiender Wikinger. Du kennst dich auf einem Langschiff aus und hast Aufgaben von der Reparatur bis zum Steuern übernommen.</p><p><strong>Originalname:</strong> Seamanship</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 25</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Seamanship",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "25",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.skilaufen",
+   "kind": "ability",
+   "name": "Skifahren",
+   "type": "Erkundung (sekundär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.geschick}}</p><p>Auf Skiern bewältigst du einen winterlichen Hang am besten und führst gewagte Manöver aus, besonders bei Verfolgungsjagden.</p><p><strong>Ausrüstung:</strong> Skier und Lederriemen, um sie an den Stiefeln zu befestigen. Last: 4</p><p><strong>Originalname:</strong> Ski</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 25</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Ski",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "25",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.schlafen",
+   "kind": "ability",
+   "name": "Schlafen",
+   "type": "Erkundung (sekundär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.ausdauer}}</p><p>Du schläfst schnell ein und tief, auch in schlimmster Umgebung, und kannst Schlaf gewissermaßen vorrätig anlegen.</p><p>Willst du einschlafen, ohne müde zu sein, würfle Ausdauer gegen eine <strong>Schwierigkeit von 16 minus die Stunden seit dem letzten Aufwachen</strong>. Du schläfst so viele Stunden, wie die Differenz zwischen Schwierigkeit und Schlafen-Gesamtwurf beträgt.</p><p>Nach <strong>16 Stunden Wachsein</strong> schläfst du wie jeder andere automatisch ein. Die Fertigkeit hilft auch, schnell aus einer Bewusstlosigkeit zu erwachen.</p><p><strong>Originalname:</strong> Sleep</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 26</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Sleep",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "26",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.sprint",
+   "kind": "ability",
+   "name": "Sprinten",
+   "type": "Erkundung (primär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.primaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Primär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.staerke}}</p><p>Du läufst auf kurzen Strecken sehr schnell: um Verfolgern zu entkommen oder fliehende Feinde anzuspringen, oder um Steinlawinen und Lavaströmen zu entkommen. Ohne diese Fertigkeit kannst du auch nicht richtig in die Mitte der Gegner stürmen und hauen.</p><p>Kapitel 2 zeigt, wie weit du in einer Runde kommst, wenn du nur dich bewegst (volle Bewegung) und wie weit du dich bewegen und trotzdem handeln kannst. Heldenbewegung liegt nie unter dem Wert für Sprinten 0.</p><table><tr><th>Fertigkeitswert</th><th>Halbe Aktion (bewegen und noch handeln)</th><th>Volle Aktion (auf alles andere verzichten)</th></tr><tr><td>0</td><td>8 Meter</td><td>15 Meter</td></tr><tr><td>1</td><td>10</td><td>20</td></tr><tr><td>2</td><td>12</td><td>25</td></tr><tr><td>3</td><td>15</td><td>30</td></tr><tr><td>4+</td><td>15 + 2,5 je Punkt über 3 (Bruchteile abrunden)</td><td>30 + 10 je Punkt über 3</td></tr></table><p><strong>Originalname:</strong> Sprint</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 26</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Sprint",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "26",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Primär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.schleichen",
+   "kind": "ability",
+   "name": "Schleichen",
+   "type": "Erkundung (primär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.primaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Primär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.geschick}}</p><p>Mit vorsichtigem, quälend langsamem Schritt dringst du in Feindesland vor, ohne bemerkt zu werden: Du trittst auf einen Zweig, ohne ihn zu brechen, watest ohne Geplätscher durch Wasser und erschlägst eine Stechfliege so lautlos, dass nicht einmal sie es merkt.</p><p><strong>Originalname:</strong> Stealth</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 26</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Stealth",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "26",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Primär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.ueberleben",
+   "kind": "ability",
+   "name": "Überleben",
+   "type": "Erkundung (sekundär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.intelligenz}}</p><p>Du beherrschst praktische Techniken, damit du und deine Gefährten im Freien und unter der Erde gesund, trocken und halbwegs behaglich bleiben: Fackeln trocken halten, sichere Lagerplätze finden, nützliche von giftigen Pflanzen und Pilzen unterscheiden. Du verpflegst dich und die Gruppe auf Reisen durch die Oberwelt, findest Wild und zerlegst es, nachdem du es mit einer Kampffertigkeit wie {{ref:ab.bogen}} erlegt hast.</p><p><strong>Ausrüstung:</strong> Feuerstein, drei Tage Vorrat trockener Zweige als Fackeln, Magnetkompass und kleines Messer zum Zerlegen. Last: 0,25</p><p><strong>Originalname:</strong> Survival</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 26</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Survival",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "26",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.schwimmen",
+   "kind": "ability",
+   "name": "Schwimmen",
+   "type": "Erkundung (sekundär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.staerke}} (Fluss oder See durchqueren); {{ref:n.ch.ausdauer}} (lange Wasser treten)</p><p>Ob du von den Stürmen des Nordmeers umhergeworfen oder in eisige Becken der Unterwelt gestürzt wirst: Schwimmen bewahrt dich vor dem Ertrinken.</p><p>Die Tabelle zeigt die Strecke pro Kampfaktion bei ruhiger Wasseroberfläche und einer Temperatur, die weder verbrüht noch gefrieren lässt. Leicht bewegtes Wasser vermindert die Werte um 50 %, tosende Wellen oder starke Strömung um 25 %.</p><table><tr><th>Fertigkeitswert</th><th>Halbe Aktion</th><th>Volle Aktion</th></tr><tr><td>0</td><td>7</td><td>15</td></tr><tr><td>1</td><td>10</td><td>20</td></tr><tr><td>2</td><td>13</td><td>25</td></tr><tr><td>3</td><td>16</td><td>30</td></tr><tr><td>4+</td><td>16 + 3 je Punkt über 3</td><td>30 + 5 je Punkt über 3</td></tr></table><p><strong>Originalname:</strong> Swim</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 27</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Swim",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "27",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.fallenkunde",
+   "kind": "ability",
+   "name": "Fallenkunde",
+   "type": "Erkundung (primär)",
+   "parent": "ab.g.erkundung",
+   "tags": [
+    "tag.kap1",
+    "tag.erkundung",
+    "tag.primaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Primär · <strong>Gruppe:</strong> Erkundung · <strong>Leitcharakteristik:</strong> {{ref:n.ch.geschick}}</p><p>Die Wege der Unterwelt sind voller Fallen, die Eindringlinge verstümmeln oder töten sollen; auch die Wälder der Elfen sind damit gespickt. Mit dieser Fertigkeit durchquerst du gesperrte Bereiche sicher. Hat du oder ein Gefährte eine Falle entdeckt (meist mit {{ref:ab.aufmerksamkeit}}), entschärfst du sie, ohne sie auszulösen.</p><p>Du kannst auch Fallen bauen, etwa um versteckte Beute in feindlicher Umgebung zu sichern.</p><p><strong>Ausrüstung:</strong> Einfache Zange, Schere, Hammer und kleine Spitzhacke. Last: 0,5</p><p><strong>Originalname:</strong> Traps</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 27</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Traps",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "27",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Primär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.feilschen",
+   "kind": "ability",
+   "name": "Feilschen",
+   "type": "Interaktion (sekundär)",
+   "parent": "ab.g.interaktion",
+   "tags": [
+    "tag.kap1",
+    "tag.interaktion",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Interaktion · <strong>Leitcharakteristik:</strong> {{ref:n.ch.kommunikation}}</p><p>Du verhandelst jede gegenseitige Abmachung, vom Preis einer Streitaxt beim Schmied bis zu politischen Gefälligkeiten zwischen Häuptlingen.</p><p>Die Zeit der Wikinger kennt keine Preislisten. Man weiß, ob ein Gegenstand <strong>gewöhnlich</strong> oder <strong>selten</strong> ist, aber den genauen Preis bestimmt allein das Feilschen. Beim Tausch von Ausrüstung gegen Schatz (oder umgekehrt) trittst du in einen <strong>Wettstreit</strong> (Kapitel 2, Original S. 57): dein Feilschen-Wurf gegen den des Verhandlungspartners. Gewinnt der Käufer, liegt der Preis im oberen Bereich der Spanne für die Verfügbarkeit, gewinnt der Verkäufer, im unteren. Gewöhnliche Gegenstände kosten 1 bis 4 Unzen Silber, seltene 5 bis 20 Unzen. Der Verlierer muss das Geschäft nie abschließen.</p><table><tr><th>Ergebnis</th><th>Gewöhnlich</th><th>Selten</th></tr><tr><td>Käufer gewinnt um 6+</td><td>1 Unze Silber</td><td>5 Unzen Silber</td></tr><tr><td>Käufer gewinnt um 2–5</td><td>2 Unzen Silber</td><td>10 Unzen Silber</td></tr><tr><td>Käufer gewinnt um 1</td><td>3 Unzen Silber</td><td>15 Unzen Silber</td></tr><tr><td>Verkäufer gewinnt um 1</td><td>4 Unzen Silber</td><td>20 Unzen Silber</td></tr><tr><td>Verkäufer gewinnt um 2–5</td><td>5 Unzen Silber</td><td>25 Unzen Silber</td></tr><tr><td>Verkäufer gewinnt um 6+</td><td>Differenz der Summen in Unzen Silber</td><td>Differenz der Summen × 5 in Unzen Silber</td></tr></table><p><strong>Originalname:</strong> Bargain</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 27</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Bargain",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "27",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.zechen",
+   "kind": "ability",
+   "name": "Zechen",
+   "type": "Interaktion (sekundär)",
+   "parent": "ab.g.interaktion",
+   "tags": [
+    "tag.kap1",
+    "tag.interaktion",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Interaktion · <strong>Leitcharakteristik:</strong> {{ref:n.ch.ausdauer}}</p><p>Wikinger beeindruckt eine gewaltige Kapazität für Essen und Alkohol. Damit schmeichelst du dich bei Wikingern aus anderen Dörfern ein, gewinnst Trink- und Esswettbewerbe (auf die hoch gewettet wird) und schüttelst die bleiernen Nachwirkungen eines Festes ab, wenn du dich den Feinden stellen musst.</p><p><strong>Originalname:</strong> Carouse</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 28</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Carouse",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "28",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.taeuschung",
+   "kind": "ability",
+   "name": "Täuschen",
+   "type": "Interaktion (sekundär)",
+   "parent": "ab.g.interaktion",
+   "tags": [
+    "tag.kap1",
+    "tag.interaktion",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Interaktion · <strong>Leitcharakteristik:</strong> {{ref:n.ch.praesenz}}</p><p>Wie Loki hast du die Kunst der Lüge studiert. Du trittst als freundlicher, aufrichtiger Mensch auf, schaust dein Gegenüber an und erzählst mit Überzeugung unglaubliche Lügen.</p><p><strong>Originalname:</strong> Deception</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 28</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Deception",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "28",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.auftreten",
+   "kind": "ability",
+   "name": "Auftreten",
+   "type": "Interaktion (sekundär)",
+   "parent": "ab.g.interaktion",
+   "tags": [
+    "tag.kap1",
+    "tag.interaktion",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Interaktion · <strong>Leitcharakteristik:</strong> {{ref:n.ch.kommunikation}}</p><p>Du weißt, wie du dich so gibst, dass du einen guten Eindruck machst: selbstsicher und respektvoll, klar, mutig und leidenschaftlich im Sprechen, ohne kriecherische Schmeichelei vor Höhergestellten. Dein Anstandsgefühl ist natürlich das eines Wikingers.</p><p>Die <strong>Schwierigkeit</strong> der meisten Auftreten-Würfe ist <strong>Kommunikation + Einsicht des Gegenübers</strong>, angepasst an sein Wissen über deinen Ruf und deine Taten (hast du gerade den Sohn des Häuptlings getötet, schießt sie in die Höhe; hast du ihn gerettet, sinkt sie auf 1).</p><p>Bei Fremden und nichtmenschlichen Völkern wirken Offenheit und Stolz weniger gut: Du erhältst <strong>+6 Schwierigkeit</strong>, wenn du in einer dir fremden Kultur die Anstandsregeln befolgen willst. Jeder Erfolg bei dieser Kultur senkt den Aufschlag bei späteren Versuchen um 1 (nach drei Erfolgen bei Goblins etwa +3), nicht unter 0. Führst du darüber nicht Buch, bleibt es bei +6.</p><p>Exzentriker, die die Anstandsregeln ihrer Kultur ablehnen, erhöhen die Schwierigkeit um einen vom Entwerfer bestimmten Aufschlag. Du kannst ihn mit einem erfolgreichen {{ref:ab.menschenkenntnis}}-Wurf senken: Jeder Punkt Unterschied zwischen Schwierigkeit und Gesamtwurf senkt den Aufschlag beim folgenden Auftreten-Wurf um 1.</p><p><strong>Originalname:</strong> Demeanor</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 28</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Demeanor",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "28",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.verkleiden",
+   "kind": "ability",
+   "name": "Verkleiden",
+   "type": "Interaktion (sekundär)",
+   "parent": "ab.g.interaktion",
+   "tags": [
+    "tag.kap1",
+    "tag.interaktion",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Interaktion · <strong>Leitcharakteristik:</strong> {{ref:n.ch.intelligenz}}</p><p>Du veränderst dein Aussehen so, dass du nicht wie ein Wikingerkrieger wirkst. Je größer der Unterschied zwischen deinem wahren und dem gewünschten Aussehen, desto schwerer; eine bestimmte Person nachzuahmen ist sehr schwer, wenn die Getäuschten sie auch nur ein wenig kennen.</p><p><strong>Originalname:</strong> Disguise</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 29</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Disguise",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "29",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.gluecksspiel",
+   "kind": "ability",
+   "name": "Glücksspiel",
+   "type": "Interaktion (sekundär)",
+   "parent": "ab.g.interaktion",
+   "tags": [
+    "tag.kap1",
+    "tag.interaktion",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Interaktion · <strong>Leitcharakteristik:</strong> {{ref:n.ch.intelligenz}} (ehrliche Geschicklichkeitsspiele gewinnen); {{ref:n.ch.wahrnehmung}} (Betrüger entdecken); {{ref:n.ch.schnelligkeit}} (selbst betrügen). Ohne Charakteristik, wenn das Spiel reines Glück ist.</p><p>Du gewinnst unkörperliche Spiele: Würfeln, Steineverteilen und Brettspiele. Kartenspiele gibt es noch nicht. Du trittst meist im Wettstreit (Original S. 57) gegen das Glücksspiel anderer an.</p><p><strong>Ausrüstung:</strong> Satz Knochenwürfel und ein Spielbrett mit Figuren. Last: 0,5</p><p><strong>Originalname:</strong> Gamble</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 29</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Gamble",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "29",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.menschenkenntnis",
+   "kind": "ability",
+   "name": "Einsicht",
+   "type": "Interaktion (sekundär)",
+   "parent": "ab.g.interaktion",
+   "tags": [
+    "tag.kap1",
+    "tag.interaktion",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Interaktion · <strong>Leitcharakteristik:</strong> {{ref:n.ch.kommunikation}}</p><p>Nach kurzem Gespräch erfasst du Charakter und Beweggründe einer Person: Du sagst voraus, wie sie auf hypothetische Lagen reagiert und was sie hören will. Ein Erfolg bei einer Person erhöht oft deine Chancen, wenn du danach andere Interaktionsfertigkeiten bei ihr einsetzt. Den Bonus bestimmt der Entwerfer der Begegnung.</p><p><strong>Originalname:</strong> Insight</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 29</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Insight",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "29",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.fuehrung",
+   "kind": "ability",
+   "name": "Führungsstärke",
+   "type": "Interaktion (sekundär)",
+   "parent": "ab.g.interaktion",
+   "tags": [
+    "tag.kap1",
+    "tag.interaktion",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Interaktion · <strong>Leitcharakteristik:</strong> {{ref:n.ch.praesenz}}</p><p>Du bringst andere dazu, deinen Anweisungen zu folgen. Die Chancen steigen, wenn sie dich kennen und dir vertrauen oder du legitime Autorität über sie hast.</p><p>Lokis Diener und andere Schurken führen, indem sie Furcht verbreiten. Auch du musst bei Anhängern, die dich nicht achten können oder wollen, zu grober Einschüchterung greifen.</p><p><strong>Originalname:</strong> Leadership</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 29</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Leadership",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "29",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.musizieren",
+   "kind": "ability",
+   "name": "Musizieren",
+   "type": "Interaktion (sekundär)",
+   "parent": "ab.g.interaktion",
+   "tags": [
+    "tag.kap1",
+    "tag.interaktion",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Interaktion · <strong>Leitcharakteristik:</strong> {{ref:n.ch.kommunikation}}</p><p>Du spielst die Leier, die oft die derben, lauten Lieder der zechenden Krieger begleitet. Dein Spiel gewinnt hartgesottene Kämpfer wie verträumte Mädchen.</p><p><strong>Ausrüstung:</strong> Eine Leier. Last: 3</p><p><strong>Originalname:</strong> Music</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 29</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Music",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "29",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.runenkunde",
+   "kind": "ability",
+   "name": "Runenkunde",
+   "type": "Interaktion (sekundär)",
+   "parent": "ab.g.interaktion",
+   "tags": [
+    "tag.kap1",
+    "tag.interaktion",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Interaktion · <strong>Leitcharakteristik:</strong> {{ref:n.ch.intelligenz}}</p><p>Anders als die meisten deines Volkes kannst du lesen. Dein Alphabet besteht aus Runen, gewiss vom weisen Odin überliefert.</p><p>Mit einem Wert von <strong>3 oder mehr</strong> kannst du auch Latein lesen, die Sprache vieler Völker, die ihr überfallt. Anders als bei allen übrigen Fertigkeiten dieses Kapitels <strong>kannst du sie nicht ohne Wert versuchen</strong>.</p><p><strong>Originalname:</strong> Runes</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 29</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Runes",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "29",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.singen",
+   "kind": "ability",
+   "name": "Singen",
+   "type": "Interaktion (sekundär)",
+   "parent": "ab.g.interaktion",
+   "tags": [
+    "tag.kap1",
+    "tag.interaktion",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Interaktion · <strong>Leitcharakteristik:</strong> {{ref:n.ch.ausdauer}}</p><p>Ein fremder Besucher Skandinaviens nannte den nordischen Gesang heiseres, barbarisches Heulen. Deine Fertigkeit erlaubt dir, diese Tradition zu wahren. Mitreißender, leidenschaftlicher Gesang kann bei deinen Leuten einen guten Eindruck machen oder Geister und Goblins vertreiben.</p><p><strong>Originalname:</strong> Sing</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 30</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Sing",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "30",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.skaldik",
+   "kind": "ability",
+   "name": "Skaldendichtung",
+   "type": "Interaktion (sekundär)",
+   "parent": "ab.g.interaktion",
+   "tags": [
+    "tag.kap1",
+    "tag.interaktion",
+    "tag.sekundaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Sekundär · <strong>Gruppe:</strong> Interaktion · <strong>Leitcharakteristik:</strong> {{ref:n.ch.praesenz}} (mit Dichtung beeindrucken oder bissige Satire vortragen); {{ref:n.ch.intelligenz}} (Mythen, Geschichte und Gesetze erinnern)</p><p>Dein Volk erbt eine große Tradition der Dichtung; mündlich überliefert hält sie Geschichte, Göttertaten und alte Gesetze lebendig. Du trägst nicht nur vor, sondern dichtest selbst, oft in <strong>Kenningar</strong>, kurzen rhythmischen Wendungen mit seltsamen Metaphern.</p><p>Kenningar können Rivalen schaden: Eine gut vorgetragene Schmähung bringt Schande und Spott über einen anderen Wikinger. Er kann sie nur tilgen, indem er ein besseres Kenning auf dich dichtet (oder einen anderen Skalden dafür anheuert) oder dich im Duell besiegt. Vorsicht: Wikingerduelle haben kaum Regeln und enden für den Verlierer oft tödlich.</p><p><strong>Originalname:</strong> Skald</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 30</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Skald",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "30",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Sekundär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "ab.gottesgespuer",
+   "kind": "ability",
+   "name": "Gottesgespür",
+   "type": "Sonstige (primär)",
+   "parent": "ab.g.sonstige",
+   "tags": [
+    "tag.kap1",
+    "tag.sonstige",
+    "tag.primaer"
+   ],
+   "entry": "<p><strong>Kategorie:</strong> Primär · <strong>Gruppe:</strong> Sonstige · <strong>Leitcharakteristik:</strong> {{ref:n.ch.praesenz}}</p><p>Einige Menschen sind besonders auf das Wirken der Götter eingestimmt, und du gehörst dazu. Wenn die Götter dich beobachten oder ihr Werk in der Nähe ist, spürst du es: ein Prickeln im Nacken, ein Frösteln, der Geruch brennenden Metalls. Dann weißt du, dass Gefährten, die von den Göttern Gaben empfangen haben, bald den manchmal schrecklichen Preis dafür zahlen.</p><p>Gottesgespür spiegelt auch dein allgemeines Glück beziehungsweise die Gunst der Götter. Wenn dem Entwerfer einer Begegnung nichts einfällt, was dir in einer Lage helfen könnte, aber du würfeln musst, ist Gottesgespür die Fertigkeit der letzten Wahl.</p><p><strong>Originalname:</strong> Divine Awareness</p><p><em>Quelle: Rune RPG, Kapitel 1, Original S. 30</em></p>",
+   "properties": [
+    {
+     "name": "Originalname",
+     "value": "Divine Awareness",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "30",
+     "type_id": 1
+    },
+    {
+     "name": "Kategorie",
+     "value": "Primär",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "god.thor",
+   "kind": "character",
+   "name": "Thor",
+   "type": "Gottheit",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.gottheit"
+   ],
+   "entry": "<p>Donnergott und Kriegsgott, Sohn Odins. Er treibt uns an, im Kampf Ruhm zu erringen. Schutzgott der Stärke.</p><p><strong>Schutzgott von:</strong> {{ref:n.ch.staerke}}</p><p><em>Quelle: Rune RPG, Einleitung S. 10–11, Kapitel 1 S. 17–18, Kapitel 3 (Göttliche Verbindungen).</em></p>"
+  },
+  {
+   "key": "god.tyr",
+   "kind": "character",
+   "name": "Tyr",
+   "type": "Gottheit",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.gottheit"
+   ],
+   "entry": "<p>Der tapfere, leidende Gott, der im Kampf eine Hand verlor. Schutzgott der Ausdauer.</p><p><strong>Schutzgott von:</strong> {{ref:n.ch.ausdauer}}</p><p><em>Quelle: Rune RPG, Einleitung S. 10–11, Kapitel 1 S. 17–18, Kapitel 3 (Göttliche Verbindungen).</em></p>"
+  },
+  {
+   "key": "god.ull",
+   "kind": "character",
+   "name": "Ull",
+   "type": "Gottheit",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.gottheit"
+   ],
+   "entry": "<p>Gott der Jagd. Schutzgott der Geschicklichkeit.</p><p><strong>Schutzgott von:</strong> {{ref:n.ch.geschick}}</p><p><em>Quelle: Rune RPG, Einleitung S. 10–11, Kapitel 1 S. 17–18, Kapitel 3 (Göttliche Verbindungen).</em></p>"
+  },
+  {
+   "key": "god.njord",
+   "kind": "character",
+   "name": "Njord",
+   "type": "Gottheit",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.gottheit"
+   ],
+   "entry": "<p>Rätselhafter Gott des Windes und Vater der Vanir. Schutzgott der Schnelligkeit.</p><p><strong>Schutzgott von:</strong> {{ref:n.ch.schnelligkeit}}</p><p><em>Quelle: Rune RPG, Einleitung S. 10–11, Kapitel 1 S. 17–18, Kapitel 3 (Göttliche Verbindungen).</em></p>"
+  },
+  {
+   "key": "god.loki",
+   "kind": "character",
+   "name": "Loki",
+   "type": "Gottheit",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.gottheit"
+   ],
+   "entry": "<p>Der Trickster und Feind der Götter, der Balder erschlagen und damit Ragnarök auslösen wird. Er liegt in einer geheimen Kammer tief unter der Erde in Ketten. Schutzgott der Intelligenz.</p><p><strong>Schutzgott von:</strong> {{ref:n.ch.intelligenz}}</p><p><em>Quelle: Rune RPG, Einleitung S. 10–11, Kapitel 1 S. 17–18, Kapitel 3 (Göttliche Verbindungen).</em></p>"
+  },
+  {
+   "key": "god.heimdal",
+   "kind": "character",
+   "name": "Heimdal",
+   "type": "Gottheit",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.gottheit"
+   ],
+   "entry": "<p>Der wachsame Wächter der Brücke Bifröst, die Asgard und Midgard verbindet. Schutzgott der Wahrnehmung.</p><p><strong>Schutzgott von:</strong> {{ref:n.ch.wahrnehmung}}</p><p><em>Quelle: Rune RPG, Einleitung S. 10–11, Kapitel 1 S. 17–18, Kapitel 3 (Göttliche Verbindungen).</em></p>"
+  },
+  {
+   "key": "god.odin",
+   "kind": "character",
+   "name": "Odin",
+   "type": "Gottheit",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.gottheit"
+   ],
+   "entry": "<p>Häuptling der Götter, der Allvater, der in Asgard über die beiden Göttergeschlechter der Asen und Vanen herrscht. Er opferte ein Auge und hängte sich an den kosmischen Weltenbaum, um göttliche Weisheit zu erlangen. Schutzgott der Präsenz.</p><p><strong>Schutzgott von:</strong> {{ref:n.ch.praesenz}}</p><p><em>Quelle: Rune RPG, Einleitung S. 10–11, Kapitel 1 S. 17–18, Kapitel 3 (Göttliche Verbindungen).</em></p>"
+  },
+  {
+   "key": "god.freyr",
+   "kind": "character",
+   "name": "Freyr",
+   "type": "Gottheit",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.gottheit"
+   ],
+   "entry": "<p>Gott der wachsenden Ernte und der prallen Börsen. Schutzgott der Kommunikation.</p><p><strong>Schutzgott von:</strong> {{ref:n.ch.kommunikation}}</p><p><em>Quelle: Rune RPG, Einleitung S. 10–11, Kapitel 1 S. 17–18, Kapitel 3 (Göttliche Verbindungen).</em></p>"
+  },
+  {
+   "key": "god.angrboda",
+   "kind": "character",
+   "name": "Angrboda",
+   "type": "Gottheit",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.gottheit"
+   ],
+   "entry": "<p>Die Riesin, die Loki heiratete und ihm drei Ungeheuer gebar: die Midgardschlange, den Wolf Fenrir und Hel, die Göttin der Verdammten. Patronin von Göttlichen Gaben (Kapitel 3).</p><p><em>Quelle: Rune RPG, Einleitung S. 10–11, Kapitel 1 S. 17–18, Kapitel 3 (Göttliche Verbindungen).</em></p>"
+  },
+  {
+   "key": "god.hoder",
+   "kind": "character",
+   "name": "Hoder",
+   "type": "Gottheit",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.gottheit"
+   ],
+   "entry": "<p>Ein bescheidener, blinder Gott unter den Asen in Odins Gefolge. Loki täuschte ihn, sodass er den Pfeil abschoss, der den jungen Gott Balder tötete, und beschleunigte so Ragnarök. Patron von Göttlichen Gaben (Kapitel 3).</p><p><em>Quelle: Rune RPG, Einleitung S. 10–11, Kapitel 1 S. 17–18, Kapitel 3 (Göttliche Verbindungen).</em></p>"
+  },
+  {
+   "key": "god.freyja",
+   "kind": "character",
+   "name": "Freyja",
+   "type": "Gottheit",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.gottheit"
+   ],
+   "entry": "<p>Patronin von Göttlichen Gaben (Kapitel 3). Ausführliche Beschreibung folgt mit Kapitel 6.</p><p><em>Quelle: Rune RPG, Einleitung S. 10–11, Kapitel 1 S. 17–18, Kapitel 3 (Göttliche Verbindungen).</em></p>"
+  },
+  {
+   "key": "god.asjandr",
+   "kind": "character",
+   "name": "Asjandr",
+   "type": "Gottheit",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.gottheit"
+   ],
+   "entry": "<p>Patron von Göttlichen Gaben (Kapitel 3). Ausführliche Beschreibung folgt mit Kapitel 6.</p><p><em>Quelle: Rune RPG, Einleitung S. 10–11, Kapitel 1 S. 17–18, Kapitel 3 (Göttliche Verbindungen).</em></p>"
+  },
+  {
+   "key": "god.urd",
+   "kind": "character",
+   "name": "Urd",
+   "type": "Gottheit",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.gottheit"
+   ],
+   "entry": "<p>Patronin von Göttlichen Gaben (Kapitel 3). Ausführliche Beschreibung folgt mit Kapitel 6.</p><p><em>Quelle: Rune RPG, Einleitung S. 10–11, Kapitel 1 S. 17–18, Kapitel 3 (Göttliche Verbindungen).</em></p>"
+  },
+  {
+   "key": "pk.held",
+   "kind": "property_kit",
+   "name": "Rune-Held",
+   "type": null,
+   "parent": null,
+   "tags": [],
+   "entry": "<p>Heldenbogen für Rune RPG als Property Kit: Charakteristiken, 43 Fertigkeiten, Trefferpunkte, Wundschwelle, Siegespunkte, wichtige Zahlen und drei Waffenplätze mit berechneten Kampfwerten. Anleitung: </p>{{ref:n.heldenbogen}}",
+   "properties": [
+    {
+     "name": "Charakteristiken",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Stärke",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Ausdauer",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Geschicklichkeit",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Schnelligkeit",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Intelligenz",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Wahrnehmung",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Präsenz",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Kommunikation",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Kampffertigkeiten",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Bögen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Raufen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Kettenwaffe",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Großwaffe",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Stangenwaffe",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Einhandwaffe",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Wurfwaffe",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Zwei_Waffen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Erkundungsfertigkeiten",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Tierumgang",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Aufmerksamkeit",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Balance",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Tapferkeit",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Klettern",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Ausweichen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Heilkunde",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Springen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Überlieferung",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Kartenzeichnen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Schlösserknacken",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Verfolgung",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Reparieren",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Reiten",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Seefahrt",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Skifahren",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Schlafen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Sprinten",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Schleichen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Überleben",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Schwimmen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Fallenkunde",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Interaktionsfertigkeiten",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Feilschen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Zechen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Täuschen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Auftreten",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Verkleiden",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Glücksspiel",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Einsicht",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Führungsstärke",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Musizieren",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Runenkunde",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Singen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Skaldendichtung",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Sonstige Fertigkeiten",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Gottesgespür",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Trefferpunkte, Wunden, Siegespunkte",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "HP_Max",
+     "value": "0",
+     "type_id": 6,
+     "is_pinned": true
+    },
+    {
+     "name": "HP_Aktuell",
+     "value": "0",
+     "type_id": 6,
+     "is_pinned": true
+    },
+    {
+     "name": "Wundschwelle",
+     "value": "0",
+     "type_id": 6,
+     "is_pinned": true
+    },
+    {
+     "name": "Wunden",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Siegespunkte_Gesamt",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Siegespunkte_Ausgegeben",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Siegespunkte_Frei",
+     "value": "{Siegespunkte_Gesamt}-{Siegespunkte_Ausgegeben}",
+     "type_id": 1
+    },
+    {
+     "name": "Wichtige Zahlen",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Gesamtlast",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Belastungsabzug",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Rüstung_Schutz",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Rüstung_Init",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Absorption",
+     "value": "{Ausdauer}+{Rüstung_Schutz}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Bewegung",
+     "value": "15+5*{Sprinten}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "RES_Aufmerksamkeit",
+     "value": "{Wahrnehmung}+{Aufmerksamkeit}",
+     "type_id": 1
+    },
+    {
+     "name": "RES_Balance",
+     "value": "{Geschicklichkeit}+{Balance}",
+     "type_id": 1
+    },
+    {
+     "name": "RES_Tapferkeit",
+     "value": "{Ausdauer}+{Tapferkeit}",
+     "type_id": 1
+    },
+    {
+     "name": "RES_Ausweichen",
+     "value": "{Schnelligkeit}+{Ausweichen}",
+     "type_id": 1
+    },
+    {
+     "name": "RES_Sprinten",
+     "value": "{Stärke}+{Sprinten}",
+     "type_id": 1
+    },
+    {
+     "name": "RES_Engagement",
+     "value": "{Stärke}+max({Kettenwaffe},{Großwaffe},{Stangenwaffe},{Einhandwaffe},{Zwei_Waffen})",
+     "type_id": 1
+    },
+    {
+     "name": "Reaktion",
+     "value": "max({RES_Aufmerksamkeit},{RES_Balance},{RES_Tapferkeit},{RES_Ausweichen},{RES_Sprinten},{RES_Engagement})",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe 1 (Nahkampf)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Waffe1_Name",
+     "value": "",
+     "type_id": 1
+    },
+    {
+     "name": "Waffe1_Fertigkeit",
+     "value": "0",
+     "type_id": 1
+    },
+    {
+     "name": "Waffe1_FertWirksam",
+     "value": "{Waffe1_Fertigkeit}-3*(1-ceil({Waffe1_Fertigkeit}/({Waffe1_Fertigkeit}+1)))",
+     "type_id": 1
+    },
+    {
+     "name": "Waffe1_InitWert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe1_AtkWert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe1_DfnWert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe1_DamWert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe1_INIT",
+     "value": "{Schnelligkeit}+{Waffe1_FertWirksam}+{Waffe1_InitWert}+{Rüstung_Init}-{Belastungsabzug}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe1_ATK",
+     "value": "{Geschicklichkeit}+{Waffe1_FertWirksam}+{Waffe1_AtkWert}-{Belastungsabzug}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe1_DFN",
+     "value": "{Schnelligkeit}+{Waffe1_FertWirksam}+{Waffe1_DfnWert}-{Belastungsabzug}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe1_DAM",
+     "value": "{Stärke}+{Waffe1_DamWert}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe 2 (Nahkampf)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Waffe2_Name",
+     "value": "",
+     "type_id": 1
+    },
+    {
+     "name": "Waffe2_Fertigkeit",
+     "value": "0",
+     "type_id": 1
+    },
+    {
+     "name": "Waffe2_FertWirksam",
+     "value": "{Waffe2_Fertigkeit}-3*(1-ceil({Waffe2_Fertigkeit}/({Waffe2_Fertigkeit}+1)))",
+     "type_id": 1
+    },
+    {
+     "name": "Waffe2_InitWert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe2_AtkWert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe2_DfnWert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe2_DamWert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe2_INIT",
+     "value": "{Schnelligkeit}+{Waffe2_FertWirksam}+{Waffe2_InitWert}+{Rüstung_Init}-{Belastungsabzug}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe2_ATK",
+     "value": "{Geschicklichkeit}+{Waffe2_FertWirksam}+{Waffe2_AtkWert}-{Belastungsabzug}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe2_DFN",
+     "value": "{Schnelligkeit}+{Waffe2_FertWirksam}+{Waffe2_DfnWert}-{Belastungsabzug}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe2_DAM",
+     "value": "{Stärke}+{Waffe2_DamWert}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe 3 (Fernkampf)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Waffe3_Name",
+     "value": "",
+     "type_id": 1
+    },
+    {
+     "name": "Waffe3_Fertigkeit",
+     "value": "0",
+     "type_id": 1
+    },
+    {
+     "name": "Waffe3_FertWirksam",
+     "value": "{Waffe3_Fertigkeit}-3*(1-ceil({Waffe3_Fertigkeit}/({Waffe3_Fertigkeit}+1)))",
+     "type_id": 1
+    },
+    {
+     "name": "Waffe3_InitWert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe3_AtkWert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe3_DamWert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe3_INIT",
+     "value": "{Schnelligkeit}+{Waffe3_FertWirksam}+{Waffe3_InitWert}+{Rüstung_Init}-{Belastungsabzug}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe3_ATK",
+     "value": "{Wahrnehmung}+{Waffe3_FertWirksam}+{Waffe3_AtkWert}-{Belastungsabzug}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe3_DAM",
+     "value": "{Waffe3_DamWert}",
+     "type_id": 1,
+     "is_pinned": true
+    }
+   ]
+  },
+  {
+   "key": "char.ragnar",
+   "kind": "character",
+   "name": "Ragnar (Beispielheld)",
+   "type": "Held",
+   "parent": null,
+   "tags": [
+    "tag.kap1",
+    "tag.beispiel"
+   ],
+   "entry": "<p>Beispielheld aus der Heldenerschaffung des Regelwerks ({{ref:n.ragnar}}). Dient zugleich als Prüfung des Property Kits {{ref:pk.held|Rune-Held}}.</p><p><strong>Besonderheit:</strong> Prüfwerte aus dem Buch (S. 38–39): Wikingeraxt INIT 9 / ATK 9 / DFN 9 / DAM 12, Kriegshammer 9 / 8 / 10 / 12, Kurzbogen INIT 2 / ATK 0, Absorption 6, Bewegung 20, Reaktion 5.</p>",
+   "properties": [
+    {
+     "name": "Charakteristiken",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Stärke",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Ausdauer",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Geschicklichkeit",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Schnelligkeit",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Intelligenz",
+     "value": "-1",
+     "type_id": 6
+    },
+    {
+     "name": "Wahrnehmung",
+     "value": "-1",
+     "type_id": 6
+    },
+    {
+     "name": "Präsenz",
+     "value": "-1",
+     "type_id": 6
+    },
+    {
+     "name": "Kommunikation",
+     "value": "-1",
+     "type_id": 6
+    },
+    {
+     "name": "Kampffertigkeiten",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Bögen",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Raufen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Kettenwaffe",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Großwaffe",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Stangenwaffe",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Einhandwaffe",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Wurfwaffe",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Zwei_Waffen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Erkundungsfertigkeiten",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Tierumgang",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Aufmerksamkeit",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Balance",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Tapferkeit",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Klettern",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Ausweichen",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Heilkunde",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Springen",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Überlieferung",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Kartenzeichnen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Schlösserknacken",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Verfolgung",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Reparieren",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Reiten",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Seefahrt",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Skifahren",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Schlafen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Sprinten",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Schleichen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Überleben",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Schwimmen",
+     "value": "1",
+     "type_id": 6
+    },
+    {
+     "name": "Fallenkunde",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Interaktionsfertigkeiten",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Feilschen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Zechen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Täuschen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Auftreten",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Verkleiden",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Glücksspiel",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Einsicht",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Führungsstärke",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Musizieren",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Runenkunde",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Singen",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Skaldendichtung",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Sonstige Fertigkeiten",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Gottesgespür",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Trefferpunkte, Wunden, Siegespunkte",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "HP_Max",
+     "value": "77",
+     "type_id": 6,
+     "is_pinned": true
+    },
+    {
+     "name": "HP_Aktuell",
+     "value": "77",
+     "type_id": 6,
+     "is_pinned": true
+    },
+    {
+     "name": "Wundschwelle",
+     "value": "18",
+     "type_id": 6,
+     "is_pinned": true
+    },
+    {
+     "name": "Wunden",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Siegespunkte_Gesamt",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Siegespunkte_Ausgegeben",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Siegespunkte_Frei",
+     "value": "{Siegespunkte_Gesamt}-{Siegespunkte_Ausgegeben}",
+     "type_id": 1
+    },
+    {
+     "name": "Wichtige Zahlen",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Gesamtlast",
+     "value": "5",
+     "type_id": 6
+    },
+    {
+     "name": "Belastungsabzug",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Rüstung_Schutz",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Rüstung_Init",
+     "value": "-1",
+     "type_id": 6
+    },
+    {
+     "name": "Absorption",
+     "value": "{Ausdauer}+{Rüstung_Schutz}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Bewegung",
+     "value": "15+5*{Sprinten}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "RES_Aufmerksamkeit",
+     "value": "{Wahrnehmung}+{Aufmerksamkeit}",
+     "type_id": 1
+    },
+    {
+     "name": "RES_Balance",
+     "value": "{Geschicklichkeit}+{Balance}",
+     "type_id": 1
+    },
+    {
+     "name": "RES_Tapferkeit",
+     "value": "{Ausdauer}+{Tapferkeit}",
+     "type_id": 1
+    },
+    {
+     "name": "RES_Ausweichen",
+     "value": "{Schnelligkeit}+{Ausweichen}",
+     "type_id": 1
+    },
+    {
+     "name": "RES_Sprinten",
+     "value": "{Stärke}+{Sprinten}",
+     "type_id": 1
+    },
+    {
+     "name": "RES_Engagement",
+     "value": "{Stärke}+max({Kettenwaffe},{Großwaffe},{Stangenwaffe},{Einhandwaffe},{Zwei_Waffen})",
+     "type_id": 1
+    },
+    {
+     "name": "Reaktion",
+     "value": "max({RES_Aufmerksamkeit},{RES_Balance},{RES_Tapferkeit},{RES_Ausweichen},{RES_Sprinten},{RES_Engagement})",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe 1 (Nahkampf)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Waffe1_Name",
+     "value": "Wikingeraxt (Viking Axe)",
+     "type_id": 1
+    },
+    {
+     "name": "Waffe1_Fertigkeit",
+     "value": "{Großwaffe}",
+     "type_id": 1
+    },
+    {
+     "name": "Waffe1_FertWirksam",
+     "value": "{Waffe1_Fertigkeit}-3*(1-ceil({Waffe1_Fertigkeit}/({Waffe1_Fertigkeit}+1)))",
+     "type_id": 1
+    },
+    {
+     "name": "Waffe1_InitWert",
+     "value": "5",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe1_AtkWert",
+     "value": "3",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe1_DfnWert",
+     "value": "4",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe1_DamWert",
+     "value": "10",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe1_INIT",
+     "value": "{Schnelligkeit}+{Waffe1_FertWirksam}+{Waffe1_InitWert}+{Rüstung_Init}-{Belastungsabzug}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe1_ATK",
+     "value": "{Geschicklichkeit}+{Waffe1_FertWirksam}+{Waffe1_AtkWert}-{Belastungsabzug}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe1_DFN",
+     "value": "{Schnelligkeit}+{Waffe1_FertWirksam}+{Waffe1_DfnWert}-{Belastungsabzug}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe1_DAM",
+     "value": "{Stärke}+{Waffe1_DamWert}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe 2 (Nahkampf)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Waffe2_Name",
+     "value": "Kriegshammer (War Maul)",
+     "type_id": 1
+    },
+    {
+     "name": "Waffe2_Fertigkeit",
+     "value": "{Großwaffe}",
+     "type_id": 1
+    },
+    {
+     "name": "Waffe2_FertWirksam",
+     "value": "{Waffe2_Fertigkeit}-3*(1-ceil({Waffe2_Fertigkeit}/({Waffe2_Fertigkeit}+1)))",
+     "type_id": 1
+    },
+    {
+     "name": "Waffe2_InitWert",
+     "value": "5",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe2_AtkWert",
+     "value": "2",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe2_DfnWert",
+     "value": "5",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe2_DamWert",
+     "value": "10",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe2_INIT",
+     "value": "{Schnelligkeit}+{Waffe2_FertWirksam}+{Waffe2_InitWert}+{Rüstung_Init}-{Belastungsabzug}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe2_ATK",
+     "value": "{Geschicklichkeit}+{Waffe2_FertWirksam}+{Waffe2_AtkWert}-{Belastungsabzug}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe2_DFN",
+     "value": "{Schnelligkeit}+{Waffe2_FertWirksam}+{Waffe2_DfnWert}-{Belastungsabzug}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe2_DAM",
+     "value": "{Stärke}+{Waffe2_DamWert}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe 3 (Fernkampf)",
+     "value": "",
+     "type_id": 4
+    },
+    {
+     "name": "Waffe3_Name",
+     "value": "Kurzbogen (Short Bow)",
+     "type_id": 1
+    },
+    {
+     "name": "Waffe3_Fertigkeit",
+     "value": "{Bögen}",
+     "type_id": 1
+    },
+    {
+     "name": "Waffe3_FertWirksam",
+     "value": "{Waffe3_Fertigkeit}-3*(1-ceil({Waffe3_Fertigkeit}/({Waffe3_Fertigkeit}+1)))",
+     "type_id": 1
+    },
+    {
+     "name": "Waffe3_InitWert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe3_AtkWert",
+     "value": "0",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe3_DamWert",
+     "value": "6",
+     "type_id": 6
+    },
+    {
+     "name": "Waffe3_INIT",
+     "value": "{Schnelligkeit}+{Waffe3_FertWirksam}+{Waffe3_InitWert}+{Rüstung_Init}-{Belastungsabzug}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe3_ATK",
+     "value": "{Wahrnehmung}+{Waffe3_FertWirksam}+{Waffe3_AtkWert}-{Belastungsabzug}",
+     "type_id": 1,
+     "is_pinned": true
+    },
+    {
+     "name": "Waffe3_DAM",
+     "value": "{Waffe3_DamWert}",
+     "type_id": 1,
+     "is_pinned": true
+    }
+   ],
+   "expected": {
+    "Waffe1_INIT": 9,
+    "Waffe1_ATK": 9,
+    "Waffe1_DFN": 9,
+    "Waffe1_DAM": 12,
+    "Waffe2_INIT": 9,
+    "Waffe2_ATK": 8,
+    "Waffe2_DFN": 10,
+    "Waffe2_DAM": 12,
+    "Waffe3_INIT": 2,
+    "Waffe3_ATK": 0,
+    "Absorption": 6,
+    "Bewegung": 20,
+    "Reaktion": 5,
+    "Siegespunkte_Frei": 0
+   }
+  }
+ ]
+}

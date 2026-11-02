@@ -1,0 +1,348 @@
+<table>
+<thead>
+<tr>
+<th>Provinz</th>
+<th>Startfraktion</th>
+<th>Siedlungen</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td>Ailech</td>
+<td>Aileach</td>
+<td>Ard Sratha, Dún na nGall, Grianán Aileach, Ráth Luraig</td>
+</tr>
+
+<tr>
+<td>Airgialla</td>
+<td>Airgialla</td>
+<td>Ard Macha, Clocher, Cluain Eoais</td>
+</tr>
+
+<tr>
+<td>Brega</td>
+<td>Mide</td>
+<td>Cnódba, Dyflin, Linns, Loch Gabhair, Na Sceiri</td>
+</tr>
+
+<tr>
+<td>Breifne</td>
+<td>Breifne</td>
+<td>Cell Mór, Druim dá Ethiar</td>
+</tr>
+
+<tr>
+<td>Connacht</td>
+<td>Connacht</td>
+<td>Balla, Cell Alaid, Loch Raich, Ráth Cruachan, Tuaim</td>
+</tr>
+
+<tr>
+<td>Mide</td>
+<td>Mide</td>
+<td>Ardach, Cenannas, Cluain Iraird, Cluain Mac Nois</td>
+</tr>
+
+<tr>
+<td>Laigen</td>
+<td>Laigin</td>
+<td>An tinbhear Mor, Cluain Mór, Ferna, Gleann dá Loch, Nás</td>
+</tr>
+
+<tr>
+<td>Osraige</td>
+<td>Osraige</td>
+<td>Achadh Bó, Cell Cainning, Saigher</td>
+</tr>
+
+<tr>
+<td>Muma</td>
+<td>Caisil</td>
+<td>Ard Mór, Caisil, Imblech Ibair, Lis Mór</td>
+</tr>
+
+<tr>
+<td>Iarmuma</td>
+<td>Iarmuma</td>
+<td>Ard Fert, Cathair Domnaill, Druim Collachair, Inis Faithlenn, Ros Ailithir</td>
+</tr>
+
+<tr>
+<td>Tuadmuma</td>
+<td>Tuadmuma</td>
+<td>Cathair Commáin, Inis Cathaigh</td>
+</tr>
+
+<tr>
+<td>Corcaigh</td>
+<td>Desmuma</td>
+<td>Cluain, Corcach</td>
+</tr>
+
+<tr>
+<td>Dál Fiatach</td>
+<td>Ulaid</td>
+<td>Cairlinn, Dún Pátraic, Moige Bile</td>
+</tr>
+
+<tr>
+<td>Dál nAraidi</td>
+<td>Ulaid</td>
+<td>Coinnire, Dún Sebuirgi, Latharna</td>
+</tr>
+
+<tr>
+<td>Airer Goidel</td>
+<td>Gallgoidel</td>
+<td>Dún Aberte, Dún Att, Dún Ollaig</td>
+</tr>
+
+<tr>
+<td>Druim Alban</td>
+<td>Gallgoidel</td>
+<td>Aporcrosan, Cell Daltáin, Ioua</td>
+</tr>
+
+<tr>
+<td>Athfochla</td>
+<td>Athfochla</td>
+<td>Dún Blann, Dún Cailden, Dùn Duirn</td>
+</tr>
+
+<tr>
+<td>Fortriu</td>
+<td>Fortriu</td>
+<td>Airchardan, Ros Maircind, Torfness</td>
+</tr>
+
+<tr>
+<td>Circenn</td>
+<td>Circenn</td>
+<td>Brechin, Cenn Rigmonid, Dùn Eachainn, Scoan, Sconnin</td>
+</tr>
+
+<tr>
+<td>Monadh</td>
+<td>Circenn</td>
+<td>Abberdeon, Déar, Dún Foither, Rinnin, Ros Cuissine</td>
+</tr>
+
+<tr>
+<td>Aurmoreb</td>
+<td>Circenn</td>
+<td>Dún Nechtain, Forais, Inber Nise, Tor in Dúine</td>
+</tr>
+
+<tr>
+<td>Cait</td>
+<td>Orkneyar</td>
+<td>Blascona, Latharn, Thursa</td>
+</tr>
+
+<tr>
+<td>Sudreyar</td>
+<td>Sudreyar</td>
+<td>Bornais, Dún Beccán, Stornochway</td>
+</tr>
+
+<tr>
+<td>Loden</td>
+<td>Strat Clut</td>
+<td>Aebburcurnig, Dynbaer, Eidenburg</td>
+</tr>
+
+<tr>
+<td>Strat Clut</td>
+<td>Strat Clut</td>
+<td>Alt Clut, Dùn Dómnaill, Guvan, Sreth Belin</td>
+</tr>
+
+<tr>
+<td>Cumbraland</td>
+<td>Westmoringas</td>
+<td>Carleol, Cherchebi, Dacor, Din Prys, Hwitan Aerne</td>
+</tr>
+
+<tr>
+<td>North Thryding</td>
+<td>Northymbre</td>
+<td>Alclyt, Cetretha, Dunholm, Gyruum, Hagustaldes</td>
+</tr>
+
+<tr>
+<td>East Thryding</td>
+<td>Northymbre</td>
+<td>Beoferlic, Eoferwic, Heslerton, Poclintun</td>
+</tr>
+
+<tr>
+<td>West Thryding</td>
+<td>Northleode</td>
+<td>Doneceaster, Hripum, Loidis</td>
+</tr>
+
+<tr>
+<td>Lindesege</td>
+<td>Hylborg</td>
+<td>Drayton, Flichesburg, Lindcylne, Lude, Tureceseig</td>
+</tr>
+
+<tr>
+<td>North Mierce</td>
+<td>Djúrby</td>
+<td>Deoraby, Dor, Snotingaham, Wyrcesuuyrthe</td>
+</tr>
+
+<tr>
+<td>Middel Engle</td>
+<td>Mierce</td>
+<td>Bedanford, Buccingahamm, Northhamtun</td>
+</tr>
+
+<tr>
+<td>Hwicce</td>
+<td>Mierce</td>
+<td>Cirenceaster, Eofesham, Gleawceaster, Hereford, Wigraceaster</td>
+</tr>
+
+<tr>
+<td>Suth Mierce</td>
+<td>Mierce</td>
+<td>Ligeraceaster, Rocheberie, Waerincwicum</td>
+</tr>
+
+<tr>
+<td>Staeffordscir</td>
+<td>Mierce</td>
+<td>Licetfelda, Staefford, Stoc, Tamworthige</td>
+</tr>
+
+<tr>
+<td>Offa's Dic</td>
+<td>Seisyllwg</td>
+<td>Brug, Ceaster, Scrobbesburg</td>
+</tr>
+
+<tr>
+<td>Gwined</td>
+<td>Gwined</td>
+<td>Aberffro, Cair Segeint, Dugannu, Rudglann</td>
+</tr>
+
+<tr>
+<td>Powis</td>
+<td>Powis</td>
+<td>Lann Afan, Lann Idloes, Mathrafal, Oswaldestroe</td>
+</tr>
+
+<tr>
+<td>Dewet</td>
+<td>Dewet</td>
+<td>Cair Mirddin, Dinefwr, Haverfordia, Menevia</td>
+</tr>
+
+<tr>
+<td>Ceredigeaun</td>
+<td>Seisyllwg</td>
+<td>Aberteifi, Lann Dewi, Lann Padarn</td>
+</tr>
+
+<tr>
+<td>Morcanhuc</td>
+<td>Gwent</td>
+<td>Cair Gwent, Dinas Powis, Lann Cors, Lann Ildut, Nedd</td>
+</tr>
+
+<tr>
+<td>West Seaxe</td>
+<td>West Seaxe</td>
+<td>Doreceaster, Oxnaforda</td>
+</tr>
+
+<tr>
+<td>Wiltscir</td>
+<td>West Seaxe</td>
+<td>Cippanhamm, Cissanbyrig, Ethandun, Wiltun</td>
+</tr>
+
+<tr>
+<td>Hamtunscir</td>
+<td>West Seaxe</td>
+<td>Basengas, Porteceaster, Suthhamtun, Wiht, Wintanceaster</td>
+</tr>
+
+<tr>
+<td>Sumorsaete</td>
+<td>West Seaxe</td>
+<td>Aethelingaeg, Axanbrycg, Bathanceaster, Glastingburi, Waecet</td>
+</tr>
+
+<tr>
+<td>Defenascir</td>
+<td>Defena</td>
+<td>Cridiatune, Exanceaster, Liwtune, Totanaes</td>
+</tr>
+
+<tr>
+<td>Cerneu</td>
+<td>Cerneu</td>
+<td>Bodmine, Sancte Germanes, Sancte Ye, Tintagol</td>
+</tr>
+
+<tr>
+<td>Cent</td>
+<td>Cent</td>
+<td>Cantwaraburg, Dofere, Rofeceaster, Stutfall, Tanet</td>
+</tr>
+
+<tr>
+<td>Middel Seaxe</td>
+<td>Suth Seaxe</td>
+<td>Ebbesham, Guldeford, Lunden</td>
+</tr>
+
+<tr>
+<td>West Suth Seaxe</td>
+<td>Suth Seaxe</td>
+<td>Middeherst, Seolesigge, Staeningum</td>
+</tr>
+
+<tr>
+<td>East Suth Seaxe</td>
+<td>Suth Seaxe</td>
+<td>Haestingas, Laewe, Pefenesea</td>
+</tr>
+
+<tr>
+<td>East Seaxe</td>
+<td>East Engle</td>
+<td>Celmeresfort, Colneceaster, Maeldune, Tilaburg, Wigingamere</td>
+</tr>
+
+<tr>
+<td>Norfolc</td>
+<td>East Engle</td>
+<td>Aelmham, Earmutha, Northwic, Theodford</td>
+</tr>
+
+<tr>
+<td>Suthfolc</td>
+<td>East Engle</td>
+<td>Domuc, Gipeswic, Rendlaesham, Sancte Eadmundes</td>
+</tr>
+
+<tr>
+<td>Grantabrycgscir</td>
+<td>East Engle</td>
+<td>Elig, Grantabrycg, Herutford, Sancte Albanes</td>
+</tr>
+
+<tr>
+<td>Fenns</td>
+<td>Bedeborg</td>
+<td>Huntandun, Steanford</td>
+</tr>
+
+</tbody>
+</table>
