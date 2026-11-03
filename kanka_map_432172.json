@@ -59,417 +59,500 @@
   "n.root": {
    "id": 347705,
    "entity_id": 10118944,
-   "kind": "note"
+   "kind": "note",
+   "hash": "451632fbc36d9acc"
   },
   "n.kap1": {
    "id": 347708,
    "entity_id": 10118952,
-   "kind": "note"
+   "kind": "note",
+   "hash": "802850e3086e8275"
   },
   "n.erschaffung": {
    "id": 347709,
    "entity_id": 10118953,
-   "kind": "note"
+   "kind": "note",
+   "hash": "e651fb198eb76a26"
   },
   "n.beiname": {
    "id": 347710,
    "entity_id": 10118954,
-   "kind": "note"
+   "kind": "note",
+   "hash": "de63b07647afb088"
   },
   "n.charakteristiken": {
    "id": 347711,
    "entity_id": 10118955,
-   "kind": "note"
+   "kind": "note",
+   "hash": "47417becef51e7bd"
   },
   "n.ch.staerke": {
    "id": 347712,
    "entity_id": 10118956,
-   "kind": "note"
+   "kind": "note",
+   "hash": "597f753d6fe4ed7e"
   },
   "n.ch.ausdauer": {
    "id": 347713,
    "entity_id": 10118957,
-   "kind": "note"
+   "kind": "note",
+   "hash": "4612c50191f88305"
   },
   "n.ch.geschick": {
    "id": 347714,
    "entity_id": 10118958,
-   "kind": "note"
+   "kind": "note",
+   "hash": "637cc2a650c42c94"
   },
   "n.ch.schnelligkeit": {
    "id": 347715,
    "entity_id": 10118959,
-   "kind": "note"
+   "kind": "note",
+   "hash": "6baa2e02d3a399f9"
   },
   "n.ch.intelligenz": {
    "id": 347716,
    "entity_id": 10118960,
-   "kind": "note"
+   "kind": "note",
+   "hash": "f4ca2be3ecbe56ce"
   },
   "n.ch.wahrnehmung": {
    "id": 347717,
    "entity_id": 10118961,
-   "kind": "note"
+   "kind": "note",
+   "hash": "cc12c56cf82625c8"
   },
   "n.ch.praesenz": {
    "id": 347718,
    "entity_id": 10118963,
-   "kind": "note"
+   "kind": "note",
+   "hash": "a2f5b9958c5c7bc7"
   },
   "n.ch.kommunikation": {
    "id": 347719,
    "entity_id": 10118964,
-   "kind": "note"
+   "kind": "note",
+   "hash": "b32cf4a285f024c5"
   },
   "n.charkosten": {
    "id": 347720,
    "entity_id": 10118965,
-   "kind": "note"
+   "kind": "note",
+   "hash": "1aa64c16162ae372"
   },
   "n.fertigkeitenregeln": {
    "id": 347721,
    "entity_id": 10118966,
-   "kind": "note"
+   "kind": "note",
+   "hash": "3ad8c85009ed95f5"
   },
   "n.tp": {
    "id": 347722,
    "entity_id": 10118968,
-   "kind": "note"
+   "kind": "note",
+   "hash": "c3d8f943a3130d2b"
   },
   "n.wunden": {
    "id": 347723,
    "entity_id": 10118969,
-   "kind": "note"
+   "kind": "note",
+   "hash": "99e56cb5a433397e"
   },
   "n.zahlen": {
    "id": 347724,
    "entity_id": 10118970,
-   "kind": "note"
+   "kind": "note",
+   "hash": "6af66d7b9656a606"
   },
   "n.ragnar": {
    "id": 347725,
    "entity_id": 10118971,
-   "kind": "note"
+   "kind": "note",
+   "hash": "526aee94a0a75a27"
   },
   "n.heldenbogen": {
    "id": 347726,
    "entity_id": 10118972,
-   "kind": "note"
+   "kind": "note",
+   "hash": "59681208033ca7ca"
   },
   "n.hinweise": {
    "id": 347727,
    "entity_id": 10118973,
-   "kind": "note"
+   "kind": "note",
+   "hash": "8de36e9903df4a2f"
   },
   "ab.g.kampf": {
    "id": 735307,
    "entity_id": 10118974,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "d780f1b6874830b4"
   },
   "ab.g.erkundung": {
    "id": 735308,
    "entity_id": 10118975,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "9b9c8249151a4177"
   },
   "ab.g.interaktion": {
    "id": 735309,
    "entity_id": 10118976,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "a91c6077eff98017"
   },
   "ab.g.sonstige": {
    "id": 735310,
    "entity_id": 10118977,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "9d5c0769e304dd11"
   },
   "ab.bogen": {
    "id": 735311,
    "entity_id": 10118978,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "10ed8f628297a729"
   },
   "ab.raufen": {
    "id": 735312,
    "entity_id": 10118988,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "cf4395b7039bb38c"
   },
   "ab.kettenwaffe": {
    "id": 735313,
    "entity_id": 10118989,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "a2a653f9900090fd"
   },
   "ab.grosswaffe": {
    "id": 735314,
    "entity_id": 10118990,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "7819f8ea9ede3aa3"
   },
   "ab.stangenwaffe": {
    "id": 735315,
    "entity_id": 10118991,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "258266b6f87923e3"
   },
   "ab.einzelwaffe": {
    "id": 735316,
    "entity_id": 10118992,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "70801bfb59371155"
   },
   "ab.wurfwaffe": {
    "id": 735317,
    "entity_id": 10118993,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "7a867f57899dab65"
   },
   "ab.zweiwaffen": {
    "id": 735318,
    "entity_id": 10118994,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "ae180884684ac0b7"
   },
   "ab.tierumgang": {
    "id": 735319,
    "entity_id": 10118995,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "cd5e28d6e2ab20e1"
   },
   "ab.aufmerksamkeit": {
    "id": 735320,
    "entity_id": 10118996,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "069df799ae29222a"
   },
   "ab.balance": {
    "id": 735321,
    "entity_id": 10118997,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "95939909d25854ff"
   },
   "ab.tapferkeit": {
    "id": 735322,
    "entity_id": 10118998,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "efa9b1d3bea09c4a"
   },
   "ab.klettern": {
    "id": 735323,
    "entity_id": 10118999,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "f203319e23022327"
   },
   "ab.ausweichen": {
    "id": 735324,
    "entity_id": 10119000,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "94cd216a08a665c0"
   },
   "ab.heilkunde": {
    "id": 735325,
    "entity_id": 10119001,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "f18e1d725994579d"
   },
   "ab.springen": {
    "id": 735326,
    "entity_id": 10119002,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "44d40d6d6187143d"
   },
   "ab.ueberlieferung": {
    "id": 735327,
    "entity_id": 10119003,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "d5218a8b510d0bf5"
   },
   "ab.kartenzeichnen": {
    "id": 735328,
    "entity_id": 10119004,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "d0e5d1aba948b00c"
   },
   "ab.schloesser": {
    "id": 735329,
    "entity_id": 10119005,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "e3b4e2a56a0b3183"
   },
   "ab.verfolgung": {
    "id": 735330,
    "entity_id": 10119006,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "83c048986c307f9c"
   },
   "ab.reparieren": {
    "id": 735331,
    "entity_id": 10119007,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "09c6ad5d3932d800"
   },
   "ab.reiten": {
    "id": 735332,
    "entity_id": 10119008,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "db4ce7e4360f7a74"
   },
   "ab.seemannschaft": {
    "id": 735333,
    "entity_id": 10119011,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "f6ae6f6b33211c97"
   },
   "ab.skilaufen": {
    "id": 735334,
    "entity_id": 10119012,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "ce771eac7984cdcf"
   },
   "ab.schlafen": {
    "id": 735335,
    "entity_id": 10119013,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "bf496a7c17dd7b62"
   },
   "ab.sprint": {
    "id": 735336,
    "entity_id": 10119014,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "f60533e8de69ba9a"
   },
   "ab.schleichen": {
    "id": 735337,
    "entity_id": 10119017,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "cc3c50b9caf8a785"
   },
   "ab.ueberleben": {
    "id": 735338,
    "entity_id": 10119018,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "6ccddeb5edbdd72a"
   },
   "ab.schwimmen": {
    "id": 735339,
    "entity_id": 10119019,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "8774f50e3a7abc48"
   },
   "ab.fallenkunde": {
    "id": 735340,
    "entity_id": 10119020,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "b0afddfce4d7d8ef"
   },
   "ab.feilschen": {
    "id": 735341,
    "entity_id": 10119021,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "22dea826967b0d61"
   },
   "ab.zechen": {
    "id": 735342,
    "entity_id": 10119022,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "a06f7916e12f3b90"
   },
   "ab.taeuschung": {
    "id": 735343,
    "entity_id": 10119023,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "ecc9aab9eb85db65"
   },
   "ab.auftreten": {
    "id": 735344,
    "entity_id": 10119024,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "0dec8c3554e83458"
   },
   "ab.verkleiden": {
    "id": 735345,
    "entity_id": 10119025,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "4a900f5c90699be5"
   },
   "ab.gluecksspiel": {
    "id": 735346,
    "entity_id": 10119030,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "53627b8fa02f4f51"
   },
   "ab.menschenkenntnis": {
    "id": 735347,
    "entity_id": 10119031,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "ea9532ec5abe5c38"
   },
   "ab.fuehrung": {
    "id": 735348,
    "entity_id": 10119032,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "d2ab5a4528bca9ef"
   },
   "ab.musizieren": {
    "id": 735349,
    "entity_id": 10119033,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "c4062cdfc8b10705"
   },
   "ab.runenkunde": {
    "id": 735350,
    "entity_id": 10119034,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "f192a8957b79e94d"
   },
   "ab.singen": {
    "id": 735351,
    "entity_id": 10119035,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "052ecf4e4d40f565"
   },
   "ab.skaldik": {
    "id": 735352,
    "entity_id": 10119036,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "a806cfb27e6ddc0d"
   },
   "ab.gottesgespuer": {
    "id": 735353,
    "entity_id": 10119037,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "e679453e6ab01c61"
   },
   "god.thor": {
    "id": 2619825,
    "entity_id": 10119038,
-   "kind": "character"
+   "kind": "character",
+   "hash": "732dd3bf61dbed52"
   },
   "god.tyr": {
    "id": 2619826,
    "entity_id": 10119039,
-   "kind": "character"
+   "kind": "character",
+   "hash": "58d5e671a0ad52c4"
   },
   "god.ull": {
    "id": 2619827,
    "entity_id": 10119040,
-   "kind": "character"
+   "kind": "character",
+   "hash": "1a772ce2c7a4a6f8"
   },
   "god.njord": {
    "id": 2619828,
    "entity_id": 10119041,
-   "kind": "character"
+   "kind": "character",
+   "hash": "f7fb3215a8a24335"
   },
   "god.loki": {
    "id": 2619829,
    "entity_id": 10119042,
-   "kind": "character"
+   "kind": "character",
+   "hash": "f2cd1102f33e1b2f"
   },
   "god.heimdal": {
    "id": 2619830,
    "entity_id": 10119043,
-   "kind": "character"
+   "kind": "character",
+   "hash": "32c5701ff6ef3040"
   },
   "god.odin": {
    "id": 2619831,
    "entity_id": 10119044,
-   "kind": "character"
+   "kind": "character",
+   "hash": "50c81856049deae8"
   },
   "god.freyr": {
    "id": 2619832,
    "entity_id": 10119045,
-   "kind": "character"
+   "kind": "character",
+   "hash": "c63c83930fa04adc"
   },
   "god.angrboda": {
    "id": 2619834,
    "entity_id": 10119050,
-   "kind": "character"
+   "kind": "character",
+   "hash": "7e79471519c755e5"
   },
   "god.hoder": {
    "id": 2619835,
    "entity_id": 10119051,
-   "kind": "character"
+   "kind": "character",
+   "hash": "a1ca6bfb5fd0bcbb"
   },
   "god.freyja": {
    "id": 2619836,
    "entity_id": 10119052,
-   "kind": "character"
+   "kind": "character",
+   "hash": "373a81ba0d5f7461"
   },
   "god.asjandr": {
    "id": 2619837,
    "entity_id": 10119053,
-   "kind": "character"
+   "kind": "character",
+   "hash": "b65f35289b2f0092"
   },
   "god.urd": {
    "id": 2619838,
    "entity_id": 10119054,
-   "kind": "character"
+   "kind": "character",
+   "hash": "93275af51e9cd101"
   },
   "pk.held": {
    "id": 37812,
    "entity_id": 10119055,
-   "kind": "property_kit"
+   "kind": "property_kit",
+   "hash": "132c942e516cc29f"
   },
   "char.ragnar": {
    "id": 2619839,
    "entity_id": 10119056,
-   "kind": "character"
+   "kind": "character",
+   "hash": "a939a52e75026677"
   },
   "tag.waffe": {
    "id": 622000,
@@ -509,442 +592,530 @@
   "pk.waffe": {
    "id": 37813,
    "entity_id": 10119182,
-   "kind": "property_kit"
+   "kind": "property_kit",
+   "hash": "dab6908b9de26c17"
   },
   "pk.ruestung": {
    "id": 37814,
    "entity_id": 10119183,
-   "kind": "property_kit"
+   "kind": "property_kit",
+   "hash": "51da55fcdd3ea0d6"
   },
   "item.w.barb-net": {
    "id": 648616,
    "entity_id": 10119184,
-   "kind": "item"
+   "kind": "item",
+   "hash": "71de04e9d29d4d47"
   },
   "item.w.billhook": {
    "id": 648617,
    "entity_id": 10119185,
-   "kind": "item"
+   "kind": "item",
+   "hash": "d4a0ac7071add882"
   },
   "item.w.chair": {
    "id": 648618,
    "entity_id": 10119186,
-   "kind": "item"
+   "kind": "item",
+   "hash": "f76830a38c70f8da"
   },
   "item.w.compbow": {
    "id": 648619,
    "entity_id": 10119187,
-   "kind": "item"
+   "kind": "item",
+   "hash": "99be42a54a35bc53"
   },
   "item.w.dagger": {
    "id": 648620,
    "entity_id": 10119188,
-   "kind": "item"
+   "kind": "item",
+   "hash": "cb502a69b5da394f"
   },
   "item.w.dblaxe": {
    "id": 648621,
    "entity_id": 10119189,
-   "kind": "item"
+   "kind": "item",
+   "hash": "f5dccb1ddb601a98"
   },
   "item.w.dwbaxe": {
    "id": 648622,
    "entity_id": 10119190,
-   "kind": "item"
+   "kind": "item",
+   "hash": "4a148a9c31731367"
   },
   "item.w.dwbhammer": {
    "id": 648623,
    "entity_id": 10119191,
-   "kind": "item"
+   "kind": "item",
+   "hash": "e92d4768a6b2b038"
   },
   "item.w.dwbsword": {
    "id": 648624,
    "entity_id": 10119192,
-   "kind": "item"
+   "kind": "item",
+   "hash": "fde4f12fe45b2fcf"
   },
   "item.w.dwwhammer": {
    "id": 648625,
    "entity_id": 10119193,
-   "kind": "item"
+   "kind": "item",
+   "hash": "23cadc1cd44f0602"
   },
   "item.w.dwwsword": {
    "id": 648626,
    "entity_id": 10119194,
-   "kind": "item"
+   "kind": "item",
+   "hash": "5667d67b812335a4"
   },
   "item.w.fist": {
    "id": 648627,
    "entity_id": 10119195,
-   "kind": "item"
+   "kind": "item",
+   "hash": "5f6a93220a299cbe"
   },
   "item.w.flagon": {
    "id": 648628,
    "entity_id": 10119196,
-   "kind": "item"
+   "kind": "item",
+   "hash": "eb5f2d73a1c4ed9e"
   },
   "item.w.flail": {
    "id": 648629,
    "entity_id": 10119197,
-   "kind": "item"
+   "kind": "item",
+   "hash": "494462aa914b8243"
   },
   "item.w.fbmace": {
    "id": 648630,
    "entity_id": 10119198,
-   "kind": "item"
+   "kind": "item",
+   "hash": "c98ad76273cacda4"
   },
   "item.w.gauntlet": {
    "id": 648631,
    "entity_id": 10119199,
-   "kind": "item"
+   "kind": "item",
+   "hash": "297cf0340b9be9c0"
   },
   "item.w.gobaxe": {
    "id": 648632,
    "entity_id": 10119200,
-   "kind": "item"
+   "kind": "item",
+   "hash": "5c44f5db8ed8359c"
   },
   "item.w.gobclub": {
    "id": 648633,
    "entity_id": 10119201,
-   "kind": "item"
+   "kind": "item",
+   "hash": "33b8827a3c44109e"
   },
   "item.w.handaxe": {
    "id": 648634,
    "entity_id": 10119202,
-   "kind": "item"
+   "kind": "item",
+   "hash": "fe304b3169eebdaa"
   },
   "item.w.hxbow": {
    "id": 648635,
    "entity_id": 10119203,
-   "kind": "item"
+   "kind": "item",
+   "hash": "4832e133a8a7e834"
   },
   "item.w.lxbow": {
    "id": 648636,
    "entity_id": 10119204,
-   "kind": "item"
+   "kind": "item",
+   "hash": "b4722ffeafcabfc9"
   },
   "item.w.longbow": {
    "id": 648637,
    "entity_id": 10119205,
-   "kind": "item"
+   "kind": "item",
+   "hash": "1fab3c076a1592a7"
   },
   "item.w.mace": {
    "id": 648638,
    "entity_id": 10119206,
-   "kind": "item"
+   "kind": "item",
+   "hash": "a89bb42c8f8dfba7"
   },
   "item.w.mstar": {
    "id": 648639,
    "entity_id": 10119207,
-   "kind": "item"
+   "kind": "item",
+   "hash": "bd4b14739f99116a"
   },
   "item.w.net": {
    "id": 648640,
    "entity_id": 10119208,
-   "kind": "item"
+   "kind": "item",
+   "hash": "83060794fd6f39a5"
   },
   "item.w.pike": {
    "id": 648641,
    "entity_id": 10119209,
-   "kind": "item"
+   "kind": "item",
+   "hash": "a9dac192e2ef5040"
   },
   "item.w.polearm": {
    "id": 648642,
    "entity_id": 10119210,
-   "kind": "item"
+   "kind": "item",
+   "hash": "2477e6fa1f3848d9"
   },
   "item.w.punyknife": {
    "id": 648643,
    "entity_id": 10119211,
-   "kind": "item"
+   "kind": "item",
+   "hash": "1d69df22df4be7f0"
   },
   "item.w.qstaff": {
    "id": 648644,
    "entity_id": 10119212,
-   "kind": "item"
+   "kind": "item",
+   "hash": "33dc62bf1db75414"
   },
   "item.w.rock": {
    "id": 648645,
    "entity_id": 10119213,
-   "kind": "item"
+   "kind": "item",
+   "hash": "77eb406d984d2aa2"
   },
   "item.w.romansword": {
    "id": 648646,
    "entity_id": 10119214,
-   "kind": "item"
+   "kind": "item",
+   "hash": "8dafd67d58d00f6d"
   },
   "item.w.sap": {
    "id": 648647,
    "entity_id": 10119215,
-   "kind": "item"
+   "kind": "item",
+   "hash": "01c962f9dafbb8f6"
   },
   "item.w.sevarm": {
    "id": 648648,
    "entity_id": 10119216,
-   "kind": "item"
+   "kind": "item",
+   "hash": "a96f0df9c07c54f4"
   },
   "item.w.shortbow": {
    "id": 648649,
    "entity_id": 10119217,
-   "kind": "item"
+   "kind": "item",
+   "hash": "da7821980c315948"
   },
   "item.w.shortspear": {
    "id": 648650,
    "entity_id": 10119218,
-   "kind": "item"
+   "kind": "item",
+   "hash": "c90c4f172ae2936e"
   },
   "item.w.shortsword": {
    "id": 648651,
    "entity_id": 10119219,
-   "kind": "item"
+   "kind": "item",
+   "hash": "2093b80843e9495b"
   },
   "item.w.sworddag": {
    "id": 648652,
    "entity_id": 10119220,
-   "kind": "item"
+   "kind": "item",
+   "hash": "bedf84c89e4c33f5"
   },
   "item.w.sling": {
    "id": 648653,
    "entity_id": 10119221,
-   "kind": "item"
+   "kind": "item",
+   "hash": "ac1b37b63b238cec"
   },
   "item.w.spearthrown": {
    "id": 648654,
    "entity_id": 10119222,
-   "kind": "item"
+   "kind": "item",
+   "hash": "0785ba2bb80bc4d8"
   },
   "item.w.spearlance": {
    "id": 648655,
    "entity_id": 10119223,
-   "kind": "item"
+   "kind": "item",
+   "hash": "19db127f0e01356d"
   },
   "item.w.throwaxe": {
    "id": 648656,
    "entity_id": 10119224,
-   "kind": "item"
+   "kind": "item",
+   "hash": "5a9ca4bdb348fb6e"
   },
   "item.w.throwknife": {
    "id": 648657,
    "entity_id": 10119227,
-   "kind": "item"
+   "kind": "item",
+   "hash": "820d8f65b3690abf"
   },
   "item.w.twohandaxes": {
    "id": 648658,
    "entity_id": 10119228,
-   "kind": "item"
+   "kind": "item",
+   "hash": "d3b8052a3d45afe2"
   },
   "item.w.twoswords": {
    "id": 648659,
    "entity_id": 10119229,
-   "kind": "item"
+   "kind": "item",
+   "hash": "3d704ec25655097f"
   },
   "item.w.vikingaxe": {
    "id": 648660,
    "entity_id": 10119230,
-   "kind": "item"
+   "kind": "item",
+   "hash": "b3dfb2473de35bcc"
   },
   "item.w.vikingbroad": {
    "id": 648661,
    "entity_id": 10119231,
-   "kind": "item"
+   "kind": "item",
+   "hash": "61e4db7694f2d749"
   },
   "item.w.warmaul": {
    "id": 648662,
    "entity_id": 10119232,
-   "kind": "item"
+   "kind": "item",
+   "hash": "4dc4f05ca47c944b"
   },
   "item.w.whip": {
    "id": 648663,
    "entity_id": 10119233,
-   "kind": "item"
+   "kind": "item",
+   "hash": "ba2f610582c5e45d"
   },
   "item.a.quilted": {
    "id": 648664,
    "entity_id": 10119234,
-   "kind": "item"
+   "kind": "item",
+   "hash": "ca6cb2b00972d07f"
   },
   "item.a.heavyleather": {
    "id": 648665,
    "entity_id": 10119235,
-   "kind": "item"
+   "kind": "item",
+   "hash": "bd9970e0c626ad2a"
   },
   "item.a.studded": {
    "id": 648666,
    "entity_id": 10119236,
-   "kind": "item"
+   "kind": "item",
+   "hash": "2a05df8a3f7d1f0f"
   },
   "item.a.chainmail": {
    "id": 648667,
    "entity_id": 10119237,
-   "kind": "item"
+   "kind": "item",
+   "hash": "c168fae7f987b8ce"
   },
   "item.a.steelscale": {
    "id": 648668,
    "entity_id": 10119238,
-   "kind": "item"
+   "kind": "item",
+   "hash": "f710ac9901bfa4a0"
   },
   "item.s.buckler": {
    "id": 648669,
    "entity_id": 10119239,
-   "kind": "item"
+   "kind": "item",
+   "hash": "aadc3808ddfa1711"
   },
   "item.s.round": {
    "id": 648670,
    "entity_id": 10119240,
-   "kind": "item"
+   "kind": "item",
+   "hash": "01c5ba97205911cc"
   },
   "item.s.kite": {
    "id": 648671,
    "entity_id": 10119241,
-   "kind": "item"
+   "kind": "item",
+   "hash": "7622f935421a451c"
   },
   "item.s.tower": {
    "id": 648672,
    "entity_id": 10119242,
-   "kind": "item"
+   "kind": "item",
+   "hash": "584d60df4faa6dbd"
   },
   "n.waffen": {
    "id": 347731,
    "entity_id": 10119243,
-   "kind": "note"
+   "kind": "note",
+   "hash": "5dbb7074fa97a86d"
   },
   "n.waffentabelle": {
    "id": 347732,
    "entity_id": 10119245,
-   "kind": "note"
+   "kind": "note",
+   "hash": "b7570a85a78bd3b3"
   },
   "n.k2": {
    "id": 347733,
    "entity_id": 10119246,
-   "kind": "note"
+   "kind": "note",
+   "hash": "46d862c438003fea"
   },
   "n.k2.stil": {
    "id": 347734,
    "entity_id": 10119247,
-   "kind": "note"
+   "kind": "note",
+   "hash": "fa6f2068ddaec401"
   },
   "n.k2.runde": {
    "id": 347735,
    "entity_id": 10119248,
-   "kind": "note"
+   "kind": "note",
+   "hash": "76bb76afb4ae1361"
   },
   "n.k2.s1": {
    "id": 347736,
    "entity_id": 10119249,
-   "kind": "note"
+   "kind": "note",
+   "hash": "119c476d02e88d49"
   },
   "n.k2.s2": {
    "id": 347737,
    "entity_id": 10119250,
-   "kind": "note"
+   "kind": "note",
+   "hash": "3c344000f15983ad"
   },
   "n.k2.s2.aktionen": {
    "id": 347738,
    "entity_id": 10119251,
-   "kind": "note"
+   "kind": "note",
+   "hash": "802ee7caa6f3b730"
   },
   "n.k2.s2.engagement": {
    "id": 347739,
    "entity_id": 10119252,
-   "kind": "note"
+   "kind": "note",
+   "hash": "44b57997243c24dc"
   },
   "n.k2.s2.gelegenheit": {
    "id": 347740,
    "entity_id": 10119255,
-   "kind": "note"
+   "kind": "note",
+   "hash": "37d9a2a692ef9fd7"
   },
   "n.k2.s3": {
    "id": 347741,
    "entity_id": 10119256,
-   "kind": "note"
+   "kind": "note",
+   "hash": "0ad2155ee3b39560"
   },
   "n.k2.s3.fern": {
    "id": 347742,
    "entity_id": 10119257,
-   "kind": "note"
+   "kind": "note",
+   "hash": "517b6c25b0f924df"
   },
   "n.k2.s3.nah": {
    "id": 347743,
    "entity_id": 10119258,
-   "kind": "note"
+   "kind": "note",
+   "hash": "7533ec2ff0cfe8b5"
   },
   "n.k2.s3.sonder": {
    "id": 347744,
    "entity_id": 10119259,
-   "kind": "note"
+   "kind": "note",
+   "hash": "18110e2043774426"
   },
   "n.k2.s3.modifikatoren": {
    "id": 347745,
    "entity_id": 10119260,
-   "kind": "note"
+   "kind": "note",
+   "hash": "f6c1a2b914fdcd11"
   },
   "n.k2.s4": {
    "id": 347746,
    "entity_id": 10119261,
-   "kind": "note"
+   "kind": "note",
+   "hash": "4d2f6383cf52c48f"
   },
   "n.k2.sonder": {
    "id": 347747,
    "entity_id": 10119262,
-   "kind": "note"
+   "kind": "note",
+   "hash": "5410c9744e2ccc5a"
   },
   "n.k2.sonder.raufen": {
    "id": 347748,
    "entity_id": 10119263,
-   "kind": "note"
+   "kind": "note",
+   "hash": "8a16ca03e33bd43c"
   },
   "n.k2.sonder.arm": {
    "id": 347749,
    "entity_id": 10119264,
-   "kind": "note"
+   "kind": "note",
+   "hash": "a2886b9a391f42ce"
   },
   "n.k2.sonder.deckung": {
    "id": 347750,
    "entity_id": 10119265,
-   "kind": "note"
+   "kind": "note",
+   "hash": "b7b32af360c70988"
   },
   "n.k2.sonder.fallen": {
    "id": 347751,
    "entity_id": 10119266,
-   "kind": "note"
+   "kind": "note",
+   "hash": "2fd0cbbb39516410"
   },
   "n.k2.verletzungen": {
    "id": 347752,
    "entity_id": 10119267,
-   "kind": "note"
+   "kind": "note",
+   "hash": "ffd3d87a6deef2f3"
   },
   "n.k2.verletzungen.heilung": {
    "id": 347753,
    "entity_id": 10119268,
-   "kind": "note"
+   "kind": "note",
+   "hash": "31f7a81aa0189632"
   },
   "n.k2.weitere": {
    "id": 347754,
    "entity_id": 10119270,
-   "kind": "note"
+   "kind": "note",
+   "hash": "18b8d348fef93d32"
   },
   "n.k2.weitere.fertigkeit": {
    "id": 347755,
    "entity_id": 10119272,
-   "kind": "note"
+   "kind": "note",
+   "hash": "55e29fd364f682ae"
   },
   "n.k2.weitere.wuerfe": {
    "id": 347756,
    "entity_id": 10119273,
-   "kind": "note"
+   "kind": "note",
+   "hash": "f1b457258a13f58e"
   },
   "n.k2.weitere.wettstreit": {
    "id": 347757,
    "entity_id": 10119274,
-   "kind": "note"
+   "kind": "note",
+   "hash": "54a16a51cf2d6729"
   },
   "n.k2.weitere.beritten": {
    "id": 347758,
    "entity_id": 10119275,
-   "kind": "note"
+   "kind": "note",
+   "hash": "0cef5028dd643772"
   },
   "n.k2.hinweise": {
    "id": 347759,
    "entity_id": 10119276,
-   "kind": "note"
+   "kind": "note",
+   "hash": "2423fa46086bfd73"
   },
   "tag.kap3": {
    "id": 622007,
@@ -964,572 +1135,686 @@
   "n.k3": {
    "id": 347764,
    "entity_id": 10119315,
-   "kind": "note"
+   "kind": "note",
+   "hash": "749301413cc1bf33"
   },
   "n.k3.siegpunkte": {
    "id": 347765,
    "entity_id": 10119316,
-   "kind": "note"
+   "kind": "note",
+   "hash": "bb78d0351b75cff2"
   },
   "n.k3.todesversicherung": {
    "id": 347766,
    "entity_id": 10119317,
-   "kind": "note"
+   "kind": "note",
+   "hash": "3c122e29f22da8cf"
   },
   "n.k3.fertigkeiten": {
    "id": 347767,
    "entity_id": 10119318,
-   "kind": "note"
+   "kind": "note",
+   "hash": "8e6e4922685d8bb0"
   },
   "n.k3.ausruestung": {
    "id": 347768,
    "entity_id": 10119319,
-   "kind": "note"
+   "kind": "note",
+   "hash": "9b9c6a41b776803f"
   },
   "n.k3.gaben": {
    "id": 347769,
    "entity_id": 10119320,
-   "kind": "note"
+   "kind": "note",
+   "hash": "122467609b39c259"
   },
   "gift.g.root": {
    "id": 735358,
    "entity_id": 10119321,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "dff92aadc9f32aed"
   },
   "gift.g.heimdal": {
    "id": 735359,
    "entity_id": 10119322,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "bbf8965468c48c85"
   },
   "gift.g.loki": {
    "id": 735360,
    "entity_id": 10119323,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "7233cfba0b38f77d"
   },
   "gift.g.odin": {
    "id": 735361,
    "entity_id": 10119324,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "dc625445503f7637"
   },
   "gift.g.angrboda": {
    "id": 735362,
    "entity_id": 10119325,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "5c26f45c5271c0e8"
   },
   "gift.g.freyja": {
    "id": 735363,
    "entity_id": 10119326,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "4c18550e5b7c21a6"
   },
   "gift.g.thor": {
    "id": 735364,
    "entity_id": 10119327,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "14ba8715514e1c11"
   },
   "gift.g.urd": {
    "id": 735365,
    "entity_id": 10119328,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "897c9a924b0ba91b"
   },
   "gift.g.njord": {
    "id": 735366,
    "entity_id": 10119329,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "bdf35229f5226541"
   },
   "gift.g.freyr": {
    "id": 735367,
    "entity_id": 10119330,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "1cc5525fabf2c688"
   },
   "gift.g.ull": {
    "id": 735368,
    "entity_id": 10119331,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "9130562ca4c2df26"
   },
   "gift.g.tyr": {
    "id": 735369,
    "entity_id": 10119332,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "cf890c9e69471698"
   },
   "gift.g.hoder": {
    "id": 735370,
    "entity_id": 10119333,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "3654aa193e61c5b9"
   },
   "gift.g.asjandr": {
    "id": 735371,
    "entity_id": 10119334,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "f7e4870aa3b085da"
   },
   "gift.g.runen": {
    "id": 735372,
    "entity_id": 10119335,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "9d9b5c144a9a6052"
   },
   "gift.agony": {
    "id": 735373,
    "entity_id": 10119336,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "0b3e6c958961ec26"
   },
   "gift.aura": {
    "id": 735374,
    "entity_id": 10119338,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "a008c8239fedb33b"
   },
   "gift.bann": {
    "id": 735375,
    "entity_id": 10119339,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "bed306279be981a8"
   },
   "gift.berserker": {
    "id": 735376,
    "entity_id": 10119340,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "fb0efcb5200eed2a"
   },
   "gift.angrboda": {
    "id": 735377,
    "entity_id": 10119341,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "851108871ea2da72"
   },
   "gift.knochenrichter": {
    "id": 735378,
    "entity_id": 10119342,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "68245c7bac7d31da"
   },
   "gift.sturm": {
    "id": 735379,
    "entity_id": 10119343,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "368c3958030d9e4f"
   },
   "gift.eichhoernchen": {
    "id": 735380,
    "entity_id": 10119344,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "c570167a122bb82a"
   },
   "gift.kiefer": {
    "id": 735381,
    "entity_id": 10119345,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "9f5a9486ee3cc433"
   },
   "gift.stiefel": {
    "id": 735382,
    "entity_id": 10119346,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "d6d2b5a933ea3da1"
   },
   "gift.vergeltung": {
    "id": 735383,
    "entity_id": 10119347,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "5bd670f7d0d800b6"
   },
   "gift.abgang": {
    "id": 735384,
    "entity_id": 10119348,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "7148784691b7dea2"
   },
   "gift.kaesebruch": {
    "id": 735385,
    "entity_id": 10119349,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "8967dfdb7c762b9f"
   },
   "gift.schicksal": {
    "id": 735386,
    "entity_id": 10119350,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "ffb4366d213365e8"
   },
   "gift.todesstreich": {
    "id": 735387,
    "entity_id": 10119351,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "66b543ce3530323b"
   },
   "gift.pfeil": {
    "id": 735388,
    "entity_id": 10119352,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "bc15d5ba62346ce4"
   },
   "gift.pferd": {
    "id": 735389,
    "entity_id": 10119353,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "cdfe174683786b1e"
   },
   "gift.becher": {
    "id": 735390,
    "entity_id": 10119354,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "a18061590d16a677"
   },
   "gift.kohlen": {
    "id": 735391,
    "entity_id": 10119355,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "fd40f83af08324ae"
   },
   "gift.fleisch": {
    "id": 735392,
    "entity_id": 10119356,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "60db09455c32e30b"
   },
   "gift.gipfel": {
    "id": 735393,
    "entity_id": 10119357,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "365e9b00e63e2665"
   },
   "gift.fersen": {
    "id": 735394,
    "entity_id": 10119358,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "d6da69859cb8bfad"
   },
   "gift.donner": {
    "id": 735395,
    "entity_id": 10119359,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "1dcfb3210b95ce21"
   },
   "gift.freyr_zunge": {
    "id": 735396,
    "entity_id": 10119360,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "d780da8bfa33d5e7"
   },
   "gift.hirsche": {
    "id": 735397,
    "entity_id": 10119361,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "395498910bd1476c"
   },
   "gift.aepfel": {
    "id": 735398,
    "entity_id": 10119362,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "31b6f5ce81df68d9"
   },
   "gift.gestemmt": {
    "id": 735400,
    "entity_id": 10119365,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "5a584563e1ef0a08"
   },
   "gift.fluch": {
    "id": 735401,
    "entity_id": 10119366,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "e46b3847c21d3c54"
   },
   "gift.entschlossenheit": {
    "id": 735402,
    "entity_id": 10119367,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "36b4a69d29a7b248"
   },
   "gift.verweben": {
    "id": 735403,
    "entity_id": 10119368,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "dce6aa0039c551cc"
   },
   "gift.luege": {
    "id": 735404,
    "entity_id": 10119369,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "5e3cbbe64fdc2433"
   },
   "gift.blatt": {
    "id": 735405,
    "entity_id": 10119370,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "3d3c3e35cd61af77"
   },
   "gift.hirsch": {
    "id": 735406,
    "entity_id": 10119371,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "49f24b56423fa1cd"
   },
   "gift.heft": {
    "id": 735407,
    "entity_id": 10119372,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "a736889d654394fd"
   },
   "gift.mantel": {
    "id": 735408,
    "entity_id": 10119373,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "06ab0d3a5f809a5c"
   },
   "gift.speer": {
    "id": 735409,
    "entity_id": 10119374,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "6b5ad601fcab27a3"
   },
   "gift.macht_thors": {
    "id": 735410,
    "entity_id": 10119375,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "58cfbb7bc4a8865e"
   },
   "gift.mjoelnir": {
    "id": 735411,
    "entity_id": 10119376,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "a65ff9338847b64d"
   },
   "gift.naglfar": {
    "id": 735412,
    "entity_id": 10119377,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "70767dae06e08917"
   },
   "gift.kruste": {
    "id": 735413,
    "entity_id": 10119378,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "6704985186543be2"
   },
   "gift.yggdrasil": {
    "id": 735414,
    "entity_id": 10119379,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "b5cf5f13e6900ab0"
   },
   "gift.nebel": {
    "id": 735415,
    "entity_id": 10119380,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "a0445ec689bffdbe"
   },
   "gift.walkuere": {
    "id": 735416,
    "entity_id": 10119381,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "6dd680f091ac1991"
   },
   "gift.seufzer": {
    "id": 735417,
    "entity_id": 10119382,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "427df3dd4bca38e3"
   },
   "gift.eule": {
    "id": 735418,
    "entity_id": 10119383,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "b090eabf29e1434c"
   },
   "gift.blitz": {
    "id": 735419,
    "entity_id": 10119384,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "40317c95022b6a97"
   },
   "gift.njordsatem": {
    "id": 735420,
    "entity_id": 10119385,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "5ebc49e8010a89fa"
   },
   "gift.rabe": {
    "id": 735421,
    "entity_id": 10119386,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "3010291c2e154fe7"
   },
   "gift.njordsgale": {
    "id": 735422,
    "entity_id": 10119387,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "ac1a1852521c925f"
   },
   "gift.hoders_reue": {
    "id": 735423,
    "entity_id": 10119388,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "45b2c6ea1a916d11"
   },
   "gift.schlangentraenen": {
    "id": 735424,
    "entity_id": 10119389,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "8fce5d5d8fd4139a"
   },
   "gift.quell": {
    "id": 735425,
    "entity_id": 10119391,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "14786e3a1897abad"
   },
   "gift.gebruell": {
    "id": 735426,
    "entity_id": 10119392,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "c6db925280291680"
   },
   "gift.verrat": {
    "id": 735427,
    "entity_id": 10119393,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "fe6743e36907b55f"
   },
   "gift.geister": {
    "id": 735428,
    "entity_id": 10119394,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "7ee7febf16027d9b"
   },
   "gift.schultern": {
    "id": 735429,
    "entity_id": 10119395,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "de4da53ffca323a4"
   },
   "gift.skadi": {
    "id": 735430,
    "entity_id": 10119396,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "be0333a0ddc4bce6"
   },
   "gift.mistel": {
    "id": 735431,
    "entity_id": 10119397,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "152b0a8d64fb33ad"
   },
   "gift.bergsturm": {
    "id": 735432,
    "entity_id": 10119398,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "5460bede1ea12ffd"
   },
   "gift.feuersee": {
    "id": 735433,
    "entity_id": 10119399,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "c9831cf42812612d"
   },
   "gift.sleipnir": {
    "id": 735434,
    "entity_id": 10119400,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "6e6c691c02164bb0"
   },
   "gift.spalten": {
    "id": 735435,
    "entity_id": 10119401,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "b192250da36d3ac7"
   },
   "gift.thors_sehnen": {
    "id": 735436,
    "entity_id": 10119402,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "802d65958921afcb"
   },
   "gift.freudenschrei": {
    "id": 735437,
    "entity_id": 10119403,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "75bf9f24b0279a58"
   },
   "gift.trompete": {
    "id": 735438,
    "entity_id": 10119404,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "0aa55bc47539d25b"
   },
   "gift.tyrs_langmut": {
    "id": 735439,
    "entity_id": 10119405,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "1685e407988d201f"
   },
   "gift.ulls_haut": {
    "id": 735440,
    "entity_id": 10119406,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "fb83d35938287e2e"
   },
   "gift.ulls_hand": {
    "id": 735441,
    "entity_id": 10119407,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "a59e7367a37c33b4"
   },
   "gift.tyrs_mut": {
    "id": 735442,
    "entity_id": 10119408,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "3f2450806548e585"
   },
   "gift.wachsamkeit": {
    "id": 735443,
    "entity_id": 10119409,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "0b42c5d8bc6efa5f"
   },
   "gift.lokis_ranke": {
    "id": 735444,
    "entity_id": 10119410,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "299c4ad6cf397a6a"
   },
   "gift.beide_haende": {
    "id": 735445,
    "entity_id": 10119411,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "5a4cbc422d8988ff"
   },
   "gift.wunden": {
    "id": 735446,
    "entity_id": 10119412,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "4f4062c61db76999"
   },
   "gift.ringer": {
    "id": 735447,
    "entity_id": 10119413,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "41ab7ad5ab45556f"
   },
   "gift.sehnen": {
    "id": 735448,
    "entity_id": 10119414,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "5695b0923e50ab2c"
   },
   "gift.r.doppelaxt": {
    "id": 735449,
    "entity_id": 10119415,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "e2636f0fcc52136d"
   },
   "gift.r.zwergenaxt": {
    "id": 735450,
    "entity_id": 10119416,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "5d30834605832e7d"
   },
   "gift.r.zwergenkriegshammer": {
    "id": 735451,
    "entity_id": 10119417,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "0221549520a3cbe7"
   },
   "gift.r.zwergenkampfschwert": {
    "id": 735452,
    "entity_id": 10119418,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "0e0371e9a4caf518"
   },
   "gift.r.zwergenarbeitshammer": {
    "id": 735453,
    "entity_id": 10119419,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "6ef548d79e1adfe6"
   },
   "gift.r.zwergenarbeitsschwert": {
    "id": 735454,
    "entity_id": 10119420,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "3511711c3eeca48f"
   },
   "gift.r.vierklingenkolben": {
    "id": 735455,
    "entity_id": 10119421,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "3dbc024e0865d633"
   },
   "gift.r.goblinaxt": {
    "id": 735456,
    "entity_id": 10119422,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "b5ebf4d8b6fe9ca7"
   },
   "gift.r.goblinstachelkeule": {
    "id": 735457,
    "entity_id": 10119423,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "590334b4ab2584af"
   },
   "gift.r.handaxt": {
    "id": 735458,
    "entity_id": 10119424,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "328cc19e9866b094"
   },
   "gift.r.streitkolben": {
    "id": 735459,
    "entity_id": 10119425,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "b38f41fd1b9d233e"
   },
   "gift.r.roemisches_schwert": {
    "id": 735460,
    "entity_id": 10119426,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "7a6f9df320b72c81"
   },
   "gift.r.wikingeraxt": {
    "id": 735461,
    "entity_id": 10119427,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "24e439120054e1ba"
   },
   "gift.r.wikingerbreitschwert": {
    "id": 735462,
    "entity_id": 10119428,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "7421ead3f24658cd"
   },
   "gift.r.wikingerkurzschwert": {
    "id": 735463,
    "entity_id": 10119429,
-   "kind": "ability"
+   "kind": "ability",
+   "hash": "de4d272e90a609d8"
   },
   "n.k3.gabenliste": {
    "id": 347770,
    "entity_id": 10119430,
-   "kind": "note"
+   "kind": "note",
+   "hash": "e87d86b7cd558cf9"
   },
   "n.k3.runen": {
    "id": 347771,
    "entity_id": 10119431,
-   "kind": "note"
+   "kind": "note",
+   "hash": "18241ee1f9a3f057"
   },
   "n.k3.hinweise": {
    "id": 347772,
    "entity_id": 10119432,
-   "kind": "note"
+   "kind": "note",
+   "hash": "5616fbb8260045a0"
   },
   "tag.kap4": {
    "id": 622015,
@@ -1549,277 +1834,332 @@
   "n.k4": {
    "id": 347785,
    "entity_id": 10119580,
-   "kind": "note"
+   "kind": "note",
+   "hash": "5e463b7c1a5754b5"
   },
   "n.k4.hinweis": {
    "id": 347786,
    "entity_id": 10119581,
-   "kind": "note"
+   "kind": "note",
+   "hash": "346511169807a67d"
   },
   "n.k4.begegnung": {
    "id": 347787,
    "entity_id": 10119582,
-   "kind": "note"
+   "kind": "note",
+   "hash": "73414640c8c0581c"
   },
   "n.k4.siegpunkte": {
    "id": 347788,
    "entity_id": 10119583,
-   "kind": "note"
+   "kind": "note",
+   "hash": "e97ddc8539ca75a7"
   },
   "n.k4.budget": {
    "id": 347789,
    "entity_id": 10119584,
-   "kind": "note"
+   "kind": "note",
+   "hash": "ebd635b4e2fc3cdc"
   },
   "n.k4.gegner": {
    "id": 347790,
    "entity_id": 10119585,
-   "kind": "note"
+   "kind": "note",
+   "hash": "b434311a2b25e966"
   },
   "n.k4.gegner.schritte": {
    "id": 347791,
    "entity_id": 10119586,
-   "kind": "note"
+   "kind": "note",
+   "hash": "9f58d0c1bacea1c4"
   },
   "n.k4.gegner.werte": {
    "id": 347792,
    "entity_id": 10119587,
-   "kind": "note"
+   "kind": "note",
+   "hash": "cc8a082b9b59617d"
   },
   "n.k4.gegner.fern": {
    "id": 347793,
    "entity_id": 10119588,
-   "kind": "note"
+   "kind": "note",
+   "hash": "46bf64117fb7a4f4"
   },
   "pk.gegner": {
    "id": 37815,
    "entity_id": 10119589,
-   "kind": "property_kit"
+   "kind": "property_kit",
+   "hash": "b6c7c92042b495d0"
   },
   "ex.zenturio": {
    "id": 236175,
    "entity_id": 10119590,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "d4e4755b705f872c"
   },
   "ex.mechazwerg": {
    "id": 236176,
    "entity_id": 10119591,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "17a7b47990ea8faf"
   },
   "ex.arbeiter": {
    "id": 236177,
    "entity_id": 10119592,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "153d043bbb78a3b4"
   },
   "race.wikinger": {
    "id": 1009760,
    "entity_id": 10119652,
-   "kind": "race"
+   "kind": "race",
+   "hash": "acce413cd8da7a42"
   },
   "race.zwerge": {
    "id": 1009761,
    "entity_id": 10119653,
-   "kind": "race"
+   "kind": "race",
+   "hash": "37c0f3e8a62e4629"
   },
   "race.craftwerks": {
    "id": 1009762,
    "entity_id": 10119654,
-   "kind": "race"
+   "kind": "race",
+   "hash": "b50a4a59dffd0f74"
   },
   "race.elfen": {
    "id": 1009763,
    "entity_id": 10119655,
-   "kind": "race"
+   "kind": "race",
+   "hash": "398008fc2d4bca36"
   },
   "race.goblins": {
    "id": 1009764,
    "entity_id": 10119656,
-   "kind": "race"
+   "kind": "race",
+   "hash": "bd0d5995abf044c7"
   },
   "race.sonstige": {
    "id": 1009765,
    "entity_id": 10119657,
-   "kind": "race"
+   "kind": "race",
+   "hash": "be39b22d6ea58bc9"
   },
   "cr.darkviking": {
    "id": 236181,
    "entity_id": 10119658,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "befabba299006b15"
   },
   "cr.dishonored": {
    "id": 236182,
    "entity_id": 10119659,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "dc9764738a7a1d58"
   },
   "cr.sarkamen": {
    "id": 236183,
    "entity_id": 10119660,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "21ebd83c1a8cb81d"
   },
   "cr.laborer": {
    "id": 236184,
    "entity_id": 10119661,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "ab0a88f54229583c"
   },
   "cr.pitboss": {
    "id": 236185,
    "entity_id": 10119662,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "2b7981f05ae35c2a"
   },
   "cr.slaver": {
    "id": 236186,
    "entity_id": 10119663,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "135a422d6dff7062"
   },
   "cr.medic": {
    "id": 236187,
    "entity_id": 10119664,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "cd1f5afa27397ce1"
   },
   "cr.centurion": {
    "id": 236188,
    "entity_id": 10119665,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "1fd259320da6ca41"
   },
   "cr.clanchampion": {
    "id": 236189,
    "entity_id": 10119666,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "344bda87826b5eab"
   },
   "cr.beetlewerk": {
    "id": 236190,
    "entity_id": 10119667,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "669ce1bbf51f70f4"
   },
   "cr.centiwerk": {
    "id": 236191,
    "entity_id": 10119668,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "ecb4d771996bc303"
   },
   "cr.spiderwerk": {
    "id": 236192,
    "entity_id": 10119669,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "86e953006dec3089"
   },
   "cr.mechadwarf": {
    "id": 236193,
    "entity_id": 10119670,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "26fa542806f84eb8"
   },
   "cr.megadwarf": {
    "id": 236194,
    "entity_id": 10119671,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "7b820a9fcfd93999"
   },
   "cr.mischief": {
    "id": 236195,
    "entity_id": 10119672,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "ddfadb303d698c8a"
   },
   "cr.courtier": {
    "id": 236196,
    "entity_id": 10119673,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "c9d38661d094f46a"
   },
   "cr.rockgoblin": {
    "id": 236197,
    "entity_id": 10119674,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "980f03267635509a"
   },
   "cr.rockgoblinesse": {
    "id": 236198,
    "entity_id": 10119675,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "f681e9054ae81354"
   },
   "cr.gobwarrior": {
    "id": 236199,
    "entity_id": 10119676,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "02456f532303ea65"
   },
   "cr.rovingslayer": {
    "id": 236200,
    "entity_id": 10119682,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "1efe9becb3b385ab"
   },
   "cr.seniorslayer": {
    "id": 236201,
    "entity_id": 10119683,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "0162b169625434bc"
   },
   "cr.gobfreak": {
    "id": 236202,
    "entity_id": 10119684,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "89a382f7c7a08fae"
   },
   "cr.gobshaman": {
    "id": 236203,
    "entity_id": 10119685,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "2e4b26b609c4d1c7"
   },
   "cr.gobleader": {
    "id": 236204,
    "entity_id": 10119686,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "f6d097821e8341d8"
   },
   "cr.vegetarian": {
    "id": 236205,
    "entity_id": 10119687,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "52f431e408fd57b6"
   },
   "cr.giant": {
    "id": 236206,
    "entity_id": 10119688,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "83483377de3d5590"
   },
   "cr.landcrab_s": {
    "id": 236207,
    "entity_id": 10119689,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "cec02d24fa96fa23"
   },
   "cr.landcrab_l": {
    "id": 236208,
    "entity_id": 10119690,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "bae228d7dda7aacf"
   },
   "cr.troll": {
    "id": 236209,
    "entity_id": 10119691,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "f1b51c29d9be4842"
   },
   "cr.tubestriker": {
    "id": 236210,
    "entity_id": 10119692,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "577a9d4cfb65b9f6"
   },
   "cr.wendol": {
    "id": 236211,
    "entity_id": 10119693,
-   "kind": "creature"
+   "kind": "creature",
+   "hash": "6fb2aa578487ecc7"
   },
   "n.k4.gegner.galerie": {
    "id": 347795,
    "entity_id": 10119694,
-   "kind": "note"
+   "kind": "note",
+   "hash": "28d0ccbe6de39bbc"
   },
   "n.k4.gegner.symbole": {
    "id": 347796,
    "entity_id": 10119695,
-   "kind": "note"
+   "kind": "note",
+   "hash": "4d97ce217c46c1d6"
   },
   "n.k4.gegner.benchmark": {
    "id": 347797,
    "entity_id": 10119696,
-   "kind": "note"
+   "kind": "note",
+   "hash": "40ffafba31f8fb87"
   },
   "n.k4.gegner.tabelle": {
    "id": 347798,
    "entity_id": 10119697,
-   "kind": "note"
+   "kind": "note",
+   "hash": "9823d3700e375920"
   },
   "n.k4.gegner.eigene": {
    "id": 347799,
    "entity_id": 10119698,
-   "kind": "note"
+   "kind": "note",
+   "hash": "f60194a7787e9f41"
   },
   "tag.gelaende": {
    "id": 622020,
@@ -1834,127 +2174,152 @@
   "n.k4.gelaende": {
    "id": 347801,
    "entity_id": 10119728,
-   "kind": "note"
+   "kind": "note",
+   "hash": "6ab828a1a041ddba"
   },
   "n.k4.gel.barrieren": {
    "id": 347802,
    "entity_id": 10119729,
-   "kind": "note"
+   "kind": "note",
+   "hash": "4be498d10122354b"
   },
   "n.k4.gel.deckung": {
    "id": 347803,
    "entity_id": 10119730,
-   "kind": "note"
+   "kind": "note",
+   "hash": "5a85a7a8f2635c35"
   },
   "n.k4.gel.schaden": {
    "id": 347804,
    "entity_id": 10119731,
-   "kind": "note"
+   "kind": "note",
+   "hash": "b3fc04376aca4786"
   },
   "n.k4.gel.statisten": {
    "id": 347805,
    "entity_id": 10119732,
-   "kind": "note"
+   "kind": "note",
+   "hash": "61612f08bb1cc864"
   },
   "n.k4.gel.ausgaenge": {
    "id": 347806,
    "entity_id": 10119734,
-   "kind": "note"
+   "kind": "note",
+   "hash": "ee010516a6759297"
   },
   "n.k4.gel.ebenen": {
    "id": 347807,
    "entity_id": 10119735,
-   "kind": "note"
+   "kind": "note",
+   "hash": "f5184bc436e9bc3a"
   },
   "n.k4.gel.sicht": {
    "id": 347808,
    "entity_id": 10119736,
-   "kind": "note"
+   "kind": "note",
+   "hash": "f9ad583a3731df45"
   },
   "n.k4.gel.fernbeschuss": {
    "id": 347809,
    "entity_id": 10119737,
-   "kind": "note"
+   "kind": "note",
+   "hash": "a98952848d63cbb9"
   },
   "n.k4.gel.rutschig": {
    "id": 347810,
    "entity_id": 10119738,
-   "kind": "note"
+   "kind": "note",
+   "hash": "fc739084e935f486"
   },
   "n.k4.gel.schraeg": {
    "id": 347811,
    "entity_id": 10119739,
-   "kind": "note"
+   "kind": "note",
+   "hash": "c441af783545f86f"
   },
   "n.k4.gel.uneben": {
    "id": 347812,
    "entity_id": 10119740,
-   "kind": "note"
+   "kind": "note",
+   "hash": "e7849bb88d02b4a5"
   },
   "n.k4.gel.magie": {
    "id": 347813,
    "entity_id": 10119741,
-   "kind": "note"
+   "kind": "note",
+   "hash": "c835451f34b73f26"
   },
   "n.k4.gel.karten": {
    "id": 347814,
    "entity_id": 10119742,
-   "kind": "note"
+   "kind": "note",
+   "hash": "b2b76cd503b92caa"
   },
   "n.k4.schwierigkeit": {
    "id": 347815,
    "entity_id": 10119743,
-   "kind": "note"
+   "kind": "note",
+   "hash": "9cf8c2a6679fe757"
   },
   "n.k4.sw.grund": {
    "id": 347816,
    "entity_id": 10119744,
-   "kind": "note"
+   "kind": "note",
+   "hash": "cd7c319700addfd8"
   },
   "n.k4.sw.uebersicht": {
    "id": 347817,
    "entity_id": 10119745,
-   "kind": "note"
+   "kind": "note",
+   "hash": "ae4099569999fc24"
   },
   "n.k4.sw.singulaer": {
    "id": 347818,
    "entity_id": 10119746,
-   "kind": "note"
+   "kind": "note",
+   "hash": "bca17457b3cc861c"
   },
   "n.k4.sw.schwach": {
    "id": 347819,
    "entity_id": 10119747,
-   "kind": "note"
+   "kind": "note",
+   "hash": "646794098f38b7e0"
   },
   "n.k4.sw.bedingt": {
    "id": 347820,
    "entity_id": 10119749,
-   "kind": "note"
+   "kind": "note",
+   "hash": "9f2f86f71d0a8daf"
   },
   "n.k4.sw.mehrfach": {
    "id": 347821,
    "entity_id": 10119750,
-   "kind": "note"
+   "kind": "note",
+   "hash": "77b28a18694870f4"
   },
   "n.k4.sw.eskalation": {
    "id": 347822,
    "entity_id": 10119751,
-   "kind": "note"
+   "kind": "note",
+   "hash": "897ca3bc040a4574"
   },
   "n.k4.sw.zusatz": {
    "id": 347823,
    "entity_id": 10119752,
-   "kind": "note"
+   "kind": "note",
+   "hash": "68a96bb66a3fba68"
   },
   "n.k4.sw.exotisch": {
    "id": 347824,
    "entity_id": 10119754,
-   "kind": "note"
+   "kind": "note",
+   "hash": "7baeb4cf162e6f07"
   },
   "n.k4.sw.goetter": {
    "id": 347825,
    "entity_id": 10119755,
-   "kind": "note"
+   "kind": "note",
+   "hash": "89b0dcfe39daa180"
   },
   "tag.falle": {
    "id": 622023,
@@ -1974,227 +2339,272 @@
   "n.k4.fallen": {
    "id": 347826,
    "entity_id": 10119783,
-   "kind": "note"
+   "kind": "note",
+   "hash": "341795e87c1f94c8"
   },
   "n.k4.f.schaden": {
    "id": 347827,
    "entity_id": 10119784,
-   "kind": "note"
+   "kind": "note",
+   "hash": "21060ecdf63ff9a9"
   },
   "n.k4.f.beeintraechtigung": {
    "id": 347828,
    "entity_id": 10119785,
-   "kind": "note"
+   "kind": "note",
+   "hash": "5766bf3c5dc44670"
   },
   "n.k4.f.sonder": {
    "id": 347829,
    "entity_id": 10119786,
-   "kind": "note"
+   "kind": "note",
+   "hash": "26850e3a1685a645"
   },
   "n.k4.f.saeure": {
    "id": 347830,
    "entity_id": 10119788,
-   "kind": "note"
+   "kind": "note",
+   "hash": "2d776322b48c448b"
   },
   "n.k4.f.hinterhalt": {
    "id": 347831,
    "entity_id": 10119789,
-   "kind": "note"
+   "kind": "note",
+   "hash": "c0fe70cb8bfa9dff"
   },
   "n.k4.f.ertrinken": {
    "id": 347832,
    "entity_id": 10119790,
-   "kind": "note"
+   "kind": "note",
+   "hash": "8eec65340e39e33d"
   },
   "n.k4.f.ausruestung": {
    "id": 347833,
    "entity_id": 10119791,
-   "kind": "note"
+   "kind": "note",
+   "hash": "97c227ec44706bfc"
   },
   "n.k4.f.sturz": {
    "id": 347834,
    "entity_id": 10119792,
-   "kind": "note"
+   "kind": "note",
+   "hash": "f524c73846cc3d7f"
   },
   "n.k4.f.feuer": {
    "id": 347835,
    "entity_id": 10119793,
-   "kind": "note"
+   "kind": "note",
+   "hash": "0fdd632295432f75"
   },
   "n.k4.f.verirren": {
    "id": 347836,
    "entity_id": 10119794,
-   "kind": "note"
+   "kind": "note",
+   "hash": "5892c6806a9f3e27"
   },
   "n.k4.f.greifer": {
    "id": 347837,
    "entity_id": 10119795,
-   "kind": "note"
+   "kind": "note",
+   "hash": "9ea99017002aa757"
   },
   "n.k4.f.plage": {
    "id": 347838,
    "entity_id": 10119796,
-   "kind": "note"
+   "kind": "note",
+   "hash": "700d6bac26c2bd6d"
   },
   "n.k4.schatz": {
    "id": 347839,
    "entity_id": 10119797,
-   "kind": "note"
+   "kind": "note",
+   "hash": "1ed9817c981c7cf2"
   },
   "n.k4.sch.kategorien": {
    "id": 347840,
    "entity_id": 10119798,
-   "kind": "note"
+   "kind": "note",
+   "hash": "103a75a37cc4a208"
   },
   "n.k4.sch.tabellen": {
    "id": 347841,
    "entity_id": 10119799,
-   "kind": "note"
+   "kind": "note",
+   "hash": "6d194fedd0fa3ad9"
   },
   "n.k4.sch.beute": {
    "id": 347842,
    "entity_id": 10119800,
-   "kind": "note"
+   "kind": "note",
+   "hash": "36b65e61cf7dc9fa"
   },
   "n.k4.sch.traenke": {
    "id": 347843,
    "entity_id": 10119801,
-   "kind": "note"
+   "kind": "note",
+   "hash": "715013ab5a09cd72"
   },
   "n.k4.sch.talismane": {
    "id": 347844,
    "entity_id": 10119802,
-   "kind": "note"
+   "kind": "note",
+   "hash": "44fd310b91b3f227"
   },
   "n.k4.sch.amulette": {
    "id": 347845,
    "entity_id": 10119803,
-   "kind": "note"
+   "kind": "note",
+   "hash": "ad5c9e213f45d9de"
   },
   "n.k4.sch.ausruestung": {
    "id": 347846,
    "entity_id": 10119804,
-   "kind": "note"
+   "kind": "note",
+   "hash": "598dba68dfb03a53"
   },
   "n.k4.sch.potenz": {
    "id": 347847,
    "entity_id": 10119805,
-   "kind": "note"
+   "kind": "note",
+   "hash": "6ffb1808817db733"
   },
   "n.k4.sch.looting": {
    "id": 347848,
    "entity_id": 10119814,
-   "kind": "note"
+   "kind": "note",
+   "hash": "b8289afe4a29dc1d"
   },
   "n.k4.sch.helme": {
    "id": 347849,
    "entity_id": 10119815,
-   "kind": "note"
+   "kind": "note",
+   "hash": "74291f591add3c7f"
   },
   "n.k4.sch.legendaer": {
    "id": 347850,
    "entity_id": 10119816,
-   "kind": "note"
+   "kind": "note",
+   "hash": "159ad169b2210ac2"
   },
   "item.l.inflexible": {
    "id": 648681,
    "entity_id": 10119817,
-   "kind": "item"
+   "kind": "item",
+   "hash": "8bbc95f6413bda59"
   },
   "item.l.absorption": {
    "id": 648682,
    "entity_id": 10119818,
-   "kind": "item"
+   "kind": "item",
+   "hash": "83ba935a08df0bb4"
   },
   "item.l.axt": {
    "id": 648683,
    "entity_id": 10119819,
-   "kind": "item"
+   "kind": "item",
+   "hash": "faf1fac1e8bd1399"
   },
   "item.l.klinge": {
    "id": 648684,
    "entity_id": 10119820,
-   "kind": "item"
+   "kind": "item",
+   "hash": "2edf811737ad9c97"
   },
   "item.l.blendend": {
    "id": 648685,
    "entity_id": 10119821,
-   "kind": "item"
+   "kind": "item",
+   "hash": "a2d68156e7312293"
   },
   "item.l.blutzoll": {
    "id": 648686,
    "entity_id": 10119822,
-   "kind": "item"
+   "kind": "item",
+   "hash": "a389aac21cc53d68"
   },
   "item.l.mantel_verrat": {
    "id": 648687,
    "entity_id": 10119823,
-   "kind": "item"
+   "kind": "item",
+   "hash": "e152d9a18b1e8b1a"
   },
   "item.l.stumpf": {
    "id": 648688,
    "entity_id": 10119824,
-   "kind": "item"
+   "kind": "item",
+   "hash": "ba497b8499a06711"
   },
   "item.l.daemonenrachen": {
    "id": 648689,
    "entity_id": 10119825,
-   "kind": "item"
+   "kind": "item",
+   "hash": "5c820867bf29fb55"
   },
   "item.l.einherjar": {
    "id": 648690,
    "entity_id": 10119826,
-   "kind": "item"
+   "kind": "item",
+   "hash": "e22651fe069af255"
   },
   "item.l.halsreif_gerecht": {
    "id": 648691,
    "entity_id": 10119828,
-   "kind": "item"
+   "kind": "item",
+   "hash": "6b39c47999957a0a"
   },
   "item.l.goldklinge": {
    "id": 648692,
    "entity_id": 10119829,
-   "kind": "item"
+   "kind": "item",
+   "hash": "a42931d3fb2e6242"
   },
   "item.l.stiefel": {
    "id": 648693,
    "entity_id": 10119830,
-   "kind": "item"
+   "kind": "item",
+   "hash": "c5b3872ac50e0bb6"
   },
   "item.l.lokivereitelnd": {
    "id": 648694,
    "entity_id": 10119831,
-   "kind": "item"
+   "kind": "item",
+   "hash": "b4644625eaa3fdf7"
   },
   "item.l.lokistab": {
    "id": 648695,
    "entity_id": 10119832,
-   "kind": "item"
+   "kind": "item",
+   "hash": "8b62b9242134f136"
   },
   "item.l.grimmig": {
    "id": 648696,
    "entity_id": 10119833,
-   "kind": "item"
+   "kind": "item",
+   "hash": "0d4ecb0ed5dad27e"
   },
   "item.l.alberich_ring": {
    "id": 648697,
    "entity_id": 10119834,
-   "kind": "item"
+   "kind": "item",
+   "hash": "1a2d599aab1d1eb1"
   },
   "item.l.schildwut": {
    "id": 648698,
    "entity_id": 10119835,
-   "kind": "item"
+   "kind": "item",
+   "hash": "6ba932bceafe8921"
   },
   "item.l.spuckend": {
    "id": 648699,
    "entity_id": 10119836,
-   "kind": "item"
+   "kind": "item",
+   "hash": "3dc5e16b7ae970fd"
   },
   "item.l.alberich_halsreif": {
    "id": 648700,
    "entity_id": 10119837,
-   "kind": "item"
+   "kind": "item",
+   "hash": "f12176990226d07e"
   },
   "tag.einleitung": {
    "id": 622027,
@@ -2204,37 +2614,294 @@
   "n.ei": {
    "id": 347852,
    "entity_id": 10119857,
-   "kind": "note"
+   "kind": "note",
+   "hash": "0e0e0516c96ef315"
   },
   "n.ei.rune": {
    "id": 347853,
    "entity_id": 10119858,
-   "kind": "note"
+   "kind": "note",
+   "hash": "55b6738126c15191"
   },
   "n.ei.begriffe": {
    "id": 347854,
    "entity_id": 10119859,
-   "kind": "note"
+   "kind": "note",
+   "hash": "56e071465a2e1820"
   },
   "n.ei.welt": {
    "id": 347855,
    "entity_id": 10119860,
-   "kind": "note"
+   "kind": "note",
+   "hash": "c2b14fe10239900c"
   },
   "n.ei.wuerfel": {
    "id": 347856,
    "entity_id": 10119861,
-   "kind": "note"
+   "kind": "note",
+   "hash": "a850f17f145e1ec0"
   },
   "n.ei.beispiel": {
    "id": 347857,
    "entity_id": 10119862,
-   "kind": "note"
+   "kind": "note",
+   "hash": "66223a11efdc757d"
   },
   "n.ei.eigenart": {
    "id": 347858,
    "entity_id": 10119864,
-   "kind": "note"
+   "kind": "note",
+   "hash": "aa409436448b2e72"
+  },
+  "tag.tb": {
+   "id": 622466,
+   "entity_id": 10128344,
+   "kind": "tag"
+  },
+  "tag.unsicher": {
+   "id": 622467,
+   "entity_id": 10128345,
+   "kind": "tag"
+  },
+  "kul.angelsachsen": {
+   "id": 1010209,
+   "entity_id": 10128346,
+   "kind": "race"
+  },
+  "kul.galen": {
+   "id": 1010210,
+   "entity_id": 10128347,
+   "kind": "race"
+  },
+  "kul.waliser": {
+   "id": 1010211,
+   "entity_id": 10128348,
+   "kind": "race"
+  },
+  "kul.gro-e-wikingerarmee": {
+   "id": 1010212,
+   "entity_id": 10128349,
+   "kind": "race"
+  },
+  "kul.wikinger-seekonige": {
+   "id": 1010213,
+   "entity_id": 10128350,
+   "kind": "race"
+  },
+  "kul.wikinger": {
+   "id": 1010214,
+   "entity_id": 10128351,
+   "kind": "race"
+  },
+  "prov.agmundrenesse": {
+   "id": 2282308,
+   "entity_id": 10128352,
+   "kind": "location"
+  },
+  "prov.ailech": {
+   "id": 2282309,
+   "entity_id": 10128353,
+   "kind": "location"
+  },
+  "prov.airer-goidel": {
+   "id": 2282310,
+   "entity_id": 10128354,
+   "kind": "location"
+  },
+  "prov.airgialla": {
+   "id": 2282311,
+   "entity_id": 10128355,
+   "kind": "location"
+  },
+  "prov.athfochla": {
+   "id": 2282312,
+   "entity_id": 10128356,
+   "kind": "location"
+  },
+  "prov.aurmoreb": {
+   "id": 2282313,
+   "entity_id": 10128357,
+   "kind": "location"
+  },
+  "prov.beornice": {
+   "id": 2282314,
+   "entity_id": 10128358,
+   "kind": "location"
+  },
+  "prov.brega": {
+   "id": 2282315,
+   "entity_id": 10128359,
+   "kind": "location"
+  },
+  "prov.breifne": {
+   "id": 2282316,
+   "entity_id": 10128360,
+   "kind": "location"
+  },
+  "prov.cait": {
+   "id": 2282317,
+   "entity_id": 10128361,
+   "kind": "location"
+  },
+  "prov.cent": {
+   "id": 2282318,
+   "entity_id": 10128362,
+   "kind": "location"
+  },
+  "prov.ceredigeaun": {
+   "id": 2282319,
+   "entity_id": 10128363,
+   "kind": "location"
+  },
+  "prov.circenn": {
+   "id": 2282320,
+   "entity_id": 10128365,
+   "kind": "location"
+  },
+  "prov.connacht": {
+   "id": 2282321,
+   "entity_id": 10128366,
+   "kind": "location"
+  },
+  "prov.corcaigh": {
+   "id": 2282322,
+   "entity_id": 10128367,
+   "kind": "location"
+  },
+  "prov.cumbraland": {
+   "id": 2282323,
+   "entity_id": 10128368,
+   "kind": "location"
+  },
+  "prov.dal-fiatach": {
+   "id": 2282324,
+   "entity_id": 10128369,
+   "kind": "location"
+  },
+  "prov.dal-naraidi": {
+   "id": 2282325,
+   "entity_id": 10128387,
+   "kind": "location"
+  },
+  "prov.defenascir": {
+   "id": 2282326,
+   "entity_id": 10128388,
+   "kind": "location"
+  },
+  "prov.dorsaete": {
+   "id": 2282327,
+   "entity_id": 10128389,
+   "kind": "location"
+  },
+  "prov.druim-alban": {
+   "id": 2282328,
+   "entity_id": 10128390,
+   "kind": "location"
+  },
+  "prov.dewet": {
+   "id": 2282329,
+   "entity_id": 10128391,
+   "kind": "location"
+  },
+  "prov.east-seaxe": {
+   "id": 2282330,
+   "entity_id": 10128392,
+   "kind": "location"
+  },
+  "prov.east-suth-seaxe": {
+   "id": 2282331,
+   "entity_id": 10128393,
+   "kind": "location"
+  },
+  "prov.east-thryding": {
+   "id": 2282332,
+   "entity_id": 10128394,
+   "kind": "location"
+  },
+  "prov.fenns": {
+   "id": 2282333,
+   "entity_id": 10128395,
+   "kind": "location"
+  },
+  "prov.grantabrycgscir": {
+   "id": 2282334,
+   "entity_id": 10128396,
+   "kind": "location"
+  },
+  "prov.gwined": {
+   "id": 2282335,
+   "entity_id": 10128397,
+   "kind": "location"
+  },
+  "prov.hamtunscir": {
+   "id": 2282336,
+   "entity_id": 10128398,
+   "kind": "location"
+  },
+  "prov.hlymrekr": {
+   "id": 2282337,
+   "entity_id": 10128399,
+   "kind": "location"
+  },
+  "prov.hwicce": {
+   "id": 2282338,
+   "entity_id": 10128400,
+   "kind": "location"
+  },
+  "prov.iarmoreb": {
+   "id": 2282339,
+   "entity_id": 10128401,
+   "kind": "location"
+  },
+  "prov.iarmuma": {
+   "id": 2282340,
+   "entity_id": 10128402,
+   "kind": "location"
+  },
+  "prov.cerneu": {
+   "id": 2282341,
+   "entity_id": 10128403,
+   "kind": "location"
+  },
+  "prov.laigen": {
+   "id": 2282342,
+   "entity_id": 10128404,
+   "kind": "location"
+  },
+  "prov.lindesege": {
+   "id": 2282343,
+   "entity_id": 10128405,
+   "kind": "location"
+  },
+  "prov.loden": {
+   "id": 2282344,
+   "entity_id": 10128406,
+   "kind": "location"
+  },
+  "prov.mana": {
+   "id": 2282345,
+   "entity_id": 10128407,
+   "kind": "location"
+  },
+  "prov.middel-engle": {
+   "id": 2282346,
+   "entity_id": 10128408,
+   "kind": "location"
+  },
+  "prov.middel-seaxe": {
+   "id": 2282347,
+   "entity_id": 10128409,
+   "kind": "location"
+  },
+  "prov.mide": {
+   "id": 2282348,
+   "entity_id": 10128410,
+   "kind": "location"
+  },
+  "prov.monadh": {
+   "id": 2282349,
+   "entity_id": 10128411,
+   "kind": "location"
   }
  }
 }

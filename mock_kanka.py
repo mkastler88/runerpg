@@ -9,9 +9,9 @@ from http.server import BaseHTTPRequestHandler, HTTPServer
 sys.path.insert(0, os.path.join(os.path.dirname(os.path.abspath(__file__)), ".."))
 from kanka_import import eval_props  # gleiche Formelrechnung wie der Selbsttest
 
-STATE = {"counter": 0, "eid": 1000, "objs": {}, "attrs": {}, "attr_id": 0, "calls": 0, "limited": False, "log": []}
+STATE = {"rels": [], "rel_id": 0, "members": [], "counter": 0, "eid": 1000, "objs": {}, "attrs": {}, "attr_id": 0, "calls": 0, "limited": False, "log": []}
 LOCK = threading.Lock()
-EP = ("tags", "notes", "abilities", "characters", "items", "creatures", "races", "attribute_templates")
+EP = ("tags", "notes", "abilities", "characters", "items", "creatures", "races", "locations", "organisations", "attribute_templates")
 
 
 class H(BaseHTTPRequestHandler):
@@ -42,9 +42,16 @@ class H(BaseHTTPRequestHandler):
             if mm and mm.group(1) in EP:
                 ep, oid = mm.group(1), mm.group(2)
                 if method in ("POST", "PUT", "PATCH") and body and body.get("parent_id") is not None:
-                    if body["parent_id"] not in {o["entity_id"] for o in STATE["objs"].values() if o["_ep"] == ep}:
+                    if body["parent_id"] not in {o["id" if os.environ.get("MOCK_PARENT_MODE") == "id" else "entity_id"] for o in STATE["objs"].values() if o["_ep"] == ep}:
                         return self._send(422, {"code": 422, "error": "The selected parent id is invalid.",
                                                 "fields": {"parent_id": ["The selected parent id is invalid."]}})
+                if method in ("POST", "PUT", "PATCH") and body:
+                    mode = os.environ.get("MOCK_LINK_MODE", "id")
+                    for fld, target_ep in (("races", "races"), ("locations", "locations")):
+                        for v in body.get(fld) or []:
+                            ok = any(o["_ep"] == target_ep and o["id" if mode == "id" else "entity_id"] == v for o in STATE["objs"].values())
+                            if not ok:
+                                return self._send(422, {"code": 422, "error": "The selected %s is invalid." % fld, "fields": {fld: ["The selected %s is invalid." % fld]}})
                 if method == "POST":
                     STATE["counter"] += 1; STATE["eid"] += 1
                     o = dict(body); o.update(id=STATE["counter"], entity_id=STATE["eid"], _ep=ep)
@@ -56,6 +63,27 @@ class H(BaseHTTPRequestHandler):
                     if method == "PUT": o.update(body)
                     else: o.update(body)
                     return self._send(200, {"data": o})
+            mr = re.match(r"^entities/(\d+)/relations$", path)
+            if mr and method == "POST":
+                eids = {o["entity_id"] for o in STATE["objs"].values()}
+                owner = int(mr.group(1))
+                targets = body.get("targets") or [body.get("target_id")]
+                if owner not in eids or body.get("owner_id") != owner or not body.get("relation") or any(t not in eids for t in targets):
+                    return self._send(422, {"code": 422, "error": "invalid relation"})
+                out = []
+                for t in targets:
+                    STATE["rel_id"] += 1
+                    r = {"id": STATE["rel_id"], "owner_id": owner, "target_id": t, "relation": body["relation"]}
+                    STATE["rels"].append(r); out.append(r)
+                return self._send(200, {"data": out if body.get("targets") else out[0]})
+            mm = re.match(r"^organisations/(\d+)/organisation_members$", path)
+            if mm and method == "POST":
+                orgs = {o["id"] for o in STATE["objs"].values() if o["_ep"] == "organisations"}
+                chars = {o["id"] for o in STATE["objs"].values() if o["_ep"] == "characters"}
+                if body.get("organisation_id") not in orgs or body.get("character_id") not in chars:
+                    return self._send(422, {"code": 422, "error": "invalid member"})
+                STATE["rel_id"] += 1; STATE["members"].append(dict(body, id=STATE["rel_id"]))
+                return self._send(200, {"data": {"id": STATE["rel_id"]}})
             md = re.match(r"^entities/(\d+)/attributes/(\d+)$", path)
             if md and method == "DELETE":
                 lst = STATE["attrs"].get(int(md.group(1)), [])
@@ -89,7 +117,7 @@ class H(BaseHTTPRequestHandler):
             with LOCK:
                 info = {"objekte": len(STATE["objs"]), "attribut_listen": {str(k): len(v) for k, v in STATE["attrs"].items() if len(v) > 100},
                         "doppelte_property_namen": sum(len(v) - len({a["name"] for a in v}) for v in STATE["attrs"].values()),
-                        "anfragen": STATE["calls"]}
+                        "anfragen": STATE["calls"], "relationen": len(STATE["rels"]), "mitglieder": len(STATE["members"])}
             return self._send(200, info)
         self._handle("GET")
     def do_POST(self): self._handle("POST")

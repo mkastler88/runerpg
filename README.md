@@ -17,6 +17,7 @@ Die Inhalte kommen in **Etappen**, jede als eigene Datei in `data/`. Das Skript 
 | `data/07_kap4d_fallen_gefahren.json` | Kapitel 4, Teil D: Fallen und Gefahren (Schaden, Beeinträchtigung, Sticks, Sonderfälle) und 9 Fertigpakete (Säure, Hinterhalt, Ertrinken, Ausrüstungsschaden, Stürze, Feuer, Sich verirren, Greiferfallen, Tiere) |
 | `data/08_kap4e_schaetze.json` | Kapitel 4, Teil E: Schätze (Kategorien A–F mit Zufallstabellen, Beute, Tränke, Talismane, Amulette, Ausrüstung und Potenz, Plündern, Machthelme) und 20 legendäre Gegenstände als Items |
 | `data/09_einleitung.json` | Einleitung: Was ist Rune RPG, wichtige Begriffe, Die Welt von Rune, Grundregeln (Würfeln, Schwierigkeit, Triumph, Patzer), Spielbeispiel, Eigenarten des Spiels |
+| `data/10_thrones_of_britannia.json` | Welt von „A Total War Saga: Thrones of Britannia“ (878 n. Chr.): 63 Provinzen, 229 Städte (als Orte, Kind-Orte der Provinz), 53 Königreiche (Orte mit Properties), 67 Fraktionen (Organisationen), 6 Kulturen (Völker), 10 Anführer (Charaktere, Mitglieder ihrer Fraktion) und 649 Verbindungen. Quelle und Prüfbericht: `thrones_pruefbericht.md` |
 | `glossar.md` | Glossar Englisch → Deutsch (Zeilen mit „Vorschlag“ bitte prüfen) |
 | `tests/mock_kanka.py` | Optional: lokaler Kanka-Nachbau zum Trockenlauf ohne echte Kampagne |
 
@@ -94,6 +95,29 @@ Der Pilot prüft diese Annahmen, die ich nicht vorab testen konnte (die Kanka-AP
 * **Engagement** (für die Reaktion): ist als Auslegung umgesetzt (siehe Note „Übersetzungshinweise und Auffälligkeiten im Original“).
 * Waffen sind im Pilot noch keine Items: Ihre Werte trägst du in den Waffenfeldern ein. Mit Kapitel 1 (Waffen/Rüstung) und Kapitel 4 werden sie später Items.
 
+## Thrones of Britannia importieren
+
+Die Datei `data/10_thrones_of_britannia.json` enthält zusätzlich zu den `entities` zwei Abschnitte:
+
+* `relations`: Verbindungen (Kanka „Connections“) zwischen Einträgen, jeweils `from`, `to`, `relation` (Text). Das Skript bündelt Verbindungen mit gleichem Besitzer und Text zu **einer** Anfrage (`targets`); 649 Verbindungen brauchen so nur 473 Anfragen.
+* `members`: Mitglieder von Organisationen (Anführer einer Fraktion).
+
+Neue Eintragsarten: `location` (Provinzen, Städte, Königreiche; Städte haben die Provinz als Kind-Ort), `organisation` (Fraktionen, mit Verweis auf ihren Königreichs-Ort) und `race` (Kulturen), dazu Charaktere mit Titel und Volk.
+
+Die Datei lässt sich **allein** einspielen, ohne die Rune-Regeln anzufassen:
+
+```powershell
+python3 kanka_import.py plan   --campaign $C --data data\10_thrones_of_britannia.json
+python3 kanka_import.py import --campaign $C --token-file $T --data data\10_thrones_of_britannia.json
+```
+
+Etwa 976 Anfragen, bei 25 pro Minute rund 39 Minuten. Wie immer in eine **Testkampagne** zuerst. Weitere Hinweise:
+
+* Mit dem Standardaufruf ohne `--data` werden alle Dateien in `data\` abgeglichen; bereits Importiertes wird übersprungen.
+* Verbindungen und Mitglieder werden in der Zuordnungsdatei (`kanka_map_<ID>.json`) vermerkt und nicht doppelt angelegt. Ändert sich der Text einer Verbindung, entsteht eine neue; die alte musst du in Kanka von Hand löschen.
+* **Zwei API-Unklarheiten fängt das Skript selbst ab:** Erwartet Kanka bei `races`/`locations` oder `parent_id` die andere ID-Art, erscheint „Hinweis: … wechsle und versuche es erneut“, und das Skript merkt sich die richtige Art.
+* 34 Städte tragen das Tag „Zuordnung unsicher (Kartenfarbe)“. Ihre Zuordnung zum Königreich wurde aus Kartenfarben abgeleitet.
+
 ## Aktualisieren und Umbenennen
 
 `python3 kanka_import.py import` gleicht die Daten in `data/` mit der Kampagne ab:
@@ -125,7 +149,7 @@ Das sind etwa 64 Anfragen (3 Minuten). Wiederhole den Aufruf, wenn sich deine Gr
 
 ## Umfang der Übersetzung
 
-Übernommen werden die Einleitung und die Kapitel 1 bis 4 des Originals. Auf Wunsch entfallen „Recap: Designing Your Encounters“, „Quick ‘n’ Dirty Encounter Design“, Kapitel 5 bis 7, Anhang und Index. Die Kampagne hat dauerhaft einen Runner (Spielleiter), keinen Proxy, unbegrenzte Begegnungspunkte und Siegespunkte nach Ermessen. Entsprechende Regeln stehen als Referenz mit dem Tag „Referenz (Originalsystem, nicht angewandt)“.
+Übernommen werden die Einleitung und die Kapitel 1 bis 4 des Originals sowie (als eigene Datei) die Welt von Thrones of Britannia. Auf Wunsch entfallen „Recap: Designing Your Encounters“, „Quick ‘n’ Dirty Encounter Design“, Kapitel 5 bis 7, Anhang und Index. Die Kampagne hat dauerhaft einen Runner (Spielleiter), keinen Proxy, unbegrenzte Begegnungspunkte und Siegespunkte nach Ermessen. Entsprechende Regeln stehen als Referenz mit dem Tag „Referenz (Originalsystem, nicht angewandt)“.
 
 ## Was automatisch getestet wurde
 

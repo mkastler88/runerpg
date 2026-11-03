@@ -20,7 +20,7 @@ from collections import deque
 
 HERE = os.path.dirname(os.path.abspath(__file__))
 BASE_URL = "https://api.kanka.io/1.0"
-ENDPOINT = {"note": "notes", "ability": "abilities", "character": "characters", "item": "items", "creature": "creatures", "race": "races",
+ENDPOINT = {"note": "notes", "ability": "abilities", "character": "characters", "item": "items", "creature": "creatures", "race": "races", "location": "locations", "organisation": "organisations",
             "property_kit": "attribute_templates", "tag": "tags"}
 REF_RE = re.compile(r"\{\{ref:([^}|]+)(?:\|([^}]+))?\}\}")
 BRACE_RE = re.compile(r"\{([^{}]+)\}")
@@ -42,15 +42,21 @@ def load_data(paths, ascii_names=False):
     """Lädt eine oder mehrere Datendateien und führt sie zusammen (Tags eindeutig, Einträge in Dateireihenfolge)."""
     if isinstance(paths, str):
         paths = [paths]
-    data = {"meta": {}, "tags": [], "entities": []}
+    data = {"meta": {}, "tags": [], "entities": [], "relations": [], "members": []}
     tagkeys = set()
     for path in paths:
         part = json.load(open(path, encoding="utf-8"))
+        if not isinstance(part, dict) or "entities" not in part:
+            print("Hinweis: %s enthält keine Einträge (\"entities\") und wird übersprungen. "
+                  "Gehört sie nicht in data\\? (umbenennungen.json liegt neben dem Skript.)" % os.path.basename(path))
+            continue
         data["meta"].setdefault("dateien", []).append(os.path.basename(path))
         for t in part.get("tags", []):
             if t["key"] not in tagkeys:
                 tagkeys.add(t["key"]); data["tags"].append(t)
         data["entities"] += part["entities"]
+        data["relations"] += part.get("relations", [])
+        data["members"] += part.get("members", [])
     if ascii_names:
         for e in data["entities"]:
             for pr in e.get("properties", []):
@@ -124,6 +130,23 @@ def cmd_selftest(args):
         for t in e["tags"]:
             if t not in keys:
                 errors.append("Unbekannter Tag %s in %s" % (t, e["key"]))
+        for fld in ("races", "locations"):
+            for k in e.get(fld, []):
+                if k not in allkeys:
+                    errors.append("Unbekannter Schlüssel %s in %s.%s" % (k, e["key"], fld))
+    seen_rel = set()
+    for r in data.get("relations", []):
+        for side in ("from", "to"):
+            if r[side] not in allkeys:
+                errors.append("Verbindung mit unbekanntem Schlüssel (%s): %s" % (side, r[side]))
+        rk = (r["from"], r["relation"], r["to"])
+        if rk in seen_rel:
+            errors.append("Doppelte Verbindung: %s -> %s (%s)" % (r["from"], r["to"], r["relation"]))
+        seen_rel.add(rk)
+    for m in data.get("members", []):
+        for side in ("organisation", "character"):
+            if m[side] not in allkeys:
+                errors.append("Mitglied mit unbekanntem Schlüssel (%s): %s" % (side, m[side]))
     abil = [e for e in ents if e["kind"] == "ability" and e["key"].startswith("ab.") and not e["key"].startswith("ab.g.")]
     if abil:
         print("Fertigkeiten (ohne Gruppen): %d (erwartet 43)" % len(abil))
@@ -175,6 +198,9 @@ def cmd_selftest(args):
 def ehash(e):
     """Prüfsumme des Soll-Inhalts eines Eintrags (zur Erkennung von Änderungen)."""
     core = {k: e.get(k) for k in ("kind", "name", "type", "parent", "tags", "entry", "properties")}
+    for k in ("title", "races", "locations"):
+        if e.get(k):
+            core[k] = e[k]
     return hashlib.sha1(json.dumps(core, sort_keys=True, ensure_ascii=False).encode("utf-8")).hexdigest()[:16]
 
 
@@ -202,9 +228,23 @@ def classify(data, mapping, args):
     return new, changed, same
 
 
-def plan_counts(data, mapping=None, args=None):
+def pending_links(data, state):
+    """Noch nicht angelegte Verbindungen (gruppiert je Besitzer und Text) und Mitglieder."""
+    rel_state = (state or {}).get("relations", {})
+    mem_state = (state or {}).get("members", {})
+    groups = {}
+    for r in data.get("relations", []):
+        if "%s|%s|%s" % (r["from"], r["relation"], r["to"]) in rel_state:
+            continue
+        groups.setdefault((r["from"], r["relation"], r.get("attitude")), []).append(r["to"])
+    members = [m for m in data.get("members", []) if "%s|%s" % (m["organisation"], m["character"]) not in mem_state]
+    return groups, members
+
+
+def plan_counts(data, mapping=None, args=None, state=None):
     """Zählt Anfragen. Pass 2 (Verlinkung) ist nur nötig, wenn ein Verweis beim Anlegen noch nicht bekannt ist.
-    Rückgabe: Tags, Anlegen, Verlinken, Properties (neu), Aktualisieren, Properties (Aktualisieren, je 2 Anfragen), unverändert."""
+    Rückgabe: Tags, Anlegen, Verlinken, Properties (neu), Aktualisieren, Properties (Aktualisieren, je 2 Anfragen), unverändert,
+    Verbindungs-Anfragen (gebündelt), Mitglieder-Anfragen."""
     mapping = mapping or {}
     known = set(mapping) | {t["key"] for t in data["tags"]}
     n_tags = sum(1 for t in data["tags"] if t["key"] not in mapping)
@@ -219,19 +259,21 @@ def plan_counts(data, mapping=None, args=None):
             n_ph2 += 1
         known.add(e["key"])
     n_upd_props = sum(1 for e in changed if e.get("properties"))
-    return n_tags, len(new), n_ph2, n_props, len(changed), n_upd_props, len(same)
+    groups, members = pending_links(data, state)
+    return n_tags, len(new), n_ph2, n_props, len(changed), n_upd_props, len(same), len(groups), len(members)
 
 
 def cmd_plan(args):
     data = load_data(data_files(args), args.ascii_names)
     cid = (args.campaign or os.environ.get("KANKA_CAMPAIGN_ID", "")).strip()
-    mapping = {}
+    mapping, pstate = {}, {}
     mp_path = args.map or os.path.join(HERE, "kanka_map_%s.json" % cid)
     if cid and os.path.exists(mp_path):
-        mapping = json.load(open(mp_path, encoding="utf-8")).get("items", {})
+        pstate = json.load(open(mp_path, encoding="utf-8"))
+        mapping = pstate.get("items", {})
         print("Zuordnungsdatei gefunden: %d Einträge sind schon in Kampagne %s." % (len(mapping), cid))
-    n_tags, n_create, n_ph2, n_props, n_upd, n_upd_props, n_same = plan_counts(data, mapping, args)
-    total = n_tags + n_create + n_ph2 + n_props + n_upd + 2 * n_upd_props
+    n_tags, n_create, n_ph2, n_props, n_upd, n_upd_props, n_same, n_rel, n_mem = plan_counts(data, mapping, args, pstate)
+    total = n_tags + n_create + n_ph2 + n_props + n_upd + 2 * n_upd_props + n_rel + n_mem
     print("Dateien: %s" % ", ".join(data["meta"].get("dateien", [])))
     print("Geplante Anfragen:")
     print("  Tags anlegen:                 %d" % n_tags)
@@ -240,6 +282,8 @@ def cmd_plan(args):
     print("  Properties neuer Einträge:    %d" % n_props)
     print("  Geänderte Einträge aktualisieren: %d (Properties dazu: %d × 2 Anfragen)" % (n_upd, n_upd_props))
     print("  Unverändert (übersprungen):   %d" % n_same)
+    print("  Verbindungen (gebündelt):     %d Anfragen" % n_rel)
+    print("  Mitglieder (Organisationen):  %d" % n_mem)
     print("  Summe:                        %d Anfragen, bei %d/min etwa %.0f Minuten" % (total, args.rpm, total / args.rpm))
     if args.show:
         e = next((x for x in data["entities"] if x["key"] == args.show), None)
@@ -366,13 +410,47 @@ def cmd_import(args):
     def save():
         json.dump(state, open(map_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
 
-    n_tags, n_create, n_ph2, n_props, n_upd, n_upd_props, n_same = plan_counts(data, mp, args)
-    total = n_tags + n_create + n_ph2 + n_props + n_upd + 2 * n_upd_props
-    print("Kampagne %s: %d neu, %d zu aktualisieren, %d unverändert." % (cid, n_create, n_upd, n_same))
+    n_tags, n_create, n_ph2, n_props, n_upd, n_upd_props, n_same, n_rel, n_mem = plan_counts(data, mp, args, state)
+    total = n_tags + n_create + n_ph2 + n_props + n_upd + 2 * n_upd_props + n_rel + n_mem
+    print("Kampagne %s: %d neu, %d zu aktualisieren, %d unverändert; Verbindungen: %d Anfragen, Mitglieder: %d." % (cid, n_create, n_upd, n_same, n_rel, n_mem))
     print("Ca. %d Anfragen, etwa %.0f Minuten bei %d/min." % (total, total / args.rpm, args.rpm))
     if not args.yes:
         if input("Fortfahren? (ja/nein) ").strip().lower() not in ("ja", "j", "y", "yes"):
             print("Abgebrochen."); return 0
+
+    def parent_id(e):
+        mode = state.get("parent_mode", {}).get(e["kind"], "entity_id")
+        return mp[e["parent"]]["entity_id" if mode == "entity_id" else "id"]
+
+    def link_fields(e, mode):
+        out = {}
+        for fld in ("races", "locations"):
+            if e.get(fld):
+                out[fld] = [mp[k]["id" if mode == "id" else "entity_id"] for k in e[fld]]
+        return out
+
+    def send(method, path, payload, e):
+        """Sendet einen Eintrag; bei 422 wegen races/locations oder parent_id wird die jeweils andere ID-Art versucht."""
+        try:
+            return api.call(method, path, payload)
+        except ApiError as ex:
+            msg = str(ex)
+            if "422" not in msg:
+                raise
+            if (e.get("races") or e.get("locations")) and ("races" in msg or "locations" in msg) and state.get("link_mode", "id") == "id":
+                state["link_mode"] = "entity_id"
+                payload.update(link_fields(e, "entity_id"))
+                print("  Hinweis: races/locations erwarten offenbar Entity-IDs; wechsle und versuche es erneut.", flush=True)
+                save()
+                return api.call(method, path, payload)
+            modes = state.setdefault("parent_mode", {})
+            if e.get("parent") and "parent_id" in msg and modes.get(e["kind"], "entity_id") == "entity_id":
+                modes[e["kind"]] = "id"
+                payload["parent_id"] = parent_id(e)
+                print("  Hinweis: parent_id erwartet bei %s offenbar die Objekt-ID; wechsle und versuche es erneut." % e["kind"], flush=True)
+                save()
+                return api.call(method, path, payload)
+            raise
 
     try:
         # 1) Tags
@@ -394,16 +472,18 @@ def cmd_import(args):
             final = all_refs_known(e["entry"], mp)
             payload = {"name": e["name"], "entry": render(e["entry"], data, mp, final)}
             if e.get("type"): payload["type"] = e["type"]
-            if e["kind"] in ("note", "ability") and e.get("parent"):
-                payload["parent_id"] = mp[e["parent"]]["entity_id"]   # Kanka erwartet die Entity-ID des Elternteils
+            if e.get("title"): payload["title"] = e["title"]
+            if e["kind"] in ("note", "ability", "location") and e.get("parent"):
+                payload["parent_id"] = parent_id(e)   # Kanka erwartet die Entity-ID des Elternteils
             if e["kind"] != "property_kit":
                 payload["tags"] = [mp[t]["id"] for t in e["tags"]]
+            payload.update(link_fields(e, state.get("link_mode", "id")))
             ep = ENDPOINT[e["kind"]]
             if exists:
-                api.call("PUT", "%s/%s" % (ep, mp[e["key"]]["id"]), payload)
+                send("PUT", "%s/%s" % (ep, mp[e["key"]]["id"]), payload, e)
                 print("Aktualisiert:", e["name"], flush=True)
             else:
-                r = api.call("POST", ep, payload)["data"]
+                r = send("POST", ep, payload, e)["data"]
                 mp[e["key"]] = {"id": r["id"], "entity_id": r.get("entity_id"), "kind": e["kind"]}
                 save(); print("Angelegt:", e["name"], flush=True)
             touched.append((e, exists))
@@ -455,6 +535,39 @@ def cmd_import(args):
                         print("   verwaist (nicht in den Daten): %s" % ", ".join(orphans[:8]) + (" …" if len(orphans) > 8 else ""), flush=True)
             mp[e["key"]]["hash"] = ehash(e)
             save()
+        # 5) Verbindungen (gebündelt je Besitzer und Text) und Mitglieder von Organisationen
+        groups, members = pending_links(data, state)
+        rel_state = state.setdefault("relations", {})
+        mem_state = state.setdefault("members", {})
+        for (frm, text, att), tos in groups.items():
+            owner = mp[frm]["entity_id"]
+            tids = [mp[t]["entity_id"] for t in tos]
+            body = {"relation": text, "owner_id": owner}
+            if att is not None:
+                body["attitude"] = att
+            if len(tids) == 1:
+                body["target_id"] = tids[0]
+            else:
+                body["targets"] = tids
+            resp = api.call("POST", "entities/%s/relations" % owner, body)
+            rdata = resp.get("data", resp) if isinstance(resp, dict) else resp
+            by_target = {}
+            if isinstance(rdata, list):
+                by_target = {x.get("target_id"): x.get("id") for x in rdata if isinstance(x, dict)}
+            elif isinstance(rdata, dict) and "id" in rdata:
+                by_target = {rdata.get("target_id"): rdata["id"]}
+            for t, tid in zip(tos, tids):
+                rel_state["%s|%s|%s" % (frm, text, t)] = by_target.get(tid, True)
+            save()
+            print("Verbindung: %s -[%s]-> %d Ziel(e)" % (key_name(data, frm), text, len(tos)), flush=True)
+        for m in members:
+            oid, cidx = mp[m["organisation"]]["id"], mp[m["character"]]["id"]
+            r = api.call("POST", "organisations/%s/organisation_members" % oid,
+                         {"organisation_id": oid, "character_id": cidx, "role": m.get("role", "")})
+            rd = r.get("data", r) if isinstance(r, dict) else {}
+            mem_state["%s|%s" % (m["organisation"], m["character"])] = rd.get("id", True) if isinstance(rd, dict) else True
+            save()
+            print("Mitglied: %s in %s (%s)" % (key_name(data, m["character"]), key_name(data, m["organisation"]), m.get("role", "")), flush=True)
         if orphans_total and not args.prune:
             print("\nHinweis: %d verwaiste Properties in %d Einträgen (nicht in den Daten). Mit --prune werden sie gelöscht; "
                   "eigene Properties, die du selbst in Kanka angelegt hast, würden dabei ebenfalls gelöscht." % (orphans_total, orphan_entries))
