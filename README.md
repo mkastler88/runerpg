@@ -118,6 +118,32 @@ Etwa 976 Anfragen, bei 25 pro Minute rund 39 Minuten. Wie immer in eine **Testka
 * **Zwei API-Unklarheiten fängt das Skript selbst ab:** Erwartet Kanka bei `races`/`locations` oder `parent_id` die andere ID-Art, erscheint „Hinweis: … wechsle und versuche es erneut“, und das Skript merkt sich die richtige Art.
 * 34 Städte tragen das Tag „Zuordnung unsicher (Kartenfarbe)“. Ihre Zuordnung zum Königreich wurde aus Kartenfarben abgeleitet.
 
+## Änderungen aus Kanka zurückholen (pull, Backup)
+
+Hast du in Kanka Texte bearbeitet oder Einträge angelegt oder gelöscht, holt `pull` das in die JSON-Dateien zurück. Immer erst der **Bericht**, dann **--apply**:
+
+```powershell
+python3 kanka_import.py pull --campaign $C --token-file $T            # Bericht, ändert nichts
+python3 kanka_import.py pull --campaign $C --token-file $T --apply    # schreibt in data\ (vorher Sicherung nach backup\)
+python3 kanka_import.py import --campaign $C --token-file $T          # danach: nichts mehr zu tun (0 Anfragen)
+```
+
+| Fall in Kanka | Was `pull --apply` macht |
+|---|---|
+| Name, Typ, Titel, Text, Tags oder Eltern eines Eintrags geändert | wird in die zugehörige JSON-Datei übernommen |
+| nur HTML-Umformung durch Kanka (Leerraum, `<br>`) | wird nicht übernommen (im Bericht „nur formal“) |
+| Eintrag neu angelegt | kommt in `data\90_aus_kanka.json` (Schlüssel `kanka.<Art>.<Name>`), samt Eltern, Tags, Volk/Orten und Properties; neue Tags ebenfalls |
+| Eintrag in Kanka gelöscht | wird als „in Kanka gelöscht“ vermerkt und bleibt in den Dateien; `import` überspringt ihn. Mit `--drop-deleted` wird er auch aus den Dateien entfernt, aber nur, wenn ihn nichts anderes mehr verwendet (Kind-Einträge, Verweise, Verbindungen) |
+| derselbe Eintrag lokal **und** in Kanka geändert (Konflikt) | Standard: Kanka gewinnt. `--prefer local` lässt die lokale Fassung stehen. Lokal geändert erkennt das Skript über die gespeicherte Prüfsumme |
+
+* **Sicherung:** Vor dem Schreiben wird der ganze Ordner `data\` samt Zuordnungsdatei nach `backup\data_<Datum_Uhrzeit>\` kopiert.
+* **Verweise:** Kanka-Verweise (`[entity:ID|Alias]` oder Links auf Einträge) werden in unsere `{{ref:schlüssel|Alias}}` zurückgerechnet.
+* **Lesen kostet wenig:** etwa 25 Anfragen für alle Einträge (45 je Seite), dazu eine je neuem Eintrag für dessen Properties.
+* **Nicht verglichen** werden Properties bestehender Einträge, Verbindungen, Posts, Bilder, Karten und Berechtigungen. Neue Einträge nehmen ihre Properties mit.
+* **Vorsicht beim ersten Lauf:** Sind im Bericht auffällig viele Einträge als geändert gemeldet (z. B. alle mit Verweisen), liegt das vermutlich an der Linkdarstellung von Kanka. Dann **nicht** übernehmen, sondern den Bericht an mich schicken.
+* `--alle` zeigt alle Unterschiede statt der ersten 25.
+* **Empfehlung:** Den Ordner `runerpg` mit Git versionieren (`git init`, nach jedem `pull --apply` ein Commit) und zusätzlich in Kanka den Kampagnen-Export ziehen (enthält auch Bilder).
+
 ## Aktualisieren und Umbenennen
 
 `python3 kanka_import.py import` gleicht die Daten in `data/` mit der Kampagne ab:

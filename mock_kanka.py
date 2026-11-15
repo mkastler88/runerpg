@@ -36,11 +36,21 @@ class H(BaseHTTPRequestHandler):
             body = json.loads(self.rfile.read(n)) if n else None
             m = re.match(r"^/1\.0/campaigns/(\d+)/(.+)$", self.path)
             if not m: return self._send(404, {"message": "not found"})
-            path = m.group(2)
+            path, _, qs = m.group(2).partition("?")
             STATE["log"].append((method, path))
             mm = re.match(r"^(\w+)(?:/(\d+))?$", path)
             if mm and mm.group(1) in EP:
                 ep, oid = mm.group(1), mm.group(2)
+                if method == "GET" and not oid:
+                    per = int(os.environ.get("MOCK_PER_PAGE", "20"))
+                    page = int(re.search(r"page=(\d+)", qs).group(1)) if re.search(r"page=(\d+)", qs) else 1
+                    allo = [o for o in STATE["objs"].values() if o["_ep"] == ep]
+                    chunk = allo[(page - 1) * per: page * per]
+                    out = [{k: v for k, v in o.items() if k != "_ep"} for o in chunk]
+                    return self._send(200, {"data": out, "meta": {"current_page": page, "last_page": max(1, -(-len(allo) // per)), "per_page": per, "total": len(allo)}})
+                if method == "DELETE" and oid:
+                    STATE["objs"].pop(int(oid), None)
+                    return self._send(200, {"message": "deleted"})
                 if method in ("POST", "PUT", "PATCH") and body and body.get("parent_id") is not None:
                     if body["parent_id"] not in {o["id" if os.environ.get("MOCK_PARENT_MODE") == "id" else "entity_id"] for o in STATE["objs"].values() if o["_ep"] == ep}:
                         return self._send(422, {"code": 422, "error": "The selected parent id is invalid.",

@@ -1,0 +1,3744 @@
+{
+ "meta": {
+  "ausschnitt": "Kapitel 3: Heldenentwicklung",
+  "version": "0.4"
+ },
+ "tags": [
+  {
+   "key": "tag.kap3",
+   "name": "Kapitel 3: Heldenentwicklung"
+  },
+  {
+   "key": "tag.gabe",
+   "name": "Göttliche Gabe"
+  },
+  {
+   "key": "tag.runenkraft",
+   "name": "Runenkraft"
+  },
+  {
+   "key": "tag.tabelle",
+   "name": "Regeltabelle"
+  }
+ ],
+ "entities": [
+  {
+   "key": "n.k3",
+   "kind": "note",
+   "name": "Kapitel 3: Heldenentwicklung",
+   "type": "Kapitel",
+   "parent": "n.root",
+   "tags": [
+    "tag.kap3"
+   ],
+   "entry": "<p>Dieses Kapitel listet die Wege, auf denen du deinen Helden im Spiel verbesserst. Vor allem schreitet er voran, indem er <strong>Göttliche Gaben</strong> erwirbt, Kräfte, die ihn weit über andere Männer stellen. Das Kapitel zeigt auch, wie Helden diese Gaben erwerben, und die verborgenen Folgen davon, zu sehr Teil der göttlichen Welt zu werden. Zusätzlich erklärt es, wie du Fertigkeiten auf gewöhnlichem Weg verbessern kannst, ohne dich an den Willen der Götter zu binden.</p><ul><li>{{ref:n.k3.siegpunkte}}</li><li>{{ref:n.k3.todesversicherung}}</li><li>{{ref:n.k3.fertigkeiten}}</li><li>{{ref:n.k3.ausruestung}}</li><li>{{ref:n.k3.gaben}}</li><li>{{ref:n.k3.gabenliste}}</li><li>{{ref:n.k3.runen}}</li><li>{{ref:n.k3.hinweise}}</li></ul><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 59</em></p>"
+  },
+  {
+   "key": "n.k3.siegpunkte",
+   "kind": "note",
+   "name": "Siegespunkte ausgeben",
+   "type": "Regel",
+   "parent": "n.k3",
+   "tags": [
+    "tag.kap3"
+   ],
+   "entry": "<p>In jeder Begegnung gewinnst du <strong>Siegespunkte</strong> (Verfahren: Kapitel 4). Sie dienen zweierlei: Erstens sind sie der Punktestand, der bestimmt, welcher Spieler gewinnt. Zweitens kannst du sie ausgeben, um die Spielwerte deines Charakters zu verbessern. Ausgeben schadet deinen Siegchancen nicht.</p><ul><li>Jeder Siegespunkt, den du je erhältst, zählt zu deiner <strong>Gesamt-Siegespunktzahl</strong>, ob ausgegeben oder nicht. Halte sie aktuell: Sie zeigt, wer die laufende Saga gewinnt, und wird von Entwerfern beim Bau von Begegnungen genutzt.</li><li>Halte fest, wie viele Punkte du für Verbesserungen ausgegeben hast: die <strong>ausgegebenen Siegespunkte</strong>.</li><li><strong>Gesamt-Siegespunkte − ausgegebene Siegespunkte = freie Siegespunkte</strong>: Das sind die Punkte, die du für Verbesserungen investieren kannst. (Im Heldenbogen: Siegespunkte_Gesamt, Siegespunkte_Ausgegeben, Siegespunkte_Frei.)</li><li>Du kannst Siegespunkte für <strong>Göttliche Gaben</strong> und für <strong>gewöhnliche Fertigkeiten</strong> ausgeben. Manchmal wirken Verbesserungen sofort, andere Gaben und Fertigkeiten setzen voraus, dass dein Held bestimmte Dinge in der Spielwelt tut.</li></ul><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 60</em></p>"
+  },
+  {
+   "key": "n.k3.todesversicherung",
+   "kind": "note",
+   "name": "Todesversicherung",
+   "type": "Regel",
+   "parent": "n.k3",
+   "tags": [
+    "tag.kap3"
+   ],
+   "entry": "<p>Zu Beginn jeder Begegnung darf ein Plünderer <strong>25 Siegespunkte</strong> ausgeben, um eine <strong>Todesversicherung</strong> zu kaufen.</p><ul><li>Er macht eine <strong>Kopie seines Heldenbogens</strong> und legt sie beiseite, das Namensfeld bleibt leer. Die Versicherung deckt keine <strong>Ausrüstung</strong> ab: Alle Ausrüstungseinträge, magisch oder nicht, bleiben leer.</li><li>Stirbt der Charakter später in eurer Saga, holt der Spieler diesen Bogen, wählt einen neuen Namen und hat einen neuen Charakter, der auf früheren Erfolgen aufbaut. Er sollte bei Gelegenheit eine neue Kopie anlegen, falls er wieder stirbt.</li><li><strong>Ein Kauf</strong> schützt vor <strong>mehreren Toden</strong>: Der Tod eines Charakters entwertet die Investition nicht. Spieler dürfen beliebig oft kaufen; sie nutzen immer den zuletzt gesicherten Bogen. Die Versicherung gilt, solange du diesen Charakter spielst.</li><li>Beim Neustart darf der Spieler nur die Ausrüstung wählen, die ein <strong>Anfangscharakter</strong> bekäme. Magische Gegenstände des alten Helden sind verloren; die anderen Helden haben sie vermutlich eingesackt. Manche Gruppen vereinbaren ein Erbe der Ausrüstung für den Ersatzhelden; das Buch empfiehlt aber den Ansatz „Wir sind Wikinger, verdammt“ mit wildem Plündern der Leiche des gefallenen Kameraden.</li></ul><p><em>Das Buch gibt zu:</em> Die Todesversicherung ist wie Speichern im Computerspiel. In der erfundenen Wirklichkeit ergibt sie keinen Sinn, aber sie macht das Spiel besser: Nutze die Regel, ohne zu viel darüber nachzudenken.</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 60</em></p>"
+  },
+  {
+   "key": "n.k3.fertigkeiten",
+   "kind": "note",
+   "name": "Fertigkeiten steigern",
+   "type": "Regel",
+   "parent": "n.k3",
+   "tags": [
+    "tag.kap3",
+    "tag.tabelle"
+   ],
+   "entry": "<p>Neben den Göttlichen Gaben kannst du Siegespunkte ausgeben, um die alltäglichen <strong>Fertigkeiten</strong> deines Helden zu steigern: durch <strong>Erfahrung</strong> oder durch <strong>Training</strong>. Es gibt <strong>keinen gewöhnlichen Weg</strong>, Charakteristiken zu steigern.</p><h3>Erfahrung</h3><ul><li>Tust du etwas Wichtiges mit einer Fertigkeit und gelingt es, kannst du daraus lernen. Gelingt dir ein Fertigkeitswurf, der in den <strong>Begegnungsnotizen des Runners</strong> aufgeführt ist, und willst du die Fertigkeit eventuell steigern, notiere es dir. Am Ende der Begegnung darfst du Siegespunkte ausgeben, um jede so notierte Fertigkeit sofort um <strong>1</strong> zu erhöhen.</li><li>Du darfst jede <strong>Waffenfertigkeit</strong> steigern, wenn du in der Begegnung die DFN-Summe eines Gegners übertroffen hast; <strong>Heilkunde</strong>, wenn du damit einem Helden zur Erholung verholfen hast; und jede Fertigkeit, die du erfolgreich einsetzt, um dir einen Vorteil auf dem Schlachtfeld zu verschaffen.</li><li>Gelingt dir der Einsatz einer Fertigkeit, die du nicht hast, kannst du so deinen ersten Punkt in ihr gewinnen.</li></ul><table><tr><th>Steigerung um 1</th><th>Kosten in Siegespunkten</th></tr><tr><td>Deine beste Kampffertigkeit</td><td>150</td></tr><tr><td>Jede niedrigere Kampffertigkeit</td><td>75</td></tr><tr><td>Andere Primärfertigkeiten</td><td>45</td></tr><tr><td>Sekundärfertigkeiten</td><td>30</td></tr></table><h3>Training</h3><p>Willst du eine neue Fertigkeit lernen und konntest sie im Spiel nicht erfolgreich einsetzen, musst du <strong>zwischen Abenteuern</strong> (nicht Begegnungen) trainieren. Kosten: <strong>30</strong> für Sekundärfertigkeiten, <strong>125</strong> für Primärfertigkeiten.</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 61</em></p>"
+  },
+  {
+   "key": "n.k3.ausruestung",
+   "kind": "note",
+   "name": "Zusätzliche Ausrüstung",
+   "type": "Regel",
+   "parent": "n.k3",
+   "tags": [
+    "tag.kap3"
+   ],
+   "entry": "<p>Verlorene oder beschädigte Waffen ersetzt du leicht durch das Plündern erschlagener Gegner (Original S. 164). Bei Rüstung ist das etwas anderes. Du kannst auch neue <strong>gewöhnliche Ausrüstung</strong> erwerben (oder zerstörte ersetzen), indem du zu deiner <strong>Heimatbasis</strong> zurückkehrst und mit einem örtlichen Handwerker oder Händler darum feilschst ({{ref:ab.feilschen}}; Ausrüstung: {{ref:n.waffen}}).</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 61</em></p>"
+  },
+  {
+   "key": "n.k3.gaben",
+   "kind": "note",
+   "name": "Göttliche Gaben: Regeln",
+   "type": "Regel",
+   "parent": "n.k3",
+   "tags": [
+    "tag.kap3"
+   ],
+   "entry": "<p><strong>Göttliche Gaben</strong> sind Kräfte der Götter. Die Götter spüren mit ihrer begrenzten Allwissenheit die Taten mächtiger Helden. Werden sie ihrer gewahr, entsteht eine Verbindung zwischen Held und Gott. Billigt der Gott die Taten des Helden, sendet er ihm einen winzigen Bruchteil seiner göttlichen Essenz. Der Held sucht die göttliche Gunst nicht, sie kommt ohne sein bewusstes Wissen. Doch in der ersten Lage, in der die Gabe nützlich sein kann, nutzt er sie unwillkürlich, instinktiv. Oft sind Göttliche Gaben nicht offensichtlich übernatürlich (er wird einfach stärker, schneller, kälteresistenter); in anderen Fällen sieht jeder, dass die Kraft göttlich ist (wenn deine verlorene Waffe durch die Luft in deine Hand springt, braucht man keinen Priester).</p><h3>Kauf</h3><ul><li>Dein Held wählt seine Gabe nicht und weiß womöglich nicht einmal, dass er sie hat: Du, der Spieler, steuerst das Langschiff. Jede Gabe hat <strong>Kosten</strong> in ihrer Beschreibung. Du darfst <strong>jederzeit</strong> die nötigen Siegespunkte ausgeben (sofern du sie hast), auch zwischen Initiativewurf und Angriffswurf im Kampf. Sei dabei schnell: Deine Mitspieler dürfen dich mit zerknüllten Chips bewerfen, wenn du einen schnellen Kampf aufhältst, weil du unentschlossen in diesem Kapitel blätterst.</li><li>Noch einmal: Der Held hat <strong>keine Wahl</strong> und weiß nichts von den Gaben, bis er sie nutzt. Der <strong>Spieler</strong> bestimmt vollständig, welche Gaben sein Held erhält.</li></ul><h3>Folgen Göttlicher Gaben</h3><p>Die Essenz hinter einer Gabe dringt in Körper und Seele des Helden und verleiht ihm eine bestimmte Kraft. Die <strong>psychische Verbindung</strong> zwischen Gott und Held bleibt aktiv. Du musst festhalten, welche Götter mit den gewählten Gaben verbunden sind und wie viele <strong>Stufen</strong> Gaben jeder gewährt hat. Jede dieser Zahlen heißt <strong>Göttliche Verbindung</strong> (Divine Connection rating); im Heldenbogen stehen sie unter „Göttliche Verbindungen“.</p><blockquote><strong>Beispiel:</strong> Ragnar hat nach vielen Spielsitzungen: Käsebruch des Utgardaloki (1 Stufe, Thor), Gewendetes Schicksal (1 Stufe, Urd), Unerbittlich gestemmt (1, Heimdal), Fluch des Verhängnisses (2, Odin), Wie der springende Hirsch (2, Ull), Von Asgards hohen Gipfeln (1, Thor) und Heimdals Wachsamkeit (1, Heimdal). Seine Göttlichen Verbindungen: Odin 2, Thor 2, Ull 2, Heimdal 2, Urd 1.</blockquote><ul><li>Deine <strong>höchste Göttliche Verbindung</strong> zeigt deinen <strong>Hauptgott</strong>. Bei Gleichstand an der Spitze zählt jeder als Hauptgott (Ausnahme: Sind alle Verbindungen 1, hast du <strong>keinen Hauptgott</strong>). Bei Ragnar zählen Odin, Thor, Ull und Heimdal als Hauptgötter.</li><li>Götter achten auf besondere Orte und Lagen in Midgard und der Unterwelt. Trifft dein Held auf einen Ort oder eine Lage, die seinen Hauptgott interessiert, kann er gezwungen sein, im Sinne des Gottes zu handeln, oder bestimmte Dinge nicht tun können (etwa einen anderen Liebling des Gottes verletzen). Wie Entwerfer das einbauen: „Den Göttern trotzen“, Original S. 140.</li></ul><h3>Göttliche Gunst erkennen</h3><p>Ein Charakter mit {{ref:ab.gottesgespuer}} kann mit einem Wurf <strong>Wahrnehmung + Gottesgespür</strong> erkennen, wie viel göttliche Gunst ein Charakter genießt:</p><table><tr><th>Schwierigkeit</th><th>Ergebnis</th></tr><tr><td>6</td><td>Summe aller Göttlichen Verbindungen des Charakters</td></tr><tr><td>8</td><td>Hauptgott des Charakters</td></tr><tr><td>10</td><td>Alle Götter, von denen der Charakter Gaben erhalten hat</td></tr></table><h3>Aufbau der Gabenbeschreibungen</h3><ul><li><strong>Kosten:</strong> Siegespunkte, die du ausgeben musst.</li><li><strong>Patron:</strong> der Gott, der die Gabe gewährt.</li><li><strong>Stufen:</strong> Die meisten Gaben erlauben <em>Stufen</em>: mehrfacher Kauf mit kumulativen Wirkungen. „Unbegrenzt“, wenn beliebig viele Stufen erlaubt sind, sonst die Zahl. „Keine“, wenn die Gabe keine Stufen kennt.</li><li>In den Beschreibungen steht <strong>X</strong> meist für <strong>deine Stufe in dieser Gabe</strong>.</li></ul><h3>Addition gut, Multiplikation schlecht</h3><p>Mehrere Beschreibungen sprechen von „den Siegespunkten, die du normalerweise erhieltest“. Gemeint ist die Zahl aus dem Wertungssystem von Kapitel 4, <strong>bevor</strong> Göttliche Gaben oder andere ungewöhnliche Kräfte berücksichtigt werden. Du darfst <strong>unter gar keinen Umständen</strong> den Siegespunktvorteil einer Gabe mit dem einer anderen multiplizieren. Beachte das, wenn eure Gruppe neue Gaben erfinden oder Gaben von Fan-Seiten übernehmen will.</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 61–64</em></p>"
+  },
+  {
+   "key": "gift.g.root",
+   "kind": "ability",
+   "name": "Göttliche Gaben",
+   "type": "Fertigkeitsgruppe",
+   "parent": null,
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p>Alle Göttlichen Gaben aus Kapitel 3, nach Schutzgott gruppiert. Regeln: {{ref:n.k3.gaben}}. Übersichtstabelle: {{ref:n.k3.gabenliste}}. Runenkräfte (ohne Schutzgott) stehen in der eigenen Gruppe {{ref:gift.g.runen}}.</p>"
+  },
+  {
+   "key": "gift.g.heimdal",
+   "kind": "ability",
+   "name": "Gaben von Heimdal",
+   "type": "Gabengruppe",
+   "parent": "gift.g.root",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p>Göttliche Gaben des Schutzgotts {{ref:god.heimdal}}.</p><ul><li>{{ref:gift.agony}}</li><li>{{ref:gift.aura}}</li><li>{{ref:gift.pfeil}}</li><li>{{ref:gift.gestemmt}}</li><li>{{ref:gift.entschlossenheit}}</li><li>{{ref:gift.eule}}</li><li>{{ref:gift.schultern}}</li><li>{{ref:gift.wachsamkeit}}</li></ul>"
+  },
+  {
+   "key": "gift.g.loki",
+   "kind": "ability",
+   "name": "Gaben von Loki",
+   "type": "Gabengruppe",
+   "parent": "gift.g.root",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p>Göttliche Gaben des Schutzgotts {{ref:god.loki}}.</p><ul><li>{{ref:gift.bann}}</li><li>{{ref:gift.eichhoernchen}}</li><li>{{ref:gift.vergeltung}}</li><li>{{ref:gift.abgang}}</li><li>{{ref:gift.fleisch}}</li><li>{{ref:gift.hirsche}}</li><li>{{ref:gift.luege}}</li><li>{{ref:gift.nebel}}</li><li>{{ref:gift.mistel}}</li><li>{{ref:gift.lokis_ranke}}</li></ul>"
+  },
+  {
+   "key": "gift.g.odin",
+   "kind": "ability",
+   "name": "Gaben von Odin",
+   "type": "Gabengruppe",
+   "parent": "gift.g.root",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p>Göttliche Gaben des Schutzgotts {{ref:god.odin}}.</p><ul><li>{{ref:gift.berserker}}</li><li>{{ref:gift.todesstreich}}</li><li>{{ref:gift.pferd}}</li><li>{{ref:gift.kohlen}}</li><li>{{ref:gift.fluch}}</li><li>{{ref:gift.mantel}}</li><li>{{ref:gift.walkuere}}</li><li>{{ref:gift.rabe}}</li><li>{{ref:gift.quell}}</li><li>{{ref:gift.gebruell}}</li><li>{{ref:gift.geister}}</li><li>{{ref:gift.sleipnir}}</li><li>{{ref:gift.trompete}}</li></ul>"
+  },
+  {
+   "key": "gift.g.angrboda",
+   "kind": "ability",
+   "name": "Gaben von Angrboda",
+   "type": "Gabengruppe",
+   "parent": "gift.g.root",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p>Göttliche Gaben des Schutzgotts {{ref:god.angrboda}}.</p><ul><li>{{ref:gift.angrboda}}</li></ul>"
+  },
+  {
+   "key": "gift.g.freyja",
+   "kind": "ability",
+   "name": "Gaben von Freyja",
+   "type": "Gabengruppe",
+   "parent": "gift.g.root",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p>Göttliche Gaben des Schutzgotts {{ref:god.freyja}}.</p><ul><li>{{ref:gift.knochenrichter}}</li><li>{{ref:gift.becher}}</li><li>{{ref:gift.aepfel}}</li><li>{{ref:gift.yggdrasil}}</li></ul>"
+  },
+  {
+   "key": "gift.g.thor",
+   "kind": "ability",
+   "name": "Gaben von Thor",
+   "type": "Gabengruppe",
+   "parent": "gift.g.root",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p>Göttliche Gaben des Schutzgotts {{ref:god.thor}}.</p><ul><li>{{ref:gift.sturm}}</li><li>{{ref:gift.kiefer}}</li><li>{{ref:gift.stiefel}}</li><li>{{ref:gift.kaesebruch}}</li><li>{{ref:gift.gipfel}}</li><li>{{ref:gift.donner}}</li><li>{{ref:gift.verweben}}</li><li>{{ref:gift.blatt}}</li><li>{{ref:gift.heft}}</li><li>{{ref:gift.speer}}</li><li>{{ref:gift.macht_thors}}</li><li>{{ref:gift.mjoelnir}}</li><li>{{ref:gift.blitz}}</li><li>{{ref:gift.verrat}}</li><li>{{ref:gift.thors_sehnen}}</li><li>{{ref:gift.ringer}}</li></ul>"
+  },
+  {
+   "key": "gift.g.urd",
+   "kind": "ability",
+   "name": "Gaben von Urd",
+   "type": "Gabengruppe",
+   "parent": "gift.g.root",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p>Göttliche Gaben des Schutzgotts {{ref:god.urd}}.</p><ul><li>{{ref:gift.schicksal}}</li></ul>"
+  },
+  {
+   "key": "gift.g.njord",
+   "kind": "ability",
+   "name": "Gaben von Njord",
+   "type": "Gabengruppe",
+   "parent": "gift.g.root",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p>Göttliche Gaben des Schutzgotts {{ref:god.njord}}.</p><ul><li>{{ref:gift.fersen}}</li><li>{{ref:gift.naglfar}}</li><li>{{ref:gift.kruste}}</li><li>{{ref:gift.seufzer}}</li><li>{{ref:gift.njordsatem}}</li><li>{{ref:gift.njordsgale}}</li><li>{{ref:gift.skadi}}</li><li>{{ref:gift.bergsturm}}</li></ul>"
+  },
+  {
+   "key": "gift.g.freyr",
+   "kind": "ability",
+   "name": "Gaben von Freyr",
+   "type": "Gabengruppe",
+   "parent": "gift.g.root",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p>Göttliche Gaben des Schutzgotts {{ref:god.freyr}}.</p><ul><li>{{ref:gift.freyr_zunge}}</li></ul>"
+  },
+  {
+   "key": "gift.g.ull",
+   "kind": "ability",
+   "name": "Gaben von Ull",
+   "type": "Gabengruppe",
+   "parent": "gift.g.root",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p>Göttliche Gaben des Schutzgotts {{ref:god.ull}}.</p><ul><li>{{ref:gift.hirsch}}</li><li>{{ref:gift.ulls_haut}}</li><li>{{ref:gift.ulls_hand}}</li><li>{{ref:gift.beide_haende}}</li></ul>"
+  },
+  {
+   "key": "gift.g.tyr",
+   "kind": "ability",
+   "name": "Gaben von Tyr",
+   "type": "Gabengruppe",
+   "parent": "gift.g.root",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p>Göttliche Gaben des Schutzgotts {{ref:god.tyr}}.</p><ul><li>{{ref:gift.schlangentraenen}}</li><li>{{ref:gift.feuersee}}</li><li>{{ref:gift.freudenschrei}}</li><li>{{ref:gift.tyrs_langmut}}</li><li>{{ref:gift.tyrs_mut}}</li><li>{{ref:gift.wunden}}</li><li>{{ref:gift.sehnen}}</li></ul>"
+  },
+  {
+   "key": "gift.g.hoder",
+   "kind": "ability",
+   "name": "Gaben von Hoder",
+   "type": "Gabengruppe",
+   "parent": "gift.g.root",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p>Göttliche Gaben des Schutzgotts {{ref:god.hoder}}.</p><ul><li>{{ref:gift.hoders_reue}}</li></ul>"
+  },
+  {
+   "key": "gift.g.asjandr",
+   "kind": "ability",
+   "name": "Gaben von Asjandr",
+   "type": "Gabengruppe",
+   "parent": "gift.g.root",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p>Göttliche Gaben des Schutzgotts {{ref:god.asjandr}}.</p><ul><li>{{ref:gift.spalten}}</li></ul>"
+  },
+  {
+   "key": "gift.g.runen",
+   "kind": "ability",
+   "name": "Runenkräfte",
+   "type": "Gabengruppe",
+   "parent": "gift.g.root",
+   "tags": [
+    "tag.kap3",
+    "tag.runenkraft"
+   ],
+   "entry": "<p>Magische Kräfte bestimmter Waffen; sie haben keinen Schutzgott und erhöhen keine Göttliche Verbindung. Regeln: {{ref:n.k3.runen}}.</p><ul><li>{{ref:gift.r.doppelaxt}}</li><li>{{ref:gift.r.zwergenaxt}}</li><li>{{ref:gift.r.zwergenkriegshammer}}</li><li>{{ref:gift.r.zwergenkampfschwert}}</li><li>{{ref:gift.r.zwergenarbeitshammer}}</li><li>{{ref:gift.r.zwergenarbeitsschwert}}</li><li>{{ref:gift.r.vierklingenkolben}}</li><li>{{ref:gift.r.goblinaxt}}</li><li>{{ref:gift.r.goblinstachelkeule}}</li><li>{{ref:gift.r.handaxt}}</li><li>{{ref:gift.r.streitkolben}}</li><li>{{ref:gift.r.roemisches_schwert}}</li><li>{{ref:gift.r.wikingeraxt}}</li><li>{{ref:gift.r.wikingerbreitschwert}}</li><li>{{ref:gift.r.wikingerkurzschwert}}</li></ul>"
+  },
+  {
+   "key": "gift.agony",
+   "kind": "ability",
+   "name": "Aufgeschobene Qual",
+   "type": "Göttliche Gabe (Heimdal)",
+   "parent": "gift.g.heimdal",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.heimdal}} · <strong>Stufen:</strong> 5</p><p>Manchmal muss ein verwundeter Krieger weiterkämpfen, auch wenn er seine Verletzungen dafür verschlimmert. Heimdal lehrt die Nordmänner diese Fähigkeit.</p><p>Dein Held darf für <strong>jede Stufe</strong> in dieser Gabe <strong>1 Punkt wundbedingte Beeinträchtigung ignorieren</strong>. Wenn er aufhört zu kämpfen, erleidet er für jeden ignorierten Beeinträchtigungspunkt <strong>6 Punkte rüstungsignorierenden Schaden</strong> (Original S. 142).</p><p><strong>Originalname:</strong> Agony Postponed</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 64</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Heimdal",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "5",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Agony Postponed",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "64",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.aura",
+   "kind": "ability",
+   "name": "Aura gelassener Hinnahme",
+   "type": "Göttliche Gabe (Heimdal)",
+   "parent": "gift.g.heimdal",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.heimdal}} · <strong>Stufen:</strong> 4</p><p>Als Wächter von Asgards Tor ist Heimdal bereit, die Schläge derer zu erdulden, die es durchbrechen wollen. Auch dein Held nimmt Schnitte und Prellungen als Ehrenzeichen.</p><p>Am Ende jeder Begegnung, in der er unter <strong>20 HP</strong> gebracht wurde oder <strong>4 Wunden</strong> erlitt, erhältst du <strong>20X zusätzliche Siegespunkte</strong> (X = deine Stufe). In einer Begegnung, in der du es ablehnst, dich gegen einen Angriff zu verteidigen, bist du von der Belohnung ausgeschlossen.</p><p><strong>Originalname:</strong> Aura of Phlegmatic Acceptance</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 65</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Heimdal",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "4",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Aura of Phlegmatic Acceptance",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "65",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.bann",
+   "kind": "ability",
+   "name": "Bann seiner Klinge",
+   "type": "Göttliche Gabe (Loki)",
+   "parent": "gift.g.loki",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 45 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.loki}} · <strong>Stufen:</strong> unbegrenzt</p><p>Lokis Grinsen, wenn ein Gegner entwaffnet vor ihm steht, ist die Vorfreude auf den wehrlosen Feind. Er belohnt dich, wenn du Gegnern gern die Klinge aus der Hand schlägst.</p><p>Entwaffnest du einen Gegner, fliegt seine Waffe die <strong>normale Strecke × deine Stufe</strong> weit. Schadest du ihm, solange er entwaffnet ist, <strong>multipliziere die Siegespunkte</strong>, die du für den Treffer normalerweise erhieltest, mit <strong>(1 + deine Stufe)</strong> und addiere das Ergebnis zu deinen Siegespunkten der Begegnung.</p><p><strong>Originalname:</strong> Banish His Blade</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 65</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "45",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Loki",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Banish His Blade",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "65",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.berserker",
+   "kind": "ability",
+   "name": "Segen der Berserker",
+   "type": "Göttliche Gabe (Odin)",
+   "parent": "gift.g.odin",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 150 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.odin}} · <strong>Stufen:</strong> unbegrenzt</p><p>Odin ist der Patron der Berserker, die ohne Gnade und ohne Sorge um ihr Schicksal kämpfen. Die Wildesten werden nach dem Tod Einherjar, Krieger Walhalls.</p><p>Für jeden HP Schaden, den du durch den <strong>freien Gegenschlag</strong> eines überlebenden Gegners nach deinem Berserkergang verlierst, erhältst du <strong>1 Siegespunkt je Stufe</strong>. Eine Stufe hebt also die sonst übliche Siegespunkt-Strafe für HP-Verlust auf, jede weitere Stufe addiert zu deinem Gesamtwert.</p><p><strong>Originalname:</strong> Berserks' Blessing</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 65</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "150",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Odin",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Berserks' Blessing",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "65",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.angrboda",
+   "kind": "ability",
+   "name": "Gabe der Angrboda",
+   "type": "Göttliche Gabe (Angrboda)",
+   "parent": "gift.g.angrboda",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 150 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.angrboda}} · <strong>Stufen:</strong> unbegrenzt</p><p>Angrboda, die Riesin, die Loki Midgardschlange, Fenrir und Hel gebar, lässt dich ein Ungeheuer-Gesicht annehmen, das dem deiner Angreifer gleicht.</p><p>Wählt ein Gegner (außer Menschen und Craftwerk) dich als Ziel nach dem Zielwahl-Ablaufdiagramm (Original S. 196) oder weil er einen <em>freien Willen</em> hat und der Runner ihn auf dich ansetzen will, muss er <strong>RES gegen Schwierigkeit = dein Verkleiden + deine Stufe in dieser Gabe</strong> würfeln. Er darf dich nur angreifen, wenn er Erfolg hat; sonst hält er dich für einen Kameraden. Er hat automatisch Erfolg, wenn es kein anderes zulässiges Ziel gibt oder du ihn schon angegriffen hast.</p><p><strong>Originalname:</strong> Boon of Angrboda</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 66</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "150",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Angrboda",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Boon of Angrboda",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "66",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.knochenrichter",
+   "kind": "ability",
+   "name": "Segen des Knochenrichters",
+   "type": "Göttliche Gabe (Freyja)",
+   "parent": "gift.g.freyja",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.freyja}} · <strong>Stufen:</strong> unbegrenzt</p><p>Die Vanir sind gnädiger als die Asen. Freyja, Göttin der Fruchtbarkeit und Liebe, segnet Heiler, die tapfer genug sind, ihre Sicherheit für andere zu riskieren.</p><p>Wendet dein Held im Kampf eine Aktion auf, um Heilung zu leisten, addiere <strong>3X auf seine Absorption und 3X auf die Absorption seines Patienten</strong> (X = deine Stufe). Der Effekt hält bis zum Ende der Runde. Die Gabe wirkt <strong>nicht</strong>, wenn du deinen eigenen Helden behandelst.</p><p><strong>Originalname:</strong> Bone Setter's Blessing</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 66</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Freyja",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Bone Setter's Blessing",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "66",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.sturm",
+   "kind": "ability",
+   "name": "Schlagender Sturm",
+   "type": "Göttliche Gabe (Thor)",
+   "parent": "gift.g.thor",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.thor}} · <strong>Stufen:</strong> unbegrenzt</p><p>Wenn Thor mit Mjölnir zuschlägt, kann selbst der Standfesteste kaum auf den Beinen bleiben.</p><p>Nach einem <strong>erfolgreichen Nahkampftreffer</strong> (deine ATK-Summe übertrifft die DFN-Summe) muss der Runner einen <strong>RES-Wurf gegen Schwierigkeit 9 + deine Stufe</strong> machen. Misslingt er, <strong>stürzt</strong> der Gegner (Folgen: Original S. 53 und 127). Du erhältst <strong>20X Siegespunkte</strong> für jedes Niederschlagen und für jede weitere Runde, die er am Boden bleibt. Du kannst die Kraft bei einem Hieb auch nicht einsetzen.</p><p><strong>Originalname:</strong> Buffeting Gale</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 66</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Thor",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Buffeting Gale",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "66",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.eichhoernchen",
+   "kind": "ability",
+   "name": "Das schwatzende Eichhörnchen",
+   "type": "Göttliche Gabe (Loki)",
+   "parent": "gift.g.loki",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 45 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.loki}} · <strong>Stufen:</strong> unbegrenzt</p><p>Das Eichhörnchen Ratatösk trägt böse Worte zwischen dem Adler und der Schlange hin und her, die an der Weltesche Yggdrasil nagen. Loki gibt deinem Helden die Macht, die Kampfleistung seiner Feinde durch ominöse Drohungen in der alten Riesenzunge zu schwächen.</p><ul><li>Dein Held muss <strong>höchstens 3 Meter</strong> von einem Gegner entfernt sein. Aktiviere die Gabe mit einem Wurf <strong>Gottesgespür + Präsenz</strong>, der die RES-Summe des Gegners übertrifft.</li><li>Bei Erfolg erleidet er einen <strong>Absorptionsmalus gleich deiner Stufe</strong> (nicht unter 0).</li><li><strong>Ansteckend:</strong> Lebt er zu Beginn der nächsten Runde noch, muss der ihm nächste Gegner einen RES-Wurf gegen Schwierigkeit 6 bestehen oder erleidet denselben Malus; und so weiter. Die Kette bricht, wenn eine Runde beginnt und das letzte Opfer bereits tot ist.</li><li>Die Mali halten bis zum Ende des Kampfes. Nur <strong>einmal je Ereignis</strong>. Keine Aktion nötig.</li></ul><p><strong>Originalname:</strong> The Chattering Squirrel</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 66</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "45",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Loki",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "The Chattering Squirrel",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "66",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.kiefer",
+   "kind": "ability",
+   "name": "Der zusammengebissene Kiefer der Rache",
+   "type": "Göttliche Gabe (Thor)",
+   "parent": "gift.g.thor",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 45 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.thor}} · <strong>Stufen:</strong> 4</p><p>Kein tapferer Held kann sagen, er sei nie besiegt worden. Doch wenn ein Feind deinen Helden niederstreckt, steht er wieder auf, beißt die Zähne zusammen und sucht seinen Gegner.</p><p>Die Gabe wirkt, nachdem du von einem bestimmten Gegner im Kampf <strong>verwundet</strong> wurdest. Für den Rest der Begegnung (oder bis dieser Gegner tot ist) addierst du <strong>deine Stufe zur Absorption</strong>. Beim <strong>ersten Treffer</strong> gegen ihn nach dem verwundenden Schlag addierst du den Schaden jenes Schlags zu deinem eigenen. Tötest du ihn, erhältst du <strong>20X Siegespunkte</strong>.</p><p><strong>Originalname:</strong> The Clenched Jaw of Vengeance</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 67</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "45",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Thor",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "4",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "The Clenched Jaw of Vengeance",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "67",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.stiefel",
+   "kind": "ability",
+   "name": "Das Poltern eilender Stiefel",
+   "type": "Göttliche Gabe (Thor)",
+   "parent": "gift.g.thor",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 250 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.thor}} · <strong>Stufen:</strong> unbegrenzt</p><p>Nichts liebt Thor mehr als den Sturmlauf auf einen Feind.</p><p>Besonders lange Sturmläufe erhöhen deinen ATK-Wert: Ein Sturmlauf muss <strong>mindestens 10 Meter</strong> lang sein; für <strong>jede 3 Meter darüber</strong> gewinnst du +1 ATK, zusätzlich zu den üblichen +3 fürs Stürmen. Außerdem erleidet ein Gegner, der auf deinen Sturm eingestellt ist, für <strong>jede Stufe</strong> einen Abzug von 1 auf seinen Verteidigungswurf.</p><p><em>Hinweis des Buchs:</em> Sinnlos bei niedrigem Sprinten.</p><p><strong>Originalname:</strong> The Clatter of Rushing Boots</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 67</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "250",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Thor",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "The Clatter of Rushing Boots",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "67",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.vergeltung",
+   "kind": "ability",
+   "name": "Aufgeschobene Vergeltung",
+   "type": "Göttliche Gabe (Loki)",
+   "parent": "gift.g.loki",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 250 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.loki}} · <strong>Stufen:</strong> keine</p><p>Lokis Kampfkunst ist ein Bruchteil der seiner Asen-Feinde Thor, Tyr und Heimdal. Deshalb beherrscht er die Kunst der Flucht.</p><p>Wenn dein Held flieht, behält er den Schutz eines vorsichtig Zurückweichenden: sein <strong>DFN-Wert steigt um 3</strong>, obwohl er zwei volle Bewegungen weit läuft. Andere Gegner auf deinem Fluchtweg können nur Gelegenheitsschüsse abgeben, <strong>wenn sie dich im Engagement-Wurf übertreffen</strong>. Addiere deine <strong>Loki-Göttliche-Verbindung</strong> auf diese Engagement-Würfe.</p><p><strong>Originalname:</strong> Comeuppance Postponed</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 67</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "250",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Loki",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "keine",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Comeuppance Postponed",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "67",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.abgang",
+   "kind": "ability",
+   "name": "Feiger Abgang",
+   "type": "Göttliche Gabe (Loki)",
+   "parent": "gift.g.loki",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 250 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.loki}} · <strong>Stufen:</strong> unbegrenzt</p><p>Loki bewahrt seine mächtigsten Fluchtkräfte für Diener auf, die ihm direkt dienen.</p><p>Dein Held <strong>löst sich auf</strong> und verschwindet sofort und dauerhaft aus dem aktuellen Ereignis. Beim nächsten Ereignis stößt er wieder zu den Gefährten, nachdem er an einen sicheren Ort gebracht wurde. Zum Aktivieren musst du einen <strong>Wettstreit</strong> gegen einen Gegner gewinnen, der dich im Nahkampf bindet: Würfle <strong>deine Stufe</strong> gegen seine <strong>RES</strong>. Bei mehreren Gegnern wählt der Runner den mit den besten Erfolgsaussichten. Dein Held muss dafür eine Aktion aufwenden, der Gegner nicht. Der Gegner merkt nicht, dass seine angeborene Magie dich am Verschwinden hindert.</p><p><strong>Originalname:</strong> Craven Departure</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 67</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "250",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Loki",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Craven Departure",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "67",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.kaesebruch",
+   "kind": "ability",
+   "name": "Käsebruch des Utgardaloki",
+   "type": "Göttliche Gabe (Thor)",
+   "parent": "gift.g.thor",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 100 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.thor}} · <strong>Stufen:</strong> 8</p><p>Beim Besuch bei Utgardaloki besiegte Thor einen wandelnden Rüstungskrieger des Riesen, indem er den Knauf von Mjölnir abbiss und den Griff zu einer Spitze schärfte. Als Preis gewann er einen Topf magischen Käsebruchs, der Sterbende wiederbeleben kann.</p><p>Jederzeit, auch bei 0 oder weniger HP, darfst du <strong>25 Siegespunkte</strong> ausgeben, um <strong>4X HP</strong> zurückzugewinnen (X = deine Stufe).</p><p><strong>Originalname:</strong> Curds of Utgardaloki</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 68</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "100",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Thor",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "8",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Curds of Utgardaloki",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "68",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.schicksal",
+   "kind": "ability",
+   "name": "Gewendetes Schicksal",
+   "type": "Göttliche Gabe (Urd)",
+   "parent": "gift.g.urd",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 400 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.urd}} · <strong>Stufen:</strong> unbegrenzt</p><p>Urd ist eine der drei Nornen, die Norne der Vergangenheit. Sie nimmt zuweilen Gefallen von Sterblichen an und lässt dafür gerade vergangene Augenblicke auftrennen und neu weben.</p><p><strong>X-mal pro Sitzung</strong> (X = deine Stufe) kannst du einen Würfel <strong>sofort nach seinem Ergebnis neu würfeln</strong>. Das ursprüngliche Ergebnis wird ignoriert. Dein Held behält zwei Erinnerungen: die tatsächliche und die an das Unglück, das beinahe geschah.</p><p><strong>Originalname:</strong> Destiny Reversed</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 68</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "400",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Urd",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Destiny Reversed",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "68",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.todesstreich",
+   "kind": "ability",
+   "name": "Todesstreich",
+   "type": "Göttliche Gabe (Odin)",
+   "parent": "gift.g.odin",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.odin}} · <strong>Stufen:</strong> unbegrenzt</p><p>Der sicherste Weg in Odins Halle ist, mit einem letzten selbstaufopfernden Streich gegen einen erbitterten Feind zu sterben. Odin lenkt dann die Hand.</p><ul><li>Erleidet dein Held Schaden, der eine <strong>fünfte Wunde</strong> verursachen oder ihn unter 0 HP bringen würde, darf er noch <strong>so viele Runden kämpfen, wie seine Stufe</strong> beträgt. Du darfst deine Stufe auf jeden Wurf in seinen letzten Augenblicken addieren.</li><li>Wundbedingte Beeinträchtigung zum Zeitpunkt des Todesstoßes wird nicht nur vom ATK entfernt, sondern in einen <strong>Bonus</strong> umgewandelt (Beispiel: Hallgerd hat −3 Beeinträchtigung und erleidet ihren Todesstoß: Ihre ATK-Würfe erhalten nun +3, ihre übrigen Würfe bleiben −3).</li><li>Nichts kann dich vor dem Tod retten, sobald du diesen letzten Mut zeigst: Sobald die Dauer abläuft oder der Kampf endet, bist du tot.</li><li>Erschaffst du statt Todesversicherung einen neuen Helden, beginnt er mit <strong>X × dem gesamten Schaden</strong>, den der Vorgänger nach dem Todesstreich austeilte, als ungenutzte Siegespunkte (X = Stufe des Verstorbenen).</li></ul><p><strong>Originalname:</strong> Dying Blow</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 68</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Odin",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Dying Blow",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "68",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.pfeil",
+   "kind": "ability",
+   "name": "Der gierige Pfeil",
+   "type": "Göttliche Gabe (Heimdal)",
+   "parent": "gift.g.heimdal",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.heimdal}} · <strong>Stufen:</strong> unbegrenzt</p><p>Deine Pfeile sind zu hungrig, um sich mit dem Fleisch eines einzigen Feindes zu begnügen.</p><p>Du kannst jederzeit <strong>Präsenz + X</strong> würfeln (X = deine Stufe), damit alle Pfeile, die dein Held in diesem Ereignis abgeschossen hat, <strong>rückwärts in den Köcher zurückfliegen</strong>. Schwierigkeit: <strong>Entfernung des am weitesten entfernten Pfeils in Meter ÷ 10</strong>. Misslingt es, bleiben die Pfeile liegen. Bei Erfolg reißen sich Pfeile, die aktive Gegner verletzt haben (sie gelten als noch im Fleisch steckend), heraus und verursachen <strong>X Punkte rüstungsignorierenden Schaden</strong> (Original S. 142). Schießt dein Held einen so gelösten Pfeil erneut auf denselben Gegner, erhältst du <strong>+X auf die ATK-Summe</strong>. Funktioniert auch mit Armbrustbolzen.</p><p><strong>Originalname:</strong> The Eager Arrow</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 69</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Heimdal",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "The Eager Arrow",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "69",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.pferd",
+   "kind": "ability",
+   "name": "Das achtbeinige Pferd",
+   "type": "Göttliche Gabe (Odin)",
+   "parent": "gift.g.odin",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 100 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.odin}} · <strong>Stufen:</strong> unbegrenzt</p><p>Odins Ross Sleipnir ist ein achtbeiniger, kohlschwarzer Hengst. Odin gewährt dir einen Anteil seines Überblicks, der dein inneres Auge das ganze Schlachtfeld überschauen lässt.</p><p>Du kannst Gefährten komplexe taktische Hinweise („Pass auf!“, „Er hat einen Speer!“) zurufen und so einem anderen Helden <strong>+X</strong> auf seine nächste ATK- oder DFN-Summe geben (sein Plünderer wählt). <strong>X-mal pro Kampf</strong>, keine Aktion nötig. Jeder Plünderer darf dir dafür freiwillig beliebig viele ungenutzte Siegespunkte geben; du darfst auch über Silber oder magische Gegenstände verhandeln. Auch ohne Gegenleistung kannst du die Gabe nutzen. X = deine Stufe.</p><p><strong>Originalname:</strong> The Eight-Legged Horse</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 69</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "100",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Odin",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "The Eight-Legged Horse",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "69",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.becher",
+   "kind": "ability",
+   "name": "Der nie versiegende Becher",
+   "type": "Göttliche Gabe (Freyja)",
+   "parent": "gift.g.freyja",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 45 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.freyja}} · <strong>Stufen:</strong> unbegrenzt</p><p>Freyja half Thor einst im Kampf gegen Riesen mit einem Becher, der ihn wiederbelebte; zum Dank musste er sieben dreckige Schafställe ausmisten.</p><p>Diese Gabe belebt deinen Helden nicht vollständig. <strong>Deine Stufe</strong> entspricht der Zahl der <strong>Runden</strong>, die er mit 5 Wunden oder unter 0 HP <strong>ohne Hilfe eines Heilers</strong> überlebt (Original S. 56).</p><p><strong>Originalname:</strong> The Ever-Flowing Cup</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 69</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "45",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Freyja",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "The Ever-Flowing Cup",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "69",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.kohlen",
+   "kind": "ability",
+   "name": "Augen wie glühende Kohlen",
+   "type": "Göttliche Gabe (Odin)",
+   "parent": "gift.g.odin",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 45 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.odin}} · <strong>Stufen:</strong> unbegrenzt</p><p>Wenn Odin auf dem Schlachtfeld steht, erstarren selbst die schlimmsten Feinde vor Ehrfurcht.</p><ul><li>Gegner, die deinen Helden mit Fernwaffen anvisieren wollen, müssen <strong>Tapferkeit + Ausdauer</strong> gegen <strong>Schwierigkeit = deine Präsenz + Stufe in dieser Gabe</strong> würfeln. Bei Bedrohungskategorie <em>Unterlegen</em> oder weniger addieren sie die Differenz beider Werte zur Schwierigkeit. Keine Aktion nötig.</li><li>Wer scheitert, kann nicht auf dich schießen (deine Gefährten bleiben Ziele). Wer es nach früherem Scheitern erneut versucht, addiert <strong>+3 je früherem Fehlschlag</strong>.</li><li>Dauer: <strong>X Runden</strong> nach Aktivierung. Weichst du einem Geschoss aus, endet die Kraft vorzeitig.</li></ul><p><strong>Originalname:</strong> Eyes like Glowing Coals</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 69</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "45",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Odin",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Eyes like Glowing Coals",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "69",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.fleisch",
+   "kind": "ability",
+   "name": "Das Fleisch schreit nach dem Stich",
+   "type": "Göttliche Gabe (Loki)",
+   "parent": "gift.g.loki",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 150 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.loki}} · <strong>Stufen:</strong> 8</p><p>Loki schlägt am besten, wenn er auf den Fehler seines Feindes wartet.</p><p>Du darfst <strong>+1 je Stufe auf deinen ATK-Wert</strong> addieren, wenn dein Held außerhalb der Initiative nach <em>Auf Gelegenheit warten</em> zuschlägt. Wartest du, um einen Gegner zu treffen, der gerade seinen Gegner verfehlt hat, addiere <strong>+1 je Stufe auf ATK und +2 je Stufe auf DAM</strong>.</p><p><strong>Originalname:</strong> Flesh Cries Out for Piercing</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 70</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "150",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Loki",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "8",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Flesh Cries Out for Piercing",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "70",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.gipfel",
+   "kind": "ability",
+   "name": "Von Asgards hohen Gipfeln",
+   "type": "Göttliche Gabe (Thor)",
+   "parent": "gift.g.thor",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 125 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.thor}} · <strong>Stufen:</strong> 8</p><p>Am Tag von Ragnarök kämpfen die Mächte der Finsternis im Nachteil: Die Asen verteidigen die Anhöhe am Ende der Bifröst-Brücke.</p><p>Addiere <strong>+1 je Stufe auf ATK, DFN, DAM und Absorption</strong>, wenn dein Held <strong>hohes oder überlegenes Gelände</strong> besetzt.</p><p><strong>Originalname:</strong> From Lofty Asgard's Peaks</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 70</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "125",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Thor",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "8",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "From Lofty Asgard's Peaks",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "70",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.fersen",
+   "kind": "ability",
+   "name": "Frostbeschwingte Fersen",
+   "type": "Göttliche Gabe (Njord)",
+   "parent": "gift.g.njord",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.njord}} · <strong>Stufen:</strong> unbegrenzt</p><p>Während andere noch ans Ziehen des Schwerts denken, liegt deine Hand schon am Heft.</p><p>Addiere für jede Stufe <strong>+2 auf den INIT-Wert</strong>. Die Gabe hilft <strong>nicht</strong> bei zusätzlichen Angriffen: Ziehe den Bonus von der Initiativesumme ab, wenn du bestimmst, ob du in der Runde weitere Aktionen hast.</p><p><strong>Originalname:</strong> Frost-Speeded Heels</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 70</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Njord",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Frost-Speeded Heels",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "70",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.donner",
+   "kind": "ability",
+   "name": "Sich sammelnder Donner",
+   "type": "Göttliche Gabe (Thor)",
+   "parent": "gift.g.thor",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 40 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.thor}} · <strong>Stufen:</strong> unbegrenzt</p><p>Die Wut deines Helden baut sich auf wie ein Gewitter in der Sommerhitze.</p><p>Nach einer <strong>ersten Runde im Engagement</strong> mit einem Gegner darfst du <strong>(deine Stufe) + (Dauer des Kampfes in Runden)</strong> zu deinem ATK-Wert addieren. Wirkt für einen einzelnen ATK-Wurf; <strong>einmal pro Sitzung</strong>.</p><p><strong>Originalname:</strong> Gathering Thunder</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 70</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "40",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Thor",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Gathering Thunder",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "70",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.freyr_zunge",
+   "kind": "ability",
+   "name": "Vergoldete Zunge des Freyr",
+   "type": "Göttliche Gabe (Freyr)",
+   "parent": "gift.g.freyr",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.freyr}} · <strong>Stufen:</strong> unbegrenzt</p><p>Wie der goldene, kluge Freyr erntet dein Held beim Verhandeln einen Schatz an Wohlwollen.</p><p>Jede Stufe erhöht deine <strong>Kommunikation um 1</strong>.</p><p><strong>Originalname:</strong> Gilded Tongue of Freyr</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 71</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Freyr",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Gilded Tongue of Freyr",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "71",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.hirsche",
+   "kind": "ability",
+   "name": "Die nagenden Hirsche",
+   "type": "Göttliche Gabe (Loki)",
+   "parent": "gift.g.loki",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.loki}} · <strong>Stufen:</strong> unbegrenzt</p><p>Vier Hirsche fressen ständig an den jüngsten Trieben Yggdrasils und halten den Baum davon ab zu wachsen. Loki belohnt, wer Materielles zerstört, um das Schicksal Richtung Ragnarök zu halten.</p><p>Du erhältst <strong>5X Siegespunkte</strong> (X = deine Stufe), jedes Mal wenn dein Held <strong>eine Falle entschärft</strong> oder <strong>eine Barriere, Deckung oder einen von Menschen gebauten Gegenstand</strong> (Plattform, Rampe, Treppe), der dem Kampfgelände mehrere Ebenen hinzufügt, <strong>zerstört oder verschiebt</strong>. Er muss die Falle erfolgreich entschärfen oder das Geländemerkmal neutralisieren, und zwar <strong>im Kampf</strong> und mit mindestens einer Aktion je Gegenstand.</p><p><strong>Originalname:</strong> The Gnawing Stags</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 71</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Loki",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "The Gnawing Stags",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "71",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.aepfel",
+   "kind": "ability",
+   "name": "Süße der goldenen Äpfel",
+   "type": "Göttliche Gabe (Freyja)",
+   "parent": "gift.g.freyja",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.freyja}} · <strong>Stufen:</strong> unbegrenzt</p><p>Freyja pflegt den Obstgarten der goldenen Äpfel, die Asen und Vanen vor dem Altern bewahren. Sie hat dich mit der Fähigkeit gesegnet, dich schnell von Strapazen zu erholen.</p><p>Erleidet dein Held Beeinträchtigung, darfst du <strong>Präsenz + deine Stufe</strong> gegen <strong>Schwierigkeit 6 + deine Loki-Göttliche-Verbindung</strong> würfeln. Bei Erfolg sinkt die Beeinträchtigung um 1 (nicht unter 0). <strong>X-mal pro Sitzung</strong> (X = deine Stufe).</p><p><strong>Originalname:</strong> Golden Apples' Sweetness</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 71</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Freyja",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Golden Apples' Sweetness",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "71",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.gestemmt",
+   "kind": "ability",
+   "name": "Unerbittlich gestemmt",
+   "type": "Göttliche Gabe (Heimdal)",
+   "parent": "gift.g.heimdal",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.heimdal}} · <strong>Stufen:</strong> unbegrenzt</p><p>Wie Heimdal ist dein Held auf den Anmarsch jedes Feindes vorbereitet.</p><p>Addiere <strong>+1 je Stufe auf ATK, DFN, DAM und Absorption</strong>, wenn du <strong>Stellung hältst</strong> oder einen Sturmangriff erwartest.</p><p><strong>Originalname:</strong> Implacably Braced</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 71</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Heimdal",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Implacably Braced",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "71",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.fluch",
+   "kind": "ability",
+   "name": "Fluch des Verhängnisses",
+   "type": "Göttliche Gabe (Odin)",
+   "parent": "gift.g.odin",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 250 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.odin}} · <strong>Stufen:</strong> unbegrenzt</p><p>Das Verhängnis erwartet alle, aber du kannst seinen Griff um einen mächtigen Feind beschleunigen.</p><p>Dein Held bestimmt einen Gegner, der Odins Zorn erhält. Für den Rest der Begegnung erleidet er <strong>3X Schaden</strong>, jedes Mal wenn <strong>ein anderer Gegner</strong> durch deinen Nah- oder Fernangriff mindestens 1 HP verliert (X = deine Stufe). Du darfst beliebig viele Gegner treffen, um den Zielgegner zu schädigen. Der Schaden ist <strong>rüstungsignorierend</strong> (Original S. 142). <strong>Einmal pro Sitzung.</strong> Der Schaden zählt zu deinen Siegespunkten.</p><p><strong>Originalname:</strong> Imprecation of Doom</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 71</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "250",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Odin",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Imprecation of Doom",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "71",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.entschlossenheit",
+   "kind": "ability",
+   "name": "Unermüdliche Entschlossenheit",
+   "type": "Göttliche Gabe (Heimdal)",
+   "parent": "gift.g.heimdal",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.heimdal}} · <strong>Stufen:</strong> 10</p><p>Wenn das Schicksal Asgards und Midgards in der Schwebe hängt, darf ein wahrer Krieger sich von Müdigkeit nicht abhalten lassen.</p><p><strong>X-mal pro Sitzung</strong> (X = deine Stufe) darf dein Held alle Beeinträchtigungsmali auf <strong>einen einzelnen Wurf</strong> ignorieren. Gelingt der Wurf dann und hat das Entfernen des Malus den Ausschlag zwischen Erfolg und Misserfolg gegeben, erhältst du <strong>5X Siegespunkte</strong>.</p><blockquote><strong>Beispiel:</strong> Ragnar hat 4 Stufen und 3 Beeinträchtigung. Er ignoriert sie bei einem ATK-Wurf gegen einen Wendol: ATK-Summe 12, DFN-Summe 10. Die 2 Punkte Abstand sind weniger als die ignorierte Beeinträchtigung: Er erhält 20 Siegespunkte.</blockquote><p><strong>Originalname:</strong> Indefatigable Determination</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 71</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Heimdal",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "10",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Indefatigable Determination",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "71",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.verweben",
+   "kind": "ability",
+   "name": "Das Verweben von Fleisch und Knochen",
+   "type": "Göttliche Gabe (Thor)",
+   "parent": "gift.g.thor",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 45 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.thor}} · <strong>Stufen:</strong> unbegrenzt</p><p>Thor gibt seinen Lieblingskriegern die Fähigkeit, zerrissenes Fleisch, zerschmetterte Knochen und durchtrennte Nerven wieder zusammenfließen zu lassen.</p><p>Würfle <strong>Ausdauer + deine Stufe</strong> gegen <strong>Schwierigkeit 9</strong>. Bei Erfolg gewinnt dein Held <strong>X × Differenz zwischen Schwierigkeit und Wurfsumme</strong> verlorene HP zurück. Du musst die ganze Runde damit verbringen; sofern du nicht in Deckung bist, erhalten Fernkämpfer <strong>+6 auf ihren ATK</strong>. So oft je Begegnung, wie du Stufen hast.</p><p><strong>Originalname:</strong> The Knitting of Meat and Bone</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 72</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "45",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Thor",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "The Knitting of Meat and Bone",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "72",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.luege",
+   "kind": "ability",
+   "name": "Die Lüge wird zur Wahrheit",
+   "type": "Göttliche Gabe (Loki)",
+   "parent": "gift.g.loki",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.loki}} · <strong>Stufen:</strong> unbegrenzt</p><p>Loki ist so geschickt im Vortäuschen, dass er eine Fertigkeit zumindest zeitweise gewinnt, indem er behauptet, sie schon immer gehabt zu haben.</p><p><strong>X-mal pro Sitzung</strong> (X = deine Stufe) erhältst du <strong>+X auf einen Wurf</strong> mit einer Fertigkeit, die du nicht hast. Der übliche −3-Malus wird weiter eingerechnet; die Gabe hebt ihn also erst ab Stufe 3 vollständig auf.</p><p><strong>Originalname:</strong> The Lie Turns to Truth</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 72</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Loki",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "The Lie Turns to Truth",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "72",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.blatt",
+   "kind": "ability",
+   "name": "Wie ein windgetriebenes Blatt",
+   "type": "Göttliche Gabe (Thor)",
+   "parent": "gift.g.thor",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 125 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.thor}} · <strong>Stufen:</strong> unbegrenzt</p><p>Deine Bewegungen sind schnell und unvorhersehbar: Du bist nicht leichter zu treffen als ein Blatt im Wind.</p><p>Addiere <strong>+1 je Stufe auf ATK, DFN, DAM und Absorption</strong>, wenn dein Held <strong>ducken und ausweichen</strong> kann.</p><p><strong>Originalname:</strong> Like a Wind-Tossed Leaf</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 72</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "125",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Thor",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Like a Wind-Tossed Leaf",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "72",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.hirsch",
+   "kind": "ability",
+   "name": "Wie der springende Hirsch",
+   "type": "Göttliche Gabe (Ull)",
+   "parent": "gift.g.ull",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.ull}} · <strong>Stufen:</strong> unbegrenzt</p><p>Ull der Jäger hat von den Tieren gelernt, die er jagt. Wenn man ihn mit Pfeilen durchbohren will, springt er wie der Hirsch ins dichteste Unterholz.</p><p>Weicht dein Held <strong>erfolgreich einem Fernangriff aus</strong> (statt die Grundschwierigkeit 6 hinzunehmen), erhältst du <strong>20X Siegespunkte</strong> (X = deine Stufe).</p><p><strong>Originalname:</strong> Like the Leaping Stag</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 72</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Ull",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Like the Leaping Stag",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "72",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.heft",
+   "kind": "ability",
+   "name": "Das treue Heft",
+   "type": "Göttliche Gabe (Thor)",
+   "parent": "gift.g.thor",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 250 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.thor}} · <strong>Stufen:</strong> unbegrenzt</p><p>Deine Waffen wollen sich wie treue Jagdhunde nicht von dir trennen.</p><ul><li>Durch <strong>Werfen deiner Waffe</strong> kannst du Nahkampfangriffe gegen Gegner bis zu <strong>3 + 3X Meter</strong> entfernt machen (X = deine Stufe). Gelingt dein ATK-Wurf, fliegt die Waffe aus deiner Hand, trifft und fliegt zurück in deine Hand.</li><li><strong>Patzer:</strong> Die Waffe fliegt <strong>3X Meter</strong> in gerader Linie vom Gegner weg und stoppt vorzeitig an Wänden oder festen Gegenständen (Runner entscheidet nach der Karte). In manchen Fällen kannst du patzen und doch treffen: Du triffst, bekommst die Waffe aber nicht zurück.</li><li>Gegner, die du so triffst und die weiter als 3 Meter entfernt sind, binden dich nicht im Engagement.</li></ul><p><strong>Originalname:</strong> The Loyal Hilt</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 72</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "250",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Thor",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "The Loyal Hilt",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "72",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.mantel",
+   "kind": "ability",
+   "name": "Mantel Odins",
+   "type": "Göttliche Gabe (Odin)",
+   "parent": "gift.g.odin",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 100 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.odin}} · <strong>Stufen:</strong> unbegrenzt</p><p>Du strahlst Autorität und Gewicht aus, als hätte Odin dir seine Herrscherrobe geliehen.</p><p>Jede Stufe erhöht deine <strong>Präsenz um 1</strong>.</p><p><strong>Originalname:</strong> Mantle of Odin</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 73</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "100",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Odin",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Mantle of Odin",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "73",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.speer",
+   "kind": "ability",
+   "name": "Der vielfach durchbohrende Speer",
+   "type": "Göttliche Gabe (Thor)",
+   "parent": "gift.g.thor",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.thor}} · <strong>Stufen:</strong> 11</p><p>Thor versprach zwei Riesen, sie mit einem einzigen Wurf zu verwunden, und hielt sein Wort.</p><p>Wirft dein Held einen Speer auf einen Gegner und fügt ihm <strong>mehr als 12 − X Schaden</strong> (nach Absorption) zu, durchbohrt der Speer ihn und trifft einen zweiten Gegner, sofern einer passend steht (höchstens <strong>5 Meter × deine Stufe</strong> Abstand zwischen beiden). Du machst einen <strong>neuen ATK-Wurf</strong> gegen den zweiten. Fügst du auch ihm mehr als 12 − X Schaden zu, kann der Speer zu einem dritten weiterfliegen usw. Er trifft nie dieselbe Figur zweimal in einer Folge. X = deine Stufe.</p><p><strong>Originalname:</strong> Many-Impaling Spear</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 73</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Thor",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "11",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Many-Impaling Spear",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "73",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.macht_thors",
+   "kind": "ability",
+   "name": "Macht Thors",
+   "type": "Göttliche Gabe (Thor)",
+   "parent": "gift.g.thor",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 300 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.thor}} · <strong>Stufen:</strong> unbegrenzt</p><p>Thors unvergleichliche Körperkraft füllt die Adern und Muskeln deines Helden.</p><p>Jede Stufe erhöht deine <strong>Stärke um 1</strong>.</p><p><strong>Originalname:</strong> Might of Thor</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 73</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "300",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Thor",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Might of Thor",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "73",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.mjoelnir",
+   "kind": "ability",
+   "name": "Mjölnir erwacht",
+   "type": "Göttliche Gabe (Thor)",
+   "parent": "gift.g.thor",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.thor}} · <strong>Stufen:</strong> unbegrenzt</p><p>Wie Thors Hammer auf seinen Wunsch in seine Hand fliegt, springen die Waffen deines Helden in seinen Griff.</p><p><strong>X-mal pro Begegnung</strong> (X = deine Stufe) kann er <strong>eine Waffe gegen eine andere tauschen</strong>, schnell wie ein Gedanke und ohne eine andere Aktion zu verzögern. Beide Waffen müssen bei ihm sein.</p><p><strong>Originalname:</strong> Mjolnir Awakes</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 73</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Thor",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Mjolnir Awakes",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "73",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.naglfar",
+   "kind": "ability",
+   "name": "Naglfar pflügt die Wellen",
+   "type": "Göttliche Gabe (Njord)",
+   "parent": "gift.g.njord",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.njord}} · <strong>Stufen:</strong> unbegrenzt</p><p>Das mächtigste Schiff Midgards, Naglfar aus den Nagelspänen der Toten, liegt vor Asgard vor Anker, bis die Midgardschlange es bei Ragnarök losreißt. Njord, Patron der Seefahrer, leiht deinem Helden etwas von seiner Kraft.</p><p>Jede Stufe gibt <strong>+3 auf jeden Schwimmen-Versuch</strong>.</p><p><strong>Originalname:</strong> Naglfar Plows the Waves</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 73</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Njord",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Naglfar Plows the Waves",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "73",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.kruste",
+   "kind": "ability",
+   "name": "Njords Kruste",
+   "type": "Göttliche Gabe (Njord)",
+   "parent": "gift.g.njord",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.njord}} · <strong>Stufen:</strong> unbegrenzt</p><p>Njord härtet den Körper deines Helden wie sein kalter Atem die oberste Schneeschicht der Berge zu Eis.</p><p>Jede Stufe addiert <strong>dauerhaft 10 zu deinen maximalen HP</strong>. Andere Götter bieten ähnliche Gaben: Tyrs Langmut, Ulls Haut und Thors Sehnen.</p><p><strong>Originalname:</strong> Njord's Crust</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 74</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Njord",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Njord's Crust",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "74",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.yggdrasil",
+   "kind": "ability",
+   "name": "Pflege Yggdrasils",
+   "type": "Göttliche Gabe (Freyja)",
+   "parent": "gift.g.freyja",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 150 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.freyja}} · <strong>Stufen:</strong> 4</p><p>Die drei Nornen sorgen dafür, dass die Welten bestehen: Sie wässern die Weltesche Yggdrasil. Freyja belohnt zum Dank Heiler, die Gefallene stärken, damit sie wieder aufstehen.</p><p>Stellst du mit <strong>Heilkunde</strong> einem verletzten Verbündeten <strong>weitere 12 HP</strong> wieder her, erhältst du <strong>20X Siegespunkte</strong> (X = deine Stufe). Belebst du einen sterbenden Helden unter 0 HP wieder, erhältst du <strong>30X Siegespunkte</strong>. Selbstheilung zählt nicht.</p><p><strong>Originalname:</strong> Nurturing of Yggdrasil</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 74</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "150",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Freyja",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "4",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Nurturing of Yggdrasil",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "74",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.nebel",
+   "kind": "ability",
+   "name": "Verhüllender Nebel",
+   "type": "Göttliche Gabe (Loki)",
+   "parent": "gift.g.loki",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.loki}} · <strong>Stufen:</strong> unbegrenzt</p><p>Loki, Gott der Täuschung, hüllt dich in einen Nebelmantel, der dich vor den Geschossen empörter Feinde schützt.</p><p><strong>Einmal pro Begegnung</strong> darfst du eine <strong>Aktion</strong> aufwenden, um Lokis Nebelmantel zu rufen. Er hält <strong>so viele Runden wie deine Stufe</strong>. Solange er wirkt, gilt dein Held für die Fernkampfmodifikatoren der Feinde als <strong>verdeckt</strong>, was immer er tut.</p><p><strong>Originalname:</strong> Obscuring Mist</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 74</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Loki",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Obscuring Mist",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "74",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.walkuere",
+   "kind": "ability",
+   "name": "Auf Walküren-Schwingen",
+   "type": "Göttliche Gabe (Odin)",
+   "parent": "gift.g.odin",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 45 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.odin}} · <strong>Stufen:</strong> unbegrenzt</p><p>Wenn die Walküren die ehrenvoll Gefallenen nach Walhall tragen, sind diese federleicht, von den Sorgen des Sterblichen befreit. Odin erleichtert manchmal auch die Last lebender Gefolgsleute.</p><p>Für jede Stufe darfst du den <strong>INIT-Wert deiner Rüstung um 1 verringern</strong>, nicht unter 0.</p><p><strong>Originalname:</strong> On Valkyries' Wings</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 74</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "45",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Odin",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "On Valkyries' Wings",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "74",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.seufzer",
+   "kind": "ability",
+   "name": "Der kühlende Seufzer des Nordens",
+   "type": "Göttliche Gabe (Njord)",
+   "parent": "gift.g.njord",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.njord}} · <strong>Stufen:</strong> unbegrenzt</p><p>Njord, Gott der eisigen Hänge und kalten Winde, schützt Lieblingshelden vor Hitze und Flammen.</p><p>Jedes Mal, wenn dein Held durch <strong>Hitze, Feuer, Flammenstrahlen oder Lava</strong> Schaden nimmt, ziehe <strong>3X</strong> vom Schaden ab (X = deine Stufe). Hitze-, Feuer-, Flammen- oder Lavaschaden, der sonst rüstungsignorierend wäre (Original S. 142), wird um den <strong>Schutzwert deiner Rüstung</strong> vermindert.</p><p><strong>Originalname:</strong> The North's Cooling Sigh</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 74</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Njord",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "The North's Cooling Sigh",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "74",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.eule",
+   "kind": "ability",
+   "name": "Die Eule hört die Viper",
+   "type": "Göttliche Gabe (Heimdal)",
+   "parent": "gift.g.heimdal",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.heimdal}} · <strong>Stufen:</strong> unbegrenzt</p><p>Loki ist Patron der Fallen und Fallensteller; sein Gegenspieler Heimdal leiht seine scharfen Sinne denen, die sie bestehen müssen.</p><p>Addiere <strong>+3 je Stufe</strong> auf <strong>Aufmerksamkeits-Würfe zum Entdecken von Fallen</strong>. Die Falle muss nicht mechanisch sein, aber von einer <strong>intelligenten Kraft</strong> in Schadensabsicht angelegt worden sein (eine natürliche Lavagrube löst die Gabe nicht aus; lockert jemand die Felsen um sie, damit Helden abrutschen, schon).</p><p><strong>Originalname:</strong> The Owl Hears the Viper</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 74</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Heimdal",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "The Owl Hears the Viper",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "74",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.blitz",
+   "kind": "ability",
+   "name": "Durchdringender Blitz",
+   "type": "Göttliche Gabe (Thor)",
+   "parent": "gift.g.thor",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.thor}} · <strong>Stufen:</strong> unbegrenzt</p><p>Versteckt sich ein feiger Feind vor Thors Zorn, schleudert der Donnerer einen Blitz auf den Baum, die Wand oder den Felsen, der ihn verbirgt.</p><p>Kurz bevor dein Held auf einen gedeckten Gegner schießt, würfle <strong>Geschicklichkeit + deine Thor-Göttliche-Verbindung</strong>. Der Runner würfelt die <strong>RES</strong> des Gegners. Übertriffst du ihn, wird seine Deckung <strong>um eine Stufe verringert</strong>: fast vollständige Deckung wird halbe, halbe wird Drittel-Deckung, Drittel-Deckung entfällt. Keine Aktion nötig; <strong>einmal pro Begegnung je Stufe</strong>. Die Wirkung auf das Deckungsobjekt ist <strong>dauerhaft</strong>.</p><p><strong>Originalname:</strong> Penetrating Lightning</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 75</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Thor",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Penetrating Lightning",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "75",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.njordsatem",
+   "kind": "ability",
+   "name": "Von Njords Atem gefiedert",
+   "type": "Göttliche Gabe (Njord)",
+   "parent": "gift.g.njord",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 45 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.njord}} · <strong>Stufen:</strong> unbegrenzt</p><p>Njord bremst mit seinem eisigen Atem die Stürze seiner Lieblingshelden.</p><p>Fällt dein Held, kannst du für jede Stufe die <strong>wirksame Fallhöhe um eine Stufe</strong> der Fallschadens-Tabelle (Original S. 151) verringern. Die Gabe ändert nicht die Fallstrecke, nur den erlittenen Schaden.</p><p><strong>Originalname:</strong> Plumed Up by Njordsbreath</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 75</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "45",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Njord",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Plumed Up by Njordsbreath",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "75",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.rabe",
+   "kind": "ability",
+   "name": "Der Rabe pickt ein Auge",
+   "type": "Göttliche Gabe (Odin)",
+   "parent": "gift.g.odin",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.odin}} · <strong>Stufen:</strong> unbegrenzt</p><p>Odin tauschte sein Auge gegen Weisheit; zwei Riesenraben flüstern ihm Geheimnisse zu. Wie ein Rabe an den Leichen nach einer glorreichen Schlacht erbeutet dein Held geheimes Wissen von erschlagenen Feinden.</p><p>Stirbt ein Gegner, den dein Held verletzt hat, darfst du deine <strong>Odin-Göttliche-Verbindung</strong> gegen seine <strong>RES</strong> würfeln. Bei Erfolg darfst du für <strong>X Runden</strong> <strong>X</strong> von dessen Werten statt deiner eigenen verwenden (X = deine Stufe). Zur Wahl stehen <strong>INIT, ATK, DFN oder Absorption</strong>. Ab 5 Stufen verlängert sich die Wirkung, Werte lassen sich aber nicht stapeln. Stirbt ein neuer Gegner, kannst du erneut würfeln und den bisherigen ersetzen. Keine Aktion nötig.</p><p><strong>Originalname:</strong> The Raven Plucks an Eye</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 75</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Odin",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "The Raven Plucks an Eye",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "75",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.njordsgale",
+   "kind": "ability",
+   "name": "Die unerbittlichen Stürme Njords",
+   "type": "Göttliche Gabe (Njord)",
+   "parent": "gift.g.njord",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 400 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.njord}} · <strong>Stufen:</strong> unbegrenzt</p><p>Dein Held stürmt in den Kampf mit der Schnelligkeit der beißenden Winde, die Njord, Vater der Vanen, die winterlichen Berghänge hinabschickt.</p><p>Jede Stufe erhöht deine <strong>Schnelligkeit um 1</strong>.</p><p><strong>Originalname:</strong> The Relentless Gales of Njord</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 75</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "400",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Njord",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "The Relentless Gales of Njord",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "75",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.hoders_reue",
+   "kind": "ability",
+   "name": "Die Reue Hoders",
+   "type": "Göttliche Gabe (Hoder)",
+   "parent": "gift.g.hoder",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.hoder}} · <strong>Stufen:</strong> unbegrenzt</p><p>Hoder, der blinde Gott, schoss unwissentlich den mit Mistel präparierten Pfeil ab, der Balder tötete. Sein einziger Segen schützt andere davor, es ihm gleichzutun.</p><p>Schießt dein Held in einen Nahkampf und die Summe zeigt, dass er <strong>versehentlich einen Verbündeten trifft</strong>, darfst du <strong>Präsenz + Reue Hoders</strong> gegen <strong>Schwierigkeit = Entfernung zum Gefährten in Meter ÷ 10</strong> würfeln. Bei Erfolg schwenkt der Pfeil im letzten Augenblick ab und trifft einen <strong>Gegner</strong>. Der Spieler des beinahe getroffenen Helden wählt, welcher (höchstens 20 Meter von seiner Position). Beide, du und der Spieler des Beinahe-Opfers, erhalten die <strong>vollen Siegespunkte</strong> für den Schaden.</p><p><strong>Originalname:</strong> The Remorse of Hoder</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 75</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Hoder",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "The Remorse of Hoder",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "75",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.schlangentraenen",
+   "kind": "ability",
+   "name": "Den Tränen der Schlange widerstehen",
+   "type": "Göttliche Gabe (Tyr)",
+   "parent": "gift.g.tyr",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.tyr}} · <strong>Stufen:</strong> unbegrenzt</p><p>Tyr schützt seine Lieblingskrieger vor vielen Arten körperlicher Strafe, darunter Gift.</p><p>Addiere deine Stufe auf <strong>Ausdauer-Würfe gegen Giftwirkung</strong>. Scheiterst du, liegst aber höchstens <strong>3 Punkte</strong> unter der Schwierigkeit, darfst du erlittenen Schaden um deine Stufe verringern. Versucht ein Heiler, deinen Helden von der Vergiftung zu heilen, darf er deine Stufe auf seine Würfe addieren.</p><p><strong>Originalname:</strong> Resist the Serpent's Tears</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 76</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Tyr",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Resist the Serpent's Tears",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "76",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.quell",
+   "kind": "ability",
+   "name": "Wellen aus dem Brunnen des Wissens",
+   "type": "Göttliche Gabe (Odin)",
+   "parent": "gift.g.odin",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.odin}} · <strong>Stufen:</strong> unbegrenzt</p><p>Odin warf ein Auge in den Brunnen des Wissens, um höchste Weisheit zu erlangen. Die Magie der anderen Asen ist nur ein Abglanz der seinen.</p><ul><li>An einem <strong>Schrein</strong> von Heimdal, Thor, Ull, Freyja oder Freyr darf der Held <strong>Gottesgespür + Präsenz</strong> gegen <strong>Schwierigkeit 6</strong> würfeln. Bei Erfolg zieht er jeden Nutzen, den er von einem Odin-Schrein hätte.</li><li>An einem <strong>Odin-Schrein</strong> (oder einem so wirkenden Schrein) addiert er <strong>5X Siegespunkte</strong>, jedes Mal wenn irgendein Plünderer (auch sein eigener) eine <strong>Todesversicherung</strong> oder eine <strong>Stufe einer Göttlichen Gabe</strong> kauft oder einen beschädigten <strong>Machthelm</strong> repariert. X = seine Stufe.</li></ul><p><strong>Originalname:</strong> Ripples from the Well of Knowledge</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 76</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Odin",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Ripples from the Well of Knowledge",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "76",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.gebruell",
+   "kind": "ability",
+   "name": "Brüllender Zornesschrei",
+   "type": "Göttliche Gabe (Odin)",
+   "parent": "gift.g.odin",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 45 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.odin}} · <strong>Stufen:</strong> unbegrenzt</p><p>Wenn Odin zürnt, erzittert der Himmel.</p><p>Dein Held kann den Kopf zurückwerfen und ein furchterregendes Gebrüll ausstoßen. Du darfst die <strong>RES-Werte aller Gegner im Umkreis von 10X Meter um X senken</strong> (X = deine Stufe). Würfle dazu <strong>Präsenz + deine Stufe</strong> gegen einen RES-Wurf des Runners; er wählt die höchste RES eines Feindes in Reichweite. Bei Erfolg sinken die RES-Werte aller Feinde in Reichweite. Keine Aktion nötig.</p><p><strong>Originalname:</strong> Roaring Shout of Rage</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 76</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "45",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Odin",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Roaring Shout of Rage",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "76",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.verrat",
+   "kind": "ability",
+   "name": "Dem Biss des Verrats trotzen",
+   "type": "Göttliche Gabe (Thor)",
+   "parent": "gift.g.thor",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.thor}} · <strong>Stufen:</strong> unbegrenzt</p><p>Oft hat der feige Loki versucht, Thor aus der Ferne mit Fallen zu schaden. Thor wurde unter Steinschlag begraben, von Federspeeren durchbohrt und in Bottiche ewig brennenden Feuers gestoßen, hat aber immer durch sein Abschütteln solchen Verrats obsiegt. Er schenkt deinem Helden dieselbe Fähigkeit.</p><ul><li>Beim Bestimmen des Schadens durch <strong>Fallen</strong> steigt die Absorption deines Helden um <strong>3 je Stufe</strong>. Sie schützt <strong>nicht</strong> vor natürlichen Gefahren wie Lavaströmen oder Strudeln, nur vor Schaden aus der bewussten Planung eines intelligenten Fallenstellers (eine Lawine durch gewöhnliche Schneeschmelze oder weil er ein Geräusch machte: nicht; hat ein Feind einen Graben im Schnee gegraben, um sie auszulösen: ja).</li><li>Wird dein Held durch eine <strong>rüstungsignorierende Falle</strong> (Original S. 142) verletzt, würfle <strong>Präsenz + deine Stufe</strong> gegen <strong>Schwierigkeit 6</strong>. Bei Erfolg ignoriert der Schaden die Rüstung nicht mehr.</li><li>Geben die Begegnungsnotizen nicht an, ob eine Falle bewusst entworfen wurde, entscheidet der Runner vor Ort.</li></ul><p><strong>Originalname:</strong> Scorn the Bite of Treachery</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 80</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Thor",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Scorn the Bite of Treachery",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "80",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.geister",
+   "kind": "ability",
+   "name": "Geißelung der finsteren Geister",
+   "type": "Göttliche Gabe (Odin)",
+   "parent": "gift.g.odin",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.odin}} · <strong>Stufen:</strong> 6</p><p>Die Götter sind nicht die einzigen magischen Wesen: Geister, Kobolde und andere böse Geister streifen durch das Land. Odin segnet dich mit der Macht, ihre seltsame Magie abzuwehren.</p><p>Trifft dein Held auf ein <strong>Geländemerkmal aus seltsamer Magie</strong>, das den Helden einen Malus oder ihren Feinden einen Bonus gibt, darfst du <strong>Präsenz + X</strong> gegen <strong>Schwierigkeit 6</strong> würfeln. Bei Erfolg darfst du <strong>X vom Malus oder Bonus abziehen</strong>, auch wenn X ihn übersteigt: Ein negativer Malus wird ein Bonus, ein negativer Bonus ein Malus. Das gilt auch, wenn Helden und Gegner denselben Malus oder Bonus haben. X = deine Stufe. Hast du die aktuelle Begegnung entworfen, muss dein Proxy <strong>+10 auf die Schwierigkeit</strong> addieren.</p><p><strong>Originalname:</strong> Scourging of Fell Spirits</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 81</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Odin",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "6",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Scourging of Fell Spirits",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "81",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.schultern",
+   "kind": "ability",
+   "name": "Schultern breit wie Bifröst",
+   "type": "Göttliche Gabe (Heimdal)",
+   "parent": "gift.g.heimdal",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.heimdal}} · <strong>Stufen:</strong> unbegrenzt</p><p>Das Geheimnis erfolgreicher Schlacht ist, den Feind zu zwingen, zu deinen Bedingungen zu kämpfen. Dein Held ist so unnachgiebig wie Heimdal, der auf der Bifröst-Brücke Asgards Eindringlinge zurückschlägt.</p><ul><li>Addiere <strong>3X</strong> auf jeden Engagement-Wurf (X = deine Stufe).</li><li>Du darfst <strong>Y zusätzliche Engagement-Würfe je Runde</strong> machen, Y = (X ÷ 3) + 1.</li><li>Du kannst Gegner am <strong>Fliehen oder Zurückweichen</strong> hindern, indem du sie im Engagement-Wurf (mit obigem Bonus) übertriffst.</li><li>Mit einem erfolgreichen Engagement-Wurf darfst du einen <strong>Verbündeten beiseite drängen</strong>, der einen Gegner erschlagen will, dessen Tod du dir vorbehalten hast. Der Verbündete bleibt unverletzt, verliert aber seine Angriffsgelegenheit.</li></ul><p><strong>Originalname:</strong> Shoulders Wide as Bifrost</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 81</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Heimdal",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Shoulders Wide as Bifrost",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "81",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.skadi",
+   "kind": "ability",
+   "name": "Skadis Hermelinmantel",
+   "type": "Göttliche Gabe (Njord)",
+   "parent": "gift.g.njord",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.njord}} · <strong>Stufen:</strong> unbegrenzt</p><p>Njords Frau ist die Riesin Skadi, die in den verschneiten Bergen wohnt. Um ihn zu Besuchen zu bewegen, schenkte sie ihm einen Mantel gegen die Kälte in seinen feuchten Knochen.</p><p>Diese Gabe funktioniert genau wie <em>Dem Biss des Verrats trotzen</em>, gilt aber nicht für Fallen, sondern für <strong>alle anderen Gefahren</strong>.</p><p><strong>Originalname:</strong> Skadi's Ermine Cloak</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 81</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Njord",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Skadi's Ermine Cloak",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "81",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.mistel",
+   "kind": "ability",
+   "name": "Mistelzweig",
+   "type": "Göttliche Gabe (Loki)",
+   "parent": "gift.g.loki",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 45 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.loki}} · <strong>Stufen:</strong> unbegrenzt</p><p>Um den unverwundbaren Balder zu töten, band Loki einen Mistelzweig an den Pfeil des blinden Hoder. Die Mistel war das einzige Lebewesen, das nicht geschworen hatte, Balder nicht zu schaden.</p><p>Addiere deine <strong>Stufe zum DAM-Wert</strong> der Fernwaffen deines Helden.</p><p><strong>Originalname:</strong> Sprig of Mistletoe</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 81</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "45",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Loki",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Sprig of Mistletoe",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "81",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.bergsturm",
+   "kind": "ability",
+   "name": "Plötzlich wie ein Bergsturm",
+   "type": "Göttliche Gabe (Njord)",
+   "parent": "gift.g.njord",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 150 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.njord}} · <strong>Stufen:</strong> unbegrenzt</p><p>Deine Hiebe prasseln mit der Schnelligkeit und Plötzlichkeit eines von Njord gebrauten Sturms auf deine Feinde.</p><p>Würfelst du eine INIT-Summe <strong>über 20</strong>, darfst du für diesen Wurf <strong>weitere 2X</strong> addieren (X = deine Stufe). Das kann dir noch mehr Zusatzangriffe verschaffen (Original S. 42).</p><p><strong>Originalname:</strong> Sudden as a Mountain Storm</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 81</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "150",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Njord",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Sudden as a Mountain Storm",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "81",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.feuersee",
+   "kind": "ability",
+   "name": "Den Feuersee überleben",
+   "type": "Göttliche Gabe (Tyr)",
+   "parent": "gift.g.tyr",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.tyr}} · <strong>Stufen:</strong> unbegrenzt</p><p>Goblins überwältigten einst Tyr und warfen ihn, gekettet, in einen Feuersee, wenn er Asgard nicht verriete. Er verweigerte, die Ketten schmolzen, und er stieg aus dem See, um sie alle zu erschlagen.</p><p>Diese Gabe schützt nicht nur vor Feuer, sondern vor <strong>allem eskalierenden Schaden</strong> (Original S. 142). Für jede Stufe wird der <strong>Beginn des zusätzlichen Schadens um eine Runde verzögert</strong>. In der Verzögerung wiederholst du nur den Schaden der Vorrunde. Erst wenn die Wirkung abgelaufen ist, beginnt der eskalierende Schaden.</p><blockquote><strong>Beispiel:</strong> Thorleik hat 3 Stufen und steht in einem tobenden Feuer. Ohne die Gabe nähme er 4, 6, 8, 10, 12 Schaden in Runde 1 bis 5. Er nimmt 4 (normal), dann 4, 4, 4 (seine drei Stufen), dann 6 in Runde 5, 8 in Runde 6 usw.</blockquote><p><strong>Originalname:</strong> Survive the Lake of Flame</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 82</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Tyr",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Survive the Lake of Flame",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "82",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.sleipnir",
+   "kind": "ability",
+   "name": "Schnelligkeit Sleipnirs",
+   "type": "Göttliche Gabe (Odin)",
+   "parent": "gift.g.odin",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.odin}} · <strong>Stufen:</strong> 8</p><p>Der Allvater verleiht dir die Schnelligkeit seines achtbeinigen Rosses Sleipnir.</p><p>Addiere <strong>5X Meter</strong> zu deiner maximalen halben Bewegung und <strong>10X Meter</strong> zu deiner maximalen vollen Bewegung je Zug (X = deine Stufe). Du erhältst <strong>10X Siegespunkte</strong>, wenn a) dein Held als <strong>erster Held im Nahkampf</strong> gegen einen Gegner im laufenden Ereignis angreift und b) <strong>mehr als 50 Meter</strong> dich vom nächsten Gegner trennten, als die ersten Initiativewürfe des Kampfes gemacht wurden.</p><p><strong>Originalname:</strong> Swiftness of Sleipnir</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 82</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Odin",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "8",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Swiftness of Sleipnir",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "82",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.spalten",
+   "kind": "ability",
+   "name": "Durch die Spalten",
+   "type": "Göttliche Gabe (Asjandr)",
+   "parent": "gift.g.asjandr",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.asjandr}} · <strong>Stufen:</strong> unbegrenzt</p><p>Die Goblins sind erbitterte Feinde der Menschen, doch ihr König Asjandr braucht gelegentlich Menschen für seine feineren Pläne. Er verschafft ihnen den Segen der kleinen Gestalt: Du kannst kurz schrumpfen und dich durch Hindernisse zwängen, die einen normalen Mann aufhalten.</p><p><strong>X-mal je Kampf</strong> (X = deine Stufe) darfst du eines davon tun:</p><ul><li>Jede Deckung oder Barriere so behandeln, als gäbe sie dir <strong>volle Deckung</strong>.</li><li><strong>Jede Begrenzung</strong> der Zahl der Helden ignorieren, die durch einen Ausgang fliehen können.</li><li>Bei der Flucht <strong>weiterem Schaden automatisch entgehen</strong> (Original S. 45); du verlierst aber alle mitgeführten Schätze.</li></ul><p><strong>Originalname:</strong> Through the Cracks</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 82</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Asjandr",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Through the Cracks",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "82",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.thors_sehnen",
+   "kind": "ability",
+   "name": "Thors Sehnen",
+   "type": "Göttliche Gabe (Thor)",
+   "parent": "gift.g.thor",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.thor}} · <strong>Stufen:</strong> unbegrenzt</p><p>Die Muskeln deines Helden schwellen mit der Kraft Thors an.</p><p>Jede Stufe addiert <strong>dauerhaft 10 zu deinen maximalen HP</strong>. Andere Götter bieten ähnliche Gaben: Tyrs Langmut, Ulls Haut und Njords Kruste.</p><p><strong>Originalname:</strong> Thor's Thews</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 82</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Thor",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Thor's Thews",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "82",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.freudenschrei",
+   "kind": "ability",
+   "name": "Der unermüdliche Freudenschrei",
+   "type": "Göttliche Gabe (Tyr)",
+   "parent": "gift.g.tyr",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.tyr}} · <strong>Stufen:</strong> unbegrenzt</p><p>Selbst wenn die Schlacht grimmig wird und Blut aus dem Fleisch läuft, zieht Tyr Kraft aus seiner Qual: Er hebt sein Schwert zum Himmel, brüllt den Kriegsruf und stürmt zurück ins Getümmel.</p><p>Die Gabe wirkt nur, nachdem dein Held <strong>eine oder mehrere Wunden</strong> erlitten hat oder seine aktuellen HP <strong>höchstens 20</strong> betragen. Er muss die Runde <strong>außerhalb des Kampfes</strong> beginnen und höchstens eine halbe Bewegung von einem Gegner entfernt sein, den mindestens ein anderer Held bereits im Engagement hält. Er stößt ein ohrenbetäubendes Gebrüll aus und springt den Gegner an. <strong>+3 auf deinen ATK-Wert</strong>. Nach dem Schlag läuft dein Held eine halbe Bewegung weiter vom Ziel weg. Hält er sich bis zu seinem nächsten Angriff von ihm fern, zieht der Gegner ihn nach dem Zielwahl-Diagramm (Original S. 196) nicht als Ziel in Betracht.</p><p><strong>Originalname:</strong> The Tireless Joy-Shout</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 82</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Tyr",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "The Tireless Joy-Shout",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "82",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.trompete",
+   "kind": "ability",
+   "name": "Der gebietende Stoß der Trompete",
+   "type": "Göttliche Gabe (Odin)",
+   "parent": "gift.g.odin",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.odin}} · <strong>Stufen:</strong> unbegrenzt</p><p>Odin, Herr der Asen, trägt einen Mantel der Autorität, der selbst seine Feinde zu Diensten lockt.</p><p><strong>X-mal je Kampf</strong> darfst du einen <strong>Würfel + X</strong> (X = deine Stufe) gegen die <strong>RES-Summe</strong> eines gewählten Gegners würfeln. Gewinnst du, muss dein Gegner einen <strong>freien Angriff gegen einen seiner eigenen Verbündeten</strong> machen. Führt er eine Nahkampfwaffe, muss ein Feind nah genug sein; benutzt er eine Fernwaffe, muss er auf einen Feind schießen können. Der Angriff kostet ihn keine Aktion. Trifft er, addierst du Siegespunkte, als hätte dein Held den Treffer gelandet; stirbt das Ziel, erhältst du den Todesstoß-Bonus.</p><p><strong>Originalname:</strong> The Trumpet's Commanding Blast</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 83</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Odin",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "The Trumpet's Commanding Blast",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "83",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.tyrs_langmut",
+   "kind": "ability",
+   "name": "Tyrs Langmut",
+   "type": "Göttliche Gabe (Tyr)",
+   "parent": "gift.g.tyr",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.tyr}} · <strong>Stufen:</strong> unbegrenzt</p><p>Dein Held erhält Tyrs Fähigkeit, körperlichen Schmerz aufzunehmen und zu ertragen.</p><p>Jede Stufe addiert <strong>dauerhaft 12 zu deinen maximalen HP</strong>. Andere Götter bieten ähnliche Gaben: Thors Sehnen, Ulls Haut und Njords Kruste. Da Tyr der Schutzgott der Ausdauer ist, ist seine Gabe etwas stärker als die der anderen.</p><p><strong>Originalname:</strong> Tyr's Forbearance</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 83</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Tyr",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Tyr's Forbearance",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "83",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.ulls_haut",
+   "kind": "ability",
+   "name": "Ulls Haut",
+   "type": "Göttliche Gabe (Ull)",
+   "parent": "gift.g.ull",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.ull}} · <strong>Stufen:</strong> unbegrenzt</p><p>Die Haut deines Helden wird zäh und ledrig wie die Ulls des Jägers, die er unter Sonne, Wind und Regen abhärtete.</p><p>Jede Stufe addiert <strong>dauerhaft 10 zu deinen maximalen HP</strong>. Andere Götter bieten ähnliche Gaben: Thors Sehnen, Tyrs Langmut und Njords Kruste.</p><p><strong>Originalname:</strong> Ull's Hide</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 83</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Ull",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Ull's Hide",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "83",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.ulls_hand",
+   "kind": "ability",
+   "name": "Ulls sichere Hand",
+   "type": "Göttliche Gabe (Ull)",
+   "parent": "gift.g.ull",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 400 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.ull}} · <strong>Stufen:</strong> unbegrenzt</p><p>Ull der Jäger trifft sicher und wahr, damit das Wild schnell und ohne unnötige Qual fällt. (Bei Goblins und Sark Amen ist dir die Qual wohl gleichgültig.)</p><p>Jede Stufe erhöht deine <strong>Geschicklichkeit um 1</strong>.</p><p><strong>Originalname:</strong> Ull's Sure Hand</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 83</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "400",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Ull",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Ull's Sure Hand",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "83",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.tyrs_mut",
+   "kind": "ability",
+   "name": "Tyrs Tapferkeit",
+   "type": "Göttliche Gabe (Tyr)",
+   "parent": "gift.g.tyr",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.tyr}} · <strong>Stufen:</strong> unbegrenzt</p><p>Wie der entschlossene Tyr kann dein Held trotz Schmerzen, die einen Schwächeren fällen würden, zum Sieg weiterkämpfen.</p><p>Jede Stufe erhöht deine <strong>Ausdauer um 1</strong>. Das ändert <strong>nicht</strong> Wundschwelle oder HP-Werte.</p><p><strong>Originalname:</strong> Valor of Tyr</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 83</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Tyr",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Valor of Tyr",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "83",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.wachsamkeit",
+   "kind": "ability",
+   "name": "Heimdals Wachsamkeit",
+   "type": "Göttliche Gabe (Heimdal)",
+   "parent": "gift.g.heimdal",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 100 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.heimdal}} · <strong>Stufen:</strong> unbegrenzt</p><p>Wie der immer wachsame Heimdal sind die Sinne deines Helden geschärft, um vor Gefahr zu warnen.</p><p>Jede Stufe erhöht deine <strong>Wahrnehmung um 1</strong>.</p><p><strong>Originalname:</strong> Vigilance of Heimdal</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 83</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "100",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Heimdal",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Vigilance of Heimdal",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "83",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.lokis_ranke",
+   "kind": "ability",
+   "name": "Lokis Ränke",
+   "type": "Göttliche Gabe (Loki)",
+   "parent": "gift.g.loki",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.loki}} · <strong>Stufen:</strong> unbegrenzt</p><p>Der Geist deines Helden gleicht dem sich stets drehenden Labyrinth der Unterwelt, immer bereit, den Feinden eine neue Überraschung zu bereiten.</p><p>Jede Stufe erhöht deine <strong>Intelligenz um 1</strong>.</p><p><strong>Originalname:</strong> Wiles of Loki</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 84</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Loki",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Wiles of Loki",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "84",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.beide_haende",
+   "kind": "ability",
+   "name": "Mit jeder Hand",
+   "type": "Göttliche Gabe (Ull)",
+   "parent": "gift.g.ull",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.ull}} · <strong>Stufen:</strong> keine</p><p>In langen Nächten auf der Jagd übte Ull, dass seine linke Hand so geschickt mit der Klinge umging wie seine rechte. Als du seinen Segen erhieltest, gab er den Kniff weiter.</p><p>Du hast <strong>keine Nebenhand</strong> und kannst Einhandwaffen in jeder Hand gleich geschickt führen (kein −3-Malus für die Nebenhand).</p><p><strong>Originalname:</strong> With Either Hand</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 84</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Ull",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "keine",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "With Either Hand",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "84",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.wunden",
+   "kind": "ability",
+   "name": "Die Wunden schließen sich rasch",
+   "type": "Göttliche Gabe (Tyr)",
+   "parent": "gift.g.tyr",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.tyr}} · <strong>Stufen:</strong> 4</p><p>Tyr, Patron der Verletzten und Leidenden, hat mehrere Heilungsgaben. Diese beschleunigt die Heilung.</p><p>Für jede Stufe darfst du die <strong>Zeit zwischen Heilversuchen</strong> (Tabelle Original S. 54) um <strong>eine Stufe verkürzen</strong>.</p><blockquote><strong>Beispiel:</strong> Thurid hat 2 Stufen und 3 Wunden. Ohne die Gabe müsste sie 24 Stunden zwischen Heilversuchen warten; sie springt zwei Zeilen hinunter zum Intervall für 1 Wunde: 3 Stunden.</blockquote><p><strong>Originalname:</strong> The Wounds Close Quick</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 84</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Tyr",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "4",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "The Wounds Close Quick",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "84",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.ringer",
+   "kind": "ability",
+   "name": "Segen der Ringer",
+   "type": "Göttliche Gabe (Thor)",
+   "parent": "gift.g.thor",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.thor}} · <strong>Stufen:</strong> unbegrenzt</p><p>Thor genießt Schubsen und Sprungmanöver ebenso wie den letzten Hammerschlag; er muss weder Blut vergießen noch tödlich verletzen, um seine Kampfeslust zu stillen.</p><p>Addiere <strong>20X Siegespunkte</strong> (X = deine Stufe), wann immer du einen <strong>Engagement-Wettstreit</strong> gewinnst, der dir einen Geländevorteil verschafft oder deinen Gegner daran hindert, ihn zu erlangen.</p><p><strong>Originalname:</strong> Wrestlers' Blessing</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 84</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Thor",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Wrestlers' Blessing",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "84",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.sehnen",
+   "kind": "ability",
+   "name": "Eifrige Sehnen",
+   "type": "Göttliche Gabe (Tyr)",
+   "parent": "gift.g.tyr",
+   "tags": [
+    "tag.kap3",
+    "tag.gabe"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 45 Siegespunkte · <strong>Schutzgott:</strong> {{ref:god.tyr}} · <strong>Stufen:</strong> unbegrenzt</p><p>Tyr, der auch schwer verletzt weiterkämpft, hat das Fleisch auf den Knochen deines Helden mit starker Erinnerung an die richtige Anordnung gesegnet. Versucht ein Heiler, dich zu heilen, arbeitet dein Fleisch mit.</p><p>Ein Heiler, der deine Verletzungen versorgt, addiert <strong>das Dreifache deiner Stufe</strong> auf seinen Heilwurf.</p><p><strong>Originalname:</strong> Zealous Sinews</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 84</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "45",
+     "type_id": 6
+    },
+    {
+     "name": "Schutzgott",
+     "value": "Tyr",
+     "type_id": 1
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Zealous Sinews",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "84",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.r.doppelaxt",
+   "kind": "ability",
+   "name": "Runenkraft: Doppelaxt",
+   "type": "Runenkraft",
+   "parent": "gift.g.runen",
+   "tags": [
+    "tag.kap3",
+    "tag.runenkraft"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt · <strong>Ruhezeit:</strong> siehe {{ref:n.k3.runen}}</p><p>Aktiviert dein Held die Kraft, muss jeder Gegner, der durch seine Doppelaxt nach Absorption Schaden erleiden würde, stattdessen einen <strong>RES-Wurf gegen Schwierigkeit = dein Großwaffen-Wert</strong> machen. Scheitert er, <strong>verwandelt er sich in eine Krähe</strong>: Er flattert hilflos und kann dir nicht ernsthaft schaden. Am Ende der Dauer fällt er vom Himmel; er muss Springen würfeln, um nicht hinzufallen. Er ist nackt, Rüstung und Ausrüstung liegen an der Stelle, wo du ihn getroffen hast. (Nach Ermessen des Runners können intelligente Gegner, die von dieser legendären Kraft gehört haben, als Krähe einfach mit Höchstgeschwindigkeit davonfliegen.) Die Kraft bleibt <strong>1 + (X ÷ 2) Runden</strong> aktiv (X = deine Stufe).</p><p><strong>Originalname:</strong> Rune Power: Double-Bladed Axe</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 76–77</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Rune Power: Double-Bladed Axe",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "76–77",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.r.zwergenaxt",
+   "kind": "ability",
+   "name": "Runenkraft: Zwergen-Streitaxt",
+   "type": "Runenkraft",
+   "parent": "gift.g.runen",
+   "tags": [
+    "tag.kap3",
+    "tag.runenkraft"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 30 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt · <strong>Ruhezeit:</strong> siehe {{ref:n.k3.runen}}</p><p>Bis zu X Runden lang (X = deine Stufe) kann dein Held die Zwergen-Streitaxt so aktivieren, dass ihr <strong>DAM-Wert</strong> je nach <strong>Bedrohungskategorie</strong> des Gegners steigt:</p><table><tr><th>Bedrohungskategorie</th><th>DAM-Bonus</th></tr><tr><td>Schrecklich (Terrifying)</td><td>+6</td></tr><tr><td>Außergewöhnlich (Exceptional)</td><td>+5</td></tr><tr><td>Überlegen (Superior)</td><td>+4</td></tr><tr><td>Ebenbürtig (Equal)</td><td>+3</td></tr><tr><td>Unterlegen (Inferior)</td><td>+2</td></tr><tr><td>Schwach (Weak)</td><td>+1</td></tr><tr><td>Erbärmlich (Pitiful)</td><td>+1</td></tr></table><p>Die Kraft bleibt 1 + (X ÷ 2) Runden aktiv. <em>(Das Original nennt „bis zu X Runden“ und „1 + (X ÷ 2) Runden“; beide Angaben stehen so im Text.)</em></p><p><strong>Originalname:</strong> Rune Power: Dwarven Battle Axe</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 77</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "30",
+     "type_id": 6
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Rune Power: Dwarven Battle Axe",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "77",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.r.zwergenkriegshammer",
+   "kind": "ability",
+   "name": "Runenkraft: Zwergen-Kriegshammer",
+   "type": "Runenkraft",
+   "parent": "gift.g.runen",
+   "tags": [
+    "tag.kap3",
+    "tag.runenkraft"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 400 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt · <strong>Ruhezeit:</strong> siehe {{ref:n.k3.runen}}</p><p>Eine furchterregendere Fassung der Runenkraft <em>Zwergen-Arbeitshammer</em>. Die Unterschiede:</p><ul><li>Das Opfer wird <strong>dauerhaft zu Stein</strong> statt zu Eis.</li><li>Sie wirkt auf <strong>alle Bedrohungskategorien außer Schrecklich</strong>.</li></ul><p><strong>Originalname:</strong> Rune Power: Dwarven Battle Hammer</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 77</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "400",
+     "type_id": 6
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Rune Power: Dwarven Battle Hammer",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "77",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.r.zwergenkampfschwert",
+   "kind": "ability",
+   "name": "Runenkraft: Zwergen-Kampfschwert",
+   "type": "Runenkraft",
+   "parent": "gift.g.runen",
+   "tags": [
+    "tag.kap3",
+    "tag.runenkraft"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 45 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> 8 · <strong>Ruhezeit:</strong> siehe {{ref:n.k3.runen}}</p><p>Dein Held kann sein Zwergen-Kampfschwert auf einen gewählten Feind richten und <strong>Präsenz + deine Stufe</strong> gegen dessen <strong>RES</strong> würfeln. Bei Erfolg schießt das Schwert einen Strahl magischer Energie, der dem Feind <strong>4X Schaden</strong> zufügt. Er <strong>ignoriert alle Hindernisse für Fernbeschuss</strong>, auch Deckung, und biegt notfalls um Ecken. Du darfst die Kraft für so viele Aktionen nutzen, wie du in <strong>X Runden</strong> unterbringst (X = deine Stufe). Die Nutzung erfordert eine Aktion.</p><p><strong>Originalname:</strong> Rune Power: Dwarven Battle Sword</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 78</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "45",
+     "type_id": 6
+    },
+    {
+     "name": "Stufen",
+     "value": "8",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Rune Power: Dwarven Battle Sword",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "78",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.r.zwergenarbeitshammer",
+   "kind": "ability",
+   "name": "Runenkraft: Zwergen-Arbeitshammer",
+   "type": "Runenkraft",
+   "parent": "gift.g.runen",
+   "tags": [
+    "tag.kap3",
+    "tag.runenkraft"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 250 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt · <strong>Ruhezeit:</strong> siehe {{ref:n.k3.runen}}</p><p>Aktiviert dein Held die Kraft und trifft dann einen Feind mit dem Zwergen-Arbeitshammer, <strong>erstarrt dieser sofort zu Eis</strong>. Das geht nur bei Feinden der Bedrohungskategorie <strong>Unterlegen oder schlechter</strong>. Der Runner würfelt <strong>DFN oder RES (je nachdem, was höher ist)</strong> gegen den ATK-Wert des Angreifers, um der Wirkung zu entgehen. Gelingt es ihm, bleibt er ungefroren und erleidet 0 Schaden. Misslingt es, ist die Figur so gut wie tot: Von der Verwandlung in eine Eisstatue gibt es keine Erholung, und das Eis schmilzt unweigerlich. Für so getötete Opfer gibt es <strong>keine Siegespunkte</strong>. Die Kraft bleibt so viele Runden aktiv wie deine Stufe.</p><p><strong>Originalname:</strong> Rune Power: Dwarven Work Hammer</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 78</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "250",
+     "type_id": 6
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Rune Power: Dwarven Work Hammer",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "78",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.r.zwergenarbeitsschwert",
+   "kind": "ability",
+   "name": "Runenkraft: Zwergen-Arbeitsschwert",
+   "type": "Runenkraft",
+   "parent": "gift.g.runen",
+   "tags": [
+    "tag.kap3",
+    "tag.runenkraft"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt · <strong>Ruhezeit:</strong> siehe {{ref:n.k3.runen}}</p><p>Aus der Schwertspitze schießt ein Blitz und sucht bis zu <strong>drei Feinde</strong>. Wähle bis zu drei Gegner im Umkreis von <strong>10X Fuß</strong> (X = deine Stufe) und würfle <strong>Wahrnehmung + Großwaffe</strong>. Der Gegner mit dem höchsten DFN-Wert würfelt dagegen. Übertriffst du ihn, trifft der Blitz alle gewählten Ziele. Das Manöver gilt sonst als Fernwaffenangriff mit folgenden Werten:</p><table><tr><th>INIT</th><th>ATK</th><th>DFN</th><th>DAM</th><th>Last</th><th>Fertigkeit</th></tr><tr><td>+6</td><td>+8</td><td>–</td><td>+12</td><td>0</td><td>Großwaffe</td></tr></table><p>Für Angriffe mit dieser Kraft gelten alle üblichen Waffenmodifikatoren. Dein Held kann <strong>X Angriffe</strong> ausführen, bevor sie wieder ruht.</p><p><strong>Originalname:</strong> Rune Power: Dwarven Work Sword</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 78</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Rune Power: Dwarven Work Sword",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "78",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.r.vierklingenkolben",
+   "kind": "ability",
+   "name": "Runenkraft: Vierklingen-Streitkolben",
+   "type": "Runenkraft",
+   "parent": "gift.g.runen",
+   "tags": [
+    "tag.kap3",
+    "tag.runenkraft"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 400 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt · <strong>Ruhezeit:</strong> siehe {{ref:n.k3.runen}}</p><p>Aktiviert dein Held die Kraft, wird er das Zentrum eines <strong>tobenden Feuers</strong> (Feuerregeln: Original S. 152) mit einem Radius von <strong>10X Meter</strong> (X = deine Stufe). Das Feuer brennt <strong>eine Runde je Stufe</strong>. Bewegst du den Streitkolben, bewegt sich das Feuer mit. Dein Held ist gegen den Flammenschaden immun, seine Freunde nicht.</p><p><strong>Originalname:</strong> Rune Power: Four-Bladed Mace</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 79</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "400",
+     "type_id": 6
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Rune Power: Four-Bladed Mace",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "79",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.r.goblinaxt",
+   "kind": "ability",
+   "name": "Runenkraft: Goblinaxt",
+   "type": "Runenkraft",
+   "parent": "gift.g.runen",
+   "tags": [
+    "tag.kap3",
+    "tag.runenkraft"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt · <strong>Ruhezeit:</strong> siehe {{ref:n.k3.runen}}</p><p>Aktiviert dein Held die Kraft, kann er <strong>einmal je Runde</strong> ein magisches Duplikat seiner Goblinaxt erschaffen und mit seiner Fertigkeit <em>Wurfwaffe</em> auf einen Gegner werfen. Das Duplikat erhält die Werte einer <strong>Wurfaxt</strong> und ignoriert alle Hindernisse für Fernbeschuss. Sobald es trifft oder verfehlt, verschwindet es. Die Kraft bleibt <strong>2X Runden</strong> aktiv (X = deine Stufe).</p><p><strong>Originalname:</strong> Rune Power: Goblin Axe</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 79</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Rune Power: Goblin Axe",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "79",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.r.goblinstachelkeule",
+   "kind": "ability",
+   "name": "Runenkraft: Goblin-Stachelkeule",
+   "type": "Runenkraft",
+   "parent": "gift.g.runen",
+   "tags": [
+    "tag.kap3",
+    "tag.runenkraft"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt · <strong>Ruhezeit:</strong> siehe {{ref:n.k3.runen}}</p><p>Aktiviert dein Held die Kraft, schießt aus dem Ende seiner ausgestreckten Keule ein <strong>kegelförmiger Steinhagel</strong>. Du machst einen ATK-Wurf; alle im Wirkungsbereich antworten mit einem DFN-Wurf. Der DAM-Wert dieses Angriffs entspricht deiner <strong>Stufe</strong> in der Kraft. Der Kegel ist <strong>10X Meter lang und 5X Meter breit an der Basis</strong> (X = deine Stufe). Du kannst Verbündete nicht ausnehmen: Jeder im Kegel erleidet die Wirkung.</p><p><strong>Originalname:</strong> Rune Power: Goblin Spike Club</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 79</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Rune Power: Goblin Spike Club",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "79",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.r.handaxt",
+   "kind": "ability",
+   "name": "Runenkraft: Handaxt",
+   "type": "Runenkraft",
+   "parent": "gift.g.runen",
+   "tags": [
+    "tag.kap3",
+    "tag.runenkraft"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt · <strong>Ruhezeit:</strong> siehe {{ref:n.k3.runen}}</p><p>Aktiviert dein Held die Kraft, wird er <strong>unstofflich</strong>: weiter sichtbar, aber teilweise immun gegen die meisten Schäden. Du darfst außerdem folgendes Gelände ignorieren: Barrieren, rutschigen Boden, unebenen Boden, Hänge und Röhrenschläger (<em>Tube-Strikers</em>).</p><ul><li>Addiere <strong>4X auf DFN-Wert und Absorption</strong> (X = deine Stufe).</li><li>Seine Waffen werden ebenfalls unstofflich: Ziehe <strong>4X von ATK- und DAM-Wert</strong> ab.</li><li>Die Kraft bleibt <strong>X Runden</strong> aktiv, beginnt zu Rundenbeginn (beim Initiativewurf) und endet am Ende der X-ten Runde. Die Aktivierung erfordert keine Aktion.</li></ul><p><strong>Originalname:</strong> Rune Power: Hand Axe</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 79</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Rune Power: Hand Axe",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "79",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.r.streitkolben",
+   "kind": "ability",
+   "name": "Runenkraft: Streitkolben",
+   "type": "Runenkraft",
+   "parent": "gift.g.runen",
+   "tags": [
+    "tag.kap3",
+    "tag.runenkraft"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt · <strong>Ruhezeit:</strong> siehe {{ref:n.k3.runen}}</p><p>Dein Held lässt seinen Streitkolben <strong>einen einzigen Kraftstoß</strong> ausstrahlen, der die <strong>X ihm nächsten Figuren</strong> erfasst (X = deine Stufe). Du wählst die Opfer nicht und kannst auch deine Gefährten treffen, wenn du den Zeitpunkt unvorsichtig wählst. Jedes Opfer wird <strong>10X Meter</strong> durch die Luft in eine Richtung deiner Wahl getragen. Bei der Landung muss jedes <strong>Balance + Geschicklichkeit</strong> gegen Schwierigkeit 6 würfeln; wer scheitert, stürzt (Original S. 53).</p><p><strong>Originalname:</strong> Rune Power: Mace</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 79</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Rune Power: Mace",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "79",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.r.roemisches_schwert",
+   "kind": "ability",
+   "name": "Runenkraft: Römisches Schwert",
+   "type": "Runenkraft",
+   "parent": "gift.g.runen",
+   "tags": [
+    "tag.kap3",
+    "tag.runenkraft"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt · <strong>Ruhezeit:</strong> siehe {{ref:n.k3.runen}}</p><p>Das Schwert deines Helden entzündet sich, von Feuer umhüllt, das Feinde und andere brennbare Dinge verbrennt. Die Kraft aktiviert sich <strong>automatisch ohne Wurf</strong>.</p><ul><li>Solange sie brennt, sehen dein Held und jeder im Umkreis von <strong>200 Meter</strong> im Dunkeln gut.</li><li>Triffst du einen Gegner, muss er prüfen, ob seine Kleidung Feuer fängt (Feuerregeln: Original S. 151).</li><li>Addiere deine <strong>Stufe zum DAM-Wert</strong>.</li><li>Das Schwert brennt <strong>so viele Runden, wie deine Stufe</strong> beträgt.</li></ul><p><strong>Originalname:</strong> Rune Power: Roman Sword</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 79–80</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Rune Power: Roman Sword",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "79–80",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.r.wikingeraxt",
+   "kind": "ability",
+   "name": "Runenkraft: Wikingeraxt",
+   "type": "Runenkraft",
+   "parent": "gift.g.runen",
+   "tags": [
+    "tag.kap3",
+    "tag.runenkraft"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt · <strong>Ruhezeit:</strong> siehe {{ref:n.k3.runen}}</p><p>Aktiviert dein Held die Kraft, muss jedes Opfer, das er mit der Wikingeraxt verletzt, <strong>RES gegen Schwierigkeit = dein Großwaffen-Wert</strong> würfeln. Scheitert es, wird es für <strong>X Runden</strong> (X = deine Stufe) der <strong>willenlose Verbündete</strong> deines Helden: Es kämpft für dich und behandelt alle deine Feinde als seine. Es wählt Ziele nach dem Zielwahl-Ablaufdiagramm (Original S. 196). Sobald die X Runden enden, wechselt es wieder die Seite und greift deinen Helden an (ist das unmöglich, nach dem Diagramm einen anderen Helden); andere durch diese Kraft Besessene greift es nicht an. Die Kraft ruht nach X Runden. Die <strong>Besessenheit kann die ursprüngliche Dauer überdauern</strong>. Opfer können sie vorzeitig abschütteln, wenn alle ihre ursprünglichen Verbündeten fliehen oder erschlagen sind.</p><p><strong>Originalname:</strong> Rune Power: Viking Axe</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 80</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Rune Power: Viking Axe",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "80",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.r.wikingerbreitschwert",
+   "kind": "ability",
+   "name": "Runenkraft: Wikinger-Breitschwert",
+   "type": "Runenkraft",
+   "parent": "gift.g.runen",
+   "tags": [
+    "tag.kap3",
+    "tag.runenkraft"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 200 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> unbegrenzt · <strong>Ruhezeit:</strong> siehe {{ref:n.k3.runen}}</p><p>Aktiviert dein Held die Kraft, wird <strong>aller tatsächliche Schaden</strong>, den er Gegnern nach Absorption zufügt, <strong>zu deinen HP addiert</strong> (nie über das normale Maximum hinaus). Die Kraft hält <strong>so viele Runden wie deine Stufe</strong>. Nur der vom Wikinger-Breitschwert tatsächlich verursachte Schaden zählt.</p><p><strong>Originalname:</strong> Rune Power: Viking Broad Sword</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 80</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "200",
+     "type_id": 6
+    },
+    {
+     "name": "Stufen",
+     "value": "unbegrenzt",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Rune Power: Viking Broad Sword",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "80",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "gift.r.wikingerkurzschwert",
+   "kind": "ability",
+   "name": "Runenkraft: Wikinger-Kurzschwert",
+   "type": "Runenkraft",
+   "parent": "gift.g.runen",
+   "tags": [
+    "tag.kap3",
+    "tag.runenkraft"
+   ],
+   "entry": "<p><strong>Kosten:</strong> 75 Siegespunkte · <strong>Schutzgott:</strong> keiner · <strong>Stufen:</strong> 3 · <strong>Ruhezeit:</strong> siehe {{ref:n.k3.runen}}</p><p>Aktiviert dein Held die Kraft, erscheint eine leuchtende, durchscheinende <strong>Schutzkugel</strong>. Zum Aktivieren würfle <strong>Präsenz + deine Stufe</strong> gegen <strong>Schwierigkeit 6 + Y</strong> (Y = höchste RES irgendeiner Figur, die deinem Helden gerade zu schaden versucht). Gegen unpersönliche Schadensquellen wie Fallen gilt eine feste Schwierigkeit 6.</p><p>Bei Erfolg steigt deine <strong>Absorption um X</strong> (X = deine Stufe) für <strong>so viele Runden wie deine Stufe</strong>. Die Kraft schützt sogar gegen Schadensquellen, die normalerweise Rüstung ignorieren.</p><p><strong>Originalname:</strong> Rune Power: Viking Short Sword</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 80</em></p>",
+   "properties": [
+    {
+     "name": "Kosten",
+     "value": "75",
+     "type_id": 6
+    },
+    {
+     "name": "Stufen",
+     "value": "3",
+     "type_id": 1
+    },
+    {
+     "name": "Originalname",
+     "value": "Rune Power: Viking Short Sword",
+     "type_id": 1
+    },
+    {
+     "name": "Seite (Original)",
+     "value": "80",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.k3.gabenliste",
+   "kind": "note",
+   "name": "Gabentabelle",
+   "type": "Regeltabelle",
+   "parent": "n.k3",
+   "tags": [
+    "tag.kap3",
+    "tag.tabelle"
+   ],
+   "entry": "<p>Alle Göttlichen Gaben mit Kosten (Siegespunkte), Schutzgott, Stufen und Originalseite. Die Runenkräfte stehen darunter.</p><table><tr><th>Gabe</th><th>Kosten</th><th>Schutzgott</th><th>Stufen</th><th>Seite (Original)</th></tr><tr><td>{{ref:gift.walkuere}}</td><td>45</td><td>Odin</td><td>unbegrenzt</td><td>74</td></tr><tr><td>{{ref:gift.agony}}</td><td>30</td><td>Heimdal</td><td>5</td><td>64</td></tr><tr><td>{{ref:gift.vergeltung}}</td><td>250</td><td>Loki</td><td>keine</td><td>67</td></tr><tr><td>{{ref:gift.kohlen}}</td><td>45</td><td>Odin</td><td>unbegrenzt</td><td>69</td></tr><tr><td>{{ref:gift.aura}}</td><td>75</td><td>Heimdal</td><td>4</td><td>65</td></tr><tr><td>{{ref:gift.bann}}</td><td>45</td><td>Loki</td><td>unbegrenzt</td><td>65</td></tr><tr><td>{{ref:gift.gebruell}}</td><td>45</td><td>Odin</td><td>unbegrenzt</td><td>76</td></tr><tr><td>{{ref:gift.pferd}}</td><td>100</td><td>Odin</td><td>unbegrenzt</td><td>69</td></tr><tr><td>{{ref:gift.fleisch}}</td><td>150</td><td>Loki</td><td>8</td><td>70</td></tr><tr><td>{{ref:gift.stiefel}}</td><td>250</td><td>Thor</td><td>unbegrenzt</td><td>67</td></tr><tr><td>{{ref:gift.eichhoernchen}}</td><td>45</td><td>Loki</td><td>unbegrenzt</td><td>66</td></tr><tr><td>{{ref:gift.heft}}</td><td>250</td><td>Thor</td><td>unbegrenzt</td><td>72</td></tr><tr><td>{{ref:gift.verweben}}</td><td>45</td><td>Thor</td><td>unbegrenzt</td><td>72</td></tr><tr><td>{{ref:gift.verrat}}</td><td>30</td><td>Thor</td><td>unbegrenzt</td><td>80</td></tr><tr><td>{{ref:gift.feuersee}}</td><td>30</td><td>Tyr</td><td>unbegrenzt</td><td>82</td></tr><tr><td>{{ref:gift.schlangentraenen}}</td><td>30</td><td>Tyr</td><td>unbegrenzt</td><td>76</td></tr><tr><td>{{ref:gift.trompete}}</td><td>75</td><td>Odin</td><td>unbegrenzt</td><td>83</td></tr><tr><td>{{ref:gift.pfeil}}</td><td>75</td><td>Heimdal</td><td>unbegrenzt</td><td>69</td></tr><tr><td>{{ref:gift.seufzer}}</td><td>30</td><td>Njord</td><td>unbegrenzt</td><td>74</td></tr><tr><td>{{ref:gift.becher}}</td><td>45</td><td>Freyja</td><td>unbegrenzt</td><td>69</td></tr><tr><td>{{ref:gift.rabe}}</td><td>30</td><td>Odin</td><td>unbegrenzt</td><td>75</td></tr><tr><td>{{ref:gift.freudenschrei}}</td><td>30</td><td>Tyr</td><td>unbegrenzt</td><td>82</td></tr><tr><td>{{ref:gift.speer}}</td><td>75</td><td>Thor</td><td>11</td><td>73</td></tr><tr><td>{{ref:gift.kiefer}}</td><td>45</td><td>Thor</td><td>4</td><td>67</td></tr><tr><td>{{ref:gift.eule}}</td><td>30</td><td>Heimdal</td><td>unbegrenzt</td><td>74</td></tr><tr><td>{{ref:gift.luege}}</td><td>75</td><td>Loki</td><td>unbegrenzt</td><td>72</td></tr><tr><td>{{ref:gift.hirsche}}</td><td>30</td><td>Loki</td><td>unbegrenzt</td><td>71</td></tr><tr><td>{{ref:gift.hoders_reue}}</td><td>75</td><td>Hoder</td><td>unbegrenzt</td><td>75</td></tr><tr><td>{{ref:gift.njordsgale}}</td><td>400</td><td>Njord</td><td>unbegrenzt</td><td>75</td></tr><tr><td>{{ref:gift.wunden}}</td><td>75</td><td>Tyr</td><td>4</td><td>84</td></tr><tr><td>{{ref:gift.spalten}}</td><td>30</td><td>Asjandr</td><td>unbegrenzt</td><td>82</td></tr><tr><td>{{ref:gift.blitz}}</td><td>30</td><td>Thor</td><td>unbegrenzt</td><td>75</td></tr><tr><td>{{ref:gift.sehnen}}</td><td>45</td><td>Tyr</td><td>unbegrenzt</td><td>84</td></tr><tr><td>{{ref:gift.abgang}}</td><td>250</td><td>Loki</td><td>unbegrenzt</td><td>67</td></tr><tr><td>{{ref:gift.fluch}}</td><td>250</td><td>Odin</td><td>unbegrenzt</td><td>71</td></tr><tr><td>{{ref:gift.fersen}}</td><td>75</td><td>Njord</td><td>unbegrenzt</td><td>70</td></tr><tr><td>{{ref:gift.angrboda}}</td><td>150</td><td>Angrboda</td><td>unbegrenzt</td><td>66</td></tr><tr><td>{{ref:gift.geister}}</td><td>30</td><td>Odin</td><td>6</td><td>81</td></tr><tr><td>{{ref:gift.schicksal}}</td><td>400</td><td>Urd</td><td>unbegrenzt</td><td>68</td></tr><tr><td>{{ref:gift.wachsamkeit}}</td><td>100</td><td>Heimdal</td><td>unbegrenzt</td><td>83</td></tr><tr><td>{{ref:gift.kaesebruch}}</td><td>100</td><td>Thor</td><td>8</td><td>68</td></tr><tr><td>{{ref:gift.lokis_ranke}}</td><td>75</td><td>Loki</td><td>unbegrenzt</td><td>84</td></tr><tr><td>{{ref:gift.macht_thors}}</td><td>300</td><td>Thor</td><td>unbegrenzt</td><td>73</td></tr><tr><td>{{ref:gift.mantel}}</td><td>100</td><td>Odin</td><td>unbegrenzt</td><td>73</td></tr><tr><td>{{ref:gift.mistel}}</td><td>45</td><td>Loki</td><td>unbegrenzt</td><td>81</td></tr><tr><td>{{ref:gift.beide_haende}}</td><td>30</td><td>Ull</td><td>keine</td><td>84</td></tr><tr><td>{{ref:gift.mjoelnir}}</td><td>30</td><td>Thor</td><td>unbegrenzt</td><td>73</td></tr><tr><td>{{ref:gift.naglfar}}</td><td>30</td><td>Njord</td><td>unbegrenzt</td><td>73</td></tr><tr><td>{{ref:gift.kruste}}</td><td>75</td><td>Njord</td><td>unbegrenzt</td><td>74</td></tr><tr><td>{{ref:gift.yggdrasil}}</td><td>150</td><td>Freyja</td><td>4</td><td>74</td></tr><tr><td>{{ref:gift.bergsturm}}</td><td>150</td><td>Njord</td><td>unbegrenzt</td><td>81</td></tr><tr><td>{{ref:gift.sturm}}</td><td>75</td><td>Thor</td><td>unbegrenzt</td><td>66</td></tr><tr><td>{{ref:gift.sleipnir}}</td><td>75</td><td>Odin</td><td>8</td><td>82</td></tr><tr><td>{{ref:gift.schultern}}</td><td>75</td><td>Heimdal</td><td>unbegrenzt</td><td>81</td></tr><tr><td>{{ref:gift.berserker}}</td><td>150</td><td>Odin</td><td>unbegrenzt</td><td>65</td></tr><tr><td>{{ref:gift.ringer}}</td><td>75</td><td>Thor</td><td>unbegrenzt</td><td>84</td></tr><tr><td>{{ref:gift.knochenrichter}}</td><td>30</td><td>Freyja</td><td>unbegrenzt</td><td>66</td></tr><tr><td>{{ref:gift.donner}}</td><td>40</td><td>Thor</td><td>unbegrenzt</td><td>70</td></tr><tr><td>{{ref:gift.skadi}}</td><td>30</td><td>Njord</td><td>unbegrenzt</td><td>81</td></tr><tr><td>{{ref:gift.aepfel}}</td><td>75</td><td>Freyja</td><td>unbegrenzt</td><td>71</td></tr><tr><td>{{ref:gift.thors_sehnen}}</td><td>75</td><td>Thor</td><td>unbegrenzt</td><td>82</td></tr><tr><td>{{ref:gift.todesstreich}}</td><td>30</td><td>Odin</td><td>unbegrenzt</td><td>68</td></tr><tr><td>{{ref:gift.tyrs_langmut}}</td><td>75</td><td>Tyr</td><td>unbegrenzt</td><td>83</td></tr><tr><td>{{ref:gift.tyrs_mut}}</td><td>75</td><td>Tyr</td><td>unbegrenzt</td><td>83</td></tr><tr><td>{{ref:gift.ulls_haut}}</td><td>75</td><td>Ull</td><td>unbegrenzt</td><td>83</td></tr><tr><td>{{ref:gift.ulls_hand}}</td><td>400</td><td>Ull</td><td>unbegrenzt</td><td>83</td></tr><tr><td>{{ref:gift.gestemmt}}</td><td>75</td><td>Heimdal</td><td>unbegrenzt</td><td>71</td></tr><tr><td>{{ref:gift.entschlossenheit}}</td><td>75</td><td>Heimdal</td><td>10</td><td>71</td></tr><tr><td>{{ref:gift.freyr_zunge}}</td><td>75</td><td>Freyr</td><td>unbegrenzt</td><td>71</td></tr><tr><td>{{ref:gift.nebel}}</td><td>30</td><td>Loki</td><td>unbegrenzt</td><td>74</td></tr><tr><td>{{ref:gift.gipfel}}</td><td>125</td><td>Thor</td><td>8</td><td>70</td></tr><tr><td>{{ref:gift.njordsatem}}</td><td>45</td><td>Njord</td><td>unbegrenzt</td><td>75</td></tr><tr><td>{{ref:gift.quell}}</td><td>75</td><td>Odin</td><td>unbegrenzt</td><td>76</td></tr><tr><td>{{ref:gift.hirsch}}</td><td>75</td><td>Ull</td><td>unbegrenzt</td><td>72</td></tr><tr><td>{{ref:gift.blatt}}</td><td>125</td><td>Thor</td><td>unbegrenzt</td><td>72</td></tr></table><h3>Runenkräfte</h3><table><tr><th>Runenkraft</th><th>Kosten</th><th>Stufen</th><th>Seite (Original)</th></tr><tr><td>{{ref:gift.r.doppelaxt}}</td><td>75</td><td>unbegrenzt</td><td>76–77</td></tr><tr><td>{{ref:gift.r.zwergenaxt}}</td><td>30</td><td>unbegrenzt</td><td>77</td></tr><tr><td>{{ref:gift.r.zwergenkriegshammer}}</td><td>400</td><td>unbegrenzt</td><td>77</td></tr><tr><td>{{ref:gift.r.zwergenkampfschwert}}</td><td>45</td><td>8</td><td>78</td></tr><tr><td>{{ref:gift.r.zwergenarbeitshammer}}</td><td>250</td><td>unbegrenzt</td><td>78</td></tr><tr><td>{{ref:gift.r.zwergenarbeitsschwert}}</td><td>75</td><td>unbegrenzt</td><td>78</td></tr><tr><td>{{ref:gift.r.vierklingenkolben}}</td><td>400</td><td>unbegrenzt</td><td>79</td></tr><tr><td>{{ref:gift.r.goblinaxt}}</td><td>75</td><td>unbegrenzt</td><td>79</td></tr><tr><td>{{ref:gift.r.goblinstachelkeule}}</td><td>75</td><td>unbegrenzt</td><td>79</td></tr><tr><td>{{ref:gift.r.handaxt}}</td><td>75</td><td>unbegrenzt</td><td>79</td></tr><tr><td>{{ref:gift.r.streitkolben}}</td><td>75</td><td>unbegrenzt</td><td>79</td></tr><tr><td>{{ref:gift.r.roemisches_schwert}}</td><td>75</td><td>unbegrenzt</td><td>79–80</td></tr><tr><td>{{ref:gift.r.wikingeraxt}}</td><td>75</td><td>unbegrenzt</td><td>80</td></tr><tr><td>{{ref:gift.r.wikingerbreitschwert}}</td><td>200</td><td>unbegrenzt</td><td>80</td></tr><tr><td>{{ref:gift.r.wikingerkurzschwert}}</td><td>75</td><td>3</td><td>80</td></tr></table><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 62–84</em></p>"
+  },
+  {
+   "key": "n.k3.runen",
+   "kind": "note",
+   "name": "Runenwaffen und Runenkräfte",
+   "type": "Regel",
+   "parent": "n.k3",
+   "tags": [
+    "tag.kap3",
+    "tag.runenkraft",
+    "tag.tabelle"
+   ],
+   "entry": "<p>Lange bevor sich die Zwerge von den Asen abwandten, um Klingen und Rüstungen nur noch für Loki zu fertigen, halfen sie Odin und seiner Sippe, indem sie ein System magischer Entsprechungen zwischen Waffen und den Elementarrunen der Macht entdeckten. Odin teilte diese Geheimnisse den anderen Asen mit, die sie an ihre kriegerischen Lieblingsverehrer verteilten, auf Midgard wie in Walhall.</p><ul><li>Viele Waffen haben eine <strong>angeborene magische Kraft</strong>, die ihrer Art eigen ist. Ein hinreichend verdienter Held kann sie für kurze Zeit aktivieren, sofern er die erforderliche Waffe trägt. Er kann dafür <strong>jede Ausführung</strong> dieser Waffe nutzen, auch die gewöhnliche, mit der er begann.</li><li>Anders als andere Göttliche Gaben kann <strong>jeder</strong> Runenkräfte nutzen, der ihre Geheimnisse kennt (die Zwerge gaben sie frei, nachdem sie meinten, Odin habe sie um gerechten Lohn betrogen). Auch Goblins, Zwerge, Elfen, Entehrte und Trolle können sie nutzen. Einige sind mit Waffen verbunden, die Zwerge und Goblins führen.</li><li>Runenkräfte erhöhen <strong>nicht</strong> deine Göttliche Verbindung und haben <strong>keine Schutzgötter</strong>; sonst funktionieren sie wie jede andere Göttliche Gabe.</li><li>Eine Runenkraft zu aktivieren erfordert <strong>nie eine Aktion</strong>. Nach der Nutzung werden sie <strong>ruhend</strong> und können erst nach einer Zeit erneut aktiviert werden, die von deiner Stufe in der Kraft abhängt:</li></ul><table><tr><th>Stufe in der Runenkraft</th><th>Ruhezeit bis zur erneuten Aktivierung</th></tr><tr><td>1</td><td>3 Tage</td></tr><tr><td>2</td><td>24 Stunden</td></tr><tr><td>3</td><td>12 Stunden</td></tr><tr><td>4</td><td>6 Stunden</td></tr><tr><td>6</td><td>3 Stunden</td></tr><tr><td>8</td><td>1 Stunde</td></tr><tr><td>10</td><td>30 Minuten</td></tr><tr><td>12</td><td>10 Runden</td></tr><tr><td>16</td><td>5 Runden</td></tr></table><p>Alle Runenkräfte: {{ref:gift.g.runen}}.</p><p><em>Quelle: Rune RPG, Kapitel 3, Original S. 76–78</em></p>"
+  },
+  {
+   "key": "n.k3.hinweise",
+   "kind": "note",
+   "name": "Übersetzungshinweise zu Kapitel 3",
+   "type": "Hinweise",
+   "parent": "n.k3",
+   "tags": [
+    "tag.kap3"
+   ],
+   "entry": "<ul><li><strong>Das Poltern eilender Stiefel:</strong> Die Gabentabelle (S. 62) sagt „Stufen: keine“, die Beschreibung (S. 67) „unbegrenzt“ und spricht von Stufen. Hier gilt die Beschreibung: <strong>unbegrenzt</strong>.</li><li><strong>Runenkraft Zwergen-Streitaxt:</strong> Das Original nennt „bis zu X Runden“ und „1 + (X ÷ 2) Runden“ nebeneinander. Beides steht im Text; bitte eine Auslegung festlegen.</li><li><strong>Gabentabelle:</strong> Einige Namen der Tabelle weichen von den Überschriften ab (z. B. „Knitting of Meat“ statt „…of Meat and Bone“, „Scourging the Fell Spirits“ statt „Scourging of Fell Spirits“). Hier gelten die Überschriften der Beschreibungen.</li><li><strong>Reichweite der Runenkraft-Stufen:</strong> Das Original nennt Ruhezeiten nur für die Stufen 1, 2, 3, 4, 6, 8, 10, 12 und 16. Für dazwischenliegende Stufen ist keine Regel angegeben.</li><li><strong>Namen:</strong> Gabennamen sind als Spielbegriffe eingedeutscht (Originalname jeweils als Property). Götternamen bleiben original. Das Wort „Thews“ (Sehnen) und andere altertümliche Wörter sind sinngemäß übersetzt.</li><li><strong>Zwei Runenkräfte</strong> (Zwergen-Streitaxt, Zwergen-Kriegshammer, …) verweisen aufeinander; die Seitenzahl der einzelnen Kräfte ist als Bereich S. 76–80 angegeben, wo das Original sie nicht je Kraft nennt.</li></ul>"
+  }
+ ]
+}

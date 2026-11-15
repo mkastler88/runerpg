@@ -8,6 +8,7 @@ Befehle (import legt Neues an und aktualisiert Geändertes; Gelöschtes bleibt, 
   plan       Zeigt, was angelegt würde, und schätzt die Laufzeit. Kein Netzwerk.
   import     Legt Tags, Einträge und Properties in Kanka an (nie löschen).
   verify     Liest die Beispielwerte (Ragnar, Beispielgegner) aus Kanka und vergleicht sie mit dem Buch.
+  pull       Liest Änderungen aus Kanka (Texte, neue und gelöschte Einträge) und führt sie mit den Datendateien zusammen (Bericht; mit --apply schreiben).
   gruppenwerte  Setzt die Heldengruppen-Werte (Roll of Valor) in allen Gegnern: --init --atk --dfn --dam --abs --hp --res
 
 Zugangsdaten (nie in Dateien oder Chats schreiben):
@@ -15,7 +16,7 @@ Zugangsdaten (nie in Dateien oder Chats schreiben):
   KANKA_CAMPAIGN_ID   ID der (Test-)Kampagne
 Nur Python 3.9+, keine weiteren Pakete.
 """
-import argparse, glob, hashlib, json, math, os, re, sys, time, urllib.error, urllib.request
+import argparse, datetime, difflib, glob, hashlib, html as htmllib, json, math, os, re, shutil, sys, time, unicodedata, urllib.error, urllib.request
 from collections import deque
 
 HERE = os.path.dirname(os.path.abspath(__file__))
@@ -54,6 +55,8 @@ def load_data(paths, ascii_names=False):
         for t in part.get("tags", []):
             if t["key"] not in tagkeys:
                 tagkeys.add(t["key"]); data["tags"].append(t)
+        for _e in part["entities"]:
+            _e["_file"] = path
         data["entities"] += part["entities"]
         data["relations"] += part.get("relations", [])
         data["members"] += part.get("members", [])
@@ -219,7 +222,9 @@ def classify(data, mapping, args):
         if args.only and e["key"] not in args.only:
             continue
         rec = mapping.get(e["key"])
-        if rec is None:
+        if rec is not None and rec.get("remote_deleted") and not args.update:
+            same.append(e)      # in Kanka gelöscht (siehe pull); wird nicht neu angelegt oder aktualisiert
+        elif rec is None:
             new.append(e)
         elif args.update or (not args.no_update and rec.get("hash") != ehash(e)):
             changed.append(e)
@@ -435,6 +440,8 @@ def cmd_import(args):
             return api.call(method, path, payload)
         except ApiError as ex:
             msg = str(ex)
+            if method == "PUT" and "404" in msg:
+                return None      # Eintrag wurde in Kanka gelöscht
             if "422" not in msg:
                 raise
             if (e.get("races") or e.get("locations")) and ("races" in msg or "locations" in msg) and state.get("link_mode", "id") == "id":
@@ -480,7 +487,10 @@ def cmd_import(args):
             payload.update(link_fields(e, state.get("link_mode", "id")))
             ep = ENDPOINT[e["kind"]]
             if exists:
-                send("PUT", "%s/%s" % (ep, mp[e["key"]]["id"]), payload, e)
+                if send("PUT", "%s/%s" % (ep, mp[e["key"]]["id"]), payload, e) is None:
+                    mp[e["key"]]["remote_deleted"] = True
+                    save(); print("In Kanka gelöscht, übersprungen:", e["name"], "(mit `pull --drop-deleted` aus den Daten entfernen)", flush=True)
+                    continue
                 print("Aktualisiert:", e["name"], flush=True)
             else:
                 r = send("POST", ep, payload, e)["data"]
@@ -663,10 +673,354 @@ def cmd_gruppenwerte(args):
     return 0
 
 
+# ------------------------------------------------------------------ Pull: Änderungen aus Kanka zurückholen
+PULL_KINDS = [("tag", "tags"), ("race", "races"), ("location", "locations"), ("organisation", "organisations"), ("character", "characters"),
+              ("note", "notes"), ("ability", "abilities"), ("item", "items"), ("creature", "creatures"), ("property_kit", "attribute_templates")]
+PARENT_FIELDS = {"location": ("parent_id", "parent_location_id", "location_id"), "note": ("parent_id", "note_id"), "ability": ("parent_id", "ability_id"),
+                 "race": ("parent_id", "race_id"), "organisation": ("parent_id", "organisation_id"), "item": ("parent_id", "item_id"),
+                 "creature": ("parent_id", "creature_id"), "character": (), "property_kit": ()}
+ENT_RAW = re.compile(r"\[entity:(\d+)(?:\|([^\]]*))?\]")
+A_TAG = re.compile(r"<a\b([^>]*)>(.*?)</a>", re.S)
+
+
+def slugify(s):
+    s = s.replace("Æ", "Ae").replace("æ", "ae").replace("Ð", "D").replace("ð", "d").replace("Þ", "Th").replace("þ", "th")
+    s = unicodedata.normalize("NFKD", s)
+    s = "".join(c for c in s if not unicodedata.combining(c))
+    return re.sub(r"[^a-z0-9]+", "-", s.lower()).strip("-") or "eintrag"
+
+
+def fetch_all(api, ep):
+    out, page = [], 1
+    while True:
+        r = api.call("GET", "%s?page=%d" % (ep, page))
+        out += r.get("data", [])
+        last = (r.get("meta") or {}).get("last_page", 1)
+        if page >= last or not r.get("data"):
+            break
+        page += 1
+    return out
+
+
+def mentions_to_refs(text, ent2key, key2name):
+    """Kanka-Verweise ([entity:ID|Alias] oder <a>-Links auf Entities) in unsere {{ref:schlüssel|Alias}} zurückrechnen."""
+    text = text or ""
+
+    def ref(k, label):
+        if label and label != key2name.get(k):
+            return "{{ref:%s|%s}}" % (k, label)
+        return "{{ref:%s}}" % k
+
+    def raw(m):
+        k = ent2key.get(int(m.group(1)))
+        return ref(k, (m.group(2) or "").strip()) if k else m.group(0)
+
+    def anchor(m):
+        attrs = m.group(1)
+        mm = re.search(r"\[entity:(\d+)", attrs) or re.search(r'data-entity-id="(\d+)"', attrs) or re.search(r"/entities/(\d+)", attrs)
+        k = ent2key.get(int(mm.group(1))) if mm else None
+        return ref(k, re.sub(r"<[^>]+>", "", m.group(2)).strip()) if k else m.group(0)
+
+    return A_TAG.sub(anchor, ENT_RAW.sub(raw, text)).strip()
+
+
+def canon(text):
+    """Vergleichsform: Verweise ohne Alias, Entities aufgelöst, Leerraum vereinheitlicht."""
+    t = re.sub(r"\{\{ref:([^}|]+)(?:\|[^}]*)?\}\}", lambda m: "@@%s@@" % m.group(1), text or "")
+    t = htmllib.unescape(t)
+    t = re.sub(r"<br\s*/?>", "<br>", t)
+    t = re.sub(r"\s+", " ", t)
+    return re.sub(r">\s+<", "><", t).strip()
+
+
+def canon_text(text):
+    return re.sub(r"\s+", " ", re.sub(r"<[^>]+>", " ", canon(text))).strip()
+
+
+def snippet(a, b, w=60):
+    """Kurze Gegenüberstellung der ersten abweichenden Stelle (reiner Text)."""
+    a, b = canon_text(a), canon_text(b)
+    sm = difflib.SequenceMatcher(None, a, b, autojunk=False)
+    for tag, i1, i2, j1, j2 in sm.get_opcodes():
+        if tag != "equal":
+            return "…%s[%s → %s]%s…" % (a[max(0, i1 - 25):i1], a[i1:i2][:w], b[j1:j2][:w], a[i2:i2 + 25])
+    return ""
+
+
+def cmd_pull(args):
+    """Liest Einträge aus Kanka, vergleicht sie mit den Datendateien und schreibt (mit --apply) die Änderungen zurück."""
+    creds = get_credentials(args)
+    if not creds:
+        return 2
+    token, cid = creds
+    data = load_data(data_files(args), False)
+    map_path = args.map or os.path.join(HERE, "kanka_map_%s.json" % cid)
+    if not os.path.exists(map_path):
+        print("Keine Zuordnungsdatei gefunden:", map_path); return 2
+    state = json.load(open(map_path, encoding="utf-8"))
+    mp = state["items"]
+    api = Api(token, cid, args.base_url, args.rpm)
+    ents = {e["key"]: e for e in data["entities"]}
+    ep_of = dict(PULL_KINDS)
+
+    # Fernstand lesen
+    try:
+        remote = {k: fetch_all(api, ep) for k, ep in PULL_KINDS}
+    except ApiError as ex:
+        print("ABBRUCH:", ex); return 1
+    print("Gelesen: " + ", ".join("%s %d" % (ep, len(remote[k])) for k, ep in PULL_KINDS))
+
+    by_id, by_ent = {}, {}                       # (kind, id) -> key ; entity_id -> key
+    for key, rec in mp.items():
+        by_id[(rec.get("kind"), rec["id"])] = key
+        if rec.get("entity_id"):
+            by_ent[rec["entity_id"]] = key
+    key2name = {k: e["name"] for k, e in ents.items()}
+
+    # Eltern-ID-Art anhand bekannter Einträge erkennen (Entity-ID oder Objekt-ID)
+    votes = {"entity_id": 0, "id": 0}
+    for kind, objs in remote.items():
+        for r in objs:
+            key = by_id.get((kind, r["id"]))
+            e = ents.get(key) if key else None
+            if not e or not e.get("parent") or e["parent"] not in mp:
+                continue
+            for f in PARENT_FIELDS.get(kind, ()):
+                v = r.get(f)
+                if v:
+                    if v == mp[e["parent"]].get("entity_id"): votes["entity_id"] += 1
+                    elif v == mp[e["parent"]]["id"]: votes["id"] += 1
+                    break
+    pmode = "id" if votes["id"] > votes["entity_id"] else "entity_id"
+
+    def remote_parent(kind, r):
+        """Liefert (Schlüssel des Elterneintrags oder None, Rohwert). Rohwert None = kein Elternteil."""
+        for f in PARENT_FIELDS.get(kind, ()):
+            v = r.get(f)
+            if v:
+                k = (by_ent.get(v) or by_id.get((kind, v))) if pmode == "entity_id" else (by_id.get((kind, v)) or by_ent.get(v))
+                return k, v
+        return None, None
+
+    tag_names = {t["id"]: t.get("name", "") for t in remote["tag"]}
+    new_tags = []                                # (key, id, entity_id, name)
+    tag_key = {rec["id"]: k for k, rec in mp.items() if rec.get("kind") == "tag"}
+    used_keys = set(mp) | set(ents)
+
+    def keys_for_tags(ids):
+        out = []
+        for i in ids or []:
+            if i not in tag_key:
+                k = "tag.kanka.%s" % slugify(tag_names.get(i, str(i)))
+                while k in used_keys: k += "-2"
+                used_keys.add(k); tag_key[i] = k
+                tobj = next((t for t in remote["tag"] if t["id"] == i), {})
+                new_tags.append((k, i, tobj.get("entity_id"), tag_names.get(i, str(i))))
+            out.append(tag_key[i])
+        return out
+
+    changed, formal, conflicts, unchanged = [], [], [], 0
+    seen_remote = set()
+    for kind, objs in remote.items():
+        if kind == "tag":
+            continue
+        for r in objs:
+            key = by_id.get((kind, r["id"]))
+            if not key or key not in ents:
+                continue
+            seen_remote.add(key)
+            e = ents[key]
+            diffs = {}
+            if (r.get("name") or "").strip() != (e["name"] or "").strip(): diffs["name"] = r.get("name")
+            if (r.get("type") or "").strip() != (e.get("type") or "").strip(): diffs["type"] = (r.get("type") or "").strip() or None
+            if kind == "character" and (r.get("title") or "").strip() != (e.get("title") or "").strip(): diffs["title"] = (r.get("title") or "").strip()
+            new_entry = mentions_to_refs(r.get("entry"), by_ent, key2name)
+            only_formal = False
+            if canon(new_entry) != canon(e["entry"]):
+                if canon_text(new_entry) == canon_text(e["entry"]):
+                    only_formal = True
+                else:
+                    diffs["entry"] = new_entry
+            if set(keys_for_tags(r.get("tags"))) != set(e["tags"]):
+                diffs["tags"] = keys_for_tags(r.get("tags"))
+            if any(f in r for f in PARENT_FIELDS.get(kind, ())):      # nur vergleichen, wenn Kanka das Feld überhaupt liefert
+                pk, raw = remote_parent(kind, r)
+                if raw is not None and pk is None:
+                    diffs["parent"] = ("?", raw)                          # Elternteil ist (noch) unbekannt, z. B. ein neuer Eintrag
+                elif pk != (e.get("parent") or None):
+                    diffs["parent"] = pk
+            if diffs:
+                local_changed = bool(mp[key].get("hash")) and mp[key]["hash"] != ehash(e)
+                (conflicts if local_changed else changed).append((key, e, r, diffs))
+            elif only_formal:
+                formal.append(key)
+            else:
+                unchanged += 1
+
+    deleted = [k for k, rec in mp.items() if rec.get("kind") in ep_of and rec["kind"] != "tag" and k in ents and k not in seen_remote and (not rec.get("remote_deleted") or args.drop_deleted)]
+    new_objs = []
+    for kind, objs in remote.items():
+        if kind == "tag":
+            continue
+        for r in objs:
+            if (kind, r["id"]) not in by_id:
+                new_objs.append((kind, r))
+
+    # ---------- Bericht
+    print("\nVergleich mit den Datendateien (Eltern-ID-Art: %s):" % pmode)
+    print("  unverändert:          %d" % unchanged)
+    print("  nur formal geändert:  %d (HTML-Umformung durch Kanka, wird nicht übernommen)" % len(formal))
+    print("  inhaltlich geändert:  %d" % len(changed))
+    print("  Konflikte (auch lokal seit dem Import geändert): %d" % len(conflicts))
+    print("  neu in Kanka:         %d" % len(new_objs))
+    print("  in Kanka gelöscht:    %d" % len(deleted))
+
+    def show(title, items, limit):
+        if not items: return
+        print("\n" + title)
+        for key, e, r, diffs in items[:limit]:
+            fl = ", ".join(diffs)
+            print("  %-34s %s  [%s]" % (key[:34], e["name"][:40], fl))
+            if "entry" in diffs:
+                sn = snippet(e["entry"], diffs["entry"])
+                if sn: print("      Text: %s" % sn)
+            for f in ("name", "type", "title"):
+                if f in diffs: print("      %s: %r → %r" % (f, e.get(f), diffs[f]))
+            if "parent" in diffs:
+                print("      Eltern: %r → %r" % (e.get("parent"), diffs["parent"] if not isinstance(diffs["parent"], tuple) else "(neuer Eintrag)"))
+            if "tags" in diffs:
+                print("      Tags: %s → %s" % (sorted(e["tags"]), sorted(diffs["tags"])))
+        if len(items) > limit: print("  … und %d weitere (--alle zeigt alle)" % (len(items) - limit))
+    lim = 10 ** 6 if args.alle else 25
+    show("Inhaltlich geändert:", changed, lim)
+    show("KONFLIKTE (lokal und in Kanka geändert; Standard: %s gewinnt):" % ("Kanka" if args.prefer == "kanka" else "lokal"), conflicts, lim)
+    if new_objs:
+        print("\nNeu in Kanka:")
+        for kind, r in new_objs[:lim]:
+            print("  %-13s %s" % (kind, r.get("name")))
+    if deleted:
+        print("\nIn Kanka gelöscht (noch in den Dateien):")
+        for k in deleted[:lim]: print("  %-34s %s" % (k[:34], key2name[k]))
+    if not args.apply:
+        print("\nNichts geändert. Mit --apply werden die Änderungen in die Datendateien geschrieben (vorher Sicherung nach backup\\).")
+        return 0
+
+    # ---------- Anwenden
+    stamp = datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    bdir = os.path.join(HERE, "backup", "data_%s" % stamp)
+    _n = 2
+    while os.path.exists(bdir):                      # mehrere Sicherungen in derselben Sekunde
+        bdir = os.path.join(HERE, "backup", "data_%s_%d" % (stamp, _n)); _n += 1
+    os.makedirs(os.path.dirname(bdir), exist_ok=True)
+    shutil.copytree(os.path.join(HERE, "data"), bdir)
+    shutil.copy2(map_path, os.path.join(bdir, os.path.basename(map_path)))
+    print("\nSicherung: %s" % bdir)
+
+    todo = [(k, e, r, d) for k, e, r, d in changed]
+    todo += [(k, e, r, d) for k, e, r, d in conflicts if args.prefer == "kanka"]
+    skipped = len(conflicts) if args.prefer == "local" else 0
+    by_file, pending_parents = {}, []
+    for key, e, r, diffs in todo:
+        by_file.setdefault(e["_file"], []).append((key, diffs))
+    for path, items in by_file.items():
+        raw = json.load(open(path, encoding="utf-8"))
+        idx = {x["key"]: x for x in raw["entities"]}
+        for key, diffs in items:
+            x = idx[key]
+            for f, v in diffs.items():
+                if f == "parent" and isinstance(v, tuple):
+                    pending_parents.append((key, x, v[1], path))
+                elif f == "parent":
+                    x["parent"] = v
+                else:
+                    x[f] = v
+            mp[key]["hash"] = ehash(x)
+        json.dump(raw, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        print("Aktualisiert: %s (%d Einträge)" % (os.path.basename(path), len(items)))
+
+    # neue Einträge
+    if new_objs or new_tags:
+        out_path = os.path.join(HERE, "data", "90_aus_kanka.json")
+        out = json.load(open(out_path, encoding="utf-8")) if os.path.exists(out_path) else {"meta": {"ausschnitt": "In Kanka angelegte Einträge (per pull übernommen)"}, "tags": [], "entities": []}
+        newkey = {}
+        for kind, r in new_objs:
+            k = "kanka.%s.%s" % (kind, slugify(r.get("name") or str(r["id"])))
+            while k in used_keys: k += "-2"
+            used_keys.add(k); newkey[(kind, r["id"])] = k
+            by_id[(kind, r["id"])] = k
+            if r.get("entity_id"): by_ent[r["entity_id"]] = k
+        for k, tid, teid, tname in new_tags:
+            out["tags"].append({"key": k, "name": tname})
+            mp[k] = {"id": tid, "entity_id": teid, "kind": "tag"}
+        # Eltern zuerst
+        newkeys_set = set(newkey.values())
+
+        def depth(kind, r, d=0):
+            pk, raw = remote_parent(kind, r)
+            if pk in newkeys_set and d < 20:
+                for kk, rr in new_objs:
+                    if newkey[(kk, rr["id"])] == pk:
+                        return 1 + depth(kk, rr, d + 1)
+            return 0
+        order = sorted(new_objs, key=lambda t: (depth(*t), [x[0] for x in PULL_KINDS].index(t[0])))
+        for kind, r in order:
+            k = newkey[(kind, r["id"])]
+            ent_dict = {"key": k, "kind": kind, "name": r.get("name"), "type": (r.get("type") or None), "parent": remote_parent(kind, r)[0],
+                        "tags": keys_for_tags(r.get("tags")), "entry": mentions_to_refs(r.get("entry"), by_ent, key2name)}
+            if kind == "character" and r.get("title"): ent_dict["title"] = r["title"]
+            for fld, kn in (("races", "race"), ("locations", "location")):
+                keys = [x for x in ((by_id.get((kn, i)) or by_ent.get(i)) for i in (r.get(fld) or [])) if x]
+                if keys: ent_dict[fld] = keys
+            if r.get("entity_id"):
+                try:
+                    attrs = api.call("GET", "entities/%s/attributes" % r["entity_id"]).get("data", [])
+                except ApiError:
+                    attrs = []
+                props = [{"name": a["name"], "value": a.get("value") if a.get("value") is not None else "", "type_id": a.get("type_id", 1),
+                          **({"is_pinned": True} if a.get("is_pinned") else {})} for a in attrs]
+                if props: ent_dict["properties"] = props
+            out["entities"].append(ent_dict)
+            mp[k] = {"id": r["id"], "entity_id": r.get("entity_id"), "kind": kind, "hash": ehash(ent_dict)}
+        json.dump(out, open(out_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+        print("Neu übernommen: %d Einträge, %d Tags → data\\90_aus_kanka.json" % (len(order), len(new_tags)))
+        for key, x, rawv, path in pending_parents:
+            pk = by_ent.get(rawv) or by_id.get((mp[key]["kind"], rawv))
+            if pk:
+                raw = json.load(open(path, encoding="utf-8"))
+                for y in raw["entities"]:
+                    if y["key"] == key:
+                        y["parent"] = pk; mp[key]["hash"] = ehash(y)
+                json.dump(raw, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+            else:
+                print("  Hinweis: Elternteil von %s unbekannt, unverändert gelassen." % key)
+
+    # gelöschte Einträge
+    if deleted:
+        if args.drop_deleted:
+            dropped = []
+            for k in deleted:
+                dep = [x["key"] for x in ents.values() if x.get("parent") == k or k in x.get("races", []) or k in x.get("locations", []) or ("{{ref:%s" % k) in x["entry"]]
+                dep += ["Verbindung" for r in data.get("relations", []) if k in (r["from"], r["to"])] + ["Mitglied" for m in data.get("members", []) if k in (m["organisation"], m["character"])]
+                if dep:
+                    print("  nicht entfernt (wird noch verwendet von %s): %s" % (", ".join(dep[:3]), k)); continue
+                path = ents[k]["_file"]
+                raw = json.load(open(path, encoding="utf-8"))
+                raw["entities"] = [x for x in raw["entities"] if x["key"] != k]
+                json.dump(raw, open(path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+                mp.pop(k, None); dropped.append(k)
+            print("Aus den Dateien entfernt: %d von %d gelöschten Einträgen" % (len(dropped), len(deleted)))
+        else:
+            for k in deleted: mp[k]["remote_deleted"] = True
+            print("Als „in Kanka gelöscht“ vermerkt (bleiben in den Dateien; `import` überspringt sie). Zum Entfernen: pull --apply --drop-deleted")
+    json.dump(state, open(map_path, "w", encoding="utf-8"), ensure_ascii=False, indent=1)
+    print("\nFertig. %d Anfragen gesendet.%s" % (api.count, " %d Konflikte blieben lokal (--prefer local)." % skipped if skipped else ""))
+    return 0
+
+
 # ------------------------------------------------------------------ CLI
 def main():
     ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
-    ap.add_argument("command", choices=["selftest", "plan", "import", "verify", "gruppenwerte"])
+    ap.add_argument("command", choices=["selftest", "plan", "import", "verify", "gruppenwerte", "pull"])
     ap.add_argument("--data", nargs="+", help="Datendatei(en) (JSON); Standard: alle Dateien in data/")
     ap.add_argument("--campaign", help="Kampagnen-ID (sonst KANKA_CAMPAIGN_ID)")
     ap.add_argument("--token-file", help="Datei mit dem Token (sonst KANKA_TOKEN)")
@@ -674,6 +1028,10 @@ def main():
     ap.add_argument("--ascii-names", action="store_true", help="Umlaute in Property-Namen ersetzen (ä→ae, ö→oe, ü→ue, ß→ss)")
     ap.add_argument("--update", action="store_true", help="import: ALLE vorhandenen Einträge erzwungen aktualisieren (sonst nur geänderte)")
     ap.add_argument("--no-update", dest="no_update", action="store_true", help="import: nur neue Einträge anlegen, vorhandene nie anfassen")
+    ap.add_argument("--apply", action="store_true", help="pull: Änderungen aus Kanka in die Datendateien schreiben (vorher Sicherung nach backup\\)")
+    ap.add_argument("--prefer", choices=["kanka", "local"], default="kanka", help="pull: wer bei Konflikten gewinnt (Standard: kanka)")
+    ap.add_argument("--drop-deleted", dest="drop_deleted", action="store_true", help="pull --apply: in Kanka gelöschte Einträge auch aus den Datendateien entfernen")
+    ap.add_argument("--alle", action="store_true", help="pull: alle Unterschiede anzeigen, nicht nur die ersten 25")
     ap.add_argument("--prune", action="store_true", help="import: Properties löschen, die in Kanka stehen, aber nicht in den Daten (Vorsicht bei eigenen Properties)")
     ap.add_argument("--yes", action="store_true", help="Rückfrage vor dem Import überspringen")
     ap.add_argument("--map", help="Pfad der Zuordnungsdatei")
@@ -683,7 +1041,7 @@ def main():
     for _n, _a in GRP_NAMES:
         ap.add_argument("--" + _a, type=int, help="gruppenwerte: Gruppenwert " + _n)
     a = ap.parse_args()
-    sys.exit({"selftest": cmd_selftest, "plan": cmd_plan, "import": cmd_import, "verify": cmd_verify, "gruppenwerte": cmd_gruppenwerte}[a.command](a))
+    sys.exit({"selftest": cmd_selftest, "plan": cmd_plan, "import": cmd_import, "verify": cmd_verify, "gruppenwerte": cmd_gruppenwerte, "pull": cmd_pull}[a.command](a))
 
 
 if __name__ == "__main__":

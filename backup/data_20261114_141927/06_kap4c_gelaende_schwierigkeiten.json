@@ -1,0 +1,414 @@
+{
+ "meta": {
+  "ausschnitt": "Kapitel 4, Teil C: Gelände und Schwierigkeiten",
+  "version": "0.7"
+ },
+ "tags": [
+  {
+   "key": "tag.kap4",
+   "name": "Kapitel 4: Begegnungen und Gegner"
+  },
+  {
+   "key": "tag.tabelle",
+   "name": "Regeltabelle"
+  },
+  {
+   "key": "tag.gelaende",
+   "name": "Geländemerkmal"
+  },
+  {
+   "key": "tag.wurfart",
+   "name": "Wurfart"
+  }
+ ],
+ "entities": [
+  {
+   "key": "n.k4.gelaende",
+   "kind": "note",
+   "name": "Gelände",
+   "type": "Regel",
+   "parent": "n.k4",
+   "tags": [
+    "tag.kap4"
+   ],
+   "entry": "<p>Gelände macht Kämpfe für Spieler schwerer und für den Runner interessanter. Ein Kampf-Ereignis kann beliebig viele Geländemerkmale enthalten; im Originalsystem zählen nur <strong>drei</strong> Merkmale für Begegnungspunkte (der Entwerfer wählt, welche). Prozentuale Anteile des Kampfgebiets legst du fest und trägst sie auf Papier mit Quadraten oder Hexfeldern ein; mehrere flächenwirksame Merkmale kannst du farblich getrennt überlappen lassen, wenn es Sinn ergibt.</p><ul><li>{{ref:n.k4.gel.barrieren}}</li><li>{{ref:n.k4.gel.deckung}}</li><li>{{ref:n.k4.gel.schaden}}</li><li>{{ref:n.k4.gel.statisten}}</li><li>{{ref:n.k4.gel.ausgaenge}}</li><li>{{ref:n.k4.gel.ebenen}}</li><li>{{ref:n.k4.gel.sicht}}</li><li>{{ref:n.k4.gel.fernbeschuss}}</li><li>{{ref:n.k4.gel.rutschig}}</li><li>{{ref:n.k4.gel.schraeg}}</li><li>{{ref:n.k4.gel.uneben}}</li><li>{{ref:n.k4.gel.magie}}</li><li>{{ref:n.k4.gel.karten}}</li><li>Tube Striker: siehe {{ref:cr.tubestriker}}</li></ul><p><strong>Anfänger-Tipp des Buchs:</strong> Gruppen, die die Regeln gerade lernen, lassen Gelände in den ersten Begegnungen weg.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 120–121</em></p>"
+  },
+  {
+   "key": "n.k4.gel.barrieren",
+   "kind": "note",
+   "name": "Barrieren",
+   "type": "Geländemerkmal",
+   "parent": "n.k4.gelaende",
+   "tags": [
+    "tag.kap4",
+    "tag.gelaende"
+   ],
+   "entry": "<p>Eine <strong>Barriere</strong> ist jedes Objekt, das den Treff- oder Verteidigungsversuch eines Nahkämpfers stört; sie verstärkt den Vorteil des geschickteren Kämpfers ({{ref:n.k2.sonder.deckung}}). Barrieren zwingen Kämpfer zu Umwegen: Man läuft darum herum oder springt darüber. <strong>Ein Hindernis zu überspringen kostet eine halbe Aktion</strong> und halbiert die Strecke der Runde.</p><ul><li>Beispiele: morsche Balken, Stühle, aufgerollte Teppiche, Kohlebecken, Hühnerkäfige, Steinhaufen, Gräben.</li><li>Die Schwierigkeit zum Überspringen ist <strong>6</strong>, sofern der Entwerfer nichts anderes festlegt (erhöhte Schwierigkeit wird zum üblichen Preis bezahlt).</li><li><strong>Originalsystem:</strong> 3 Begegnungspunkte je Barriere, bis zu vier. Pillager und Runner erhalten Siegespunkte, wenn der gerade Weg zum Gegner (beim Angriff) oder zum Ausgang oder zur Deckung (bei Flucht oder Rückzug) über die Barriere führt.</li></ul><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 120–121</em></p>",
+   "properties": [
+    {
+     "name": "Kosten (Originalsystem)",
+     "value": "+3 je Barriere, höchstens 4",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.k4.gel.deckung",
+   "kind": "note",
+   "name": "Deckung",
+   "type": "Geländemerkmal",
+   "parent": "n.k4.gelaende",
+   "tags": [
+    "tag.kap4",
+    "tag.gelaende",
+    "tag.tabelle"
+   ],
+   "entry": "<p><strong>Deckung</strong> ist alles, hinter dem sich ein Charakter verstecken kann, um weniger Körper dem Fernbeschuss auszusetzen: große Bäume, Mauern, Steinhaufen, umgestürzte Säulen, halb vergrabene Schiffe, große Möbel. Die Wirkung hängt vom Grad ab (ein Drittel, halb, fast ganz = <em>volle Deckung</em>); die Mali auf den Fernkampf stehen in {{ref:n.k2.s3.fern}}.</p><ul><li><strong>Spieler können Deckungen anerkannt bekommen</strong>, die der Entwerfer eigentlich für anderes gedacht hat; der Runner erhält dafür nachträglich keine Punkte.</li><li><strong>Gegen vorhersehbare Gegner:</strong> Helden in Deckung werden vom Zielwahl-Diagramm ignoriert. Gegner mit <strong>freiem Willen</strong> entdecken sie nur mit einem <strong>RES-Wurf</strong>; sonst dürfen sie nicht zur Deckung laufen und den Helden binden.</li></ul><table><tr><th>Grad der Deckung</th><th>RES-Schwierigkeit zum Entdecken</th><th>Schwierigkeit zum Überspringen</th></tr><tr><td>Ein Drittel</td><td>3</td><td>3</td></tr><tr><td>Halb</td><td>6</td><td>6</td></tr><tr><td>Voll</td><td>9</td><td>9</td></tr></table><ul><li><strong>Flach liegen:</strong> Erhöht die Schwierigkeit um 3. Nur möglich, wenn die Deckung drei oder mehr Helden schützen kann und kein anderer Held sich mit ihm versteckt.</li><li><strong>Aus voller Deckung hochspringen und schießen:</strong> Der Runner wählt zufällig einen Fernkämpfer unter den Gegnern, der einen <strong>Gelegenheitsschuss</strong> abgibt (wie bei halber Deckung, nach der Aktion des Hochspringenden). Gegner mit dem heulenden Goblin verlieren ihre nächste Aktion, Gegner mit dem grinsenden Goblin nicht.</li><li><strong>Deckung und Höhe:</strong> Der ATK-Malus gegen Gedeckte sinkt um <strong>3 je 10 Fuß</strong> Höhe des Schützen über dem Ziel. Hat das Ziel einen Höhenvorteil, steigt der Malus um 3 je 10 Fuß. (Beispiel: Ragnar steht 20 Fuß hoch und schießt auf einen Goblin hinter einer Statue (halbe Deckung, −6): Der Malus sinkt um 6 auf 0. Steht der Goblin samt Deckung oben, steigt er von −6 auf −12.) Das Buch verzichtet bewusst auf Trigonometrie.</li><li><strong>Überspringen:</strong> Erhöhte Schwierigkeit wird zum Preis der Differenz der Kosten bezahlt (Beispiel: Stacheldraht auf einer Mauer, Schwierigkeit 9 → 12 kostet 60 − 30 = 30). Bei geänderter Sprung-Schwierigkeit erhalten Spieler und Runner Erfolgs- und Misserfolgspunkte wie bei Barrieren.</li><li><strong>Originalsystem:</strong> Drittel-Deckung 3 Punkte, halbe 6, volle 12, mal Zahl der Charaktere, die sich dahinter verbergen können (höchstens 36).</li></ul><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 121–123</em></p>",
+   "properties": [
+    {
+     "name": "Kosten (Originalsystem)",
+     "value": "Drittel 3 / halb 6 / voll 12 je Charakter, höchstens 36",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.k4.gel.schaden",
+   "kind": "note",
+   "name": "Schadensorte (Damaging Places)",
+   "type": "Geländemerkmal",
+   "parent": "n.k4.gelaende",
+   "tags": [
+    "tag.kap4",
+    "tag.gelaende",
+    "tag.tabelle"
+   ],
+   "entry": "<p>Ein <strong>Schadensort</strong> ist ein Geländemerkmal, das allen Schaden zufügt, die einen bestimmten Bereich betreten: Lavagruben, Flächen glühender Kohlen, zwergische Dampfpressen, Orte mit beißendem Bergwind. Die Helden müssen ihm ausweichen können, indem sie fernbleiben, und seine Gefahr <strong>automatisch wahrnehmen</strong>. Der Entwerfer darf keine andere Falle oder anderes Geländemerkmal einbauen, das Helden hineinzwingt; Gegner dürfen aber versuchen, sie hineinzumanövrieren.</p><ul><li><strong>Wurf:</strong> Ein Held im Bereich muss <strong>jede Runde Ausdauer gegen Schwierigkeit 4</strong> würfeln. Der Schaden folgt dem DAM-Wert des Ortes.</li><li><strong>Köder:</strong> Helden können mit Schätzen oder Gewinnen in den Schadensort gelockt werden, wenn sie die Belohnung allein durch Betreten erhalten. Muss der Held <strong>2 Runden</strong> bleiben: 10 Begegnungspunkte; <strong>3 Runden</strong>: 20. Mehr als 3 Runden Schaden darf nicht verlangt werden. Für den Köder gibt es keine Punkte.</li><li><strong>Gegner und Schadensorte:</strong> Runner dürfen Gegner nicht willkürlich hineinlaufen lassen, damit die Helden nicht um Siegespunkte gebracht werden. Gegner erleiden Schaden nur, wenn die Helden sie hineinwerfen, -schieben oder -manövrieren (die Helden erhalten dafür Siegespunkte).</li><li><strong>Ausdehnender Schadensort:</strong> Beginnt auf einem Feld (je nach Kartenmaßstab 2 bis 10 Meter breit) und füllt jede Runde alle angrenzenden Felder.</li><li>Zusätzliche fallenartige Eigenschaften (z. B. Gefahr für Waffen und Ausrüstung) werden wie jede Falle bezahlt.</li></ul><table><tr><th>DAM-Wert</th><th>Kosten (Originalsystem)</th></tr><tr><td>10</td><td>−10</td></tr><tr><td>20</td><td>−20</td></tr><tr><td>25</td><td>−30</td></tr><tr><td>30</td><td>−20</td></tr><tr><td>35</td><td>−10</td></tr></table><table><tr><th>Feldgröße (ausdehnend)</th><th>Kosten (Originalsystem)</th></tr><tr><td>2–4 Meter</td><td>−20</td></tr><tr><td>5 Meter</td><td>−10</td></tr><tr><td>10 Meter</td><td>−1</td></tr></table><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 122–123</em></p>",
+   "properties": [
+    {
+     "name": "Kosten (Originalsystem)",
+     "value": "nach DAM-Wert: 10 → −10, 20 → −20, 25 → −30, 30 → −20, 35 → −10",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.k4.gel.statisten",
+   "kind": "note",
+   "name": "Statisten: Lockvögel und Geiseln",
+   "type": "Geländemerkmal",
+   "parent": "n.k4.gelaende",
+   "tags": [
+    "tag.kap4",
+    "tag.gelaende"
+   ],
+   "entry": "<p><strong>Statisten (Extras)</strong> sind Unterstützungsfiguren, die den Helden keine Gefahr sind, aber ihr Bemühen erschweren, die eigentlichen Gegner niederzumähen. Zwei Arten:</p><h3>Lockvögel (Decoys)</h3><ul><li>Diener, Sklaven, Verwandte oder andere Begleiter der Kampfgegner, die ihnen nichts Böses wollen und die Helden <strong>nicht angreifen</strong>.</li><li>Zu Beginn jeder Runde würfelt der Runner: Ist das Ergebnis höchstens die Zahl der Lockvögel, wird <strong>einer in Panik</strong> versetzt. Der Runner würfelt Initiative für alle panischen Lockvögel und alle, die das Feld noch nicht verlassen haben. Zu seiner Initiative rennt ein panischer Lockvogel <strong>30 Meter</strong> in eine zufällig gewürfelte Richtung; trifft er auf ein Geländemerkmal oder eine Figur, ändert er die Richtung, bis die 30 Meter aufgebraucht sind. Nicht panische laufen geradeaus zur nächsten Deckung oder Wand.</li><li>Lockvögel zählen als mögliche zufällige Ziele beim Schießen in den Nahkampf. Ihr Gekreische und Gehüpfe lenkt ab: Wer innerhalb von <strong>5 Meter</strong> um Lockvögel einen ATK-Wurf macht, erleidet <strong>−1 je Lockvogel</strong>.</li><li>Siegespunkte gibt es für das Erledigen nicht. Helden können ihn mit einem ATK-Wurf gegen <strong>Schwierigkeit 6</strong> ausschalten: Er stirbt oder stellt sich tot (Würfel: ungerade = lebt).</li><li><strong>Originalsystem:</strong> 10 Begegnungspunkte je Lockvogel, höchstens 4. Der Entwerfer sollte nicht mehr als drei einsetzen, solange er unerfahren als Runner ist.</li></ul><h3>Geiseln (Hostages)</h3><ul><li>Statisten, die die Helden aus den Händen ihrer Feinde retten wollen. Entführer lassen Gefangene selten frei herumlaufen, sondern verstecken sich hinter ihnen.</li><li>Ein Gegner, der sich hinter einer Geisel versteckt, addiert <strong>6 auf seine Absorption</strong>. Die 6 Punkte Schaden gehen stattdessen an die Geisel, die keine Absorption hat und <strong>18 HP</strong> aushält. <strong>Ausnahme:</strong> Übertrifft der ATK-Wurf des Helden den DFN-Wurf des Geiselnehmers um <strong>10 oder mehr</strong>, darf der Plünderer festlegen, dass sein Held die verängstigte Geisel umgangen hat.</li><li>Alternativ kann ein Held seine Aktion auf einen <strong>Engagement-Wurf gegen den Entführer</strong> verwenden; gewinnt er, wird die Geisel aus dem Griff gezogen. Befreite Geiseln verhalten sich wie Lockvögel (zur Wand oder Deckung, mit Panik).</li><li>Siegespunkte (Originalsystem): <strong>−20</strong> für jede im Kampf getötete Geisel, <strong>+20</strong> für jede befreite.</li><li>Nur <strong>gerissene Gegner</strong> (grinsender Goblin) können Geiseln nutzen, und eine Geisel schützt höchstens vor <strong>zwei Helden</strong>; andere Helden hält er ab, indem er sich an eine Wand oder Deckung lehnt.</li><li><strong>Originalsystem:</strong> 10 Begegnungspunkte je Geisel, höchstens 3 je Begegnung.</li></ul><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 123–124</em></p>",
+   "properties": [
+    {
+     "name": "Kosten (Originalsystem)",
+     "value": "Lockvogel +10 (höchstens 4), Geisel +10 (höchstens 3)",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.k4.gel.ausgaenge",
+   "kind": "note",
+   "name": "Begrenzte Ausgänge",
+   "type": "Geländemerkmal",
+   "parent": "n.k4.gelaende",
+   "tags": [
+    "tag.kap4",
+    "tag.gelaende"
+   ],
+   "entry": "<p>Findet der Kampf in einem geschlossenen Raum mit nur <strong>einem brauchbaren Ausgang</strong> statt, ist das meist auch der Eingang der Helden. Ein Ausgang ist <strong>brauchbar</strong>, wenn ein Held ihn zur Flucht ({{ref:n.k2.s2.aktionen}}) nutzen kann, ohne würfeln zu müssen. Muss er ein Seil erklimmen, eine Schlucht überspringen oder an einer Falle an der Schwelle vorbei, ist er nicht brauchbar.</p><ul><li>Es entkommt je Runde und Ausgang nur <strong>ein Held</strong>. Der Entwerfer kann auch einen Ausgang vorsehen, durch den zwei Helden pro Runde entkommen können.</li><li><strong>Originalsystem:</strong> 1 brauchbarer Ausgang: 20 Punkte; 2 Ausgänge: 10 Punkte; ein Ausgang für zwei Helden pro Runde: 10 Punkte.</li></ul><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 124</em></p>",
+   "properties": [
+    {
+     "name": "Kosten (Originalsystem)",
+     "value": "1 Ausgang +20, 2 Ausgänge +10",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.k4.gel.ebenen",
+   "kind": "note",
+   "name": "Mehrere Ebenen",
+   "type": "Geländemerkmal",
+   "parent": "n.k4.gelaende",
+   "tags": [
+    "tag.kap4",
+    "tag.gelaende"
+   ],
+   "entry": "<p>Betrachte den Kampfbereich wie ein Filmset: ein einziger flacher Boden ist nicht interessant. <strong>Mehrere Ebenen</strong> erlauben Gegnern, um höheres Gelände zu rangeln (wer von höherem Boden kämpft, hat im Nahkampf einen Vorteil, siehe {{ref:n.k2.s3.modifikatoren}}). Beispiele: Balkone, breite Mauern, Treppen, Dächer niedriger Gebäude, Schutthaufen, kleine Steilhänge.</p><p><strong>Originalsystem:</strong> 5 Punkte je zusätzlicher Ebene, höchstens 3 Ebenen.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 124</em></p>",
+   "properties": [
+    {
+     "name": "Kosten (Originalsystem)",
+     "value": "+5 je zusätzliche Ebene, höchstens 3",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.k4.gel.sicht",
+   "kind": "note",
+   "name": "Eingeschränkte Sicht (Dunkelheit, Nebel)",
+   "type": "Geländemerkmal",
+   "parent": "n.k4.gelaende",
+   "tags": [
+    "tag.kap4",
+    "tag.gelaende"
+   ],
+   "entry": "<p>Wer nicht sehen kann, hat Mühe, Fallen und Gefahren zu umgehen, und ist im Kampf besonders gegen Gegner im Nachteil, die im Dunkeln sehen. Die Unterwelt ist oft dunkel; die meisten Bewohner (Goblins, Zwerge, Dishonored) sehen bei sehr wenig Licht (Halbmond-Symbol; Zwerge und Goblins finden das auf Dauer anstrengend und halten oft Fackeln bereit). Im Wikingerreich ist die Nacht etwas Furchteinflößendes. Natürliches Licht gibt es auch: Fackeln in bewohnten Gängen, phosphoreszierende Pilze.</p><ul><li>Bei Dunkelheit müssen Helden <strong>Fackeln</strong> tragen, was sie im Kampf zwischen Fackel und Schild wählen lässt. Eine Fackel erhellt zuverlässig einen Umkreis von <strong>25 Meter</strong>. Wer innerhalb dieser Entfernung vom Licht eines anderen steht, handelt ohne Abzug.</li><li><strong>Volle Dunkelheit:</strong> Ohne Lichtquelle <strong>−4</strong> auf alle Würfe, die auf Stärke, Geschicklichkeit, Schnelligkeit, Wahrnehmung, Kommunikation oder Präsenz beruhen, einschließlich abgeleiteter Werte (INIT, DFN).</li><li><strong>Dämmerung (Gloom):</strong> Ohne Lichtquelle <strong>−2</strong> auf diese Würfe.</li><li>Hoher Wind oder anhaltender Regen oder Schnee löschen Fackeln und halten sie gelöscht (zusätzlich 10 Punkte).</li><li>Auch <strong>dichter Nebel, Insektenschwärme oder Rauch</strong> verdecken die Sicht, ohne dass Fackeln helfen. Der Abzug ist je nach Wirkung verschieden und kann innerhalb des Gebiets variieren (Rauch kann zudem beim Einatmen Schaden verursachen).</li><li>Dunkelheit und Sichtbehinderung rechtfertigen auch erhöhte Schwierigkeiten für Nicht-Kampf-Würfe (zum üblichen Preis).</li><li><strong>Originalsystem:</strong> Volle Dunkelheit kostet (oder bringt) 10 Punkte, Dämmerung 5; Fackeln unmöglich +10. Gegen Gegner mit Nachtsicht <em>kostet</em> Dunkelheit den Entwerfer Punkte, gegen Gegner mit Fackeln bringt sie welche. Unlösbare Sichtbehinderung: 5 Punkte je Punkt Abzug; 5 Punkte je Bereich unterschiedlicher Intensität, höchstens 3.</li></ul><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 124–125</em></p>",
+   "properties": [
+    {
+     "name": "Kosten (Originalsystem)",
+     "value": "Dunkelheit 10, Dämmerung 5, Fackeln unmöglich +10, andere Sichtbehinderung 5 je Punkt Abzug",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.k4.gel.fernbeschuss",
+   "kind": "note",
+   "name": "Hindernisse für Fernbeschuss",
+   "type": "Geländemerkmal",
+   "parent": "n.k4.gelaende",
+   "tags": [
+    "tag.kap4",
+    "tag.gelaende"
+   ],
+   "entry": "<p>Der Kampfbereich kann viele Dinge im Weg von Fernkämpfern haben: mehrere Stützsäulen, Bäume, Flammenstrahlen, Wasserstrahlen aus einem antiken Brunnen. Solche Hindernisse zwingen den Schützen, sich bei <strong>jedem Zielwechsel</strong> oder wenn sein Ziel sich bewegt, <strong>eine Aktion zu bewegen</strong>.</p><ul><li>Alternativ kann der ganze Bereich den Fernbeschuss erschweren (Nebel macht alle Ziele verdeckt; Wind, der die Flugbahn unberechenbar macht): Der Malus auf Fernkämpfer beträgt höchstens <strong>4</strong>.</li><li><strong>Originalsystem:</strong> Hindernisse im ganzen Bereich 10 Punkte, nur etwa im halben Bereich 5 Punkte. Flächenmalus: 5 Punkte je Malus-Punkt (höchstens 4). Wird dieses Merkmal genutzt, gibt es nicht zusätzlich die Punkte für Pfeil-Gegner ohne Fernwaffen.</li></ul><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 125–126</em></p>",
+   "properties": [
+    {
+     "name": "Kosten (Originalsystem)",
+     "value": "ganz 10, halb 5; Flächenmalus 5 je Punkt (höchstens 4)",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.k4.gel.rutschig",
+   "kind": "note",
+   "name": "Rutschiger Boden",
+   "type": "Geländemerkmal",
+   "parent": "n.k4.gelaende",
+   "tags": [
+    "tag.kap4",
+    "tag.gelaende"
+   ],
+   "entry": "<p>Rutschiger Boden verlangsamt Bewegung und lässt Charaktere fallen: schlammige Erde, von Wasser oder Moos glatte Steine oder Pflaster, schneebedeckter Boden. Helden mit starker Balance locken Gegner gern hinein; Sturzgefährdete wollen hinaus.</p><ul><li>Im Bereich sind <strong>volle und halbe Bewegung halbiert</strong>.</li><li>Wer sich in einer Aktion mehr als <strong>2 Meter</strong> bewegt, muss <strong>Balance (oder RES)</strong> bestehen, um nicht auszurutschen.</li><li>Wer im Nahkampf <strong>10 oder mehr Rohschaden</strong> (vor Absorption) erleidet, muss einen <strong>zweiten DFN-Wurf</strong> machen oder fällt in den Schlamm. Die Schwierigkeit dieses Wurfs ist das ursprüngliche ATK-Ergebnis des Gegners.</li><li>Keiner dieser Würfe kostet eine Aktion. Wer ausrutscht, ist hingefallen ({{ref:n.k2.sonder.fallen}}).</li><li>Fallender Schnee oder Regen kann im Lauf einer Begegnung Boden rutschig machen (Kosten wie bei vollem Gebiet).</li><li><strong>Originalsystem:</strong> −15 Punkte bei zwei Dritteln, −10 bei der Hälfte, −5 bei einem Drittel oder dem ganzen Gebiet.</li></ul><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 126</em></p>",
+   "properties": [
+    {
+     "name": "Kosten (Originalsystem)",
+     "value": "2/3 −15, 1/2 −10, 1/3 oder ganz −5",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.k4.gel.schraeg",
+   "kind": "note",
+   "name": "Schräge Flächen",
+   "type": "Geländemerkmal",
+   "parent": "n.k4.gelaende",
+   "tags": [
+    "tag.kap4",
+    "tag.gelaende"
+   ],
+   "entry": "<p>Eine <strong>Schräge</strong> gibt dem, der die obere Seite erreicht, einen Höhenvorteil. Fehltritte lassen Helden fallen und womöglich weiter rollen.</p><ul><li><strong>Höhenvorteil erringen:</strong> Engagement-Wurf gegen den Gegner. Wer den Vorteil hat, erhält <strong>+3</strong> auf seinen Engagement-Wurf; stehen beide auf derselben Höhe der Schräge, ist der Wurf unmodifiziert. Wer die Anhöhe hält, hat <strong>+2</strong> auf alle ATK- und DFN-Würfe und +3 auf weitere Engagement-Würfe. Höchstens zwei Charaktere können gegen einen Gegner den Höhenvorteil haben.</li><li><strong>Fallen:</strong> Wer im Nahkampf <strong>15 oder mehr Rohschaden</strong> erleidet, muss einen zweiten DFN-Wurf (Schwierigkeit = ursprüngliches ATK-Ergebnis) bestehen oder fällt ({{ref:n.k2.sonder.fallen}}). Scheitert er <strong>um mehr als 5</strong>, <strong>rollt er die Schräge hinab</strong>: Er kommt nach <strong>3 Meter je Punkt Differenz</strong> zum Stillstand oder am Ende der Schräge.</li><li><strong>Richtung:</strong> Würfel 1–3 = rückwärts schräg zur Linken des Gegners (45°); 4–6 = direkt rückwärts; 7–10 = rückwärts schräg zur Rechten.</li><li><strong>Zusammenstoß:</strong> Trifft ein Rollender eine andere Figur, würfelt diese <strong>Ausweichen (Schwierigkeit 6, keine Aktion)</strong>. Scheitert sie um höchstens 5, landet sie auf dem Rollenden, beide stoppen und liegen <strong>verschlungen</strong>: Beide können normal aufstehen, aber ihre DFN-Würfe sinken um <strong>9</strong> (statt 6) und sie können <strong>nicht angreifen</strong>, auch nicht mit Stangenwaffen.</li><li><strong>Bewegung:</strong> Bergauf ist die maximale Strecke <strong>halbiert</strong>, bergab <strong>verdoppelt</strong>.</li><li><strong>Originalsystem:</strong> 15 Punkte für ein ganz geneigtes Gebiet, 20 für zwei Drittel; 5 je Rampe oder Gefälle in einem sonst flachen Gebiet (mindestens 6 Felder).</li></ul><blockquote><strong>Beispiel:</strong> Ragnar teilt 17 Rohschaden aus. Der Goblin scheitert beim zweiten DFN-Wurf um 6, verliert den Halt und rollt 18 Meter (3 × 6) in die vom Runner gewürfelte Richtung.</blockquote><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 126–127</em></p>",
+   "properties": [
+    {
+     "name": "Kosten (Originalsystem)",
+     "value": "ganz −15, 2/3 −20, +5 je Rampe (mind. 6 Felder)",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.k4.gel.uneben",
+   "kind": "note",
+   "name": "Unebener Boden",
+   "type": "Geländemerkmal",
+   "parent": "n.k4.gelaende",
+   "tags": [
+    "tag.kap4",
+    "tag.gelaende"
+   ],
+   "entry": "<p>Unebener Boden bremst Bewegung, birgt aber wenig Sturzgefahr: trümmerübersäte Ruinen, Hang- und Schluchtflanken, Unterweltgänge mit hochgewölbten Bodensteinen. Er <strong>senkt die Höchststrecke voller und halber Bewegung um 50 %</strong>.</p><p><strong>Originalsystem:</strong> −7 Punkte bei der Hälfte bis zwei Dritteln des Bereichs, −3 bei dem ganzen Bereich oder weniger als der Hälfte.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 127</em></p>",
+   "properties": [
+    {
+     "name": "Kosten (Originalsystem)",
+     "value": "1/2–2/3 −7, ganz oder < 1/2 −3",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.k4.gel.magie",
+   "kind": "note",
+   "name": "Seltsame Magie (Weird Magic)",
+   "type": "Geländemerkmal",
+   "parent": "n.k4.gelaende",
+   "tags": [
+    "tag.kap4",
+    "tag.gelaende"
+   ],
+   "entry": "<p>Die seltsame Magie der Götter, besonders Lokis Trickzauber, kann jede Kampfhandlung erschweren: greifende, halb körperlose Hände, die Waffen packen; schreiende Kobolde auf einer Klinge, die sie ins Innere des Verteidigers lenken; böse Winde, die Schwerter schärfen oder Schilde schwächen.</p><ul><li>Seltsame Magie kann <strong>jeden Wurf im Kampf</strong> um beliebige Zahlen erhöhen oder senken (INIT, ATK, DFN, Würfe zur Aktivierung göttlicher Kräfte) oder nicht gewürfelte Werte wie DAM verändern. Die höchste Anpassung der Spielwerte ist <strong>3</strong> (auf einen Wert oder verteilt).</li><li><strong>Nicht möglich:</strong> auf ATK <em>und</em> DFN zugleich; auf DAM <em>und</em> Absorption zugleich; auf INIT-Würfe von Gegnern.</li><li><strong>Originalsystem:</strong> 10 Punkte je Punkt Zu- oder Abzug. Behindert sie nur die Helden oder nützt nur den Gegnern, <em>kostet</em> sie Punkte; wirkt sie auf beide, behindert nur Gegner oder nützt nur Helden, <em>bringt</em> sie Punkte.</li><li>Goblin-Schamanen erzeugen seltsame Magie (siehe {{ref:cr.gobshaman}}).</li></ul><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 128</em></p>",
+   "properties": [
+    {
+     "name": "Kosten (Originalsystem)",
+     "value": "10 je Punkt Zu-/Abzug (höchstens 3)",
+     "type_id": 1
+    }
+   ]
+  },
+  {
+   "key": "n.k4.gel.karten",
+   "kind": "note",
+   "name": "Karten zeichnen",
+   "type": "Regel",
+   "parent": "n.k4.gelaende",
+   "tags": [
+    "tag.kap4"
+   ],
+   "entry": "<p>Jeder Kampf braucht eine <strong>Karte</strong>: eine grobe Skizze, ein Computerausdruck oder ein kolorierter Plan. Sie zeigt, wo die Helden im Verhältnis zu Gegnern stehen, und sollte maßstabsgerecht sein; sonst muss der Runner den Maßstab schnell und fair ableiten können. Alle gewählten Geländemerkmale gehören auf die Karte. Die Startpositionen der Gegner kann der Entwerfer eintragen; sie sind frei wählbar und kosten nichts.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 128</em></p>"
+  },
+  {
+   "key": "n.k4.schwierigkeit",
+   "kind": "note",
+   "name": "Schwierigkeiten und Wurfarten",
+   "type": "Regel",
+   "parent": "n.k4",
+   "tags": [
+    "tag.kap4"
+   ],
+   "entry": "<p>Wann immer die Notizen einen Helden zu einem Wurf auffordern (Falle oder Gefahr vermeiden, Schatz oder Gewinn sichern), legt der Entwerfer die <strong>Schwierigkeit</strong> und die geltenden Sonderregeln fest. Dieser Teil erklärt die Schwierigkeiten und die verschiedenen <strong>Wurfarten</strong>.</p><ul><li>{{ref:n.k4.sw.grund}}</li><li>{{ref:n.k4.sw.uebersicht}}</li><li>{{ref:n.k4.sw.singulaer}}</li><li>{{ref:n.k4.sw.schwach}}</li><li>{{ref:n.k4.sw.bedingt}}</li><li>{{ref:n.k4.sw.mehrfach}}</li><li>{{ref:n.k4.sw.eskalation}}</li><li>{{ref:n.k4.sw.zusatz}}</li><li>{{ref:n.k4.sw.exotisch}}</li><li>{{ref:n.k4.sw.goetter}}</li></ul><p><strong>Einsteiger-Tipp des Buchs:</strong> Beginne mit den Wurfarten <em>Standard, Singular, Singular: Rush</em> und <em>Singular: No-Fault</em>.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 129–140</em></p>"
+  },
+  {
+   "key": "n.k4.sw.grund",
+   "kind": "note",
+   "name": "Grundschwierigkeit, Standard- und Vergleichswurf",
+   "type": "Regeltabelle",
+   "parent": "n.k4.schwierigkeit",
+   "tags": [
+    "tag.kap4",
+    "tag.tabelle",
+    "tag.wurfart"
+   ],
+   "entry": "<p>Die Kosten eines Wurfs (wenn Erfolg einen Gewinn bringt oder ein negatives Ereignis verhindert) hängen von der <strong>Schwierigkeit</strong> ab. Die Schwierigkeit darf <strong>14</strong> nicht übersteigen. Bei Schatzwürfen gibt es keine Punkte für Schwierigkeiten unter 6. Beruht der Wurf nicht auf der Leitcharakteristik der Fertigkeit oder hat die Fertigkeit mehrere Leitcharakteristiken, nenne die Charakteristik in den Notizen.</p><table><tr><th>Schwierigkeit</th><th>Kosten (Originalsystem)</th></tr><tr><td>4</td><td>−20</td></tr><tr><td>5</td><td>−10</td></tr><tr><td>6</td><td>0</td></tr><tr><td>7</td><td>+10</td></tr><tr><td>8</td><td>+20</td></tr><tr><td>9</td><td>+30</td></tr><tr><td>10</td><td>+40</td></tr><tr><td>11</td><td>+50</td></tr><tr><td>12</td><td>+60</td></tr><tr><td>13</td><td>+70</td></tr><tr><td>14</td><td>+80</td></tr></table><blockquote><strong>Beispiel:</strong> Die Helden erreichen ein Labyrinth aus Gängen der Unterwelt; um den Rückweg zum Lager zu finden, muss ein Held eine Kartenzeichnen-Probe gegen Schwierigkeit 12 bestehen. Kosten: 35 Punkte.</blockquote><p><strong>Standardwurf (Standard roll):</strong> Jeder Held würfelt, jeder erleidet oder erhält die Folgen seines eigenen Wurfs.</p><h3>Vergleichswurf (Opposed roll)</h3><p>Statt gegen eine feste Schwierigkeit versucht der Held, das Ergebnis einer Unterstützungsfigur zu übertreffen. Der Plünderer würfelt für seinen Helden, der Runner für den Gegenspieler; erreicht oder übertrifft der Held, gewinnt er den Vorteil oder vermeidet die negative Folge. Die Kosten richten sich nach dem <strong>Gesamtbonus</strong> des Gegenspielers (meist Charakteristik + Fertigkeit; höchstens 11):</p><table><tr><th>Bonus</th><th>Kosten (Originalsystem, Singulärer Wurf)</th></tr><tr><td>0</td><td>−20</td></tr><tr><td>1</td><td>−10</td></tr><tr><td>2</td><td>0</td></tr><tr><td>3</td><td>+10</td></tr><tr><td>4</td><td>+20</td></tr><tr><td>5</td><td>+30</td></tr><tr><td>6</td><td>+40</td></tr><tr><td>7</td><td>+50</td></tr><tr><td>8</td><td>+60</td></tr><tr><td>9</td><td>+70</td></tr><tr><td>10</td><td>+80</td></tr><tr><td>11</td><td>+90</td></tr></table><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 129</em></p>"
+  },
+  {
+   "key": "n.k4.sw.uebersicht",
+   "kind": "note",
+   "name": "Wurfarten im Überblick",
+   "type": "Regeltabelle",
+   "parent": "n.k4.schwierigkeit",
+   "tags": [
+    "tag.kap4",
+    "tag.tabelle",
+    "tag.wurfart"
+   ],
+   "entry": "<p>Die Tabelle nennt, welche Wurfart zu welcher Lage passt. Einzelregeln und Beispiele stehen in den folgenden Notes.</p><table><tr><th>Lage</th><th>Wurfart</th></tr><tr><td>Jeder Held würfelt einmal; erfolgreiche erhalten den Vorteil oder entgehen der Folge, gescheiterte verlieren den Vorteil oder erleiden die Folge</td><td>Standardwurf</td></tr><tr><td>Plünderer würfelt für seinen Helden, der Runner für einen Gegner; Erreichen oder Übertreffen gewinnt</td><td>Vergleichswurf</td></tr><tr><td>Ein Held würfelt; gelingt es, profitieren oder leiden alle</td><td>Singulärer Wurf</td></tr><tr><td>Beliebig viele Helden dürfen würfeln; gelingt auch nur einer, profitieren alle, sonst verlieren alle</td><td>Singulär: No-Fault</td></tr><tr><td>Ein Held würfelt; gelingt es, profitiert oder leidet nur er allein</td><td>Singulär: Rush</td></tr><tr><td>Beliebig viele Helden dürfen würfeln, jeder erhält oder erleidet nur die Folgen seines eigenen Wurfs; wer nicht würfelt, bleibt unbetroffen</td><td>Singulär: Scramble</td></tr><tr><td>Beliebig viele Helden dürfen würfeln; gelingen allen Würfen, profitieren alle, scheitert auch nur einer, verlieren alle</td><td>Singulär: Dogpile</td></tr><tr><td>Alle Helden müssen würfeln; scheitert einer, verlieren alle</td><td>Weak-Link-Wurf</td></tr><tr><td>Alle müssen würfeln; scheitert einer, trifft es alle Helden vor oder hinter ihm</td><td>Weak-Link: Line of Doom</td></tr><tr><td>Alle müssen würfeln; scheitert einer, müssen alle Helden vor oder hinter ihm erneut würfeln</td><td>Weak-Link: Domino</td></tr><tr><td>Im Kampf müssen die Helden zusammen 2 oder mehr Erfolge erzielen; jeder Versuch kostet eine Kampfaktion</td><td>Mehrfachwurf: Action Sink</td></tr><tr><td>Ein Held muss jede Runde einen Erfolg würfeln, bis andere Helden bei einem anderen Wurf erfolgreich sind</td><td>Mehrfachwurf: Panic Button</td></tr><tr><td>Alle Helden müssen eine festgelegte Zahl von Würfen machen; wer einmal scheitert, erleidet Folge oder verpasst den Gewinn (Standard)</td><td>Mehrfachwurf: Endurance Test</td></tr><tr><td>Ein Held muss eine festgelegte Zahl von Würfen machen; scheitert er einmal, verliert die ganze Gruppe (Singulär)</td><td>Mehrfachwurf: Endurance Test</td></tr><tr><td>Alle dürfen würfeln; zusammen sind X Erfolge in Y Runden nötig</td><td>Mehrfachwurf: Countdown</td></tr><tr><td>Ein Held würfelt Vergleichswürfe gegen einen Gegner; wer zuerst eine festgelegte Zahl Erfolge hat, gewinnt</td><td>Mehrfachwurf: Scoreboard</td></tr><tr><td>Standard- oder Singulärer Wurf, bei dem der Plünderer mehr als einmal würfeln darf (nur ein Erfolg nötig)</td><td>Zusätzliche Würfe erlaubt</td></tr><tr><td>Jeder Wurf, bei dem mehr als eine Fertigkeit eingesetzt werden kann</td><td>Alternative Methode</td></tr><tr><td>Standard- oder Singulärer Wurf mit zwei getrennten Würfen mit verschiedenen Modifikatoren; beide müssen gelingen</td><td>Gleichzeitige Würfe</td></tr><tr><td>Jeder Wurf, dessen Misserfolg mehrere negative Folgen hat</td><td>Kombi-Falle</td></tr><tr><td>Jeder Wurf, dessen Erfolg mehrere Gewinne bringt</td><td>Kombi-Gewinn</td></tr><tr><td>Jeder Wurf, bei dem Erfolg zum Gewinn, Misserfolg aber zu einer schlimmen Folge führt</td><td>Dame oder Tiger</td></tr></table><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 130–131</em></p>"
+  },
+  {
+   "key": "n.k4.sw.singulaer",
+   "kind": "note",
+   "name": "Singuläre Würfe: No-Fault, Rush, Scramble, Dogpile",
+   "type": "Regel",
+   "parent": "n.k4.schwierigkeit",
+   "tags": [
+    "tag.kap4",
+    "tag.wurfart"
+   ],
+   "entry": "<p>Ein <strong>Singulärer Wurf</strong> wird nur von einem Charakter gemacht; gelingt er, vermeidet er eine schlechte Folge oder sichert einen Gewinn, womöglich für die ganze Horde. Kosten im Originalsystem: <strong>0</strong>. Dafür kann nur der Würfelnde die Gunst der Götter (Siegespunkte) gewinnen; deshalb gibt es mehrere Varianten.</p><ul><li><strong>No-Fault (Fehlerfrei):</strong> Alle Charaktere dürfen würfeln; Misserfolge heben Erfolge <em>nicht</em> auf. Meist bei rein geistigen Aufgaben wie dem Deuten von Hinweisen. Das begünstigt die Helden und bringt dem Entwerfer <strong>15 Punkte</strong>. (Beispiel: Thurid und Thorleik lesen eine Runenwand; Thurid gelingt es, Thorleik nicht; Thurid versteht die Warnung.)</li><li><strong>Rush:</strong> Nur ein Held muss würfeln, und nur er erlebt Erfolg oder Misserfolg (z. B. ein Tür-Speer: nur der Öffnende ist gefährdet; die erste Hand am goldenen Ball gewinnt 2 Punkte Invigoration). Wollen mehrere es versuchen, müssen sie sich mit <strong>Engagement-Würfen (Stärke + Raufen)</strong> um die Gelegenheit streiten; Plünderer können sich auch einigen. Ein Held, den eine Falle gezielt trifft (etwa eine Geschossfalle), ist technisch ein Rush-Wurf. Kosten: 0 Punkte.</li><li><strong>Scramble:</strong> Wie Rush, aber beliebig viele Helden dürfen es versuchen, und jeder erleidet oder genießt nur die Folgen seines eigenen Wurfs. (Beispiel: Walküren fordern die Helden zu einem Übungskampf: Gewinner erhalten je 20 Siegespunkte, Verlierer erleiden Schaden; wer nicht mitmacht, bleibt unbetroffen.)</li><li><strong>Dogpile:</strong> Jeder Held darf es gleichzeitig versuchen, aber das Scheitern <strong>eines</strong> Helden bedeutet Scheitern für <strong>alle</strong>. Erfolgreiche Würfler erhalten weiter Siegespunkte (Originalsystem), aber die schlechten Folgen treten ein oder der gute Ausgang bleibt aus. (Beispiel: Ragnar, Thurid und Thorleik würfeln gegen Schwierigkeit 8 auf Tapferkeit, um die Gunst des Seemanns Hrapp zu gewinnen; Ragnar 11, Thurid 12, Thorleik −8 (Patzer): Hrapp zerreißt die Karte.)</li></ul><p><em>Rush</em>-Würfe erlauben dem Entwerfer, den Nutzen oder Schaden zu begrenzen und fördern den Wettstreit unter den Plünderern.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 132–133</em></p>"
+  },
+  {
+   "key": "n.k4.sw.schwach",
+   "kind": "note",
+   "name": "Weak-Link-Würfe: Line of Doom und Domino",
+   "type": "Regel",
+   "parent": "n.k4.schwierigkeit",
+   "tags": [
+    "tag.kap4",
+    "tag.wurfart"
+   ],
+   "entry": "<p>Manchmal müssen <strong>alle</strong> Helden denselben Wurf bestehen, oder alle scheitern: Niemand erhält den Gewinn, oder alle fallen der Falle zum Opfer. Das ist ein <strong>Weak-Link-Wurf</strong> (kostet im Originalsystem zusätzliche <strong>40 Punkte</strong>). Der Runner muss nicht verraten, welche Fertigkeit er prüft, wenn er die Marschordnung erfragt.</p><blockquote><strong>Beispiel:</strong> Die Elfenkönigin prüft die Helden durch ihre magische Linse, ob sie ihren Silberbecher verdienen. Jeder muss einen Auftreten-Wurf bestehen.</blockquote><ul><li><strong>Line of Doom (Kosten 10 statt 40):</strong> Alle Helden unmittelbar vor oder hinter den gescheiterten Würflern bleiben automatisch verschont. Der Entwerfer legt fest, ob die Gefahr von vorne oder hinten kommt. Kommt sie von <strong>hinten</strong>, sind alle Helden vor dem am weitesten vorne gescheiterten Würfler verschont; kommt sie von <strong>vorne</strong>, alle hinter dem am weitesten hinten Gescheiterten. (Beispiel: Fünf Helden schleichen; ein Gremlin in der Wand lässt heißes Öl herabregnen, wenn er sie hört. Die Gefahr liegt hinten; Canute und Ufnal scheitern, Canute steht weiter vorn: Amundi und Bjarni vor ihm bleiben verschont.)</li><li><strong>Domino (Kosten 20):</strong> Alle Helden vor oder hinter den gescheiterten Würflern müssen <strong>einen zweiten Wurf</strong> machen, um die ursprüngliche Falle zu vermeiden. Das kann einen Dominoeffekt auslösen: Ein Held besteht den ersten Wurf, muss neu würfeln, scheitert und zwingt den Nächsten zum Neuwurf usw. (Beispiel: Fünf Helden klettern am Seil; Böen wirbeln sie umher. Bjarni fällt und zwingt Canute zum Neuwurf, der gelingt: die Kette endet.)</li></ul><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 133–135</em></p>"
+  },
+  {
+   "key": "n.k4.sw.bedingt",
+   "kind": "note",
+   "name": "Bedingte Elemente",
+   "type": "Regel",
+   "parent": "n.k4.schwierigkeit",
+   "tags": [
+    "tag.kap4",
+    "tag.wurfart"
+   ],
+   "entry": "<h3>Bedingt vermeidbare Fallen und Gefahren</h3><p>Fallen und Gefahren, die Helden <strong>automatisch</strong> vermeiden, wenn ihre Plünderer bestimmte Entscheidungen treffen (meist: etwas nicht anfassen oder einen gefährlichen Bereich nicht betreten). Zwingt der Entwerfer die Helden zur auslösenden Handlung, durch Beschreibung oder verlangten Wurf, ist es <em>nicht</em> bedingt vermeidbar. Auch wer die auslösende Wahl trifft, darf zur Vermeidung würfeln.</p><ul><li><strong>Standardwurf:</strong> Ein Held kann die Wahl treffen, die die Falle auslöst, aber alle müssen würfeln. Bringt <strong>10 Punkte</strong>.</li><li><strong>Singulärer Wurf:</strong> Nur Helden, die die auslösende Wahl treffen, müssen würfeln und leiden. Weitere <strong>20 Punkte</strong>.</li><li>Der Entwerfer legt fest, ob die Bedingung <strong>nur bei der ersten Auslösung</strong> wirkt (nur der erste Held oder die erste Gruppe würfelt; +5 Punkte) oder <strong>bestehen bleibt</strong> (jede erneute Wahl verlangt einen neuen Wurf; 0 Punkte). Er kann die Zahl der Auslösungen begrenzen, ohne Punkte.</li></ul><h3>Bedingt verfügbare Gewinne</h3><p>Gewinne, die Helden <strong>ohne Wurf</strong> sichern können, wenn die Plünderer die richtige einfache Entscheidung treffen. Der Entwerfer darf keine komplexen Rätsel für die Spieler bauen (das sind Aufgaben der Helden und werden gewürfelt). Die Wahl muss im normalen Verlauf ohne Wurf und ohne Schadensrisiko möglich sein; Ausnahme: nach einem Kampf nach Untersuchung der Leichen. Schätze dürfen auch offen herumliegen. Es gibt keine Punkte; der Vorteil ist, dass weniger Würfe nötig sind (Regel der eskalierenden Stärke, {{ref:n.k4.sw.eskalation}}).</p><h3>Kampfaktion nötig</h3><p>Der Entwerfer kann festlegen, dass ein Held nur würfeln darf, wenn er mitten im Kampf auf eine seiner Aktionen verzichtet. Kosten: <strong>10 Punkte</strong>. Muss er mehrere Erfolge erzielen und kostet jeder Versuch eine Aktion, wird mit der Zahl der Erfolge multipliziert (<em>Action Sink</em>, {{ref:n.k4.sw.mehrfach}}).</p><h3>Keine Ausrüstung nötig</h3><p><strong>5 Punkte</strong> für Würfe, bei denen die übliche Ausrüstung der Fertigkeit nicht nötig ist (meist beim Einsatz von Wissen aus einer körperlichen Fertigkeit, oft auf Intelligenz statt der Leitcharakteristik). Beispiele: Reparieren-Wurf, um die Haltbarkeit zu beurteilen; Kartenzeichnen-Wurf, um einer fremden Karte zu folgen; Klettern-Wurf, um die Falltiefe abzuschätzen. Nicht bei Fertigkeiten ohne Standardausrüstung.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 135</em></p>"
+  },
+  {
+   "key": "n.k4.sw.mehrfach",
+   "kind": "note",
+   "name": "Mehrfachwürfe",
+   "type": "Regeltabelle",
+   "parent": "n.k4.schwierigkeit",
+   "tags": [
+    "tag.kap4",
+    "tag.tabelle",
+    "tag.wurfart"
+   ],
+   "entry": "<p>Der Entwerfer kann Helden mehrfach würfeln lassen. Es gibt fünf Arten.</p><h3>Action Sink</h3><p>Die Helden müssen <strong>mehrere Erfolge</strong> erzielen, und der einzige Preis weiterer Versuche ist der Verlust von Kampfaktionen: <strong>10 Punkte je geforderten Erfolg</strong>. Die Helden müssen unbegrenzt zusätzliche Würfe haben (dafür gibt es die üblichen Punkte nicht). Bei einer Falle oder Gefahr kann der Entwerfer <strong>20 Punkte</strong> zahlen, damit die negative Folge eintritt, wenn die Erfolge bis Kampfende nicht erzielt sind (dann höchstens 4 Erfolge).</p><blockquote><strong>Beispiel:</strong> Um eine Plattform zu erreichen, von der aus sie die Deckung der Feinde neutralisieren können, müssen die Helden vier schwere Fässer die Treppe hinunterwerfen: vier erfolgreiche Würfe im Kampf.</blockquote><h3>Panic Button</h3><p>Ein Held muss <strong>jede Runde einen erfolgreichen Wurf</strong> machen, um einen Vorteil zu halten oder ein Unheil abzuwehren: zusätzlich <strong>25 Punkte</strong>. Die Helden müssen eine Möglichkeit haben, die Lage zu beenden (meist durch einen anderen erfolgreichen Wurf), der zum üblichen Preis bezahlt wird.</p><blockquote><strong>Beispiel:</strong> Ein defektes zwergisches Craftwerk explodiert und schleudert weißglühende Splitter, es sei denn, Thorleik hält jede Runde mit Singen einen Ton, der die Schallsteuerung nachahmt. Thurid muss mit Reparieren das Craftwerk sicher abschalten; dann darf Thorleik aufhören.</blockquote><h3>Endurance Test (Ausdauerprobe)</h3><p>Wie der Panic Button, aber die Helden beenden die Lage, indem sie eine <strong>festgelegte Zahl von Runden</strong> durchhalten. Kann als Standard- oder Singulärer Wurf gelten. Bei Fallen oder Gefahren multipliziert der Entwerfer alle anderen positiven Kosten mit der Zahl der zusätzlichen Würfe. Höchstens 5 Würfe. Bei Gewinnen steigt der Preis mit jeder zusätzlichen Runde:</p><table><tr><th>Würfe nach dem ersten</th><th>Kosten</th></tr><tr><td>2</td><td>+25</td></tr><tr><td>3</td><td>+40</td></tr><tr><td>4</td><td>+60</td></tr><tr><td>5</td><td>+85</td></tr></table><blockquote><strong>Beispiel:</strong> Ragnar braucht 4 Runden über eine nasse, wackelige Brücke im Sturm; jede Runde ist ein Balance-Wurf, sonst stürzt er in die Schlucht.</blockquote><h3>Countdown</h3><p>Die Helden müssen in einer festgelegten Zahl von Versuchen eine Zahl von Erfolgen erzielen. Die geforderten Erfolge können die <strong>halbe Heldenzahl, die Heldenzahl, das Anderthalbfache oder das Doppelte</strong> betragen. Auch Initiative darf gewürfelt werden (bei Nicht-Kampf-Fertigkeiten: Schnelligkeit + Fertigkeit). Countdowns sind nie zugleich No-Fault oder freistehend.</p><table><tr><th>Geforderte Erfolge</th><th>Basiskosten (der höhere Wert)</th></tr><tr><td>Heldenzahl ÷ 2</td><td>20 oder (Schwierigkeitskosten × 2)</td></tr><tr><td>Heldenzahl</td><td>40 oder (Schwierigkeitskosten × 4)</td></tr><tr><td>Heldenzahl × 1,5</td><td>60 oder (Schwierigkeitskosten × 6)</td></tr><tr><td>Heldenzahl × 2</td><td>80 oder (Schwierigkeitskosten × 8)</td></tr></table><table><tr><th>Erlaubte Versuche</th><th>Kostenmultiplikator</th></tr><tr><td>1</td><td>3</td></tr><tr><td>2</td><td>2</td></tr><tr><td>3</td><td>keiner</td></tr><tr><td>4</td><td>0,5</td></tr><tr><td>5</td><td>0,25</td></tr></table><p>Als Variante müssen Helden eine festgelegte Zahl von Erfolgen erzielen, um wiederkehrenden oder eskalierenden Schaden zu beenden; dann gelten nur die Basiskosten ohne Multiplikator.</p><h3>Scoreboard</h3><p>Simuliert ein Match, ein Rennen oder einen anderen Wettstreit mit <strong>Vergleichswürfen</strong>: Held und Gegenspieler wetteifern, wer zuerst <strong>3, 4 oder 5 Erfolge</strong> hat. Gut für Spannung bei Rennen und Spielen (z. B. Thorleik würfelt gegen einen Wikinger; wer zuerst 4 Erfolge hat, gewinnt eine Truhe). Zusatzkosten je Erfolg nach dem ersten:</p><table><tr><th>Gesamtbonus des Gegners</th><th>Kosten je Erfolg nach dem ersten</th></tr><tr><td>3 oder weniger</td><td>+5</td></tr><tr><td>3–5</td><td>+10</td></tr><tr><td>6–8</td><td>+20</td></tr><tr><td>9 oder mehr</td><td>+40</td></tr></table><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 135–138</em></p>"
+  },
+  {
+   "key": "n.k4.sw.eskalation",
+   "kind": "note",
+   "name": "Die Regel der eskalierenden Stärke (Escalating Buffness)",
+   "type": "Regel",
+   "parent": "n.k4.schwierigkeit",
+   "tags": [
+    "tag.kap4",
+    "tag.wurfart"
+   ],
+   "entry": "<p>Es gibt keine feste Obergrenze für die Zahl der Würfe in einer Begegnung. Ab dem <strong>siebten</strong> Wurf erhalten die Helden aber zunehmend die Aufmerksamkeit und Gunst der Götter: <strong>+1 auf ihre Nicht-Kampf-Würfe, kumulativ</strong> mit jedem weiteren Wurf.</p><p>Ein Wurf zählt zu den sieben und erhöht den Bonus, wenn er:</p><ul><li>eine andere Fertigkeit als eine <strong>Kampffertigkeit</strong> nutzt,</li><li>in den <strong>Begegnungsnotizen</strong> steht,</li><li><strong>nicht freistehend</strong> ist (freistehende Würfe geben Siegespunkte, aber keine für den Runner bei Misserfolg),</li><li>von mindestens einem Helden <strong>tatsächlich versucht</strong> wird.</li></ul><ul><li>Ab dem siebten zählenden Wurf wirkt der Bonus, auch auf den auslösenden Wurf. Zusätzliche Würfe zählen mit.</li><li>Der Bonus gilt auf <strong>alle Würfe außer Kampffertigkeiten</strong>, auch freistehende und nicht notierte (die ihn aber nicht erhöhen). Die meisten Engagement-Würfe beruhen auf Kampffertigkeiten und erhalten ihn nicht.</li></ul><blockquote><strong>Beispiel:</strong> Elf Würfe erfüllen die Kriterien; der dritte ist optional und wird übersprungen. Beim siebten Wurf (achter der Notizen) gibt es +1; ein folgender freistehender Wurf nutzt +1, erhöht ihn aber nicht. Im Kampf nutzen ein Springen- und ein Gottesgespür-Wurf den Bonus. Nach dem Kampf würfelt ein Held Aufmerksamkeit mit +2, dann Ausweichen gegen die Beutefalle: der Bonus steigt auf +3.</blockquote><p><em>Zweck im Originalsystem:</em> Runner erhalten Siegespunkte bei Misserfolgen, Spieler bei Erfolgen; zu viele Würfe lohnen sich für den Entwerfer nicht mehr, wenn sich die Boni häufen.</p><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 136</em></p>"
+  },
+  {
+   "key": "n.k4.sw.zusatz",
+   "kind": "note",
+   "name": "Zusatzwürfe, Alternativen, gleichzeitige Würfe, Kombinationen",
+   "type": "Regel",
+   "parent": "n.k4.schwierigkeit",
+   "tags": [
+    "tag.kap4",
+    "tag.wurfart"
+   ],
+   "entry": "<ul><li><strong>Zusätzliche Würfe (Extra Rolls):</strong> Darf ein Charakter mehrere Versuche bei einer Nicht-Kampf-Handlung machen (auch bei Nicht-Kampf-Fertigkeiten im Kampf), gibt es <strong>5 Punkte je zusätzlichem Wurf nach dem ersten</strong>; ohne Begrenzung <strong>20 Punkte</strong>.</li><li><strong>Alternative Methoden:</strong> Manche Aufgaben lassen sich auf mehreren Wegen lösen (der höhnende Loki-Schemen in einer Höhle verursacht Beeinträchtigung, wenn er nicht vertrieben wird; Vertreiben durch erfolgreiches Gottesgespür, indem der Held im Namen Odins den Schemen verschwinden lässt, oder durch einen Fernwaffentreffer). Bis zu <strong>drei</strong> Wege; <strong>10 Punkte</strong> je Methode nach der ersten.</li><li><strong>Gleichzeitige Würfe:</strong> Der Held muss zugleich auf <strong>zwei verschiedene Fertigkeiten</strong> würfeln (Beispiel: auf einem rollenden Baumstamm Balance <em>und</em> eine Fernwaffenfertigkeit). Der Entwerfer zahlt beide Würfe wie getrennte, plus <strong>15 Punkte</strong> je weiterem Fertigkeitswurf. Im Kampf darf nur einer eine Aktion kosten.</li><li><strong>Kombi-Falle:</strong> Eine Falle mit mehreren schlechten Wirkungen (etwa Schaden und Lärm, der Gegnern im Nebenraum INIT-Boni verschafft). Aufschlag: <strong>50 %</strong> aller Punkte, die der Entwerfer für Schwierigkeit und Wurfart zahlt (Beispiel: Schwierigkeit 9 (30) + Weak Link (40): (30 + 40) ÷ 2 = 35). Zahlt eine Wurfartkosten nur für eine Wirkung, darf sie ignoriert werden; Punkte aus milden Schwierigkeiten oder Wurfarten werden bei der Berechnung ignoriert.</li><li><strong>Kombi-Gewinn:</strong> Ein Wurf, der bei Erfolg mehrere Gewinne bringt. Kosten: (positive Kosten der Schwierigkeit) × (Zahl der Gewinne). Spart Würfe (Regel der eskalierenden Stärke).</li><li><strong>Dame oder Tiger (Lady or Tiger):</strong> Der Held gewinnt bei Erfolg und erleidet bei Misserfolg eine Falle oder Gefahr. Keine Kosten.</li></ul><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 138–139</em></p>"
+  },
+  {
+   "key": "n.k4.sw.exotisch",
+   "kind": "note",
+   "name": "Exotische Würfe",
+   "type": "Regeltabelle",
+   "parent": "n.k4.schwierigkeit",
+   "tags": [
+    "tag.kap4",
+    "tag.tabelle",
+    "tag.wurfart"
+   ],
+   "entry": "<p>Verlangt ein Wurf etwas anderes als Charakteristik + Fertigkeit, steigen die Kosten:</p><ul><li>Nur die <strong>Charakteristik</strong> darf addiert werden (keine Fertigkeit passt): <strong>+20</strong>.</li><li>Der Wurf erfordert eine Fertigkeit, die <strong>kein Held</strong> hat: <strong>+40</strong>.</li><li><strong>Stacked Roll:</strong> Der Wert, den der Runner-Held addiert, ist höher als der jedes anderen Charakters: <strong>+75</strong>.</li><li><strong>INIT-, ATK- oder DFN-Würfe:</strong> Der Entwerfer legt keine feste Schwierigkeit fest, sondern einen <strong>Modifikator zur Grundlinie</strong> (−2 bis +8 für ATK und DFN). Der Runner bestimmt die Grundlinie kurz vor dem Wurf: der entsprechende Wert der Gruppenwerte ({{ref:n.k4.gegner.werte}}).</li></ul><table><tr><th>Modifikator zur Grundlinie</th><th>Kosten (Originalsystem)</th></tr><tr><td>−2</td><td>−20</td></tr><tr><td>−1</td><td>−10</td></tr><tr><td>0</td><td>0</td></tr><tr><td>+2</td><td>+10</td></tr><tr><td>+3</td><td>+20</td></tr><tr><td>+4</td><td>+30</td></tr><tr><td>+5</td><td>+40</td></tr><tr><td>+6</td><td>+50</td></tr><tr><td>+7</td><td>+60</td></tr><tr><td>+8</td><td>+70</td></tr><tr><td>+9</td><td>+80</td></tr></table><ul><li>Der Entwerfer darf <strong>nie</strong> Proben verlangen, deren einzige Erfolgsmöglichkeit der Wurf auf eine Stufe einer Göttlichen Gabe ist.</li><li><strong>Klumpungsstrafe (Clumping):</strong> Enthält eine Begegnung mehr als <strong>drei Würfe auf dieselbe Sekundärfertigkeit</strong>, steigen die Kosten jedes weiteren Wurfs um <strong>15 × x</strong> (x = Zahl der bereits vorgesehenen Würfe auf diese Fertigkeit). Beispiel: fünf Skaldendichtung-Würfe, Schwierigkeit 6: die ersten drei 0, der vierte 45, der fünfte 60. Freistehende Würfe zählen nicht.</li><li><strong>Misserfolg führt zu einer Falle:</strong> Zwingt das Scheitern die Helden zu einem weiteren Wurf, um eine Falle zu vermeiden: <strong>+10</strong>.</li></ul><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 139–140</em></p>"
+  },
+  {
+   "key": "n.k4.sw.goetter",
+   "kind": "note",
+   "name": "Den Göttern trotzen (In Defiance of the Gods)",
+   "type": "Regeltabelle",
+   "parent": "n.k4.schwierigkeit",
+   "tags": [
+    "tag.kap4",
+    "tag.tabelle",
+    "tag.wurfart"
+   ],
+   "entry": "<p>Ein Risiko vieler Göttlicher Gaben: Der Held verliert Teile seines freien Willens. Will ein Gott, der einen Helden mit vielen Gaben belohnt hat, dass er etwas tut, kann er ihn zum Marionettenspieler machen; in anderen Fällen hindert er ihn an etwas.</p><ul><li>Der Entwerfer kann festlegen, dass Helden ihre <strong>Göttliche Verbindung</strong> mit einer bestimmten Gottheit als <strong>Erhöhung der Schwierigkeit</strong> eines Wurfs addieren müssen.</li><li>Die Handlung, die der Gott fördert oder hemmt, soll zu seiner Eigenart passen: Freyja schützt Wachsendes und hindert, Fruchtbares zu schänden; Heimdal lässt gegen Untote und Lokis heilige Objekte vorgehen; Loki hindert an Ehrlichem und Hilfreichem; Njord hasst Hitze und Stillstand (Feuer löschen, Windmaschinen reparieren); Odin will wissensbringende Dinge (Karten für ihn zeichnen); Thor treibt zu dickschädeliger Tapferkeit, auch gegen Rückzug vor Übermacht; Tyr fördert spektakuläres Leiden (in Fallen laufen); Ull fordert Wildjagd.</li><li>Ein Spieler, der sich auf die Gaben eines Gottes spezialisiert hat, kann so gezielt angegangen werden.</li><li><strong>Originalsystem:</strong> Der Preis lässt sich durch einen <strong>Schrein</strong> der Gottheit an anderer Stelle der Begegnung ausgleichen (Original S. 174).</li></ul><table><tr><th>Gottheit</th><th>Kosten (Originalsystem)</th></tr><tr><td>Freyja</td><td>+10</td></tr><tr><td>Heimdal</td><td>+15</td></tr><tr><td>Loki</td><td>+15</td></tr><tr><td>Njord</td><td>+15</td></tr><tr><td>Odin</td><td>+20</td></tr><tr><td>Thor</td><td>+25</td></tr><tr><td>Tyr</td><td>+15</td></tr><tr><td>Ull</td><td>+10</td></tr><tr><td>Jede andere Gottheit</td><td>+5</td></tr></table><p><em>Quelle: Rune RPG, Kapitel 4, Original S. 140</em></p>"
+  }
+ ]
+}
